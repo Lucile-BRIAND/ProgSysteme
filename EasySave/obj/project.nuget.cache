@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8sOfNrpIoAou3iaDxs0+ZojdRlnuVSedSmbV/gJhX36Cuw036fWvU8c9b1MPSrLIPLo8I3/meKKCNrLvWkSicQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lu-ro\\Source\\Repos\\ProgSysteme\\EasySave\\EasySave.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lu-ro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\lu-ro\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
