@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using Newtonsoft.Json; //no use for now because the NuGet package is not downloaded
+using System.Text.Json;  //no use because of Newtonsoft.Json
+using System.Text.Json.Serialization;  //no use because of Newtonsoft.Json
+using Newtonsoft.Json; //no use for now because the NuGet package is not installed
 
 namespace Appli_V1.Controllers
 {
@@ -29,7 +27,7 @@ namespace Appli_V1.Controllers
             {
                 if (logInstance == null)
                 {
-                    logInstance = new LogFile(); //creating a list
+                    logInstance = new LogFile();
                 }
                 return logInstance;
             }
@@ -37,7 +35,7 @@ namespace Appli_V1.Controllers
         }
 
         //Writing content in the log file
-        public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int fileSize)
+        public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int fileSize, double transferTime)
         {
             //Adding values to the json keys
             var jsonData = new
@@ -46,14 +44,14 @@ namespace Appli_V1.Controllers
                 FileSource = sourcePath,
                 FileTarget = targetPath,
                 FileSize = fileSize,
-                FileTransferTime = 0, //waiting to find the proper method
-                Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp
+                FileTransferTime = transferTime,
+                Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp in the proper format
             };
 
             //Reserializing the json file and writing
             string json = JsonConvert.SerializeObject(jsonData, Formatting.Indented);
             json += "\n";
-            File.AppendAllText("DailyLog.json", json); //creates the file if it doesn't exist, and append text in it
+            File.AppendAllText("DailyLog.json", json); //creates the file if it doesn't exist + appends text in it
         }
 
     }
