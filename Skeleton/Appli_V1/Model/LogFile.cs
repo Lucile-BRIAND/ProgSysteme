@@ -4,6 +4,7 @@ using System.Text;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Newtonsoft.Json; //no use for now because the NuGet package is not downloaded
 
 namespace Appli_V1.Controllers
 {
@@ -12,9 +13,9 @@ namespace Appli_V1.Controllers
         //THIS CLASS IS A SINGLETON
         //
         //Private attributes
-        private static List<LogFile> logInstance = null; //default unique instance
+        private static LogFile logInstance = null; //default unique instance
         private StreamWriter file; //file object we could write in
-        
+
         //Private constructor, only accessible from this class
         private LogFile()
         {
@@ -28,11 +29,11 @@ namespace Appli_V1.Controllers
             {
                 if (logInstance == null)
                 {
-                    logInstance = new List<LogFile>(); //creating a list
+                    logInstance = new LogFile(); //creating a list
                 }
                 return logInstance;
-            }  
-            
+            }
+
         }
 
         //Writing content in the log file
@@ -46,16 +47,12 @@ namespace Appli_V1.Controllers
                 FileTarget = targetPath,
                 FileSize = fileSize,
                 FileTransferTime = 0, //waiting to find the proper method
-                Date = 0 //timestamp for the beginning of the job + waiting to find the proper method
+                Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp
             };
 
-            logInstance.Add(new LogFile()
-            {
-                //
-            });
-
             //Reserializing the json file and writing
-            string json = JsonSerializer.Serialize(logInstance);
+            string json = JsonConvert.SerializeObject(jsonData, Formatting.Indented);
+            json += "\n";
             File.AppendAllText("DailyLog.json", json); //creates the file if it doesn't exist, and append text in it
         }
 
