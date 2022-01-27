@@ -1,0 +1,13 @@
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.exe
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.deps.json
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.runtimeconfig.json
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.runtimeconfig.dev.json
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.dll
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\bin\Debug\netcoreapp3.1\Appli_V1.pdb
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.csprojAssemblyReference.cache
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.AssemblyInfoInputs.cache
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.AssemblyInfo.cs
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.dll
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.pdb
+C:\Users\Bruno\source\repos\Appli_V1\Appli_V1\obj\Debug\netcoreapp3.1\Appli_V1.genruntimeconfig.cache
