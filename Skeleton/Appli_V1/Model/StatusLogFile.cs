@@ -15,9 +15,6 @@ namespace Appli_V1.Controllers
         private StreamWriter file;
         private static List<StatusLogFile> statusInstance = null;
 
-        // new string
-        private string mFileName;
-
         //the private constructor is only accessible from this class
         private StatusLogFile()
         {}
@@ -25,12 +22,10 @@ namespace Appli_V1.Controllers
         //The unique function to use theStatusLogFile object
         public static StatusLogFile GetInstance
         {
-            
             get {
                 if (statusInstance == null)
                 {
                     statusInstance = new List<StatusLogFile>();
-
                 }
                 return statusInstance;
             }
