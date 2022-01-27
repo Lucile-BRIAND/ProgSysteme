@@ -7,7 +7,7 @@ using System.Text.Json.Serialization;
 
 namespace Appli_V1.Controllers
 {
-    class LogFile : FileAbstractClass
+    class LogFile 
     {
         //THIS CLASS IS A SINGLETON
         //
@@ -39,14 +39,19 @@ namespace Appli_V1.Controllers
         public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int fileSize)
         {
             //Adding values to the json keys
-            logInstance.Add(new LogFile()
+            var jsonData = new
             {
                 Name = jobName,
                 FileSource = sourcePath,
                 FileTarget = targetPath,
                 FileSize = fileSize,
-                FileTransferTime = null, //waiting to find the proper method
-                Date = null //timestamp for the beginning of the job + waiting to find the proper method
+                FileTransferTime = 0, //waiting to find the proper method
+                Date = 0 //timestamp for the beginning of the job + waiting to find the proper method
+            };
+
+            logInstance.Add(new LogFile()
+            {
+                //
             });
 
             //Reserializing the json file and writing
