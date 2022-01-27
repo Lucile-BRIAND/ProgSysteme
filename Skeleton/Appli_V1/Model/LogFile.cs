@@ -14,7 +14,6 @@ namespace Appli_V1.Controllers
         //Private attributes
         private static List<LogFile> logInstance = null; //default unique instance
         private StreamWriter file; //file object we could write in
-        private LogFile key; //key object for the json file
         
         //Private constructor, only accessible from this class
         private LogFile()
@@ -52,7 +51,7 @@ namespace Appli_V1.Controllers
 
             //Reserializing the json file and writing
             string json = JsonSerializer.Serialize(logInstance);
-            file.Write("DailyLog.json", json);
+            File.AppendAllText("DailyLog.json", json); //creates the file if it doesn't exist, and append text in it
         }
 
     }
