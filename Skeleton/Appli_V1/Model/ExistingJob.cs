@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace projet
+namespace Appli_V1.Controllers
 {
     class ExistingJob : FileAbstractClass
     {
