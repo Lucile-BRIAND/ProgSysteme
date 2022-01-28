@@ -1,19 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.IO;
+using Newtonsoft.Json;
 
 namespace Appli_V1.Controllers
 {
-    class LogFile : FileAbstractClass
+    class LogFile
     {
-        private static LogFile logInstance = null;
-        private StreamWriter file;
-        
-        private  LogFile()
+        //THIS CLASS IS A SINGLETON
+        //
+        //Private attributes
+        private static LogFile logInstance = null; //default unique instance
+        private StreamWriter file; //file object we could write in
+
+        //Private constructor, only accessible from this class
+        private LogFile()
         {
 
         }
+
+        //Getting the unique instance of this class
         public static LogFile GetInstance
         {
             get
@@ -23,22 +28,29 @@ namespace Appli_V1.Controllers
                     logInstance = new LogFile();
                 }
                 return logInstance;
-            }  
-            
+            }
+
         }
-        public void WriteLogMessage()
+
+        //Writing content in the log file
+        public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int fileSize, double transferTime)
         {
+            //Adding values to the json keys
+            var jsonData = new
+            {
+                Name = jobName,
+                FileSource = sourcePath,
+                FileTarget = targetPath,
+                FileSize = fileSize,
+                FileTransferTime = transferTime,
+                Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp in the proper format
+            };
 
+            //Reserializing the json file and writing
+            string json = JsonConvert.SerializeObject(jsonData, Formatting.Indented);
+            json += "\n";
+            File.AppendAllText("DailyLog.json", json); //creates the file if it doesn't exist + appends text in it
         }
-        public override void InitFile()
-        {
-
-        }
-        public override void CloseFile()
-        {
-
-        }
-
 
     }
 }
