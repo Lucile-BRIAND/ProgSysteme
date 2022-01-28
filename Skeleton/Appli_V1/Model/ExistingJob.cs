@@ -1,57 +1,68 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.Json;
 
-namespace projet
+namespace Appli_V1.Controllers
 {
     class ExistingJob 
     {
-        
-        private static ExistingJob jobInstance = null;
-        private string jobName;
-        private ExistingJob()
+        public string file = "Jobfile.json"; //file where we stocks backups 
+        public ExistingJob() // constructor 
         {
 
         }
-
-        public static ExistingJob GetInstance()
+        public string ReadFile() //Get a string of the file
         {
-                if (jobInstance == null)
-                {
-                    jobInstance = new ExistingJob();
-                }
-                return jobInstance;
-
-        }
-        public string ReadFile()
-        {
-            StreamReader reader = new StreamReader("Jobfile.json");
-            string jsonString = reader.ReadToEnd();
-            dynamic model = JsonConvert.DeserializeObject(jsonString);
-            ExistingJob existingjob = new ExistingJob();
-            existingjob.jobName = model.jobName;
-            return existingjob.jobName;
+            var contentFile = System.IO.File.ReadAllText(file);
+            return contentFile;
         }
 
-        public void WriteExistingJobs( string jobNamet, string jobTypet, string sourcePatht, string targetPatht)
+        public bool WriteExistingJobs(jobModel iList) // Write the backup in the file 
         {
-            var my_jsondata = new
+            var contentFile = System.IO.File.ReadAllText(file);
+            List<jobModel> jobModelList = new List<jobModel>();
+            try
             {
-                jobName = jobNamet,
-                jobType = jobTypet,
-                sourcePath = sourcePatht,
-                targetPath = targetPatht,
-            };
-            var options = new JsonSerializerOptions { WriteIndented = true };
-            string json = System.Text.Json.JsonSerializer.Serialize(my_jsondata, options);
-            File.AppendAllText("Jobfile.json", json);
+                jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile);
+            }
+            catch
+            {            
+            }
+            if (jobModelList == null)
+            {
+                jobModelList = new List<jobModel>();
+            }
+            jobModelList.Add(iList);
+            System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList)); //Replace the file with the new one  
+            return true;
         }
-        public void RemoveExistingJobs(string jobName)
+        public bool RemoveExistingJobs(string name) //Remove the backup corresponding with the name parameter 
         {
+            var contentFile = System.IO.File.ReadAllText(file);
+            List<jobModel> jobModelList = new List<jobModel>(); 
+            try
+            {
+                jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile); //Insert file content into object list 
+            }
+            catch
+            {
+            }
 
+            foreach (jobModel jobObject in jobModelList) // Get objects in the object list 
+            {
+                if (jobObject.jobName == name)
+                {
+                    var index = jobModelList.IndexOf(jobObject); 
+                    jobModelList.RemoveAt(index); 
+                    System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList)); //Replace the file with the new one   
+                    break;
+                }
+            }
+            return true;
         }
     }
 }
