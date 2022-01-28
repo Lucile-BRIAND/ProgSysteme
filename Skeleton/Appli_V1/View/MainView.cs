@@ -4,15 +4,24 @@ using System.Text;
 
 namespace Appli_V1.Controllers
 {
-    class MainView
+    class MainView : IStrategyView
     {
-        public void DisplayOptions()
-        {
+        private string choice_selected;
 
-        }
-        public int CollectOptions()
+        public void DisplayOptions(string initial_message)
         {
-            return 0;
+            Console.WriteLine(initial_message);
+        }
+
+        public string CollectOptions()
+        {
+            this.choice_selected = Console.ReadLine();
+            return choice_selected;
+        }
+
+        public void DisplayErrorMessage(string Error_Message)
+        {
+            Console.WriteLine(Error_Message);
         }
     }
 }

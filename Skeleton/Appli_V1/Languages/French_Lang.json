@@ -1,0 +1,9 @@
+{
+  "Main": "Choisissez l'action désirée :",
+  "Execute": "Saisissez le type d'action :",
+  "Delete": "Selectionnez la sauvegarde que vous souhaitez supprimer :",
+  "Create_Name": "Entrez le nom de votre sauvegarde :",
+  "Create_Type": "Entrez le type de votre sauvegarde :",
+  "Create_Source": "Entrez le chemin de la source :",
+  "Create_Target": "Entrez le chemin de la destination :"
+}	

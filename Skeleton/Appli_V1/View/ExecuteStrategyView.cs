@@ -6,24 +6,18 @@ namespace Appli_V1.Controllers
 {
     class ExecuteStrategyView : IStrategyView
     {
-        public void DisplayExistingData()
-        {
+        private string choice_selected;
 
-        }
-        public List<int> CollectDataRequirements()
+        public void DisplayExistingData(string initial_message)
         {
-            List<int> lst = new List<int>(5);
-            lst.Add(1);
-            lst.Add(2);
-            return lst;
+            Console.WriteLine(initial_message);
         }
-        public void Error()
-        {
 
-        }
-        public void Validation()
+        public string CollectOptions()
         {
-
+            this.choice_selected = Console.ReadLine();
+            return choice_selected;
         }
+
     }
 }

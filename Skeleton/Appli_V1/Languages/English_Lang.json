@@ -1,0 +1,9 @@
+{
+  "Main": "Choose the action needed :",
+  "Execute": "Write the type of execution that you want :",
+  "Delete": "Select the backup you want to delete :",
+  "Create_Name": "Enter the name of your backup :",
+  "Create_Type": "Enter the type of your backup :",
+  "Create_Source": "Enter the source path of your backup :",
+  "Create_Target": "Enter the target path of your backup :"
+}	
