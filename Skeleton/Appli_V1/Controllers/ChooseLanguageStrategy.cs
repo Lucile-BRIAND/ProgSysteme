@@ -43,11 +43,11 @@ namespace Appli_V1.Controllers
             }
         }
 
-        //Function that calls the view initializing and collects the data
+        //Function that calls the initialization of the view and collects the data
         public void InitView()
         {
             langView.DisplayExistingData();
-            this.language_Selected = langView.CollectDataRequirements();
+            this.language_Selected = langView.CollectOptions();
         }
     }
 }
