@@ -1,0 +1,120 @@
+{
+  "Name": "Test",
+  "FileSource": "C:/Users/Bruno/Documents/Source/AA",
+  "FileTarget": "C:/Users/Bruno/Documents/Source//TT",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 21:11:00"
+}
+{
+  "Name": "Test",
+  "FileSource": "C:/Users/Bruno/Documents/Source/AA",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/TT",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 21:51:33"
+}
+{
+  "Name": "Test",
+  "FileSource": "C:/Users/Bruno/Documents/Source/AA",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/TT",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 21:53:03"
+}
+{
+  "Name": "Bruno",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 21:58:24"
+}
+{
+  "Name": "Bruno",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:01:51"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:05:44"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:06:51"
+}
+{
+  "Name": null,
+  "FileSource": null,
+  "FileTarget": null,
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:07:23"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:08:16"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:09:18"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:09:53"
+}
+{
+  "Name": "Bruno",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:10:16"
+}
+{
+  "Name": "Bruno",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:10:30"
+}
+{
+  "Name": "Bruno",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:11:20"
+}
+{
+  "Name": "Dany",
+  "FileSource": "C:/Users/Bruno/Documents/Source/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/Source/Dest",
+  "FileSize": 1,
+  "FileTransferTime": 2.0,
+  "Date": "28/01/2022 22:12:15"
+}

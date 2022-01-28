@@ -1,0 +1,19 @@
+{
+	"Main": "Choisissez l'action désirée :",
+	"Execute": "Entrez le nom de la sauvegarde que vous souhaitez sauvegarder :",
+	"Delete": "Selectionnez le sauvegarde que vous souhaitez supprimer :",
+	"Create_Name": "Entrez le nom de votre sauvegarde :",
+	"Create_Type": "Entrez le type de votre sauvegarde (1 : Differentielle ou 2 : Complète):",
+	"Create_Source": "Entrez le chemin de la source :",
+	"Create_Target": "Entrez le chemin de la destination :",
+	"Error_Main": "Choix non existant, veuillez changer de valeur",
+	"Error_Execute": "Donnée saisie n'est pas valide",
+	"Validation": "Execution conclue avec succès",
+	"Main_0": "Créer une sauvegarde",
+	"Main_1": "Gestion des sauvegardes",
+	"Main_2": "Execution des sauvegardes",
+	"Type_0": "Differentielle",
+	"Type_1": "Complète"
+}	
+	
+ 	

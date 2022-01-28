@@ -1,0 +1,240 @@
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source//TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source//TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source/TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source/TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source/TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Test",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/AA",
+  "targetPath": "C:/Users/Bruno/Documents/Source/TT",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Bruno",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Bruno",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Bruno",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Bruno",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complète",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complète",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complète",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complète",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Bruno",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Bruno",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "Dany",
+  "Type": "Complete",
+  "sourcePath": "C:/Users/Bruno/Documents/Source/Source",
+  "targetPath": "C:/Users/Bruno/Documents/Source/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}

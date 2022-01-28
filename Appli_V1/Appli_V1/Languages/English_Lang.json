@@ -1,0 +1,19 @@
+{
+	"Main": "Choose the action needed :",
+	"Execute": "Enter the name of the backup who  do you want to start:",
+	"Delete": "Select which bakcup you want to delete :",
+	"Create_Name": "Enter the name of your backup",
+	"Create_Type": "Enter the type of your backup (1 : Differential or 2 : Complete)",
+	"Create_Source": "Enter the source's path of your backup",
+	"Create_Target": "Enter the target's path of your backup",
+	"Error_Main" :  "Choice no present, rewrite an another correct choice",
+	"Error_Execute": "Data enter, are not valid",
+	"Validation" : "Execution went well",
+	"Main_0": "Create a backup",
+	"Main_1": "Manage the backups",
+	"Main_2": "Execute your's backup",
+	"Type_0": "Differential",
+	"Type_1":  "Complete"
+}	
+	
+ 	
