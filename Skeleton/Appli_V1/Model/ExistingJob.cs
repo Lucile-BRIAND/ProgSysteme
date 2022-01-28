@@ -24,6 +24,11 @@ namespace Appli_V1.Controllers
 
         public bool WriteExistingJobs(jobModel iList) //Writes the backup in the file 
         {
+            if (!File.Exists(file))
+            {
+                File.Create(file).Close();
+            }
+
             var contentFile = System.IO.File.ReadAllText(file);
             List<jobModel> jobModelList = new List<jobModel>();
             try
