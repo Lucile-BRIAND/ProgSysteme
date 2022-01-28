@@ -6,7 +6,7 @@ namespace Appli_V1.Controllers
 {
     interface IStrategyView
     {
-        public void DisplayExistingData();
+        public string CollectOptions();
         
 
         

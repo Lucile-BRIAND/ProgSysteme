@@ -28,6 +28,8 @@ namespace Appli_V1.Controllers
             Premierepage.InitView();
             Premierepage.CheckRequirements();
             Premierepage.CollectExistingData();
+            MainController Second_Page = new MainController();
+            Second_Page.MainMenu();
            
 
         }

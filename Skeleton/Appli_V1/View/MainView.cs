@@ -6,13 +6,19 @@ namespace Appli_V1.Controllers
 {
     class MainView
     {
-        public void DisplayOptions()
+        private string choice_selected;
+        public void DisplayOptions(string initial_message)
         {
-
+            Console.WriteLine(initial_message);
         }
-        public int CollectOptions()
+        public string CollectOptions()
         {
-            return 0;
+            this.choice_selected = Console.ReadLine();
+            return choice_selected;
+        }
+        public void DisplayErrorMessage(string Error_Message)
+        {
+            Console.WriteLine(Error_Message);
         }
     }
 }

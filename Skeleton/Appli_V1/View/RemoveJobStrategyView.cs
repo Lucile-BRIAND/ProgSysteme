@@ -6,25 +6,20 @@ namespace Appli_V1.Controllers
 {
     class RemoveJobStrategyView : IStrategyView
     {
-        List<int> lst = new List<int>();
-        public void DisplayExistingData()
+        private string choice_selected;
+        public void DisplayExistingData(string initial_message,string back_message)
         {
-
+            Console.WriteLine(initial_message);
+            Console.WriteLine(back_message);
         }
-        public List<int> CollectDataRequirements() 
+        public string CollectOptions()
         {
-            List<int> lst = new List<int>(5);
-            lst.Add(1);
-            lst.Add(2);
-            return lst;
+            this.choice_selected = Console.ReadLine();
+            return choice_selected;
         }
-        public void Error()
+        public void DisplayErrorMessage(string Error_Message)
         {
-
-        }
-        public void Validation()
-        {
-
+            Console.WriteLine(Error_Message);
         }
     }
 }

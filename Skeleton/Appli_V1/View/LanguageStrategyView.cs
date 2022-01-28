@@ -17,11 +17,15 @@ namespace Appli_V1.Controllers
 
         }
         // Function used to collect the data writed by the user
-        public string CollectDataRequirements()
+        public string CollectOptions()
         {
             this.language_Selected = Console.ReadLine();
             return language_Selected;
         }
-        
+        public void DisplayErrorMessage(string Error_Message)
+        {
+            Console.WriteLine(Error_Message);
+        }
+
     }
 }

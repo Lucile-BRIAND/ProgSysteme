@@ -4,26 +4,17 @@ using System.Text;
 
 namespace Appli_V1.Controllers
 {
-    class CreateJobStrategyView : IStrategyView
+    class CreateJobStrategyView
     {
-        public void DisplayExistingData()
+        private string choice_selected; 
+        public void DisplayExistingData(List<string> Liste)
         {
 
         }
-        public List<int> CollectDataRequirements()
+        public string CollectOptions()
         {
-            List<int> lst = new List<int>(5);
-            lst.Add(1);
-            lst.Add(2);
-            return lst;
-        }
-        public void Error()
-        {
-
-        }
-        public void Validation()
-        {
-
+            this.choice_selected = Console.ReadLine();
+            return choice_selected;
         }
     }
 }
