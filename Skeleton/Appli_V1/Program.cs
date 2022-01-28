@@ -27,12 +27,16 @@ namespace Appli_V1.Controllers
             Employee employee = JsonConvert.DeserializeObject<Employee>(jsonread);
             Console.WriteLine(employee.Main);*/
 
-            ChooseLanguageStrategy Premierepage = new ChooseLanguageStrategy();
-            Premierepage.InitView();
-            Premierepage.CheckRequirements();
-            Premierepage.CollectExistingData();
-            MainController Second_Page = new MainController();
-            Second_Page.MainMenu();
+            //ChooseLanguageStrategy Premierepage = new ChooseLanguageStrategy();
+            //Premierepage.InitView();
+            //Premierepage.CheckRequirements();
+            //Premierepage.CollectExistingData();
+            //MainController Second_Page = new MainController();
+            //Second_Page.MainMenu();
+
+            CreateJobStrategy createJobStrategyController = new CreateJobStrategy();
+
+            createJobStrategyController.CheckRequirements();
 
 
         }
