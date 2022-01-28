@@ -128,5 +128,17 @@ namespace Appli_V1.Controllers
         {
 
         }
+
+        public void InitView()
+        {
+            executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Execute);
+            InitValue();
+        }
+
+        public void InitValue()
+        {
+            this.value_enter = executeStrategyView.CollectOptions();
+            CheckRequirements();
+        }
     }
 }
