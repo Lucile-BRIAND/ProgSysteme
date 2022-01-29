@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Appli_V1.Controllers
 {
-    class RemoveJobStrategyView : IStrategyView
+    class RemoveJobStrategyView
     {
         private string choice_selected;
         public void DisplayExistingData(string message) //Displays remove's menu messages (Question, validation, error)
