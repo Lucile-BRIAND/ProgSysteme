@@ -6,8 +6,7 @@ namespace Appli_V1.Controllers
 {
     class MainController 
     {
-        private string CollectChoice;
-        ChooseLanguageStrategy chooseLanguageStrategy = new ChooseLanguageStrategy();
+       
         ExecuteJobStrategy executeJobStrategy = new ExecuteJobStrategy();
         RemoveJobStrategy removeJobStrategy = new RemoveJobStrategy();
         CreateJobStrategy createJobStrategy = new CreateJobStrategy();
@@ -17,32 +16,29 @@ namespace Appli_V1.Controllers
         private string First_Main;
         private string Second_Main;
         private string Third_Main;
-        LanguageStrategyView langView = new LanguageStrategyView();
-
-        
-
+        private string CollectChoice;
         public void MainMenu()
         {
-            // Initialise the name of the three labels
+            // Initializes the name of the three labels
             Init_Main_Labels();
-            // Show's the initial message
+            // Shows the initial message
             mainView.DisplayOptions(Singleton_Lang.ReadFile().Main);
-            // Show the differents possibilities of the Application
+            // Shows the differents possibilities of the Application
             mainView.DisplayOptions("1. " + First_Main);
             mainView.DisplayOptions("2. " + Second_Main);
             mainView.DisplayOptions("3. " + Third_Main);
-            // Initialise the private attribute with selected value
+            // Initializes the private attribute with selected value
             this.CollectChoice = mainView.CollectOptions();
-            // Verification of the value enter
+            //Input verification
             CheckRequirements();
         }
-        public void Init_Main_Labels()
+        public void Init_Main_Labels() 
         {
             First_Main = Singleton_Lang.ReadFile().Main_0;
             Second_Main = Singleton_Lang.ReadFile().Main_1;
-            Third_Main = Singleton_Lang.ReadFile().Main_2;
+            Third_Main = Singleton_Lang.ReadFile().Main_2; 
         }
-        public void CheckRequirements()
+        public void CheckRequirements() //Collect the user's entry 
         {
 
             if (this.CollectChoice.Equals("1") | this.CollectChoice.Equals("2") | this.CollectChoice.Equals("3"))
@@ -51,13 +47,13 @@ namespace Appli_V1.Controllers
             }
             else
             {
-                langView.DisplayErrorMessage(Singleton_Lang.ReadFile().Error_Main);
+                mainView.DisplayOptions(Singleton_Lang.ReadFile().Error_Main);
                 MainMenu();
                 this.CollectChoice = mainView.CollectOptions();
             }
 
         }
-        public void CallOfControllers()
+        public void CallOfControllers() //Call the controller that the user has choosen 
         {
             
             if(this.CollectChoice.Equals("1"))

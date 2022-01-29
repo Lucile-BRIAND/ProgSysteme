@@ -4,10 +4,8 @@ using System.Text;
 
 namespace Appli_V1.Controllers
 {
-    class CreateJobStrategy : IStrategyController
+    class CreateJobStrategy 
     {
-        private int language;
-        private string value_enter;
         CreateJobStrategyView createJobStrategyView = new CreateJobStrategyView();
         LanguageFile Singleton_Lang = LanguageFile.GetInstance;
         List<string> Recuperated_List = new List<string>();
@@ -17,19 +15,19 @@ namespace Appli_V1.Controllers
             //Instanciate the new object to collect backup's requirement in his attributes
             jobModel newJob = new jobModel();
 
-            // Set up the backup's requirement
+            //Set up the backup's requirement
             newJob.jobName = this.Recuperated_List[0];
             newJob.jobType = this.Recuperated_List[1];
             newJob.sourcePath = this.Recuperated_List[2];
             newJob.targetPath = this.Recuperated_List[3];
 
-            //Call the Model function to Writes the new backup in the file 
+            //Calls the Model function to writes the new backup in the file 
             if(existingJob.WriteExistingJobs(newJob))
             {
-                createJobStrategyView.Confirmation_Message(Singleton_Lang.ReadFile().Validation);
+                createJobStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Validation);
             }else
             {
-                createJobStrategyView.DisplayError(Singleton_Lang.ReadFile().Error_Execute);
+                createJobStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Error_Execute);
             }
 
 
@@ -40,28 +38,30 @@ namespace Appli_V1.Controllers
         }
         public void InitView()
         {
-            // Creation of the list Containing needed for a job
+            MainController mainController = new MainController();
+            // Creation of the list Containing user's entry 
             List<string> CreateValues = new List<string>(4);
             CreateValues.Add(Singleton_Lang.ReadFile().Create_Name);
             CreateValues.Add(Singleton_Lang.ReadFile().Create_Type);
             CreateValues.Add(Singleton_Lang.ReadFile().Create_Source);
             CreateValues.Add(Singleton_Lang.ReadFile().Create_Target);
-            // 
-            // Send to the view the list of the create values
-            this.Recuperated_List = createJobStrategyView.DisplayExistingData(CreateValues);
-            if (Recuperated_List[1].Equals("1"))
+            
+            this.Recuperated_List = createJobStrategyView.CollectOptions(CreateValues);
+            if (Recuperated_List[1].Equals("1")) //Reads user's data when he chooses the differential type 
             {
                 Recuperated_List[1]=Singleton_Lang.ReadFile().Type_0;
                 CheckRequirements();
+                mainController.MainMenu();
             }
-            else if(Recuperated_List[1].Equals("2"))
+            else if(Recuperated_List[1].Equals("2")) //Reads user's data when he chooses the complete type 
             {
                 Recuperated_List[1] = Singleton_Lang.ReadFile().Type_1;
                 CheckRequirements();
+                mainController.MainMenu();
             }
             else
             {
-                createJobStrategyView.DisplayError(Singleton_Lang.ReadFile().Error_Execute);
+                createJobStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Error_Execute); //Throws an error to the user if he enters something other than 1 or 2
                 InitView();
             }
             

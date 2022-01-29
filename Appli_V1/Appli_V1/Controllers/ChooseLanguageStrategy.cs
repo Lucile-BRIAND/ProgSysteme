@@ -6,15 +6,15 @@ using Newtonsoft.Json;
 
 namespace Appli_V1.Controllers
 {
-    class ChooseLanguageStrategy : IStrategyController
+    class ChooseLanguageStrategy 
     {
-        // Initialisation of language view
+        // Language view initialization
         LanguageStrategyView langView = new LanguageStrategyView();
-        // Collect the instace of the model
+        // Collects the model's intance
         LanguageFile Singleton_Lang = LanguageFile.GetInstance;
-        // Attribute containing the value of the language selected
+        // Attribute containing the value of the selected language
         public string language_Selected;
-        //Function who check if language exist
+        //Function who checks if the language exist
         public void CheckRequirements()
         {
 
@@ -29,7 +29,7 @@ namespace Appli_V1.Controllers
            
         }
 
-        //Function who collect the data
+        //Function who collects the data
         public void CollectExistingData()
         {
             
@@ -43,7 +43,7 @@ namespace Appli_V1.Controllers
                 Singleton_Lang.ReadFile();
             }
         }
-        // Function who call the initialise the view and collect the data
+        //Function who allows to initialize the views and to collects the user's data
         public void InitView()
         {
             langView.DisplayExistingData();
