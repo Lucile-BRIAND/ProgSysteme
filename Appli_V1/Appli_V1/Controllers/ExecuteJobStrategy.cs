@@ -6,17 +6,18 @@ namespace Appli_V1.Controllers
 {
     class ExecuteJobStrategy //: IStrategyController
     {
-        private int language;
-        private string[] jobRequirements;
         private string source;
         private string destination;
         private string name;
         private string type;
         private string value_enter;
+        private string type_enter;
         ExecuteStrategyView executeStrategyView = new ExecuteStrategyView();
         LanguageFile Singleton_Lang = LanguageFile.GetInstance;
-        jobModel jobmodel = new jobModel();
         ExistingJob existingJob = new ExistingJob();
+        jobModel jobmodel = new jobModel();
+        LogFile lf = LogFile.GetInstance;
+
         public ExecuteJobStrategy()
         {
 
@@ -24,18 +25,16 @@ namespace Appli_V1.Controllers
 
         public void CheckRequirements()
         {
-
-            var contentFile = System.IO.File.ReadAllText(existingJob.file);
-            var jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile);
-            foreach(jobModel attribute in jobModelList)
+            if(name != null)
             {
-                if (attribute.jobName == this.value_enter)
-                {
-                    name = attribute.jobName;
-                    type = attribute.jobType;
-                    source = attribute.sourcePath;
-                    destination = attribute.targetPath;
-                }
+                // Send Validation Message
+                executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Validation);
+            }
+            else
+            {
+                // Send Error Message
+                executeStrategyView.DisplayErrorMessage(Singleton_Lang.ReadFile().Error_Execute);
+                InitView();
             }
 
             int nbfile = 0; //number of files that have been copied
@@ -64,8 +63,7 @@ namespace Appli_V1.Controllers
                     //Appends the text in the status log file
                     file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile);
                 }
-                // Send Validation Message
-                executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Validation);
+                lf.WriteLogMessage(name, source, destination, nbfile, 2);
 
             }
             else if (type == "Differential" | type== "Differentielle")
@@ -97,11 +95,6 @@ namespace Appli_V1.Controllers
                 {
                     file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
                 }
-                else
-                {
-                    //no files to copy : error()
-                }
-
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
                 {
@@ -129,28 +122,64 @@ namespace Appli_V1.Controllers
                         file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
                     }
                 });
-                // Send Validation Message
-                executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Validation);
+                lf.WriteLogMessage(name, source, destination, nbfile, 2);
+            }
+            
+            
+        }        
+        public void InitView()
+        {
+            //Read the JSON file containing the job's data
+            var contentFile = System.IO.File.ReadAllText(existingJob.file);
+            var jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile);
+            MainController mc = new MainController();
+            // Show the message asking the user to write the type of the execution and collect her repsonce 
+            executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Execute_Type);
+            this.type_enter = executeStrategyView.CollectOptions();
+            // If the user want to execute one backup
+            if(this.type_enter.Equals("1"))
+            {
+                // Show message of the name's backup
+                executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Execute);
+                // Collect name's backup
+                this.value_enter = executeStrategyView.CollectOptions();
+                // Collect the jobModel object corresponding
+                foreach (jobModel attribute in jobModelList)
+                {
+                    if (attribute.jobName == this.value_enter)
+                    {
+                        name = attribute.jobName;
+                        type = attribute.jobType;
+                        source = attribute.sourcePath;
+                        destination = attribute.targetPath;
+                        CheckRequirements();
+                    }
+                }
+                // Redirecton to main menu
+                mc.MainMenu();
+
+            }
+            // If user want to execute all of the backups
+            else if(this.type_enter.Equals("2"))
+            {
+                // Collect the jobModel object corresponding
+                foreach (jobModel attribute in jobModelList)
+                {
+                        name = attribute.jobName;
+                        type = attribute.jobType;
+                        source = attribute.sourcePath;
+                        destination = attribute.targetPath;
+                        CheckRequirements();
+                }
+                // Redirection to main menu
+                mc.MainMenu();
             }
             else
             {
-                //no refferenced type of save : error()
+                InitView();
+
             }
-
-            LogFile lf = LogFile.GetInstance;
-            lf.WriteLogMessage(name, source, destination, nbfile, 2);
-        }
-
-        public void CollectExistingData()
-        {
-
-        }
-
-        public void InitView()
-        {
-            executeStrategyView.DisplayExistingData(Singleton_Lang.ReadFile().Execute);
-            this.value_enter = executeStrategyView.CollectOptions();
-            CheckRequirements();
+            
         }
 
     }
