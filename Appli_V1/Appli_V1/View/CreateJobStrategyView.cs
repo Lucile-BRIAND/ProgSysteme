@@ -6,8 +6,7 @@ namespace Appli_V1.Controllers
 {
     class CreateJobStrategyView
     {
-        private string choice_selected;
-        public List<string>  DisplayExistingData(List<string> Create_List)
+        public List<string> DisplayExistingData(List<string> Create_List)  //Collect all backup's data 
         {
             int Counter_A =0;
             List<string> CreateValues = new List<string>(4);
@@ -19,13 +18,9 @@ namespace Appli_V1.Controllers
             }
             return CreateValues;
         }
-        public void DisplayError(string error_message)
+        public void DisplayExistingData(string message) //Displays CreateBackup's menu messages (validation, error)
         {
-            Console.WriteLine(error_message);
-        }
-        public void Confirmation_Message(string validation_message)
-        {
-            Console.WriteLine(validation_message);
+            Console.WriteLine(message);
         }
 
     }

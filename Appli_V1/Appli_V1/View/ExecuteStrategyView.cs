@@ -7,11 +7,11 @@ namespace Appli_V1.Controllers
     class ExecuteStrategyView : IStrategyView
     {
         private string choice_selected;
-        public void DisplayExistingData(string initial_message)
+        public void DisplayExistingData(string message) //Displays execution's menu messages (Question, validation, error) 
         {
-            Console.WriteLine(initial_message);
+            Console.WriteLine(message);
         }
-        public string CollectOptions()
+        public string CollectOptions() //Collect backup's name 
         {
             this.choice_selected = Console.ReadLine();
             return choice_selected;
