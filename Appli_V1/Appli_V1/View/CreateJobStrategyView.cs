@@ -6,7 +6,7 @@ namespace Appli_V1.Controllers
 {
     class CreateJobStrategyView
     {
-        public List<string> DisplayExistingData(List<string> Create_List)  //Collect all backup's data 
+        public List<string> CollectOptions(List<string> Create_List)  //Collect all backup's data 
         {
             int Counter_A =0;
             List<string> CreateValues = new List<string>(4);
