@@ -10,7 +10,6 @@ namespace Appli_V1.Controllers
         //THIS CLASS IS A SINGLETON
         //
         //Private attributes
-        private StreamWriter file;
         private static StatusLogFile statusInstance = null;
 
         //The private constructor is only accessible from this class

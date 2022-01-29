@@ -6,11 +6,11 @@ using Newtonsoft.Json;
 
 namespace Appli_V1.Controllers
 {
-    class LanguageFile : FileAbstractClass
+    class LanguageFile
     {
-        // Initialisation of the instace 
+        //Instance null by default 
         private static LanguageFile languageInstance  = null ;
-        // Private Attribute who contain the value writed by the user
+        // Private Attribute who contains the value writed by the user
         private string language;
         
         // Differents attributes used for the JSON reading
@@ -23,8 +23,7 @@ namespace Appli_V1.Controllers
         public string Create_Target { get; set; }
         public string Error_Main { get; set; }
         public string Error_Execute { get; set; }
-        public string Validation { get; set;
-        }
+        public string Validation { get; set; }
         public string Main_0 { get; set; }
         public string Main_1 { get; set; }
         public string Main_2 { get; set; }
@@ -32,9 +31,9 @@ namespace Appli_V1.Controllers
         public string Type_1 { get; set; }
 
 
-        // Creation of a private constructor 
+        //private constructor 
         private LanguageFile() { }
-        // Initialise the unique instance
+        // Initializes the unique instance
         public static LanguageFile GetInstance
         {
             get
@@ -47,13 +46,13 @@ namespace Appli_V1.Controllers
             }
 
         }
-        // Allow the initialisation of the language 
+        // Allows the initialisation of the language 
         public void InitLanguage(String language)
         {
             this.language = language;
             
         }
-        // Function used to read the JSON file containing the differents messages of the menus
+        // Function used to read the JSON file containing menu's messages
         public LanguageFile ReadFile()
         {
             

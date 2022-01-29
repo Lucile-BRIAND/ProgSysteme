@@ -10,7 +10,6 @@ namespace Appli_V1.Controllers
         //
         //Private attributes
         private static LogFile logInstance = null; //default unique instance
-        private StreamWriter file; //file object we could write in
 
         //Private constructor, only accessible from this class
         private LogFile()
