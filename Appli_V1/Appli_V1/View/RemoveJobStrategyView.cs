@@ -7,22 +7,14 @@ namespace Appli_V1.Controllers
     class RemoveJobStrategyView : IStrategyView
     {
         private string choice_selected;
-        public void DisplayExistingData(string initial_message)
+        public void DisplayExistingData(string message) //Displays remove's menu messages (Question, validation, error)
         {
-            Console.WriteLine(initial_message);
+            Console.WriteLine(message);
         }
-        public string CollectOptions()
+        public string CollectOptions() //Collects backup's name 
         {
             this.choice_selected = Console.ReadLine();
             return choice_selected;
-        }
-        public void DisplayErrorMessage(string Error_Message)
-        {
-            Console.WriteLine(Error_Message);
-        }
-        public void DisplayValidation(string Validation_Delete)
-        {
-            Console.WriteLine(Validation_Delete);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Appli_V1.Controllers
 {
-    class LanguageStrategyView : IStrategyView
+    class LanguageStrategyView 
     {
         // Private Attribute who contain the value writed by the user
         private string language_Selected;
@@ -22,7 +22,7 @@ namespace Appli_V1.Controllers
             this.language_Selected = Console.ReadLine();
             return language_Selected;
         }
-        public void DisplayErrorMessage(string Error_Message)
+        public void DisplayErrorMessage(string Error_Message) //Displays error message
         {
             Console.WriteLine(Error_Message);
         }
