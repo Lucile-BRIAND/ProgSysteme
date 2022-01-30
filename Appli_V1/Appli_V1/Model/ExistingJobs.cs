@@ -15,6 +15,8 @@ namespace Appli_V1.Controllers
         {
 
         }
+
+
         public string ReadFile() //Gets a string of the file
         {
             var contentFile = System.IO.File.ReadAllText(file);
@@ -23,16 +25,16 @@ namespace Appli_V1.Controllers
 
         public bool WriteExistingJobs(jobModel iList) //Writes the backup in the file 
         {
-            if (!File.Exists(file)) //Creates a json file if Jobfile.json doesn't exists
+            if (!File.Exists(file))
             {
                 File.Create(file).Close();
             }
 
-            var contentFile = System.IO.File.ReadAllText(file); //Gets the content of the file 
+            var contentFile = System.IO.File.ReadAllText(file);
             List<jobModel> jobModelList = new List<jobModel>();
-            try  //Removes exception message 
+            try
             {
-                jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile); //Gets all objects from the file 
+                jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile);
             }
             catch
             {
@@ -41,20 +43,19 @@ namespace Appli_V1.Controllers
 
             if (jobModelList == null)
             {
-                jobModelList = new List<jobModel>(); //Creates the list object if nothing is in the file to allows using the "add" function
+                jobModelList = new List<jobModel>();
             }
 
             jobModelList.Add(iList);
-            System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList)); //Replaces the file with the new one  
+            System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replaces the file with the new one  
             return true;
         }
 
         public bool RemoveExistingJobs(string name) //Removes the backup corresponding to the name parameter 
         {
-            bool verif = true;
             var contentFile = System.IO.File.ReadAllText(file);
             List<jobModel> jobModelList = new List<jobModel>();
-            try //Removes exception message 
+            try
             {
                 jobModelList = JsonConvert.DeserializeObject<List<jobModel>>(contentFile); //Inserts file content into object list 
             }
@@ -62,27 +63,18 @@ namespace Appli_V1.Controllers
             {
 
             }
-            try
-            {
-                foreach (jobModel jobObject in jobModelList) //Gets objects in the object list 
-                {
 
-                    if (jobObject.jobName == name) //Checks if a object with this name exist 
-                    {
-                        var index = jobModelList.IndexOf(jobObject);
-                        jobModelList.RemoveAt(index);
-                        System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList)); //Replaces the file with the new one   
-                    }
-                    else
-                    {
-                        verif = false;
-                    }
+            foreach (jobModel jobObject in jobModelList) //Gets objects in the object list 
+            {
+                if (jobObject.jobName == name)
+                {
+                    var index = jobModelList.IndexOf(jobObject);
+                    jobModelList.RemoveAt(index);
+                    System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replaces the file with the new one   
+                    break;
                 }
             }
-            catch
-            {
-            }
-            return verif;
+            return true;
         }
     }
 }
