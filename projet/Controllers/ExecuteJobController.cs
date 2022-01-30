@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 namespace Appli_V1.Controllers
 {
-    class ExecuteJobController //: IStrategyController
+    class ExecuteJobController 
     {
         private string source;
         private string destination;
@@ -12,7 +12,7 @@ namespace Appli_V1.Controllers
         private string type;
         private string valueEnter;
         private string typeEnter;
-        ExecuteJobView executeStrategyView = new ExecuteJobView();
+        ExecuteJobView executeJobView = new ExecuteJobView();
         LanguageFile singletonLang = LanguageFile.GetInstance;
         ExistingJob existingJob = new ExistingJob();
         LogFile lf = LogFile.GetInstance;
@@ -21,17 +21,23 @@ namespace Appli_V1.Controllers
         {
         }
 
+        public void GetFileContent()
+        {
+            string allFile = existingJob.ReadFile(); //Gets file content
+            executeJobView.DisplayMessage(allFile); //Shows file content
+
+        }
         public void ExecuteJobAndLogs()
         {
             if(name != null)
             {
                 // Send Validation Message
-                executeStrategyView.DisplayMessage(singletonLang.ReadFile().Validation);
+                executeJobView.DisplayMessage(singletonLang.ReadFile().Validation);
             }
             else
             {
                 // Send Error Message
-                executeStrategyView.DisplayMessage(singletonLang.ReadFile().ErrorExecute);
+                executeJobView.DisplayMessage(singletonLang.ReadFile().ErrorExecute);
                 SaveChoice();
             }
 
@@ -131,16 +137,18 @@ namespace Appli_V1.Controllers
             var contentFile = System.IO.File.ReadAllText(existingJob.file);
             var jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
             MainController mc = new MainController();
-            // Show the message asking the user to write the type of the execution and collect her repsonce 
-            executeStrategyView.DisplayMessage(singletonLang.ReadFile().ExecuteType);
-            this.typeEnter = executeStrategyView.CollectName();
+            // Displays file content 
+            GetFileContent();
+            // Show the message asking the user to write the type of the execution and collect the responce 
+            executeJobView.DisplayMessage(singletonLang.ReadFile().ExecuteType);
+            this.typeEnter = executeJobView.CollectName();
             // If the user want to execute one backup
             if(this.typeEnter.Equals("1"))
             {
-                // Show message of the name's backup
-                executeStrategyView.DisplayMessage(singletonLang.ReadFile().Execute);
+                // Ask the name's backup
+                executeJobView.DisplayMessage(singletonLang.ReadFile().Execute);
                 // Collect name's backup
-                this.valueEnter = executeStrategyView.CollectName();
+                this.valueEnter = executeJobView.CollectName();
                 // Collect the jobModel object corresponding
                 foreach (JobModel attribute in jobModelList)
                 {

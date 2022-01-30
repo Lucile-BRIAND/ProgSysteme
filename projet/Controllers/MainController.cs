@@ -7,9 +7,9 @@ namespace Appli_V1.Controllers
     class MainController 
     {
        
-        ExecuteJobController executeJobStrategy = new ExecuteJobController();
-        RemoveJobController removeJobStrategy = new RemoveJobController();
-        CreateJobController createJobStrategy = new CreateJobController();
+        ExecuteJobController executeJobController = new ExecuteJobController();
+        RemoveJobController removeJobController = new RemoveJobController();
+        CreateJobController createJobController = new CreateJobController();
         MainView mainView = new MainView();
         LanguageFile singletonLang = LanguageFile.GetInstance;
 
@@ -58,15 +58,15 @@ namespace Appli_V1.Controllers
             
             if(this.collectChoice.Equals("1"))
             {
-                createJobStrategy.InitView();
+                createJobController.InitView();
             }
             else if(this.collectChoice.Equals("2"))
             {
-                executeJobStrategy.SaveChoice();
+                executeJobController.SaveChoice();
             }
             else if(this.collectChoice.Equals("3"))
             {
-                removeJobStrategy.InitView();
+                removeJobController.InitView();
             }
         }
 

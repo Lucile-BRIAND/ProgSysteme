@@ -16,7 +16,6 @@ namespace Appli_V1.Controllers
             public string Main { get; set; }
 
         }
-        MainController mainController = new MainController();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -24,12 +23,12 @@ namespace Appli_V1.Controllers
             string jsonread = streamreader.ReadToEnd();
             Employee employee = JsonConvert.DeserializeObject<Employee>(jsonread);
             Console.WriteLine(employee.Main);*/
-            ChooseLanguageController First_Page = new ChooseLanguageController();
-            First_Page.InitView();
-            First_Page.CheckRequirements();
-            First_Page.CollectExistingData();
-            MainController Second_Page = new MainController();
-            Second_Page.MainMenu();
+            ChooseLanguageController firstPage = new ChooseLanguageController();
+            firstPage.InitView();
+            firstPage.CheckRequirements();
+            firstPage.CollectExistingData();
+            MainController secondPage = new MainController();
+            secondPage.MainMenu();
 
         }
 
