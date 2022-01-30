@@ -1,6 +1,6 @@
 {
 	"Main": "Choose the action needed :",
-	"Execute": "Enter the name of the backup who  do you want to start:",
+	"Execute": "Enter the name of the backup you want to start:",
 	"Delete": "Select which bakcup you want to delete :",
 	"CreateName": "Enter the name of your backup",
 	"CreateType": "Enter the type of your backup (1 : Differential or 2 : Complete)",
