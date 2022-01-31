@@ -1,8 +1,11 @@
 # ProgSysteme
 
-This project is a C#/.NET Core application developped by BRIAND Lucile, DIAS Bruno, KHADHAR Dany and MONAQUE Victor.
+This project is a C#/.NET Core application developed by BRIAND Lucile, DIAS Bruno, KHADHAR Dany and MONAQUE Victor.
 
 # User guide
+- [French](https://github.com/Lucile-BRIAND/ProgSysteme/tree/AppV3#french) 
+- [English](https://github.com/Lucile-BRIAND/ProgSysteme/tree/AppV3#english) 
+
 ## French
 ### 1.	Démarrage de l’application
 Le démarrage de l’application se fait à l’aide d’un fichier exécutable. En lançant l’application, une console s’ouvre, et on accède au menu principal.
