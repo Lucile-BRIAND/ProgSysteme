@@ -1,0 +1,16 @@
+{
+  "Name": "Test",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "Date": "30/01/2022 18:46:43"
+}
+{
+  "Name": "Test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "30/01/2022 18:46:43"
+}
