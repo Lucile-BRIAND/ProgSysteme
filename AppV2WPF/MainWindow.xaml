@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Create a backup" HorizontalAlignment="Left" Margin="100,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="Button_Click_1"/>
+        <Button Content="Execute a backup" HorizontalAlignment="Left" Margin="300,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="Button_Click"/>
+        <Button Content="Remove a backup" HorizontalAlignment="Left" Margin="500,162,0,0" VerticalAlignment="Top" Width="166" Height="54"/>
+        <ComboBox Name="Language" Margin="646,30,27.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>English</ComboBoxItem>
+            <ComboBoxItem>French</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="100,104,0,0" TextWrapping="Wrap" Text="Choose an action :" VerticalAlignment="Top" Width="312"/>
+        <Label FontWeight="Bold" Height="28" Margin="235,0,0,70" 
+            x:Name="NameLabel" VerticalAlignment="Bottom" 
+            HorizontalAlignment="Left"
+            Width="90" Content="Job software :"/>
+        <TextBox 
+            Text="{Binding JobSoftware}"
+            Height="23" Margin="0,0,291.6,75" x:Name="textBox" 
+            VerticalAlignment="Bottom" HorizontalAlignment="Right"
+            Width="172" />
+        <Button Content="Validation" Margin="366,363,327.6,35"/>
+
     </Grid>
 </Window>
