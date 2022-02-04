@@ -7,6 +7,42 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,250" 
+             Name="NameLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Name:</Label>
+        <TextBox 
+        Text="{Binding Name}"
+        Height="23" Margin="0,0,490,254.6" Name="textBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,200" 
+             Name="TypeLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Type :</Label>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="138,222,0,0"/>
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,150" 
+             Name="SourceLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Source :</Label>
+        <TextBox 
+        Text="{Binding Source}"
+        Height="23" Margin="0,0,490,149.6" Name="textBox2" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,100" 
+             Name="DestLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Destination :</Label>
+        <TextBox 
+        Text="{Binding Destination}"
+        Height="23" Margin="0,0,490,104.6" Name="textBox3" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Button HorizontalAlignment="Left" Margin="326,377,0,0" VerticalAlignment="Top" Width="150">
+            <Button Content="Create a backup" Width="100" Height="22"/>
+        </Button>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38"/>
+
     </Grid>
 </UserControl>
