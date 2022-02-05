@@ -1,0 +1,26 @@
+[
+  {
+    "jobName": null,
+    "jobType": null,
+    "sourcePath": null,
+    "targetPath": null
+  },
+  {
+    "jobName": null,
+    "jobType": null,
+    "sourcePath": null,
+    "targetPath": null
+  },
+  {
+    "jobName": null,
+    "jobType": null,
+    "sourcePath": null,
+    "targetPath": null
+  },
+  {
+    "jobName": "dvzrg",
+    "jobType": "Complete",
+    "sourcePath": "rgz",
+    "targetPath": "gzr"
+  }
+]

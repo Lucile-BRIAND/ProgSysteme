@@ -1,0 +1,51 @@
+﻿<Window x:Class="AppV2.CreateJobView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppV2"
+        mc:Ignorable="d"
+        Title="CreateJobView" Height="450" Width="800">
+    <Grid>
+
+        <TextBox 
+        Text="{Binding Path=JobName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,490,254.6" Name="jobNameTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" TextChanged="textBox_TextChanged" />
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,200" 
+             Name="TypeLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Type :</Label>
+        <ComboBox Name="jobTypeComboBox" Text="{Binding JobType, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="160,198,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="Complete" Tag="1"/>
+            <ComboBoxItem Content="Differential" Tag="0"/>
+        </ComboBox>
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,150" 
+             Name="SourceLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Source :</Label>
+        <TextBox 
+        Text="{Binding SourcePath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,490,149.6" Name="sourcePathTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Label FontWeight="Bold" Height="28" Margin="60,0,0,100" 
+             Name="DestLabel" VerticalAlignment="Bottom" 
+             HorizontalAlignment="Left"
+             Width="73">Destination :</Label>
+        <TextBox 
+        Text="{Binding TargetPath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,490,104.6" Name="targetPathTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Button HorizontalAlignment="Left" Margin="326,377,0,0" VerticalAlignment="Top" Width="150" Click="ButtonCreateBackup_Click">
+            <Button Content="Create a backup" Width="100" Height="22" Click="Button_Click"/>
+        </Button>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,142,0,0" TextWrapping="Wrap" Text="{Binding Path=JobName, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="326,204,0,0" TextWrapping="Wrap" Text="{Binding Path=JobType, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="338,247,0,0" TextWrapping="Wrap" Text="{Binding Path=SourcePath, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}" VerticalAlignment="Top" RenderTransformOrigin="-1.633,3.888"/>
+        <TextBlock HorizontalAlignment="Left" Margin="348,292,0,0" TextWrapping="Wrap" Text="{Binding Path=TargetPath, UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"  VerticalAlignment="Top"/>
+    </Grid>
+</Window>
