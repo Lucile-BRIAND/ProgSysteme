@@ -61,11 +61,14 @@
     <Compile Include="Models\ExistingJob.cs" />
     <Compile Include="Models\JobModel.cs" />
     <Compile Include="Models\LanguageFile.cs" />
+    <Compile Include="Models\LogFile.cs" />
+    <Compile Include="Models\StatusLogFile.cs" />
     <Compile Include="VM\ChooseLanguageVM.cs" />
     <Compile Include="VM\CreateJobVM.cs" />
     <Compile Include="RemoveJobView.xaml.cs">
       <DependentUpon>RemoveJobView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VM\ExecuteJobVM.cs" />
     <Compile Include="VM\MainVM.cs" />
     <Compile Include="VM\RemoveJobVM.cs" />
     <Page Include="CreateJobView.xaml">

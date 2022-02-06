@@ -7,24 +7,25 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Name="createBackupButton" Content="Create a Backup" HorizontalAlignment="Left" Margin="100,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonCreateJobView_Click"/>
-        <Button Name="executeBackupButton" Content="Execute a backup" HorizontalAlignment="Left" Margin="300,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonExecuteJobView_Click"/>
-        <Button Name="removeBackupButton" Content="Remove a backup" HorizontalAlignment="Left" Margin="500,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonRemoveJobView_Click"/>
+        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="100,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonCreateJobView_Click"/>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="300,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonExecuteJobView_Click"/>
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="500,162,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonRemoveJobView_Click"/>
         <ComboBox Name="selectedLanguageComboBox" Margin="646,30,27.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="French" Tag="0"/>
-            <ComboBoxItem Content="English" Tag="1"/>
+            <ComboBoxItem Content="{Binding Language1}" Tag="0"/>
+            <ComboBoxItem Content="{Binding Language2}" Tag="1"/>
         </ComboBox>
-        <TextBlock Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="100,104,0,0" TextWrapping="Wrap" Text="Choose an action :" VerticalAlignment="Top" Width="312"/>
-        <Label FontWeight="Bold" Height="28" Margin="366,0,0,114" 
+        <TextBlock Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="100,104,0,0" TextWrapping="Wrap" Text="{Binding chooseAction}" VerticalAlignment="Top" Width="312"/>
+        <Label FontWeight="Bold" Height="28" Margin="351,0,0,118" 
             x:Name="jobSoftwareLabel" VerticalAlignment="Bottom" 
             HorizontalAlignment="Left"
-            Width="90" Content="Job software :"/>
+            Width="151" Content="{Binding jobSoftware}"/>
         <TextBox 
-            Text="{Binding JobSoftware}"
-            Height="23" Margin="0,0,291.6,75" x:Name="jobSoftwareName" 
-            VerticalAlignment="Bottom" HorizontalAlignment="Right"
+            
+            Height="23" Margin="0,0,291.6,75" x:Name="JobSoftwareNameTextBox" 
+            VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="{Binding Path = JobSoftwareName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
             Width="172" />
-        <Button Name="validationJobSoftwareButton" Content="Validation" Margin="366,363,327.6,35" Click="Button_Click_3"/>
+        
+        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="156,330,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

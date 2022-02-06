@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using AppV2.Models;
+using AppV2.VM;
 
 namespace AppV2
 {
@@ -19,20 +21,26 @@ namespace AppV2
     /// </summary>
     public partial class ExecuteJobView : Window
     {
+        LanguageFile singletonLang = LanguageFile.GetInstance;
+        ExecuteJobVM executeJobVM = new ExecuteJobVM();
+        MainVM mainVM = new MainVM();
         public ExecuteJobView()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.DataContext = executeJobVM.getValues();
+            executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
         }
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-
+            JobModel jobToExecute = new JobModel();
+            foreach (var obj in executeJobDataGrid.SelectedItems)
+            {
+                jobToExecute = obj as JobModel;
+                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+            }
         }
+
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -44,6 +52,21 @@ namespace AppV2
             MainWindow main = new MainWindow();
             main.Show();
             Close();
+        }
+
+        private void ExecuteAllBackupButton_Click(object sender, RoutedEventArgs e)
+        {
+            executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text);
+        }
+
+        private void ValidationJobSoftwareNameButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -22,9 +22,16 @@ namespace AppV2
     /// </summary>
     public partial class MainWindow : Window
     {
+        LanguageFile singletonLang = LanguageFile.GetInstance;
+        MainVM mainVM = new MainVM();
+
+
         public MainWindow()
         {
             InitializeComponent();
+            
+           
+            this.DataContext = mainVM.getValues();
         }
 
         private void ButtonCreateJobView_Click(object sender, RoutedEventArgs e)
@@ -48,22 +55,13 @@ namespace AppV2
             Close();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             //MessageBox.Show(selectedLanguageComboBox.SelectedIndex.ToString());
             ChooseLanguageVM chooseLanguageVM = new ChooseLanguageVM();
             LanguageFile cmp= chooseLanguageVM.SaveLanguage(selectedLanguageComboBox.SelectedIndex);
-            createBackupButton.Content = cmp.MainCreate;
-            executeBackupButton.Content = cmp.MainExecute;
-            removeBackupButton.Content = cmp.MainRemove;
-            chooseActionTextBlock.Text = cmp.Main;
-            jobSoftwareLabel.Content = cmp.JobSoftware;
-            validationJobSoftwareButton.Content = cmp.ValidationJobSoftware;
+            this.DataContext = mainVM.getValues();
 
 
         }

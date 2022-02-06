@@ -1,11 +1,11 @@
 {
   "Main": "Choisissez l'action désirée :",
-  "Execute": "Entrez le nom de la sauvegarde que vous souhaitez executer :",
+  "Execute": "Executer",
   "Delete": "Selectionnez le sauvegarde que vous souhaitez supprimer :",
-  "CreateName": "Entrez le nom de votre sauvegarde :",
-  "CreateType": "Entrez le type de votre sauvegarde (1 : Differentielle ou 2 : Complète):",
-  "CreateSource": "Entrez le chemin de la source :",
-  "CreateTarget": "Entrez le chemin de la destination :",
+  "CreateName": "Nom :",
+  "CreateType": "Type :",
+  "CreateSource": "Source :",
+  "CreateTarget": "Destination :",
   "ErrorMain": "Choix non existant, veuillez changer de valeur",
   "ErrorExecute": "Donnée saisie n'est pas valide",
   "Validation": "Execution conclue avec succès",
@@ -16,5 +16,8 @@
   "Type0": "Differentielle",
   "Type1": "Complète",
   "JobSoftware": "Choix du logiciel métier",
-  "ValidationJobSoftware" :  "Confirmer"
+  "ValidationJobSoftware": "Confirmer",
+  "ValidationRemoveJob": "Supprimer",
+  "ValidationCreateJob": "Créer la sauvegarde",
+  "MainReturn": "Menu Principal"
 }	

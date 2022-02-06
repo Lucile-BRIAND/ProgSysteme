@@ -25,10 +25,15 @@ namespace AppV2
     {
         public string file = "Jobfile.json";
         public List<JobModel> dataList = new List<JobModel>();
+        LanguageFile singletonLang = LanguageFile.GetInstance;
+        RemoveJobVM removeJobVM = new RemoveJobVM();
         public RemoveJobView()
         {
             InitializeComponent();
             removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
+
+            this.DataContext = removeJobVM.getValues();
+
         }
 
         public void ButtonRemoveBackup_Click(object sender, RoutedEventArgs e)

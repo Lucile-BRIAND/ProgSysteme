@@ -1,11 +1,11 @@
 {
   "Main": "Choose the action needed :",
-  "Execute": "Enter the name of the backup you want to start:",
+  "Execute": "Confirm Execution",
   "Delete": "Select which bakcup you want to delete :",
-  "CreateName": "Enter the name of your backup",
-  "CreateType": "Enter the type of your backup (1 : Differential or 2 : Complete)",
-  "CreateSource": "Enter the source's path of your backup",
-  "CreateTarget": "Enter the target's path of your backup",
+  "CreateName": "Name",
+  "CreateType": "Type :",
+  "CreateSource": " Source path",
+  "CreateTarget": "Target path",
   "ErrorMain": "Choice no present, rewrite an another correct choice",
   "ErrorExecute": "Data enter, are not valid",
   "Validation": "Execution went well",
@@ -16,5 +16,8 @@
   "Type0": "Differential",
   "Type1": "Complete",
   "JobSoftware": "Choose Software :",
-  "ValidationJobSoftware": "Confirm"
+  "ValidationJobSoftware": "Confirm",
+  "ValidationRemoveJob": "Remove selected job",
+  "ValidationCreateJob": "Create job",
+  "MainReturn": "Main Menu"
 }

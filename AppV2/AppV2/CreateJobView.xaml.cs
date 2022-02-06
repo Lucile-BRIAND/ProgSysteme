@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AppV2.VM;
+using AppV2.Models;
 
 namespace AppV2
 {
@@ -21,10 +22,13 @@ namespace AppV2
     /// </summary>
     public partial class CreateJobView : Window
     {
+        LanguageFile singletonLang = LanguageFile.GetInstance;
+        CreateJobVM createJobVM1 = new CreateJobVM();
         public CreateJobView()
         {
             InitializeComponent();
-            DataContext = new CreateJobVM();
+
+            this.DataContext = createJobVM1.getValues();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

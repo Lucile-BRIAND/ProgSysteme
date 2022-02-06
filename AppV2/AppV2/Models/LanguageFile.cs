@@ -21,7 +21,7 @@ namespace AppV2.Models
         //Instance null by default 
         private static LanguageFile languageInstance = null;
         // Private Attribute who contains the value writed by the user
-        private string language;
+        private string language = "English";
         public string mainCreate;
         // Differents attributes used for the JSON reading
         public string Main { get; set; }
@@ -56,6 +56,10 @@ namespace AppV2.Models
         public string JobSoftware { get; set; }
 
         public string ValidationJobSoftware { get; set; }
+        public string ValidationRemoveJob { get; set; }
+        public string ValidationCreateJob { get; set; }
+
+        public string MainReturn { get; set; }
 
         //private constructor 
         private LanguageFile() { }
@@ -81,7 +85,7 @@ namespace AppV2.Models
         // Function used to read the JSON file containing menu's messages
         public LanguageFile ReadFile()
         {
-
+            
             StreamReader streamreader = new StreamReader("../../Languages/" + this.language + "_Lang.json");
                                                                 
             string jsonRead = streamreader.ReadToEnd();

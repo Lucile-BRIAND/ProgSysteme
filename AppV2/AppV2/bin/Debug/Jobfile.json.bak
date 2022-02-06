@@ -1,26 +1,20 @@
 [
   {
-    "jobName": null,
-    "jobType": null,
-    "sourcePath": null,
-    "targetPath": null
-  },
-  {
-    "jobName": null,
-    "jobType": null,
-    "sourcePath": null,
-    "targetPath": null
-  },
-  {
-    "jobName": null,
-    "jobType": null,
-    "sourcePath": null,
-    "targetPath": null
-  },
-  {
     "jobName": "dvzrg",
     "jobType": "Complete",
     "sourcePath": "rgz",
     "targetPath": "gzr"
+  },
+  {
+    "jobName": "Bruno",
+    "jobType": "Differentielle",
+    "sourcePath": "eeeer",
+    "targetPath": "rrrr"
+  },
+  {
+    "jobName": "lolm",
+    "jobType": "Differential",
+    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Dest",
+    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest"
   }
 ]

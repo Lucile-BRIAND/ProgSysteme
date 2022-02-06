@@ -6,12 +6,22 @@
         xmlns:local="clr-namespace:AppV2"
         mc:Ignorable="d"
         Title="ExecuteJobView" Height="450" Width="800">
+
     <Grid Background="White">
-        <Button HorizontalAlignment="Left" Margin="326,377,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click">
-            <Button Content="Execute a backup" Width="100" Height="22" Click="Button_Click"/>
+        <Button HorizontalAlignment="Left" Margin="326,377,0,0" VerticalAlignment="Top" Width="150" Click="ButtonExecuteJob_Click">
+            <Button Name="executeBackupButton" Content="{Binding executeBackup}" Width="100" Height="22" Click="ButtonExecuteJob_Click"/>
         </Button>
-        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid HorizontalAlignment="Left" Height="265" Margin="163,88,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="265" Margin="32,47,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="Execute all backup" HorizontalAlignment="Left" Margin="676,377,0,0" VerticalAlignment="Top" Width="94" Height="26" Click="ExecuteAllBackupButton_Click"/>
+        <TextBox 
+            
+            Height="23" Margin="0,0,9.6,191" x:Name="JobSoftwareNameTextBox" 
+            VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="{Binding Path = JobSoftwareName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+            Width="172" />
+
+        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="630,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="690,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>
