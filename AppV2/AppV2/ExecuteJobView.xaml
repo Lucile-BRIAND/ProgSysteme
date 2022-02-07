@@ -8,20 +8,21 @@
         Title="ExecuteJobView" Height="450" Width="800">
 
     <Grid Background="White">
-        <Button HorizontalAlignment="Left" Margin="326,377,0,0" VerticalAlignment="Top" Width="150" Click="ButtonExecuteJob_Click">
-            <Button Name="executeBackupButton" Content="{Binding executeBackup}" Width="100" Height="22" Click="ButtonExecuteJob_Click"/>
-        </Button>
+       
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Width="126" Height="32" Click="ButtonExecuteJob_Click" Margin="211,354,456.6,34"/>
+       
         <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="265" Margin="32,47,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Button Content="Execute all backup" HorizontalAlignment="Left" Margin="676,377,0,0" VerticalAlignment="Top" Width="94" Height="26" Click="ExecuteAllBackupButton_Click"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="265" Margin="49,63,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="Execute all backup" HorizontalAlignment="Left" Margin="594,364,0,0" VerticalAlignment="Top" Width="176" Height="39" Click="ExecuteAllBackupButton_Click"/>
         <TextBox 
             
-            Height="23" Margin="0,0,9.6,191" x:Name="JobSoftwareNameTextBox" 
+            Height="23" Margin="0,0,50.6,181" x:Name="JobSoftwareNameTextBox" 
             VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="{Binding Path = JobSoftwareName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
             Width="172" />
 
-        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="630,124,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="690,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="690,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="594,283,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click" Height="29"/>
+        <Label Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="29" Margin="528,179,0,0" VerticalAlignment="Top" Width="138"/>
 
     </Grid>
 </Window>

@@ -406,3 +406,342 @@
   "FileTransferTime": 2.0,
   "Date": "06/02/2022 19:05:44"
 }
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:06:12"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:06:22"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:07:20"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:07:30"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:13:16"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:13:26"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:13:57"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:14:07"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:15:28"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "Date": "07/02/2022 09:15:38"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": "- ms",
+  "Date": "07/02/2022 09:44:55"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": "- ms",
+  "Date": "07/02/2022 09:44:55"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "-",
+    "2",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 09:47:37"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "-",
+    "1",
+    "0",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 09:47:37"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "5",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 09:52:29"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "8",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 09:52:29"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "5",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 10:06:23"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 0,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "3",
+    "4",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 10:06:23"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "7",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 10:08:27"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": [
+    "6",
+    " ",
+    "m",
+    "s"
+  ],
+  "Date": "07/02/2022 10:15:57"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 10:17:29"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": "4 ms",
+  "Date": "07/02/2022 10:19:09"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": 2.0,
+  "timeCryptoSoft": "9 ms",
+  "Date": "07/02/2022 10:19:29"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": "49 ms",
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 10:29:24"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "FileSize": 2,
+  "FileTransferTime": "48 ms",
+  "timeCryptoSoft": "4 ms",
+  "Date": "07/02/2022 10:45:34"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": 0,
+  "FileTransferTime": "47 ms",
+  "timeCryptoSoft": "8 ms",
+  "Date": "07/02/2022 10:48:33"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": 0,
+  "FileTransferTime": "46 ms",
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 10:50:40"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": 0,
+  "FileTransferTime": "46 ms",
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 10:53:21"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": 10,
+  "FileTransferTime": "49 ms",
+  "timeCryptoSoft": "8 ms",
+  "Date": "07/02/2022 10:55:24"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "49 ms",
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 11:20:43"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "49 ms",
+  "timeCryptoSoft": "7 ms",
+  "Date": "07/02/2022 11:25:38"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-948 ms",
+  "timeCryptoSoft": "5 ms",
+  "Date": "07/02/2022 11:34:57"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 1,
+  "FileSize": "6 B",
+  "FileTransferTime": "-937 ms",
+  "timeCryptoSoft": "11 ms",
+  "Date": "07/02/2022 11:35:31"
+}

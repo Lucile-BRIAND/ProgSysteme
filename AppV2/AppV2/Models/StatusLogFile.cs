@@ -34,19 +34,20 @@ namespace AppV2.Models
         }
 
         //Writing content in the log file
-        public void WriteStatusLogMessage(string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, int totalFilesSize, int nbFilesLeftToDo)
+        public void WriteStatusLogMessage(string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy)
         {
             //Adding values to the json keys
             var dataLog = new
             {
                 Name = jobName,
                 Type = jobType,
-                sourcePath = sourcePath,
-                targetPath = targetPath,
-                state = state,
-                totalFilesToCopy = totalFilesToCopy,
-                totalFilesSize = totalFilesSize,
-                nbFilesLeftToDo = nbFilesLeftToDo,
+                SourcePath = sourcePath,
+                TargetPath = targetPath,
+                State = state,
+                TotalFilesToCopy = totalFilesToCopy,
+                TotalFilesSize = totalFilesSize,
+                NbFilesLeftToDo = nbFilesLeftToDo,
+                FileSizeLeftToCopy = fileSizeLeftToCopy
             };
 
             //Reserializing the json file and writing

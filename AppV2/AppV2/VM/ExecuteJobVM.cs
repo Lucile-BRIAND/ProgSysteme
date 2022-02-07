@@ -18,17 +18,23 @@ namespace AppV2.VM
         public string executeBackup { get; set; }
 
         public string mainMenu { get; set; }
+        public string JobSoftwareLabel { get; set; }
+        public static byte[] ImageBytes;
+        public static int timeCryptoSoft;
+        public static int timeExecuteBackup;
 
-        
 
-        LanguageFile gt = LanguageFile.GetInstance;
+
+
+        LanguageFile singletonLang = LanguageFile.GetInstance;
         LogFile lf = LogFile.GetInstance;
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
             {
-                executeBackup = gt.ReadFile().Execute,
-                mainMenu = gt.ReadFile().MainReturn
+                executeBackup = singletonLang.ReadFile().Execute,
+                mainMenu = singletonLang.ReadFile().MainReturn,
+                JobSoftwareLabel = singletonLang.ReadFile().JobSoftware
             };
 
             return values;
@@ -51,26 +57,65 @@ namespace AppV2.VM
             }
         }
         */
+        public static void CryptoSoft(string path)
+        {
+            Int64 key = 0xA9A9;
+            // Init the byte containing the file reading
+
+            int startCryptTime = DateTime.Now.Millisecond;
+            List<string> files = new List<string>();
+            foreach (string newPath in Directory.GetFiles(path, "*.*", SearchOption.AllDirectories))
+            {
+                files.Add(newPath);
+            }
+            foreach (string s in files)
+            {
+                // Read of the initial file
+                ImageBytes = File.ReadAllBytes(s);
+                // Encryptation or Decyptation
+
+                for (int i = 0; i < ImageBytes.Length; i++)
+                {
+                    ImageBytes[i] = (byte)(ImageBytes[i] ^ (byte)key);
+                }
+                // Write of the cryptation and copy
+                File.WriteAllBytes(s, ImageBytes);
+            }
+
+            timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
+
+
+
+
+
+        }
         public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox)
         {
-            Thread.Sleep(10000);
+            //Thread.Sleep(10000);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
 
             if (myProcesses.Length != 0)
             {
                 return;
             }
+            int startTranferTime = DateTime.Now.Millisecond;
+            CryptoSoft(source);
 
             int nbfile = 0; //number of files that have been copied
-            StatusLogFile file1 = StatusLogFile.GetInstance;
-
+            StatusLogFile slf = StatusLogFile.GetInstance;
+            long totalfileSize = 0;
+            long fileSizeLeftToCopy = 0;
 
             if (type == "Complete" | type == "Complète")
             {
                 int totalNbFileComplete = Directory.GetFiles(source, "*.*", SearchOption.AllDirectories).Length; //total number of files in the save
 
+                foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
+                {
+                    totalfileSize += newPath.Length;
+                }
                 //Appends the text in the status log file  => state 0 : initialization
-                file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile);
+                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -81,13 +126,26 @@ namespace AppV2.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
+                   
+                    fileSizeLeftToCopy += newPath.Length;
+
                     nbfile++;
                     File.Copy(newPath, newPath.Replace(source, destination), true);
+                    if (totalfileSize - fileSizeLeftToCopy == 0)
+                    {
+                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy);
+                    }
+                    else
+                    {
+                        //Appends the text in the status log file
+                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy);
+                    }
 
-                    //Appends the text in the status log file
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile);
                 }
-                lf.WriteLogMessage(name, source, destination, nbfile, 2);
+                CryptoSoft(source);
+                CryptoSoft(destination);
+                timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
+                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
 
             }
             else if (type == "Differential" | type == "Differentielle")
@@ -105,11 +163,13 @@ namespace AppV2.VM
                     {
                         if (originalFile.Length > destFile.Length)
                         {
+                            totalfileSize += originalFile.Length;
                             totalNbFileDifferential++;
                         }
                     }
                     else
                     {
+                        totalfileSize += originalFile.Length;
                         totalNbFileDifferential++;
                     }
                 });
@@ -117,7 +177,7 @@ namespace AppV2.VM
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                    slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -131,9 +191,18 @@ namespace AppV2.VM
                         {
                             originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
+                            fileSizeLeftToCopy += originalFile.Length;
 
                             //Appends the text in the status log file
-                            file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                            if (totalfileSize - fileSizeLeftToCopy == 0)
+                            {
+                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                            }
+                            else
+                            {
+                                //Appends the text in the status log file
+                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                            }
                         }
                     }
                     else
@@ -141,25 +210,38 @@ namespace AppV2.VM
                         Directory.CreateDirectory(destFile.DirectoryName);
                         originalFile.CopyTo(destFile.FullName, false);
                         nbfile++;
+                        fileSizeLeftToCopy += originalFile.Length;
 
                         //Appends the text in the status log file
-                        file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                        }
                     }
                 });
-                lf.WriteLogMessage(name, source, destination, nbfile, 2);
+                CryptoSoft(source);
+                CryptoSoft(destination);
+                timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
+                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
             }
+
         }
         public void ExecutAllBackup(string JobSoftwareNameTextBox)
         {
             //Read the JSON file containing the job's data
             var contentFile = System.IO.File.ReadAllText("Jobfile.json");
             var jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
-            
+
 
 
             foreach (JobModel attribute in jobModelList)
             {
-            
+
                 string name = attribute.jobName;
                 string type = attribute.jobType;
                 string source = attribute.sourcePath;

@@ -27,20 +27,20 @@ namespace AppV2.VM
         public string type1 { get; set; }
         public string type2 { get; set; }
 
-        LanguageFile gt = LanguageFile.GetInstance;
+        LanguageFile singletonLang = LanguageFile.GetInstance;
         public CreateJobVM getValues()
         {
             var values = new CreateJobVM()
             {
-                executeBackup = gt.ReadFile().Execute,
-                mainMenu = gt.ReadFile().MainReturn,
-                name = gt.ReadFile().ValidationCreateJob,
-                target = gt.ReadFile().CreateTarget,
-                source = gt.ReadFile().CreateSource,
-                createJob = gt.ReadFile().ValidationCreateJob,
-                type = gt.ReadFile().CreateType,
-                type1 = gt.ReadFile().Type0,
-                type2 = gt.ReadFile().Type1
+                executeBackup = singletonLang.ReadFile().Execute,
+                mainMenu = singletonLang.ReadFile().MainReturn,
+                name = singletonLang.ReadFile().ValidationCreateJob,
+                target = singletonLang.ReadFile().CreateTarget,
+                source = singletonLang.ReadFile().CreateSource,
+                createJob = singletonLang.ReadFile().ValidationCreateJob,
+                type = singletonLang.ReadFile().CreateType,
+                type1 = singletonLang.ReadFile().Type0,
+                type2 = singletonLang.ReadFile().Type1
             };
 
             return values;

@@ -17,14 +17,14 @@ namespace AppV2.VM
 
         MainVM mainVM = new MainVM();
 
-        LanguageFile gt = LanguageFile.GetInstance;
+        LanguageFile singletonLang = LanguageFile.GetInstance;
 
         public RemoveJobVM getValues()
         {
             var values = new RemoveJobVM()
             {
-                removeBackup = gt.ReadFile().ValidationRemoveJob,
-                mainMenu = gt.ReadFile().MainReturn
+                removeBackup = singletonLang.ReadFile().ValidationRemoveJob,
+                mainMenu = singletonLang.ReadFile().MainReturn
             };
 
             return values;

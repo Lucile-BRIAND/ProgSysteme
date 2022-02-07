@@ -15,7 +15,7 @@
   "MainRemove": "Suppression de sauvegardes",
   "Type0": "Differentielle",
   "Type1": "Complète",
-  "JobSoftware": "Choix du logiciel métier",
+  "JobSoftware": "Choix du logiciel métier: ",
   "ValidationJobSoftware": "Confirmer",
   "ValidationRemoveJob": "Supprimer",
   "ValidationCreateJob": "Créer la sauvegarde",

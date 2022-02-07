@@ -9,20 +9,20 @@ namespace AppV2.VM
 {
     class ChooseLanguageVM
     {
-        LanguageFile languageFile = LanguageFile.GetInstance;
+        LanguageFile singletonLang = LanguageFile.GetInstance;
         public LanguageFile SaveLanguage(int index)
         {
             switch (index) {
                 case 0:
-                    languageFile.InitLanguage("French");
-                    return languageFile.ReadFile();
+                    singletonLang.InitLanguage("French");
+                    return singletonLang.ReadFile();
 
                 case 1:
-                    languageFile.InitLanguage("English");
-                    return languageFile.ReadFile();
+                    singletonLang.InitLanguage("English");
+                    return singletonLang.ReadFile();
                 default:
-                    languageFile.InitLanguage("English");
-                    return languageFile.ReadFile();
+                    singletonLang.InitLanguage("English");
+                    return singletonLang.ReadFile();
             }
             
         }

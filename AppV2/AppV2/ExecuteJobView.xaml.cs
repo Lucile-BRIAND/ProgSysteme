@@ -36,8 +36,11 @@ namespace AppV2
             JobModel jobToExecute = new JobModel();
             foreach (var obj in executeJobDataGrid.SelectedItems)
             {
-                jobToExecute = obj as JobModel;
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+                if (executeJobDataGrid.SelectedIndex > -1)
+                {
+                    jobToExecute = obj as JobModel;
+                    executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+                }
             }
         }
 

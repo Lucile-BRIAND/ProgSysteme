@@ -36,16 +36,21 @@ namespace AppV2.Models
         }
 
         //Writing content in the log file
-        public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int fileSize, double transferTime)
+        public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int nbFile, long fileSize, int timeCryptoSoft, int timeExecuteBackup)
         {
+            string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
+            string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
+            string fileSizeFormated = fileSize.ToString() + " B";
             //Adding values to the json keys
             var dataLog = new
             {
                 Name = jobName,
                 FileSource = sourcePath,
                 FileTarget = targetPath,
-                FileSize = fileSize,
-                FileTransferTime = transferTime,
+                NbFile = nbFile,
+                FileSize = fileSizeFormated,
+                FileTransferTime = timeExecuteBackupFormated,
+                timeCryptoSoft = timeCryptoSoftFormated,
                 Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp in the proper format
             };
 
