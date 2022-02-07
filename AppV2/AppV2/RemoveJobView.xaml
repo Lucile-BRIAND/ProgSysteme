@@ -8,10 +8,10 @@
         Title="RemoveJobView" Height="450" Width="800">
     <Grid Background="White">
 
-        <Button Name="removeBackupButton" Content="{Binding removeBackup}" Width="182" Click="ButtonRemoveBackup_Click" Margin="313,351,298.6,24"/>
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" Click="ButtonRemoveBackup_Click" Margin="243,336,348.6,39"/>
 
-        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="690,10,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid Name="removeJobDataGrid" ItemsSource="{Binding removeJobGrid}" HorizontalAlignment="Left" Height="265" Margin="165,66,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="650,23,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <DataGrid Name="removeJobDataGrid" ItemsSource="{Binding removeJobGrid}" HorizontalAlignment="Left" Height="265" Margin="104,48,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
 
     </Grid>
 </Window>

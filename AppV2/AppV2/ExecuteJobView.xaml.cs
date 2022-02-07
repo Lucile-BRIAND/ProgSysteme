@@ -33,13 +33,20 @@ namespace AppV2
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            JobModel jobToExecute = new JobModel();
-            foreach (var obj in executeJobDataGrid.SelectedItems)
+            if (executeJobDataGrid.SelectedItem == null)
             {
-                if (executeJobDataGrid.SelectedIndex > -1)
+                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
+            }
+            else
+            {
+                JobModel jobToExecute = new JobModel();
+                foreach (var obj in executeJobDataGrid.SelectedItems)
                 {
-                    jobToExecute = obj as JobModel;
-                    executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+                    if (executeJobDataGrid.SelectedIndex > -1)
+                    {
+                        jobToExecute = obj as JobModel;
+                        executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+                    }
                 }
             }
         }
@@ -62,14 +69,6 @@ namespace AppV2
             executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text);
         }
 
-        private void ValidationJobSoftwareNameButton_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

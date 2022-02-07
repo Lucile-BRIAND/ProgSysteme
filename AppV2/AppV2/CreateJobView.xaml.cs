@@ -31,11 +31,6 @@ namespace AppV2
             this.DataContext = createJobVM1.getValues();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-
-        }
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -56,12 +51,20 @@ namespace AppV2
 
         private void ButtonCreateBackup_Click(object sender, RoutedEventArgs e)
         {
-            // MessageBox.Show(jobNameTextBox.Text);
-            CreateJobVM createJobVM = new CreateJobVM();
-            createJobVM.SaveJob(jobNameTextBox.Text, jobTypeComboBox.Text, sourcePathTextBox.Text, targetPathTextBox.Text);
-            MainWindow main = new MainWindow();
-            main.Show();
-            Close();
+            if(jobNameTextBox.Text == "" | jobTypeComboBox.Text == "" | sourcePathTextBox.Text == "" | targetPathTextBox.Text == "")
+            {
+                MessageBox.Show(singletonLang.ReadFile().ErrorExecute);
+            }
+            else
+            {
+                // MessageBox.Show(jobNameTextBox.Text);
+                CreateJobVM createJobVM = new CreateJobVM();
+                createJobVM.SaveJob(jobNameTextBox.Text, jobTypeComboBox.Text, sourcePathTextBox.Text, targetPathTextBox.Text);
+                MainWindow main = new MainWindow();
+                main.Show();
+                Close();
+            }
+
         }
     }
 }

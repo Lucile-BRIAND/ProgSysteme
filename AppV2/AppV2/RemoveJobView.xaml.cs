@@ -38,16 +38,21 @@ namespace AppV2
 
         public void ButtonRemoveBackup_Click(object sender, RoutedEventArgs e)
         {
-            
-            JobModel jobToDelete = new JobModel();
-            foreach (var obj in removeJobDataGrid.SelectedItems)
+            if (removeJobDataGrid.SelectedItem == null)
             {
-                jobToDelete = obj as JobModel;
-                RemoveJobVM.RemoveJob(jobToDelete.jobName);
+                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
+            }else
+            {
+                JobModel jobToDelete = new JobModel();
+                foreach (var obj in removeJobDataGrid.SelectedItems)
+                {
+                    jobToDelete = obj as JobModel;
+                    RemoveJobVM.RemoveJob(jobToDelete.jobName);
+
+                }
+
+                removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
             }
-
-            removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
-
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -13,7 +13,7 @@ namespace AppV2.VM
 
         public string mainMenu { get; set; }
 
-        public string removeJobGrid { get; set; }
+        
 
         MainVM mainVM = new MainVM();
 

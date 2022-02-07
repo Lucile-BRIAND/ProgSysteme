@@ -9,6 +9,9 @@ using AppV2;
 using AppV2.Models;
 using System.Diagnostics;
 using System.Threading;
+using System.IO.MemoryMappedFiles;
+using System.Runtime.Serialization.Formatters.Binary;
+
 
 namespace AppV2.VM
 {
@@ -19,6 +22,7 @@ namespace AppV2.VM
 
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
+        public string executeAllJobsButton { get; set; }
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
@@ -34,7 +38,8 @@ namespace AppV2.VM
             {
                 executeBackup = singletonLang.ReadFile().Execute,
                 mainMenu = singletonLang.ReadFile().MainReturn,
-                JobSoftwareLabel = singletonLang.ReadFile().JobSoftware
+                JobSoftwareLabel = singletonLang.ReadFile().JobSoftware,
+                executeAllJobsButton = singletonLang.ReadFile().Validation
             };
 
             return values;
@@ -57,37 +62,12 @@ namespace AppV2.VM
             }
         }
         */
-        public static void CryptoSoft(string path)
+        public static void CallCryptoSoft(string path)
         {
-            Int64 key = 0xA9A9;
-            // Init the byte containing the file reading
-
-            int startCryptTime = DateTime.Now.Millisecond;
-            List<string> files = new List<string>();
-            foreach (string newPath in Directory.GetFiles(path, "*.*", SearchOption.AllDirectories))
-            {
-                files.Add(newPath);
-            }
-            foreach (string s in files)
-            {
-                // Read of the initial file
-                ImageBytes = File.ReadAllBytes(s);
-                // Encryptation or Decyptation
-
-                for (int i = 0; i < ImageBytes.Length; i++)
-                {
-                    ImageBytes[i] = (byte)(ImageBytes[i] ^ (byte)key);
-                }
-                // Write of the cryptation and copy
-                File.WriteAllBytes(s, ImageBytes);
-            }
-
-            timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
-
-
-
-
-
+            Process P = new Process();
+            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.Arguments = path;
+            P.Start();
         }
         public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox)
         {
@@ -99,7 +79,7 @@ namespace AppV2.VM
                 return;
             }
             int startTranferTime = DateTime.Now.Millisecond;
-            CryptoSoft(source);
+            CallCryptoSoft(source);
 
             int nbfile = 0; //number of files that have been copied
             StatusLogFile slf = StatusLogFile.GetInstance;
@@ -142,8 +122,8 @@ namespace AppV2.VM
                     }
 
                 }
-                CryptoSoft(source);
-                CryptoSoft(destination);
+                CallCryptoSoft(source);
+                CallCryptoSoft(destination);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
 
@@ -224,8 +204,8 @@ namespace AppV2.VM
                         }
                     }
                 });
-                CryptoSoft(source);
-                CryptoSoft(destination);
+                CallCryptoSoft(source);
+                CallCryptoSoft(destination);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
             }

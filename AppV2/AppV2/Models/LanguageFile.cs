@@ -31,7 +31,7 @@ namespace AppV2.Models
         public string CreateType { get; set; }
         public string CreateSource { get; set; }
         public string CreateTarget { get; set; }
-        public string ErrorMain { get; set; }
+        public string ErrorGrid { get; set; }
         public string ErrorExecute { get; set; }
         public string Validation { get; set; }
         public string MainCreate {
