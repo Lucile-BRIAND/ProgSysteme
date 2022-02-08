@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DailyLogs>
+  <Job>
+    <JobName>Test</JobName>
+    <SourcePath>C:\Users\lu-ro\source\repos\C#\Test\Source</SourcePath>
+    <TargetPath>C:\Users\lu-ro\source\repos\C#\Test\Destination</TargetPath>
+    <FileSize>3</FileSize>
+    <FileTransferTime>2</FileTransferTime>
+    <Date>08/02/2022 13:52:30</Date>
+  </Job>
+</DailyLogs>

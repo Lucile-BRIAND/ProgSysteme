@@ -2,8 +2,8 @@
   {
     "jobName": "Test",
     "jobType": "Complete",
-    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
+    "sourcePath": "C:\\Users\\lu-ro\\source\\repos\\C#\\Test\\Source",
+    "targetPath": "C:\\Users\\lu-ro\\source\\repos\\C#\\Test\\Destination"
   },
   {
     "jobName": "Test2",

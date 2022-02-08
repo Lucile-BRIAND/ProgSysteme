@@ -28,3 +28,19 @@ C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\MVC_PROJECT\projet\obj\Debug\netco
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\MVC_PROJECT\projet\obj\Debug\netcoreapp3.1\projet.dll
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\MVC_PROJECT\projet\obj\Debug\netcoreapp3.1\projet.pdb
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\MVC_PROJECT\projet\obj\Debug\netcoreapp3.1\projet.genruntimeconfig.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.exe
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.deps.json
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.runtimeconfig.json
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.runtimeconfig.dev.json
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.dll
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\projet.pdb
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.csproj.AssemblyReference.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.AssemblyInfoInputs.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.AssemblyInfo.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.csproj.CoreCompileInputs.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.csproj.CopyComplete
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.dll
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.pdb
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\projet\obj\Debug\netcoreapp3.1\projet.genruntimeconfig.cache

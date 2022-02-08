@@ -27,7 +27,7 @@ namespace Appli_V1.Controllers
             executeJobView.DisplayMessage(allFile); //Shows file content
 
         }
-        public void ExecuteJobAndLogs()
+        public void ExecuteJobAndLogs(string format)
         {
             if(name != null)
             {
@@ -50,7 +50,7 @@ namespace Appli_V1.Controllers
                 int totalNbFileComplete = Directory.GetFiles(source, "*.*", SearchOption.AllDirectories).Length; //total number of files in the save
 
                 //Appends the text in the status log file  => state 0 : initialization
-                file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, "json");
+                file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -65,9 +65,9 @@ namespace Appli_V1.Controllers
                     File.Copy(newPath, newPath.Replace(source, destination), true);
 
                     //Appends the text in the status log file
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, "json");
+                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, format);
                 }
-                lf.WriteLogMessage(name, source, destination, nbfile, 2, "json");
+                lf.WriteLogMessage(name, source, destination, nbfile, 2, format);
 
             }
             else if (type == "Differential" | type== "Differentielle")
@@ -97,7 +97,7 @@ namespace Appli_V1.Controllers
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
+                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, format);
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -113,7 +113,7 @@ namespace Appli_V1.Controllers
                             nbfile++;
 
                             //Appends the text in the status log file
-                            file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
+                            file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, format);
                         }
                     }
                     else
@@ -123,10 +123,10 @@ namespace Appli_V1.Controllers
                         nbfile++;
 
                         //Appends the text in the status log file
-                        file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
+                        file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, format);
                     }
                 });
-                lf.WriteLogMessage(name, source, destination, nbfile, 2, "xml");
+                lf.WriteLogMessage(name, source, destination, nbfile, 2, format);
             }
             
             
@@ -139,6 +139,23 @@ namespace Appli_V1.Controllers
             MainController mc = new MainController();
             // Displays file content 
             GetFileContent();
+
+            // Show the message asking the user the format type of logs
+            executeJobView.DisplayMessage(singletonLang.ReadFile().ChooseFormat);
+            string format = executeJobView.CollectName();
+            if(format == "1")
+            {
+                format = "json";
+            }
+            else if(format == "2")
+            {
+                format = "xml";
+            }
+            else
+            {
+                SaveChoice();
+            }
+
             // Show the message asking the user to write the type of the execution and collect the responce 
             executeJobView.DisplayMessage(singletonLang.ReadFile().ExecuteType);
             this.typeEnter = executeJobView.CollectName();
@@ -158,7 +175,7 @@ namespace Appli_V1.Controllers
                         type = attribute.jobType;
                         source = attribute.sourcePath;
                         destination = attribute.targetPath;
-                        ExecuteJobAndLogs();
+                        ExecuteJobAndLogs(format);
                     }
                 }
                 // Redirecton to main menu
@@ -175,7 +192,7 @@ namespace Appli_V1.Controllers
                         type = attribute.jobType;
                         source = attribute.sourcePath;
                         destination = attribute.targetPath;
-                        ExecuteJobAndLogs();
+                        ExecuteJobAndLogs(format);
                 }
                 // Redirection to main menu
                 mc.MainMenu();

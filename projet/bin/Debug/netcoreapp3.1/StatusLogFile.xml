@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StatusLogFiles>
+  <Job>
+    <JobName>Test</JobName>
+    <JobType>Complete</JobType>
+    <SourcePath>C:\Users\lu-ro\source\repos\C#\Test\Source</SourcePath>
+    <TargetPath>C:\Users\lu-ro\source\repos\C#\Test\Destination</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>3</TotalFilesToCopy>
+    <TotalFilesSize>1000</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+  </Job>
+  <Job>
+    <JobName>Test</JobName>
+    <JobType>Complete</JobType>
+    <SourcePath>C:\Users\lu-ro\source\repos\C#\Test\Source</SourcePath>
+    <TargetPath>C:\Users\lu-ro\source\repos\C#\Test\Destination</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>3</TotalFilesToCopy>
+    <TotalFilesSize>1000</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+  </Job>
+  <Job>
+    <JobName>Test</JobName>
+    <JobType>Complete</JobType>
+    <SourcePath>C:\Users\lu-ro\source\repos\C#\Test\Source</SourcePath>
+    <TargetPath>C:\Users\lu-ro\source\repos\C#\Test\Destination</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>3</TotalFilesToCopy>
+    <TotalFilesSize>1000</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+  </Job>
+  <Job>
+    <JobName>Test</JobName>
+    <JobType>Complete</JobType>
+    <SourcePath>C:\Users\lu-ro\source\repos\C#\Test\Source</SourcePath>
+    <TargetPath>C:\Users\lu-ro\source\repos\C#\Test\Destination</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>3</TotalFilesToCopy>
+    <TotalFilesSize>1000</TotalFilesSize>
+    <NbFilesLeftToDo>3</NbFilesLeftToDo>
+  </Job>
+</StatusLogFiles>

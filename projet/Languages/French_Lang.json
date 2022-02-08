@@ -3,7 +3,7 @@
 	"Execute": "Entrez le nom de la sauvegarde que vous souhaitez executer :",
 	"Delete": "Selectionnez le sauvegarde que vous souhaitez supprimer :",
 	"CreateName": "Entrez le nom de votre sauvegarde :",
-	"CreateType": "Entrez le type de votre sauvegarde (1 : Differentielle ou 2 : Complète):",
+	"CreateType": "Entrez le type de votre sauvegarde (1: Differentielle ou 2: Complète):",
 	"CreateSource": "Entrez le chemin de la source :",
 	"CreateTarget": "Entrez le chemin de la destination :",
 	"ErrorMain": "Choix non existant, veuillez changer de valeur",
@@ -12,9 +12,8 @@
 	"ExecuteType":  "Souhaitez-vous executer un ou plusieurs sauvegarde ? (1: Une ou 2: Toutes)",
 	"Main0": "Créer une sauvegarde",
 	"Main1": "Execution des sauvegardes",
-    "Main2": "Suppression de sauvegardes",
+  "Main2": "Suppression de sauvegardes",
 	"Type0": "Differentielle",
-	"Type1": "Complète"
-}	
-	
- 	
+	"Type1": "Complète",
+	"ChooseFormat": "Sélectionnez le format des fichiers log (1: JSON ou 2: XML) :"
+}

@@ -30,6 +30,7 @@ namespace Appli_V1.Controllers
         public string Type0 { get; set; }
         public string Type1 { get; set; }
         public string ExecuteType { get; set; }
+        public string ChooseFormat { get; set; }
 
 
         //private constructor 
