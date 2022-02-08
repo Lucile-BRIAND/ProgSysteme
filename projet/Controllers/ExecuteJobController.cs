@@ -50,7 +50,7 @@ namespace Appli_V1.Controllers
                 int totalNbFileComplete = Directory.GetFiles(source, "*.*", SearchOption.AllDirectories).Length; //total number of files in the save
 
                 //Appends the text in the status log file  => state 0 : initialization
-                file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile);
+                file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, "json");
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -65,9 +65,9 @@ namespace Appli_V1.Controllers
                     File.Copy(newPath, newPath.Replace(source, destination), true);
 
                     //Appends the text in the status log file
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile);
+                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, 1000, totalNbFileComplete - nbfile, "json");
                 }
-                lf.WriteLogMessage(name, source, destination, nbfile, 2);
+                lf.WriteLogMessage(name, source, destination, nbfile, 2, "json");
 
             }
             else if (type == "Differential" | type== "Differentielle")
@@ -97,7 +97,7 @@ namespace Appli_V1.Controllers
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                    file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -113,7 +113,7 @@ namespace Appli_V1.Controllers
                             nbfile++;
 
                             //Appends the text in the status log file
-                            file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                            file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
                         }
                     }
                     else
@@ -123,10 +123,10 @@ namespace Appli_V1.Controllers
                         nbfile++;
 
                         //Appends the text in the status log file
-                        file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile);
+                        file1.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, 1000, totalNbFileDifferential - nbfile, "xml");
                     }
                 });
-                lf.WriteLogMessage(name, source, destination, nbfile, 2);
+                lf.WriteLogMessage(name, source, destination, nbfile, 2, "xml");
             }
             
             
