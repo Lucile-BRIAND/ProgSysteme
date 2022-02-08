@@ -16,12 +16,16 @@
         <Button Content="{Binding executeAllJobsButton}" HorizontalAlignment="Left" Margin="567,338,0,0" VerticalAlignment="Top" Width="176" Height="39" Click="ExecuteAllBackupButton_Click"/>
         <TextBox 
             
-            Height="23" Margin="0,0,50.6,181" x:Name="JobSoftwareNameTextBox" 
+            Height="23" Margin="0,0,35.6,135" x:Name="JobSoftwareNameTextBox" 
             VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="{Binding Path = JobSoftwareName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
             Width="172" />
 
-        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="690,181,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
-        <Label Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="29" Margin="528,179,0,0" VerticalAlignment="Top" Width="138"/>
+        <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="704,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Label Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="29" Margin="542,225,0,0" VerticalAlignment="Top" Width="138"/>
+        <ComboBox Name="LogFileFormatComboBox" SelectedIndex="0" HorizontalAlignment="Left" Margin="586,124,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
+            <ComboBoxItem  Content="JSON" Tag="0"></ComboBoxItem>
+            <ComboBoxItem  Content="XML" Tag="1" ></ComboBoxItem>
+        </ComboBox>
 
     </Grid>
 </Window>

@@ -12,9 +12,8 @@ namespace AppV2.VM
     public class MainVM : INotifyPropertyChanged, IDisposable
     {
 
-        public List<JobModel> dataList = new List<JobModel>();
         public event PropertyChangedEventHandler PropertyChanged;
-        LanguageFile gt = LanguageFile.GetInstance;
+        LanguageFile singletonLang = LanguageFile.GetInstance;
         public string jobSoftware { get; set; }
         public string chooseAction { get; set; }
         public string createBackup { get; set; }
@@ -29,10 +28,10 @@ namespace AppV2.VM
         {
             var values = new MainVM()
             {
-                chooseAction = gt.ReadFile().Main,
-                createBackup = gt.ReadFile().MainCreate,
-                executeBackup = gt.ReadFile().MainExecute,
-                removeBackup = gt.ReadFile().MainRemove,
+                chooseAction = singletonLang.ReadFile().Main,
+                createBackup = singletonLang.ReadFile().MainCreate,
+                executeBackup = singletonLang.ReadFile().MainExecute,
+                removeBackup = singletonLang.ReadFile().MainRemove,
                 Language1 = "French",
                 Language2 = "English"
 
@@ -66,10 +65,10 @@ namespace AppV2.VM
         public static List<JobModel> DisplayJobs()
         {
             string file = "Jobfile.json";
-            List<JobModel> jobmodelList = new List<JobModel>();
+            List<JobModel> jobModelList = new List<JobModel>();
             var contentFile = System.IO.File.ReadAllText(file);
-            jobmodelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
-            return jobmodelList;
+            jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
+            return jobModelList;
         }
     }
 }

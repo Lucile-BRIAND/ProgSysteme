@@ -23,12 +23,13 @@ namespace AppV2
     public partial class CreateJobView : Window
     {
         LanguageFile singletonLang = LanguageFile.GetInstance;
-        CreateJobVM createJobVM1 = new CreateJobVM();
+        CreateJobVM createJobVM = new CreateJobVM();
+        MainWindow mainWindow = new MainWindow();
         public CreateJobView()
         {
             InitializeComponent();
 
-            this.DataContext = createJobVM1.getValues();
+            this.DataContext = createJobVM.getValues();
         }
 
 
@@ -39,8 +40,7 @@ namespace AppV2
 
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            mainWindow.Show();
             Close();
         }
 
@@ -58,10 +58,8 @@ namespace AppV2
             else
             {
                 // MessageBox.Show(jobNameTextBox.Text);
-                CreateJobVM createJobVM = new CreateJobVM();
                 createJobVM.SaveJob(jobNameTextBox.Text, jobTypeComboBox.Text, sourcePathTextBox.Text, targetPathTextBox.Text);
-                MainWindow main = new MainWindow();
-                main.Show();
+                mainWindow.Show();
                 Close();
             }
 

@@ -34,20 +34,7 @@ namespace AppV2.Models
         public string ErrorGrid { get; set; }
         public string ErrorExecute { get; set; }
         public string Validation { get; set; }
-        public string MainCreate {
-            get
-            {
-                return mainCreate;
-            }
-            set
-            {
-                if (!string.Equals(mainCreate, value))
-                {
-                    mainCreate = value;
-                    OnPropertyChanged("MainCreate");
-                }
-            }
-        }
+        public string MainCreate { get; set; }
         public string MainExecute { get; set; }
         public string MainRemove { get; set; }
         public string Type0 { get; set; }

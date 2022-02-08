@@ -22,15 +22,13 @@ namespace AppV2
     /// </summary>
     public partial class MainWindow : Window
     {
-        LanguageFile singletonLang = LanguageFile.GetInstance;
+        
         MainVM mainVM = new MainVM();
-
-
+        
+        
         public MainWindow()
         {
             InitializeComponent();
-            
-           
             this.DataContext = mainVM.getValues();
         }
 
@@ -60,9 +58,8 @@ namespace AppV2
         {
             //MessageBox.Show(selectedLanguageComboBox.SelectedIndex.ToString());
             ChooseLanguageVM chooseLanguageVM = new ChooseLanguageVM();
-            LanguageFile cmp= chooseLanguageVM.SaveLanguage(selectedLanguageComboBox.SelectedIndex);
+            chooseLanguageVM.SaveLanguage(selectedLanguageComboBox.SelectedIndex);
             this.DataContext = mainVM.getValues();
-
 
         }
     }

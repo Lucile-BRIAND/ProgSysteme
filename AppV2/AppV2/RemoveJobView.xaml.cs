@@ -23,17 +23,16 @@ namespace AppV2
     /// </summary>
     public partial class RemoveJobView : Window
     {
-        public string file = "Jobfile.json";
+        
         public List<JobModel> dataList = new List<JobModel>();
         LanguageFile singletonLang = LanguageFile.GetInstance;
         RemoveJobVM removeJobVM = new RemoveJobVM();
+        MainWindow mainWindow = new MainWindow();
         public RemoveJobView()
         {
             InitializeComponent();
             removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
-
             this.DataContext = removeJobVM.getValues();
-
         }
 
         public void ButtonRemoveBackup_Click(object sender, RoutedEventArgs e)
@@ -62,8 +61,7 @@ namespace AppV2
 
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            mainWindow.Show();
             Close();
         }
     }

@@ -15,7 +15,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace AppV2.VM
 {
-    class ExecuteJobVM : MainVM
+    class ExecuteJobVM
     {
         //public string jobSoftwareName;
         public string executeBackup { get; set; }
@@ -45,31 +45,17 @@ namespace AppV2.VM
             return values;
 
         }
-        /*
-        public string JobSoftwareName
+        public static void CallCryptoSoft(string path, int startCryptTime)
         {
-            get
-            {
-                return jobSoftwareName;
-            }
-            set
-            {
-                if (!string.Equals(jobSoftwareName, value))
-                {
-                    jobSoftwareName = value;
-                    OnPropertyChanged("JobSoftwareName");
-                }
-            }
-        }
-        */
-        public static void CallCryptoSoft(string path)
-        {
+            
             Process P = new Process();
             P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
+            //int startCryptTime = DateTime.Now.Millisecond;
             P.Start();
+            timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
-        public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox)
+        public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
         {
             //Thread.Sleep(10000);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
@@ -79,7 +65,7 @@ namespace AppV2.VM
                 return;
             }
             int startTranferTime = DateTime.Now.Millisecond;
-            CallCryptoSoft(source);
+            CallCryptoSoft(source, DateTime.Now.Millisecond);
 
             int nbfile = 0; //number of files that have been copied
             StatusLogFile slf = StatusLogFile.GetInstance;
@@ -95,7 +81,7 @@ namespace AppV2.VM
                     totalfileSize += newPath.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
-                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy);
+                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -113,19 +99,19 @@ namespace AppV2.VM
                     File.Copy(newPath, newPath.Replace(source, destination), true);
                     if (totalfileSize - fileSizeLeftToCopy == 0)
                     {
-                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy);
+                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
                     else
                     {
                         //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy);
+                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
 
                 }
-                CallCryptoSoft(source);
-                CallCryptoSoft(destination);
+                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
-                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
+                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
 
             }
             else if (type == "Differential" | type == "Differentielle")
@@ -157,7 +143,7 @@ namespace AppV2.VM
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                    slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -176,12 +162,12 @@ namespace AppV2.VM
                             //Appends the text in the status log file
                             if (totalfileSize - fileSizeLeftToCopy == 0)
                             {
-                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                             else
                             {
                                 //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                         }
                     }
@@ -195,23 +181,23 @@ namespace AppV2.VM
                         //Appends the text in the status log file
                         if (totalfileSize - fileSizeLeftToCopy == 0)
                         {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                         else
                         {
                             //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy);
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                     }
                 });
-                CallCryptoSoft(source);
-                CallCryptoSoft(destination);
+                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
-                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup);
+                lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
             }
 
         }
-        public void ExecutAllBackup(string JobSoftwareNameTextBox)
+        public void ExecutAllBackup(string JobSoftwareNameTextBox, string format)
         {
             //Read the JSON file containing the job's data
             var contentFile = System.IO.File.ReadAllText("Jobfile.json");
@@ -226,7 +212,7 @@ namespace AppV2.VM
                 string type = attribute.jobType;
                 string source = attribute.sourcePath;
                 string destination = attribute.targetPath;
-                ExecuteBackup(name, type, source, destination, JobSoftwareNameTextBox);
+                ExecuteBackup(name, type, source, destination, JobSoftwareNameTextBox, format);
             }
         }
     }

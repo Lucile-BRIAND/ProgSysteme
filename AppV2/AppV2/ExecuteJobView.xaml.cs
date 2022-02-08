@@ -24,6 +24,8 @@ namespace AppV2
         LanguageFile singletonLang = LanguageFile.GetInstance;
         ExecuteJobVM executeJobVM = new ExecuteJobVM();
         MainVM mainVM = new MainVM();
+        MainWindow mainWindow = new MainWindow();
+        private string logFileFormat;
         public ExecuteJobView()
         {
             InitializeComponent();
@@ -45,7 +47,7 @@ namespace AppV2
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
                         jobToExecute = obj as JobModel;
-                        executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text);
+                        executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
                     }
                 }
             }
@@ -59,16 +61,27 @@ namespace AppV2
 
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            mainWindow.Show();
             Close();
         }
 
         private void ExecuteAllBackupButton_Click(object sender, RoutedEventArgs e)
         {
-            executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text);
+            executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text, logFileFormat);
         }
 
+        private void LogFileFormatComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
 
+            if (LogFileFormatComboBox.SelectedIndex == 0)
+            {
+                logFileFormat = "json";
+            }
+            else if(LogFileFormatComboBox.SelectedIndex == 1)
+            {
+                logFileFormat = "xml";
+            }
+        }
     }
 }
