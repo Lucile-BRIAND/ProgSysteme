@@ -18,3 +18,123 @@
   "timeCryptoSoft": "488 ms",
   "Date": "08/02/2022 11:15:34"
 }
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "687 ms",
+  "timeCryptoSoft": "570 ms",
+  "Date": "16/02/2022 11:07:58"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "292 ms",
+  "timeCryptoSoft": "1098 ms",
+  "Date": "16/02/2022 11:07:59"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-72 ms",
+  "timeCryptoSoft": "451 ms",
+  "Date": "16/02/2022 11:11:17"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "68 ms",
+  "timeCryptoSoft": "573 ms",
+  "Date": "16/02/2022 11:11:18"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-552 ms",
+  "timeCryptoSoft": "-51 ms",
+  "Date": "16/02/2022 11:11:27"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-729 ms",
+  "timeCryptoSoft": "-251 ms",
+  "Date": "16/02/2022 11:11:28"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-384 ms",
+  "timeCryptoSoft": "91 ms",
+  "Date": "16/02/2022 11:11:37"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-788 ms",
+  "timeCryptoSoft": "-322 ms",
+  "Date": "16/02/2022 11:11:38"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-479 ms",
+  "timeCryptoSoft": "-17 ms",
+  "Date": "16/02/2022 11:11:46"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-885 ms",
+  "timeCryptoSoft": "-440 ms",
+  "Date": "16/02/2022 11:11:47"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-259 ms",
+  "timeCryptoSoft": "600 ms",
+  "Date": "16/02/2022 11:15:52"
+}
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "44 ms",
+  "timeCryptoSoft": "896 ms",
+  "Date": "16/02/2022 11:15:54"
+}

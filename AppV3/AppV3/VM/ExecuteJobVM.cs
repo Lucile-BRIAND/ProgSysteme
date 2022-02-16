@@ -49,7 +49,7 @@ namespace AppV3.VM
         {
             
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "D:/ProgSystemLocal/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
             //int startCryptTime = DateTime.Now.Millisecond;
             P.Start();
@@ -97,6 +97,7 @@ namespace AppV3.VM
 
                     nbfile++;
                     File.Copy(newPath, newPath.Replace(source, destination), true);
+                    Thread.Sleep(1000);
                     if (totalfileSize - fileSizeLeftToCopy == 0)
                     {
                         slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);

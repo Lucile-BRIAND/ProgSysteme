@@ -1,50 +1,14 @@
 [
   {
-    "jobName": "lolm",
-    "jobType": "Differential",
-    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
-    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest"
-  },
-  {
-    "jobName": "tesst3",
+    "jobName": "OK",
     "jobType": "Complete",
-    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
-    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2"
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
   },
   {
-    "jobName": "Testeeeeee",
-    "jobType": "Differential",
-    "sourcePath": "D:\\blog",
-    "targetPath": "C:\\Users\\Bruno\\Videos"
-  },
-  {
-    "jobName": "fefeefef",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Documents",
-    "targetPath": "C:\\Users\\Bruno\\Pictures\\Camera Roll"
-  },
-  {
-    "jobName": "teteegthyh",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Documents\\ee",
-    "targetPath": "C:\\Users\\Bruno\\Documents\\Enregistrements audio"
-  },
-  {
-    "jobName": "xxxxxx",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Pictures\\Camera Roll",
-    "targetPath": "C:\\Users\\Bruno\\Pictures\\Camera Roll"
-  },
-  {
-    "jobName": "polmp",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Pictures\\Camera Roll",
-    "targetPath": "C:\\Users\\Bruno\\Documents\\Appa"
-  },
-  {
-    "jobName": "eeeeeee",
-    "jobType": "Differential",
-    "sourcePath": "C:/Users/Bruno/Pictures/Camera Roll",
-    "targetPath": "C:/Users/Bruno/Documents/Appa"
+    "jobName": "OK2",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination2"
   }
 ]

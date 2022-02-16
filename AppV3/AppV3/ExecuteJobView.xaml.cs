@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,6 +27,7 @@ namespace AppV3
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
         private string logFileFormat;
+        public delegate void ThreadDelegate(object jobToExecuteParameter);
         public ExecuteJobView()
         {
             InitializeComponent();
@@ -41,15 +43,23 @@ namespace AppV3
             }
             else
             {
-                JobModel jobToExecute = new JobModel();
+                ThreadDelegate del1 = (jobToExecuteParameter) =>
+                {
+                    JobModel jobToExecute = (JobModel)jobToExecuteParameter;
+                    executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                };
+                JobModel selectedJobToExecute = new JobModel();
                 foreach (var obj in executeJobDataGrid.SelectedItems)
                 {
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
-                        jobToExecute = obj as JobModel;
-                        executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                        selectedJobToExecute = obj as JobModel;
+                        Thread thread1 = new Thread(new ParameterizedThreadStart(del1.Invoke));
+                        thread1.Start(selectedJobToExecute);
+                        //executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
                     }
                 }
+
             }
         }
 
