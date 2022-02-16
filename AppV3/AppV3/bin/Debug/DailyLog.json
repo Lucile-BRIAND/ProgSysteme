@@ -198,3 +198,23 @@
   "timeCryptoSoft": "538 ms",
   "Date": "16/02/2022 15:38:05"
 }
+{
+  "Name": "OK",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "388 ms",
+  "timeCryptoSoft": "439 ms",
+  "Date": "16/02/2022 15:50:09"
+}
+{
+  "Name": "OK2",
+  "FileSource": "D:/ProgSystemLocal/Source",
+  "FileTarget": "D:/ProgSystemLocal/Destination2",
+  "NbFile": 2,
+  "FileSize": "76 B",
+  "FileTransferTime": "-60 ms",
+  "timeCryptoSoft": "-146 ms",
+  "Date": "16/02/2022 15:50:10"
+}

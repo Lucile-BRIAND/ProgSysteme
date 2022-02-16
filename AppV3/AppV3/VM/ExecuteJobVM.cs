@@ -58,24 +58,28 @@ namespace AppV3.VM
         }
 
         public void CreateThread(List<JobModel> jobListToExecute, string JobSoftwareName, string logFileFormat)
-        {    
-            
-            foreach (JobModel jobToExecute in jobListToExecute)
+        {
+
+            Parallel.ForEach(jobListToExecute, jobToExecute =>
                 {
-                ThreadDelegate delegateExecuteBackup = (jobToExecuteParameter) =>
-                {
-                    JobModel jobToExecute2 = (JobModel)jobToExecuteParameter;
+                    ThreadDelegate delegateExecuteBackup = (jobToExecuteParameter) =>
+                    {
+                        JobModel jobToExecute2 = (JobModel)jobToExecuteParameter;
 
-                    MessageBox.Show(jobToExecute2.jobName, jobToExecute2.jobType);
+                        MessageBox.Show(jobToExecute2.jobName, jobToExecute2.jobType);
 
-                    ExecuteBackup(jobToExecute2.jobName, jobToExecute2.jobType, jobToExecute2.sourcePath, jobToExecute2.targetPath, JobSoftwareName, logFileFormat);
-                };
-                Thread thread1 = new Thread(new ParameterizedThreadStart(delegateExecuteBackup.Invoke));
-                    thread1.Start(jobToExecute);
-                    
-                
+                        ExecuteBackup(jobToExecute2.jobName, jobToExecute2.jobType, jobToExecute2.sourcePath, jobToExecute2.targetPath, JobSoftwareName, logFileFormat);
+                    };
+                    Thread threadJobToExecute = new Thread(new ParameterizedThreadStart(delegateExecuteBackup.Invoke));
 
-            }
+                    threadJobToExecute.Start(jobToExecute);
+
+                    //JobModel jobToExecute in
+
+
+
+
+                });
 
 
         }

@@ -724,3 +724,69 @@
   "NbFilesLeftToDo": 0,
   "FileSizeLeftToCopy": 0
 }
+{
+  "Name": "OK",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "OK2",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "OK",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 38
+}
+{
+  "Name": "OK2",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 38
+}
+{
+  "Name": "OK",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "OK2",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 76,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
