@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using AppV3.Models;
 using AppV3.VM;
 
@@ -27,7 +28,7 @@ namespace AppV3
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
         private string logFileFormat;
-        public delegate void ThreadDelegate(object jobToExecuteParameter);
+        
         public ExecuteJobView()
         {
             InitializeComponent();
@@ -43,25 +44,20 @@ namespace AppV3
             }
             else
             {
-                ThreadDelegate del1 = (jobToExecuteParameter) =>
-                {
-                    JobModel jobToExecute = (JobModel)jobToExecuteParameter;
-                    executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
-                };
-                JobModel selectedJobToExecute = new JobModel();
+                JobModel jobToExecute = new JobModel();                
+                List<JobModel> jobListToExecute = new List<JobModel>();
                 foreach (var obj in executeJobDataGrid.SelectedItems)
                 {
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
-                        selectedJobToExecute = obj as JobModel;
-                        Thread thread1 = new Thread(new ParameterizedThreadStart(del1.Invoke));
-                        thread1.Start(selectedJobToExecute);
-                        //executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                        jobToExecute = obj as JobModel;
+                        jobListToExecute.Add(jobToExecute);                        
                     }
                 }
-
+                executeJobVM.CreateThread(jobListToExecute, JobSoftwareNameTextBox.Text, logFileFormat);
             }
         }
+
 
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

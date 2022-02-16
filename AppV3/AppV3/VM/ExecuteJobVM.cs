@@ -11,11 +11,11 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO.MemoryMappedFiles;
 using System.Runtime.Serialization.Formatters.Binary;
-
+using System.Windows; //oo
 
 namespace AppV3.VM
 {
-    class ExecuteJobVM
+    class ExecuteJobVM : Window
     {
         //public string jobSoftwareName;
         public string executeBackup { get; set; }
@@ -26,6 +26,7 @@ namespace AppV3.VM
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
+        public delegate void ThreadDelegate(object jobToExecuteParameter);
 
 
 
@@ -55,6 +56,31 @@ namespace AppV3.VM
             P.Start();
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
+
+        public void CreateThread(List<JobModel> jobListToExecute, string JobSoftwareName, string logFileFormat)
+        {    
+            
+            foreach (JobModel jobToExecute in jobListToExecute)
+                {
+                ThreadDelegate delegateExecuteBackup = (jobToExecuteParameter) =>
+                {
+                    JobModel jobToExecute2 = (JobModel)jobToExecuteParameter;
+
+                    MessageBox.Show(jobToExecute2.jobName, jobToExecute2.jobType);
+
+                    ExecuteBackup(jobToExecute2.jobName, jobToExecute2.jobType, jobToExecute2.sourcePath, jobToExecute2.targetPath, JobSoftwareName, logFileFormat);
+                };
+                Thread thread1 = new Thread(new ParameterizedThreadStart(delegateExecuteBackup.Invoke));
+                    thread1.Start(jobToExecute);
+                    
+                
+
+            }
+
+
+        }
+
+
         public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
         {
             //Thread.Sleep(10000);
