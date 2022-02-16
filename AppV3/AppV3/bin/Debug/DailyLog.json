@@ -1,0 +1,20 @@
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "319 ms",
+  "timeCryptoSoft": "252 ms",
+  "Date": "08/02/2022 11:14:46"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "561 ms",
+  "timeCryptoSoft": "488 ms",
+  "Date": "08/02/2022 11:15:34"
+}

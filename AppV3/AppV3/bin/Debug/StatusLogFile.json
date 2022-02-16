@@ -1,0 +1,132 @@
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}

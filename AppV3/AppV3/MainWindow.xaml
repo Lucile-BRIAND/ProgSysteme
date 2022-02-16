@@ -1,0 +1,23 @@
+﻿<Window x:Class="AppV3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppV3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="102,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonCreateJobView_Click"/>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="312,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonExecuteJobView_Click"/>
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="505,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonRemoveJobView_Click"/>
+        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="574,83,46.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content="{Binding Language1}" Tag="0"/>
+            <ComboBoxItem Content="{Binding Language2}" Tag="1"/>
+        </ComboBox>
+        <TextBlock x:Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="64,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="64,252,0,0" VerticalAlignment="Top" Width="636"/>
+        <Image Source="easySaveLogo.png" HorizontalAlignment="Left" Height="232" Margin="232,15,0,0" VerticalAlignment="Top" Width="246"/>
+
+
+    </Grid>
+</Window>

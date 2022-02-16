@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DailyLogs>
+  <Job>
+    <JobName>tesst3</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <FileSize>99</FileSize>
+    <FileTransferTime>363 ms</FileTransferTime>
+    <CryptTime>295 ms</CryptTime>
+    <Date>08/02/2022 11:20:58</Date>
+  </Job>
+</DailyLogs>

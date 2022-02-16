@@ -1,0 +1,42 @@
+﻿<Window x:Class="AppV3.CreateJobView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppV3"
+        mc:Ignorable="d"
+        Title="CreateJobView" Height="450" Width="800">
+    <Grid>
+
+        <TextBox 
+        Text="{Binding Path=JobName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,235.6,306" Name="jobNameTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" TextChanged="textBox_TextChanged" />
+        <Label Name="typeLabel" Content="{Binding type}" FontWeight="Bold" Height="28" Margin="247,0,0,254" 
+             VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="121"/>
+
+        <ComboBox Name="jobTypeComboBox" Text="{Binding JobType, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="409,150,0,0" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem Content ="{Binding type1}"></ComboBoxItem>
+            <ComboBoxItem Content ="{Binding type2}"></ComboBoxItem>
+        </ComboBox>
+        <TextBox 
+        Text="{Binding SourcePath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,235.6,197" Name="sourcePathTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <TextBox 
+        Text="{Binding TargetPath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+        Height="23" Margin="0,0,235.6,154" Name="targetPathTextBox" 
+        VerticalAlignment="Bottom" HorizontalAlignment="Right"
+        Width="172" />
+        <Button Name="createJobButton" Content="{Binding createJob}" Click="ButtonCreateBackup_Click" Margin="419,312,259.6,77"/>
+
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="37,30,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+
+        <Label Name="nameLabel" Content="{Binding name}" HorizontalAlignment="Left" Margin="247,92,0,0" VerticalAlignment="Top" Height="23" Width="121" FontWeight="Bold"/>
+        <Button Content="{Binding source}" HorizontalAlignment="Left" Margin="231,196,0,0" VerticalAlignment="Top" Width="137" Height="23" Click="SourceOpenFolderDialog_Click"/>
+        <Button Content="{Binding target}" HorizontalAlignment="Left" Height="23" Margin="231,237,0,0" VerticalAlignment="Top" Width="137" Click="TargetOpenFolderDialog_Click"/>
+        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="333" Margin="182,43,0,0" VerticalAlignment="Top" Width="494"/>
+    </Grid>
+</Window>
