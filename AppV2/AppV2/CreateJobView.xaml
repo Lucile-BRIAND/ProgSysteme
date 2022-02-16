@@ -10,36 +10,33 @@
 
         <TextBox 
         Text="{Binding Path=JobName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-        Height="23" Margin="0,0,322.6,299" Name="jobNameTextBox" 
+        Height="23" Margin="0,0,235.6,306" Name="jobNameTextBox" 
         VerticalAlignment="Bottom" HorizontalAlignment="Right"
         Width="172" TextChanged="textBox_TextChanged" />
-        <Label Name="typeLabel" Content="{Binding type}" FontWeight="Bold" Height="28" Margin="199,0,0,245" 
-             VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="101"/>
+        <Label Name="typeLabel" Content="{Binding type}" FontWeight="Bold" Height="28" Margin="247,0,0,254" 
+             VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="121"/>
 
-        <ComboBox Name="jobTypeComboBox" Text="{Binding JobType, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="327,153,0,0" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox Name="jobTypeComboBox" Text="{Binding JobType, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="409,150,0,0" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content ="{Binding type1}"></ComboBoxItem>
             <ComboBoxItem Content ="{Binding type2}"></ComboBoxItem>
         </ComboBox>
-        <Label Name="sourceLabel" Content="{Binding source}" FontWeight="Bold" Height="28" Margin="199,0,0,195" 
-             VerticalAlignment="Bottom"  HorizontalAlignment="Left" Width="101"/>
         <TextBox 
         Text="{Binding SourcePath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-        Height="23" Margin="0,0,322.6,194" Name="sourcePathTextBox" 
+        Height="23" Margin="0,0,235.6,197" Name="sourcePathTextBox" 
         VerticalAlignment="Bottom" HorizontalAlignment="Right"
         Width="172" />
-        <Label Name="targetLabel" Content="{Binding target}" FontWeight="Bold" Height="28" Margin="199,0,0,145" 
-             VerticalAlignment="Bottom" 
-             HorizontalAlignment="Left"
-             Width="101"/>
         <TextBox 
         Text="{Binding TargetPath, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-        Height="23" Margin="0,0,322.6,150" Name="targetPathTextBox" 
+        Height="23" Margin="0,0,235.6,154" Name="targetPathTextBox" 
         VerticalAlignment="Bottom" HorizontalAlignment="Right"
         Width="172" />
-        <Button Name="createJobButton" Content="{Binding createJob}" Click="ButtonCreateBackup_Click" Margin="332,315,346.6,74"/>
+        <Button Name="createJobButton" Content="{Binding createJob}" Click="ButtonCreateBackup_Click" Margin="419,312,259.6,77"/>
 
-        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="615,43,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="37,30,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
 
-        <Label Name="nameLabel" Content="{Binding name}" HorizontalAlignment="Left" Margin="199,95,0,0" VerticalAlignment="Top" Height="34" Width="74" FontWeight="Bold"/>
+        <Label Name="nameLabel" Content="{Binding name}" HorizontalAlignment="Left" Margin="247,92,0,0" VerticalAlignment="Top" Height="23" Width="121" FontWeight="Bold"/>
+        <Button Content="{Binding source}" HorizontalAlignment="Left" Margin="231,196,0,0" VerticalAlignment="Top" Width="137" Height="23" Click="SourceOpenFolderDialog_Click"/>
+        <Button Content="{Binding target}" HorizontalAlignment="Left" Height="23" Margin="231,237,0,0" VerticalAlignment="Top" Width="137" Click="TargetOpenFolderDialog_Click"/>
+        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="333" Margin="182,43,0,0" VerticalAlignment="Top" Width="494"/>
     </Grid>
 </Window>

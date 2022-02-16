@@ -9,11 +9,11 @@
 
     <Grid Background="White">
 
-        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="193,347,423.6,34"/>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="189,358,427.6,23"/>
 
-        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="609,30,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="265" Margin="49,63,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Button Content="{Binding executeAllJobsButton}" HorizontalAlignment="Left" Margin="567,338,0,0" VerticalAlignment="Top" Width="176" Height="39" Click="ExecuteAllBackupButton_Click"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="601,30,0,0" VerticalAlignment="Top" Width="128" Height="38" Click="ButtonMainMenu_Click"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="{Binding executeAllJobsButton}" HorizontalAlignment="Left" Margin="582,358,0,0" VerticalAlignment="Top" Width="176" Height="39" Click="ExecuteAllBackupButton_Click"/>
         <TextBox 
             
             Height="23" Margin="0,0,35.6,135" x:Name="JobSoftwareNameTextBox" 
@@ -22,10 +22,11 @@
 
         <TextBlock Text="{Binding JobSoftwareName}" Name="JobSoftwareNameTextBlock" HorizontalAlignment="Left" Margin="704,226,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
         <Label Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="29" Margin="542,225,0,0" VerticalAlignment="Top" Width="138"/>
-        <ComboBox Name="LogFileFormatComboBox" SelectedIndex="0" HorizontalAlignment="Left" Margin="586,124,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
+        <ComboBox Name="LogFileFormatComboBox" SelectedIndex="0" HorizontalAlignment="Left" Margin="586,142,0,0" VerticalAlignment="Top" Width="172" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
             <ComboBoxItem  Content="JSON" Tag="0"></ComboBoxItem>
             <ComboBoxItem  Content="XML" Tag="1" ></ComboBoxItem>
         </ComboBox>
+        <Label Content="Format :" HorizontalAlignment="Left" Height="24" Margin="586,102,0,0" VerticalAlignment="Top" Width="172"/>
 
     </Grid>
 </Window>

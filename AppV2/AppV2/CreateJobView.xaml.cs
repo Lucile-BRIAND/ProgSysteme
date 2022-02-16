@@ -14,6 +14,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using AppV2.VM;
 using AppV2.Models;
+using WinForms = System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
 
 namespace AppV2
 {
@@ -57,12 +60,82 @@ namespace AppV2
             }
             else
             {
+                string sourcePath = sourcePathTextBox.Text.Replace("\\", "/");
+                string targetPath = targetPathTextBox.Text.Replace("\\", "/");
                 // MessageBox.Show(jobNameTextBox.Text);
-                createJobVM.SaveJob(jobNameTextBox.Text, jobTypeComboBox.Text, sourcePathTextBox.Text, targetPathTextBox.Text);
+                createJobVM.SaveJob(jobNameTextBox.Text, jobTypeComboBox.Text, sourcePath, targetPath);
                 mainWindow.Show();
                 Close();
             }
 
+        }
+
+        private void SourceOpenFolderDialog_Click(object sender, RoutedEventArgs e)
+        {
+            WinForms.FolderBrowserDialog folderDialog = new WinForms.FolderBrowserDialog();
+            folderDialog.ShowNewFolderButton = false;
+            folderDialog.SelectedPath = System.AppDomain.CurrentDomain.BaseDirectory;
+            WinForms.DialogResult result = folderDialog.ShowDialog();
+
+            if (result == WinForms.DialogResult.OK)
+            {
+                //----< Selected Folder >----
+                //< Selected Path >
+                String sPath = folderDialog.SelectedPath;
+                sourcePathTextBox.Text = sPath;
+                //</ Selected Path >
+
+                //--------< Folder >--------
+                DirectoryInfo folder = new DirectoryInfo(sPath);
+                if (folder.Exists)
+                {
+                    //------< @Loop: Files >------
+                    foreach (FileInfo fileInfo in folder.GetFiles())
+                    {
+                        //----< File >----
+                        String sDate = fileInfo.CreationTime.ToString("yyyy-MM-dd");
+                        Debug.WriteLine("#Debug: File: " + fileInfo.Name + " Date:" + sDate);
+                        //----</ File >----
+                    }
+                    //------</ @Loop: Files >------
+                }
+                //--------</ Folder >--------
+                //----</ Selected Folder >----
+            }
+        }
+
+        private void TargetOpenFolderDialog_Click(object sender, RoutedEventArgs e)
+        {
+            WinForms.FolderBrowserDialog folderDialog = new WinForms.FolderBrowserDialog();
+            folderDialog.ShowNewFolderButton = false;
+            folderDialog.SelectedPath = System.AppDomain.CurrentDomain.BaseDirectory;
+            WinForms.DialogResult result = folderDialog.ShowDialog();
+
+            if (result == WinForms.DialogResult.OK)
+            {
+                //----< Selected Folder >----
+                //< Selected Path >
+                String sPath = folderDialog.SelectedPath;
+                targetPathTextBox.Text = sPath;
+                //</ Selected Path >
+
+                //--------< Folder >--------
+                DirectoryInfo folder = new DirectoryInfo(sPath);
+                if (folder.Exists)
+                {
+                    //------< @Loop: Files >------
+                    foreach (FileInfo fileInfo in folder.GetFiles())
+                    {
+                        //----< File >----
+                        String sDate = fileInfo.CreationTime.ToString("yyyy-MM-dd");
+                        Debug.WriteLine("#Debug: File: " + fileInfo.Name + " Date:" + sDate);
+                        //----</ File >----
+                    }
+                    //------</ @Loop: Files >------
+                }
+                //--------</ Folder >--------
+                //----</ Selected Folder >----
+            }
         }
     }
 }
