@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,6 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using AppV3.Models;
 using AppV3.VM;
 
@@ -26,6 +29,9 @@ namespace AppV3
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
         private string logFileFormat;
+        //JobModel jobToExecute;
+        Thread[] Threads;
+
         public ExecuteJobView()
         {
             InitializeComponent();
@@ -35,24 +41,42 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
+            Threads = new Thread[executeJobDataGrid.SelectedItems.Count];
+            int counter = 0;
+            Thread myThread;
+
             if (executeJobDataGrid.SelectedItem == null)
             {
                 MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
             }
             else
             {
-                JobModel jobToExecute = new JobModel();
-                foreach (var obj in executeJobDataGrid.SelectedItems)
+                foreach (JobModel obj in executeJobDataGrid.SelectedItems)
                 {
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
-                        jobToExecute = obj as JobModel;
-                        executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                        myThread = new Thread(new ParameterizedThreadStart(StartBackup));
+                        myThread.Name = "thread" + counter.ToString();
+                        Threads[counter] = myThread;
+                        Threads[counter].Start(obj);
+
                     }
+                    counter++;
+                    Thread.Sleep(1000);
                 }
+
             }
         }
 
+        private void StartBackup(object obj)
+        {
+            JobModel jobToExecute = (JobModel)obj;
+            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
+            {
+                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+            });
+
+        }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -72,13 +96,13 @@ namespace AppV3
 
         private void LogFileFormatComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
+
 
             if (LogFileFormatComboBox.SelectedIndex == 0)
             {
                 logFileFormat = "json";
             }
-            else if(LogFileFormatComboBox.SelectedIndex == 1)
+            else if (LogFileFormatComboBox.SelectedIndex == 1)
             {
                 logFileFormat = "xml";
             }
