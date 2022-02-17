@@ -26,8 +26,8 @@ namespace AppV3.VM
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
-        public delegate void ThreadDelegate(object jobToExecuteParameter);
 
+        public delegate void ThreadDelegate(object jobToExecuteParameter);
 
 
 
@@ -57,30 +57,19 @@ namespace AppV3.VM
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
 
-        public void CreateThread(List<JobModel> jobListToExecute, string JobSoftwareName, string logFileFormat)
+        public void CreateThread(List<Thread> threadList, List<JobModel> jobListToExecute)
         {
-
-            Parallel.ForEach(jobListToExecute, jobToExecute =>
-                {
-                    ThreadDelegate delegateExecuteBackup = (jobToExecuteParameter) =>
+            int i = 0;
+            foreach(Thread t in threadList)
+            {
+                Trace.WriteLine("cc fils de chienne" + i);
+                    ThreadPool.QueueUserWorkItem(delegate
                     {
-                        JobModel jobToExecute2 = (JobModel)jobToExecuteParameter;
-
-                        MessageBox.Show(jobToExecute2.jobName, jobToExecute2.jobType);
-
-                        ExecuteBackup(jobToExecute2.jobName, jobToExecute2.jobType, jobToExecute2.sourcePath, jobToExecute2.targetPath, JobSoftwareName, logFileFormat);
-                    };
-                    Thread threadJobToExecute = new Thread(new ParameterizedThreadStart(delegateExecuteBackup.Invoke));
-
-                    threadJobToExecute.Start(jobToExecute);
-
-                    //JobModel jobToExecute in
-
-
-
-
-                });
-
+                        t.Start(jobListToExecute[i]);
+                    });
+                i++;
+            }
+            MessageBox.Show("");
 
         }
 

@@ -27,8 +27,9 @@ namespace AppV3
         ExecuteJobVM executeJobVM = new ExecuteJobVM();
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
-        private string logFileFormat;
-        
+        private string logFileFormat; 
+        public delegate void ThreadDelegate(object jobToExecuteParameter);
+
         public ExecuteJobView()
         {
             InitializeComponent();
@@ -46,15 +47,32 @@ namespace AppV3
             {
                 JobModel jobToExecute = new JobModel();                
                 List<JobModel> jobListToExecute = new List<JobModel>();
+                List<Thread> threadList = new List<Thread>();
                 foreach (var obj in executeJobDataGrid.SelectedItems)
                 {
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
-                        jobToExecute = obj as JobModel;
-                        jobListToExecute.Add(jobToExecute);                        
+                        ThreadDelegate delegateExecuteBackup = (jobToExecuteParameter) =>
+                        {
+                           jobToExecute = (JobModel)jobToExecuteParameter;
+
+                            // MessageBox.Show(jobToExecute2.jobName, jobToExecute2.jobType);
+
+                            executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                        };
+                        
+                        Thread thread = new Thread(new ParameterizedThreadStart(delegateExecuteBackup.Invoke));
+                        thread.Name = "thread" + executeJobDataGrid.SelectedIndex.ToString();
+                        threadList.Add(thread);
+                        jobListToExecute.Add(jobToExecute);
+                        //this.Name = "thread" + executeJobDataGrid.SelectedIndex.ToString();
+
+                        //jobToExecute = obj as JobModel;
+                        //jobListToExecute.Add(jobToExecute);                        
                     }
                 }
-                executeJobVM.CreateThread(jobListToExecute, JobSoftwareNameTextBox.Text, logFileFormat);
+
+                executeJobVM.CreateThread(threadList, jobListToExecute);
             }
         }
 
