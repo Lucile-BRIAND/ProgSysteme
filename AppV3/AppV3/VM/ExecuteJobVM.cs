@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO.MemoryMappedFiles;
 using System.Runtime.Serialization.Formatters.Binary;
-
+using System.Windows.Threading;
 
 namespace AppV3.VM
 {
@@ -23,6 +23,8 @@ namespace AppV3.VM
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
         public string executeAllJobsButton { get; set; }
+        public object Dispatcher { get; private set; }
+
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
@@ -47,12 +49,17 @@ namespace AppV3.VM
         }
         public static void CallCryptoSoft(string path, int startCryptTime)
         {
-            
+            //list of files extensions to encrypt
+            string[] extension = new string[2];
+            extension[0] = "*.txt";
+            extension[1] = "*.pdf";
+
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
-            P.StartInfo.Arguments = path;
-            //int startCryptTime = DateTime.Now.Millisecond;
+            P.StartInfo.FileName = "C:/Users/lu-ro/source/repos/C#/ProgSysL3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft.exe";
+            P.StartInfo.Arguments = path + " " + extension[0] + " " + extension[1];
+            Trace.WriteLine(P.StartInfo.Arguments);
             P.Start();
+
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
         public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
@@ -65,7 +72,7 @@ namespace AppV3.VM
                 return;
             }
             int startTranferTime = DateTime.Now.Millisecond;
-            CallCryptoSoft(source, DateTime.Now.Millisecond);
+            //CallCryptoSoft(source, DateTime.Now.Millisecond);
 
             int nbfile = 0; //number of files that have been copied
             StatusLogFile slf = StatusLogFile.GetInstance;
@@ -81,7 +88,7 @@ namespace AppV3.VM
                     totalfileSize += newPath.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
-                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
+                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -92,7 +99,7 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                   
+
                     fileSizeLeftToCopy += newPath.Length;
 
                     nbfile++;
@@ -108,7 +115,7 @@ namespace AppV3.VM
                     }
 
                 }
-                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
@@ -190,12 +197,11 @@ namespace AppV3.VM
                         }
                     }
                 });
-                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
             }
-
         }
         public void ExecutAllBackup(string JobSoftwareNameTextBox, string format)
         {
