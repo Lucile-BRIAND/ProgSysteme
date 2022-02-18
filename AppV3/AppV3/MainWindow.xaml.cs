@@ -14,6 +14,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
+using AppV3;
+using System.Threading;
+using System.Diagnostics;
 
 namespace AppV3
 {
@@ -28,6 +31,12 @@ namespace AppV3
         
         public MainWindow()
         {
+            if (Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1) {
+                MessageBox.Show("Application was already running. Only one instance of this application is allowed");
+                Close();
+                return; 
+            }
+
             InitializeComponent();
             this.DataContext = mainVM.getValues();
         }
@@ -54,13 +63,12 @@ namespace AppV3
         }
 
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //MessageBox.Show(selectedLanguageComboBox.SelectedIndex.ToString());
-            ChooseLanguageVM chooseLanguageVM = new ChooseLanguageVM();
-            chooseLanguageVM.SaveLanguage(selectedLanguageComboBox.SelectedIndex);
-            this.DataContext = mainVM.getValues();
 
+        private void ButtonSettings_Click(object sender, RoutedEventArgs e)
+        {
+            GeneralSettingsView generalSettingsView = new GeneralSettingsView();
+            generalSettingsView.Show();
+            Close();
         }
     }
 }

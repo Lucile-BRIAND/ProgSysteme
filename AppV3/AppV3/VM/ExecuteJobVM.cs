@@ -26,7 +26,8 @@ namespace AppV3.VM
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
-
+        public string JobSoftwareNameTextBox;
+        private string format;
 
 
 
@@ -45,18 +46,42 @@ namespace AppV3.VM
             return values;
 
         }
+        public void InitJobSoftwareName(string jobSoftware)
+        {
+            JobSoftwareNameTextBox = jobSoftware;
+            Trace.WriteLine(JobSoftwareNameTextBox);
+            lf.InitJobSoftware(this.JobSoftwareNameTextBox);
+        }
+        public void InitFormat(string Format)
+        {
+            this.format = Format;
+            Trace.WriteLine(format);
+            lf.InitFormat(this.format);
+        }
         public static void CallCryptoSoft(string path, int startCryptTime)
         {
             
             Process P = new Process();
             P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
+            P.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
             //int startCryptTime = DateTime.Now.Millisecond;
             P.Start();
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
-        public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
+        public void ExecuteBackup(string name, string type, string source, string destination)
         {
+            this.format = lf.GetFormat();
+            Trace.WriteLine(this.format);
+
+            this.JobSoftwareNameTextBox = lf.GetJobSoftawre();
+            Trace.WriteLine(this.JobSoftwareNameTextBox);
+            if (this.format == null | JobSoftwareNameTextBox == null)
+            {
+                this.format = "json";
+                this.JobSoftwareNameTextBox = "";
+            }
+            Trace.WriteLine(format);
             //Thread.Sleep(10000);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
 
@@ -71,7 +96,6 @@ namespace AppV3.VM
             StatusLogFile slf = StatusLogFile.GetInstance;
             long totalfileSize = 0;
             long fileSizeLeftToCopy = 0;
-
             if (type == "Complete" | type == "Complète")
             {
                 int totalNbFileComplete = Directory.GetFiles(source, "*.*", SearchOption.AllDirectories).Length; //total number of files in the save
@@ -197,7 +221,7 @@ namespace AppV3.VM
             }
 
         }
-        public void ExecutAllBackup(string JobSoftwareNameTextBox, string format)
+        public void ExecutAllBackup()
         {
             //Read the JSON file containing the job's data
             var contentFile = System.IO.File.ReadAllText("Jobfile.json");
@@ -212,7 +236,7 @@ namespace AppV3.VM
                 string type = attribute.jobType;
                 string source = attribute.sourcePath;
                 string destination = attribute.targetPath;
-                ExecuteBackup(name, type, source, destination, JobSoftwareNameTextBox, format);
+                ExecuteBackup(name, type, source, destination);
             }
         }
     }

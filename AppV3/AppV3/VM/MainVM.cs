@@ -21,6 +21,15 @@ namespace AppV3.VM
         public string removeBackup { get; set; }
         public string Language1 { get; set; }
         public string Language2 { get; set; }
+        public string JobSoftwareLabel { get; set; }
+        public string LanguageLabel { get; set; }
+        public string LogFileExtensionLabel { get; set; }
+        public string ButtonValidate { get; set; }
+        public string ButtonMainMenu { get; set; }
+        public string ButtonSettings { get; set; }
+
+
+
         public string jobSoftwareName;
         
 
@@ -33,7 +42,15 @@ namespace AppV3.VM
                 executeBackup = singletonLang.ReadFile().MainExecute,
                 removeBackup = singletonLang.ReadFile().MainRemove,
                 Language1 = "French",
-                Language2 = "English"
+                Language2 = "English",
+                JobSoftwareLabel= singletonLang.ReadFile().JobSoftware,
+                LanguageLabel = singletonLang.ReadFile().ChooseLang,
+                LogFileExtensionLabel =singletonLang.ReadFile().LogFileExtensionLabel,
+                ButtonValidate = singletonLang.ReadFile().ValidationJobSoftware,
+                ButtonMainMenu = singletonLang.ReadFile().MainReturn,
+                ButtonSettings = singletonLang.ReadFile().Settings
+
+
 
             };
             return values;

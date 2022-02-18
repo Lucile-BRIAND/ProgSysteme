@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AppV2.Properties
+namespace AppV3.Properties
 {
 
 

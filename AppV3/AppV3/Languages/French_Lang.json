@@ -19,5 +19,8 @@
   "ValidationJobSoftware": "Confirmer",
   "ValidationRemoveJob": "Supprimer",
   "ValidationCreateJob": "Créer la sauvegarde",
-  "MainReturn": "Menu Principal"
+  "MainReturn": "Menu Principal",
+  "ChooseLang": "Choix du language",
+  "LogFileExtensionLabel": "Extension du LogFile",
+  "Settings":  "Paramètres"
 }	

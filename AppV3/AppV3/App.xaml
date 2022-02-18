@@ -1,7 +1,7 @@
-﻿<Application x:Class="AppV2.App"
+﻿<Application x:Class="AppV3.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:AppV2"
+             xmlns:local="clr-namespace:AppV3"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

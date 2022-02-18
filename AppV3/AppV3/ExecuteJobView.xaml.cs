@@ -57,6 +57,7 @@ namespace AppV3
                     {
                         myThread = new Thread(new ParameterizedThreadStart(StartBackup));
                         myThread.Name = "thread" + counter.ToString();
+                        myThread.IsBackground = true;
                         Threads[counter] = myThread;
                         Threads[counter].Start(obj);
 
@@ -73,7 +74,7 @@ namespace AppV3
             JobModel jobToExecute = (JobModel)obj;
             this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
             {
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath);
             });
 
         }
@@ -89,23 +90,30 @@ namespace AppV3
             Close();
         }
 
-        private void ExecuteAllBackupButton_Click(object sender, RoutedEventArgs e)
+        //private void ExecuteAllBackupButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text, logFileFormat);
+        //}
+
+        private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
-            executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text, logFileFormat);
+
         }
 
-        private void LogFileFormatComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
+  
 
+        }
 
-            if (LogFileFormatComboBox.SelectedIndex == 0)
+        private void ButtonStop_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < executeJobDataGrid.SelectedItems.Count; i++)
             {
-                logFileFormat = "json";
+                Threads[i].Abort();
+                MessageBox.Show(Threads[i].Name);
             }
-            else if (LogFileFormatComboBox.SelectedIndex == 1)
-            {
-                logFileFormat = "xml";
-            }
+
         }
     }
 }

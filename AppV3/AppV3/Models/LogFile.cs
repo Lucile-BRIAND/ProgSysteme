@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
+using System.Diagnostics;
 
 namespace AppV3.Models
 {
@@ -16,6 +17,8 @@ namespace AppV3.Models
         //
         //Private attributes
         private static LogFile logInstance = null; //default unique instance
+        private string format;
+        private string JobSoftware;
 
         //Private constructor, only accessible from this class
         private LogFile()
@@ -35,6 +38,28 @@ namespace AppV3.Models
                 return logInstance;
             }
 
+        }
+
+        // Init and Get functions -> Format LogFile
+        public void InitFormat(string Format)
+        {
+            this.format = Format;
+            Trace.WriteLine(format);
+        }
+        public string GetFormat()
+        {
+            return format;
+        }
+
+        // Init and Get functions -> JobSoftware
+        public void InitJobSoftware(string jobSoftware)
+        {
+            this.JobSoftware = jobSoftware;
+            Trace.WriteLine(JobSoftware);
+        }
+        public string GetJobSoftawre()
+        {
+            return JobSoftware;
         }
 
         //Writing content in the log file

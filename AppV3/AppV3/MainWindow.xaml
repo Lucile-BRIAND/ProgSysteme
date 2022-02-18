@@ -7,16 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="102,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonCreateJobView_Click"/>
-        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="312,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonExecuteJobView_Click"/>
-        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="505,283,0,0" VerticalAlignment="Top" Width="166" Height="54" Click="ButtonRemoveJobView_Click"/>
-        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="574,83,46.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="{Binding Language1}" Tag="0"/>
-            <ComboBoxItem Content="{Binding Language2}" Tag="1"/>
-        </ComboBox>
+        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="38,283,0,0" VerticalAlignment="Top" Width="128" Height="41" Click="ButtonCreateJobView_Click"/>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="219,283,0,0" VerticalAlignment="Top" Width="157" Height="41" Click="ButtonExecuteJobView_Click"/>
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="434,283,0,0" VerticalAlignment="Top" Width="138" Height="41" Click="ButtonRemoveJobView_Click"/>
         <TextBlock x:Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="64,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="64,252,0,0" VerticalAlignment="Top" Width="636"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="109" Margin="10,247,0,0" VerticalAlignment="Top" Width="774"/>
         <Image Source="easySaveLogo.png" HorizontalAlignment="Left" Height="232" Margin="232,15,0,0" VerticalAlignment="Top" Width="246"/>
+        <Button Content="{Binding ButtonSettings}" HorizontalAlignment="Left" Height="41" Margin="632,283,0,0" VerticalAlignment="Top" Width="128" Click="ButtonSettings_Click"/>
 
 
     </Grid>

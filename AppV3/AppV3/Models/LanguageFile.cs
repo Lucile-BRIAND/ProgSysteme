@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -45,6 +46,12 @@ namespace AppV3.Models
         public string ValidationJobSoftware { get; set; }
         public string ValidationRemoveJob { get; set; }
         public string ValidationCreateJob { get; set; }
+        public string ChooseLang { get; set; }
+        public string LogFileExtensionLabel { get; set; }
+        public string Settings { get; set; }
+
+
+
 
         public string MainReturn { get; set; }
 
