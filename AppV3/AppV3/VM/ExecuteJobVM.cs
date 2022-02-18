@@ -56,7 +56,13 @@ namespace AppV3.VM
 
             Process P = new Process();
             P.StartInfo.FileName = "C:/Users/lu-ro/source/repos/C#/ProgSysL3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft.exe";
-            P.StartInfo.Arguments = path + " " + extension[0] + " " + extension[1];
+            P.StartInfo.Arguments = path;
+
+            for (int i = 0; i < extension.Length; i++)
+            {
+                P.StartInfo.Arguments += " " + extension[i];
+            }
+
             Trace.WriteLine(P.StartInfo.Arguments);
             P.Start();
 
