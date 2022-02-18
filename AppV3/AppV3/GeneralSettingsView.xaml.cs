@@ -56,7 +56,7 @@ namespace AppV3
 
         private void ButtonSelectJobSoftware_Click(object sender, RoutedEventArgs e)
         {
-            if(jobSoftawreNameTextBox.Text == "")
+            if (jobSoftawreNameTextBox.Text == "")
             {
                 MessageBox.Show(singletonLang.ReadFile().ErrorExecute);
             }
@@ -71,6 +71,11 @@ namespace AppV3
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Close();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+            executeJobVM.GetFileExtentions((bool)CheckboxTXT.IsChecked, (bool)CheckboxPDF.IsChecked, (bool)CheckboxJPG.IsChecked, (bool)CheckboxPNG.IsChecked);
         }
     }
 }

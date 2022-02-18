@@ -7,19 +7,24 @@
         mc:Ignorable="d"
         Title="GeneralSettingsView" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="344,152,276.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="344,118,276.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="French" Tag="0"/>
             <ComboBoxItem Content="English" Tag="1"/>
         </ComboBox>
-        <TextBox Name="jobSoftawreNameTextBox" HorizontalAlignment="Left" Height="18" Margin="344,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
-        <Label Name="jobSoftwareLabel" Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="37" Margin="115,227,0,0" VerticalAlignment="Top" Width="181"/>
-        <ComboBox Name="LogFileFormatComboBox" HorizontalAlignment="Left" Height="22" Margin="344,307,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
+        <TextBox Name="jobSoftawreNameTextBox" HorizontalAlignment="Left" Height="18" Margin="344,164,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
+        <Label Name="jobSoftwareLabel" Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="28" Margin="115,160,0,0" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.474,1.162"/>
+        <ComboBox Name="LogFileFormatComboBox" HorizontalAlignment="Left" Height="22" Margin="344,202,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
             <ComboBoxItem  Content="JSON" Tag="0"></ComboBoxItem>
             <ComboBoxItem  Content="XML" Tag="1" ></ComboBoxItem>
         </ComboBox>
-        <Label Content="{Binding LanguageLabel}" HorizontalAlignment="Left" Height="31" Margin="115,143,0,0" VerticalAlignment="Top" Width="181"/>
-        <Label Content="{Binding LogFileExtensionLabel}" HorizontalAlignment="Left" Height="24" Margin="115,305,0,0" VerticalAlignment="Top" Width="181"/>
-        <Button Content="{Binding ButtonValidate}" HorizontalAlignment="Left" Height="30" Margin="556,234,0,0" VerticalAlignment="Top" Width="113" Click="ButtonSelectJobSoftware_Click"/>
+        <Label Content="{Binding LanguageLabel}" HorizontalAlignment="Left" Height="27" Margin="115,118,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label Content="{Binding LogFileExtensionLabel}" HorizontalAlignment="Left" Height="31" Margin="115,197,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button Content="{Binding ButtonValidate}" HorizontalAlignment="Left" Height="30" Margin="556,158,0,0" VerticalAlignment="Top" Width="113" Click="ButtonSelectJobSoftware_Click"/>
         <Button Content="{Binding ButtonMainMenu}" HorizontalAlignment="Left" Height="31" Margin="556,76,0,0" VerticalAlignment="Top" Width="113" Click="ButtonMainMenu_Click"/>
+        <Label Content="{Binding ExtentionLabel}" HorizontalAlignment="Left" Height="29" Margin="115,233,0,0" VerticalAlignment="Top" Width="181"/>
+        <CheckBox Content=".png" x:Name="CheckboxPNG" IsChecked="{Binding PNGvalue}" HorizontalAlignment="Left" Margin="344,306,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+        <CheckBox Content=".jpg" x:Name="CheckboxJPG" IsChecked="{Binding JPGvalue}" HorizontalAlignment="Left" Margin="344,286,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+        <CheckBox Content=".pdf" x:Name="CheckboxPDF" IsChecked="{Binding PDFvalue}" HorizontalAlignment="Left" Margin="344,266,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+        <CheckBox Content=".txt" x:Name="CheckboxTXT" IsChecked="{Binding TXTvalue}" HorizontalAlignment="Left" Margin="344,246,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
     </Grid>
 </Window>

@@ -22,5 +22,6 @@
   "MainReturn": "Main Menu",
   "ChooseLang": "Choose your Language",
   "LogFileExtensionLabel": "Choose LogFile Extension",
-  "Settings" :  "Settings"
+  "Settings": "Settings",
+  "ExtentionLabel": "Types of files to encrypt"
 }

@@ -22,5 +22,6 @@
   "MainReturn": "Menu Principal",
   "ChooseLang": "Choix du language",
   "LogFileExtensionLabel": "Extension du LogFile",
-  "Settings":  "Paramètres"
+  "Settings": "Paramètres",
+  "ExtentionLabel": "Types de fichiers à crypter"
 }	

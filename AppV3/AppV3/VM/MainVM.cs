@@ -14,6 +14,7 @@ namespace AppV3.VM
 
         public event PropertyChangedEventHandler PropertyChanged;
         LanguageFile singletonLang = LanguageFile.GetInstance;
+        FileExtentions fileExtentions = FileExtentions.GetInstance;
         public string jobSoftware { get; set; }
         public string chooseAction { get; set; }
         public string createBackup { get; set; }
@@ -27,13 +28,18 @@ namespace AppV3.VM
         public string ButtonValidate { get; set; }
         public string ButtonMainMenu { get; set; }
         public string ButtonSettings { get; set; }
+        public string ExtentionLabel { get; set; }
+        public bool PNGvalue { get; set; }
+        public bool JPGvalue { get; set; }
+        public bool PDFvalue { get; set; }
+        public bool TXTvalue { get; set; }
 
 
 
         public string jobSoftwareName;
-        
 
-        public  MainVM getValues()
+
+        public MainVM getValues()
         {
             var values = new MainVM()
             {
@@ -43,15 +49,17 @@ namespace AppV3.VM
                 removeBackup = singletonLang.ReadFile().MainRemove,
                 Language1 = "French",
                 Language2 = "English",
-                JobSoftwareLabel= singletonLang.ReadFile().JobSoftware,
+                JobSoftwareLabel = singletonLang.ReadFile().JobSoftware,
                 LanguageLabel = singletonLang.ReadFile().ChooseLang,
-                LogFileExtensionLabel =singletonLang.ReadFile().LogFileExtensionLabel,
+                LogFileExtensionLabel = singletonLang.ReadFile().LogFileExtensionLabel,
                 ButtonValidate = singletonLang.ReadFile().ValidationJobSoftware,
                 ButtonMainMenu = singletonLang.ReadFile().MainReturn,
-                ButtonSettings = singletonLang.ReadFile().Settings
-
-
-
+                ButtonSettings = singletonLang.ReadFile().Settings,
+                ExtentionLabel = singletonLang.ReadFile().ExtentionLabel,
+                TXTvalue = fileExtentions.TXTvalue,
+                PDFvalue = fileExtentions.PDFvalue,
+                JPGvalue = fileExtentions.JPGvalue,
+                PNGvalue = fileExtentions.PNGvalue
             };
             return values;
 
