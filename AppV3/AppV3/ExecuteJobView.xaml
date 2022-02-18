@@ -27,6 +27,7 @@
             <ComboBoxItem  Content="XML" Tag="1" ></ComboBoxItem>
         </ComboBox>
         <Label Content="Format :" HorizontalAlignment="Left" Height="24" Margin="586,102,0,0" VerticalAlignment="Top" Width="172"/>
-
+        <Button Name="stopBackupButton" Content="{Binding stopBackup}" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-1.347,2.198" Click="ButtonStopJob_Click" Height="19"/>
+        <Button Name="pauseBackupButton" Content="{Binding pauseBackup}" HorizontalAlignment="Left" Margin="10,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPauseJob_Click" Height="19"/>
     </Grid>
 </Window>

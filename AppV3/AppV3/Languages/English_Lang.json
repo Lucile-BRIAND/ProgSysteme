@@ -19,5 +19,8 @@
   "ValidationJobSoftware": "Confirm",
   "ValidationRemoveJob": "Remove selected job",
   "ValidationCreateJob": "Create job",
-  "MainReturn": "Main Menu"
+  "MainReturn": "Main Menu",
+  "stopBackup": "Stop thread",
+  "pauseBackup" : "Pause thread"
+
 }

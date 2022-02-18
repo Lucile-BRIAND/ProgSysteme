@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,12 +33,19 @@ namespace AppV3
         private string logFileFormat;
         //JobModel jobToExecute;
         Thread[] Threads;
+        private static ManualResetEvent mre = new ManualResetEvent(false);
+        private Socket server;
 
         public ExecuteJobView()
         {
             InitializeComponent();
             this.DataContext = executeJobVM.getValues();
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
+
+            IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9050);
+            server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            server.Bind(localEndPoint);
+            server.Listen(10);
         }
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
@@ -56,7 +65,7 @@ namespace AppV3
                     if (executeJobDataGrid.SelectedIndex > -1)
                     {
                         myThread = new Thread(new ParameterizedThreadStart(StartBackup));
-                        myThread.Name = "thread" + counter.ToString();
+                        myThread.Name = "thread" + executeJobDataGrid.SelectedIndex.ToString();
                         Threads[counter] = myThread;
                         Threads[counter].Start(obj);
 
@@ -67,14 +76,27 @@ namespace AppV3
 
             }
         }
-
         private void StartBackup(object obj)
         {
             JobModel jobToExecute = (JobModel)obj;
             this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
             {
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                executeJobVM.ExecuteBackup(server, jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
             });
+
+        }
+
+        private void ButtonStopJob_Click(object sender, RoutedEventArgs e)
+        {
+            while (true)
+            {
+                mre.WaitOne();
+                //Do work.
+            }
+        }
+
+        private void ButtonPauseJob_Click(object sender, RoutedEventArgs e)
+        {
 
         }
 

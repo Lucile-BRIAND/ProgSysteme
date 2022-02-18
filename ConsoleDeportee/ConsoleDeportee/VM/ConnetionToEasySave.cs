@@ -17,12 +17,17 @@ namespace ConsoleDeportee.VM
 
             return server;
         }
-        public static List<JobModel> EcouterReseau(Socket client)
+        public static string EcouterReseau(Socket client)
         {
-            string message = Console.ReadLine();
-            client.Send(Encoding.UTF8.GetBytes(message));
-            List<JobModel> jobModelList = new List<JobModel>();
-            return jobModelList;
+
+            byte[] buffer = new byte[1024];
+            int iRx = client.Receive(buffer);
+            char[] chars = new char[iRx];
+
+            System.Text.Decoder d = System.Text.Encoding.UTF8.GetDecoder();
+            int charLen = d.GetChars(buffer, 0, iRx, chars, 0);
+            System.String recv = new System.String(chars);
+            return recv;
         }
 
         public static void Deconnecter(Socket socket)

@@ -7,6 +7,8 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
+using System.Net;
+using System.Net.Sockets;
 
 namespace AppV3.Models
 {
@@ -36,8 +38,11 @@ namespace AppV3.Models
         }
 
         //Writing content in the log file
-        public void WriteStatusLogMessage(string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy, string format)
+        public void WriteStatusLogMessage(Socket server, string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy, string format)
         {
+           
+            Socket client = server.Accept();
+            
             if (format == "json")
             {
                 //Adding values to the json keys
@@ -59,6 +64,8 @@ namespace AppV3.Models
                 dataLogSerialized += "\n";
                 //File.WriteAllText("StatusLogFile.json", json); //creates the file if it doesn't exist + overwrite all the text in it
                 File.AppendAllText("StatusLogFile.json", dataLogSerialized); //creates the file if it doesn't exist + appends text in it
+
+                client.Send(Encoding.UTF8.GetBytes(dataLogSerialized));
             }
             else if (format == "xml")
             {

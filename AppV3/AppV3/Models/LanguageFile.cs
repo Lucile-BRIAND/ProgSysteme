@@ -41,6 +41,9 @@ namespace AppV3.Models
         public string Type1 { get; set; }
         public string ExecuteType { get; set; }
         public string JobSoftware { get; set; }
+        public string stopBackup { get; set; }
+        public string pauseBackup { get; set; }
+  
 
         public string ValidationJobSoftware { get; set; }
         public string ValidationRemoveJob { get; set; }

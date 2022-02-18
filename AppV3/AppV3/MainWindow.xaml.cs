@@ -14,6 +14,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
+using System.Net;
+using System.Net.Sockets;
 
 namespace AppV3
 {

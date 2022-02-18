@@ -11,7 +11,7 @@ using System.Diagnostics;
 using System.Threading;
 using System.IO.MemoryMappedFiles;
 using System.Runtime.Serialization.Formatters.Binary;
-
+using System.Net.Sockets;
 
 namespace AppV3.VM
 {
@@ -22,7 +22,10 @@ namespace AppV3.VM
 
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
-        public string executeAllJobsButton { get; set; }
+        public string executeAllJobsButton { get; set; }      
+        public string stopBackup { get; set; }
+        public string pauseBackup { get; set; }
+
         public static byte[] ImageBytes;
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
@@ -39,7 +42,9 @@ namespace AppV3.VM
                 executeBackup = singletonLang.ReadFile().Execute,
                 mainMenu = singletonLang.ReadFile().MainReturn,
                 JobSoftwareLabel = singletonLang.ReadFile().JobSoftware,
-                executeAllJobsButton = singletonLang.ReadFile().Validation
+                executeAllJobsButton = singletonLang.ReadFile().Validation,
+                stopBackup = singletonLang.ReadFile().stopBackup,
+                pauseBackup = singletonLang.ReadFile().pauseBackup
             };
 
             return values;
@@ -49,13 +54,14 @@ namespace AppV3.VM
         {
             
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/local/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
+            P.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
             //int startCryptTime = DateTime.Now.Millisecond;
             P.Start();
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
-        public void ExecuteBackup(string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
+        public void ExecuteBackup(Socket server, string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
         {
             //Thread.Sleep(10000);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
@@ -81,7 +87,7 @@ namespace AppV3.VM
                     totalfileSize += newPath.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
-                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
+                slf.WriteStatusLogMessage(server, name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -99,14 +105,14 @@ namespace AppV3.VM
                     File.Copy(newPath, newPath.Replace(source, destination), true);
                     if (totalfileSize - fileSizeLeftToCopy == 0)
                     {
-                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
                     else
                     {
                         //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
-
+                    Thread.Sleep(5000);
                 }
                 CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
@@ -143,7 +149,7 @@ namespace AppV3.VM
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                    slf.WriteStatusLogMessage(server, name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -162,12 +168,12 @@ namespace AppV3.VM
                             //Appends the text in the status log file
                             if (totalfileSize - fileSizeLeftToCopy == 0)
                             {
-                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                             else
                             {
                                 //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                         }
                     }
@@ -181,12 +187,12 @@ namespace AppV3.VM
                         //Appends the text in the status log file
                         if (totalfileSize - fileSizeLeftToCopy == 0)
                         {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                         else
                         {
                             //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                     }
                 });
@@ -212,7 +218,7 @@ namespace AppV3.VM
                 string type = attribute.jobType;
                 string source = attribute.sourcePath;
                 string destination = attribute.targetPath;
-                ExecuteBackup(name, type, source, destination, JobSoftwareNameTextBox, format);
+              //  ExecuteBackup(name, type, source, destination, JobSoftwareNameTextBox, format);
             }
         }
     }
