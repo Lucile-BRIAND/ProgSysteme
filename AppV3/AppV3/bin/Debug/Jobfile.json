@@ -10,5 +10,11 @@
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
     "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "Test",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest"
   }
 ]

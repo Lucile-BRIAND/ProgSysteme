@@ -34,18 +34,21 @@ namespace AppV3
         //JobModel jobToExecute;
         Thread[] Threads;
         private static ManualResetEvent mre = new ManualResetEvent(false);
-        private Socket server;
+        
+        SocketManager SocketManage = SocketManager.GetInstance;
 
         public ExecuteJobView()
         {
             InitializeComponent();
             this.DataContext = executeJobVM.getValues();
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
+            Socket serveur = SocketManage.Connect();
+            Socket client = SocketManage.AcceptConnection(serveur);
+            MessageBox.Show("Connexion reussie");
+            SocketManage.socket = client;
+            
 
-            IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9050);
-            server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            server.Bind(localEndPoint);
-            server.Listen(10);
+
         }
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
@@ -81,7 +84,7 @@ namespace AppV3
             JobModel jobToExecute = (JobModel)obj;
             this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
             {
-                executeJobVM.ExecuteBackup(server, jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
+                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath, JobSoftwareNameTextBox.Text, logFileFormat);
             });
 
         }

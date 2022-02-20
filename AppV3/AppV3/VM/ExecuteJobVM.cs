@@ -35,6 +35,7 @@ namespace AppV3.VM
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
         LogFile lf = LogFile.GetInstance;
+        SocketManager socketmanage = SocketManager.GetInstance;
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -54,17 +55,19 @@ namespace AppV3.VM
         {
             
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/local/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
             P.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
             //int startCryptTime = DateTime.Now.Millisecond;
             P.Start();
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
-        public void ExecuteBackup(Socket server, string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
+        public void ExecuteBackup( string name, string type, string source, string destination, string JobSoftwareNameTextBox, string format)
         {
             //Thread.Sleep(10000);
+            double pourcentage=0;
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
+            Byte[] buffer;
 
             if (myProcesses.Length != 0)
             {
@@ -87,7 +90,7 @@ namespace AppV3.VM
                     totalfileSize += newPath.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
-                slf.WriteStatusLogMessage(server, name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
+                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -103,22 +106,29 @@ namespace AppV3.VM
 
                     nbfile++;
                     File.Copy(newPath, newPath.Replace(source, destination), true);
+
+                    pourcentage =((100 * fileSizeLeftToCopy) / totalfileSize);
+                    pourcentage = Math.Round(pourcentage);
+                    buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
+                    socketmanage.socket.Send(buffer);
+                    Trace.WriteLine("Le poucentage : "+pourcentage.ToString());
+                   //Thread.Sleep(1000);
+
                     if (totalfileSize - fileSizeLeftToCopy == 0)
                     {
-                        slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
                     else
                     {
                         //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                     }
-                    Thread.Sleep(5000);
+                    Thread.Sleep(2000);
                 }
                 CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
-
             }
             else if (type == "Differential" | type == "Differentielle")
             {
@@ -149,7 +159,7 @@ namespace AppV3.VM
                 //Appends the text in the status log file => state 0 : initialization
                 if (totalNbFileDifferential != 0)
                 {
-                    slf.WriteStatusLogMessage(server, name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                    slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                 }
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
@@ -168,12 +178,12 @@ namespace AppV3.VM
                             //Appends the text in the status log file
                             if (totalfileSize - fileSizeLeftToCopy == 0)
                             {
-                                slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                             else
                             {
                                 //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
                         }
                     }
@@ -187,12 +197,12 @@ namespace AppV3.VM
                         //Appends the text in the status log file
                         if (totalfileSize - fileSizeLeftToCopy == 0)
                         {
-                            slf.WriteStatusLogMessage(server, name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                         else
                         {
                             //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(server, name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
                     }
                 });

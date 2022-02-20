@@ -7,9 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name = "executeJobDataGrid" Margin="164,30,164,65" SelectionChanged="DataGrid_SelectionChanged"/>
+        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Center" Height="51" Margin="0,61,0,0" VerticalAlignment="Top" Width="380" ValueChanged="pbstatus1_ValueChanged"/>
+        <DataGrid Name = "executeJobDataGrid" Margin="354,135,210,115" SelectionChanged="DataGrid_SelectionChanged"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="250,388,0,0" VerticalAlignment="Top" Height="36" Width="90" Click="ButtonPauseJob_Click"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="448,388,0,0" VerticalAlignment="Top" Height="36" Width="84" Click="ButtonStopJob_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="33,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
+        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="74,288,0,0" VerticalAlignment="Top" Height="58" Width="221" FontSize="24"/>
 
     </Grid>
 </Window>

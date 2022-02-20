@@ -9,6 +9,8 @@ using System.Xml;
 using System.Xml.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Diagnostics;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace AppV3.Models
 {
@@ -18,6 +20,7 @@ namespace AppV3.Models
         //
         //Private attributes
         private static StatusLogFile statusInstance = null;
+        private SocketManager socketManager = SocketManager.GetInstance;
 
         //The private constructor is only accessible from this class
         private StatusLogFile()
@@ -38,10 +41,11 @@ namespace AppV3.Models
         }
 
         //Writing content in the log file
-        public void WriteStatusLogMessage(Socket server, string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy, string format)
+        public void WriteStatusLogMessage(string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy, string format)
         {
-           
-            Socket client = server.Accept();
+            IPEndPoint ipEndPoint = (IPEndPoint)socketManager.socket.LocalEndPoint;
+            Trace.WriteLine(ipEndPoint.Address.ToString());
+            //socketManager.socket.Accept();
             
             if (format == "json")
             {
@@ -65,7 +69,8 @@ namespace AppV3.Models
                 //File.WriteAllText("StatusLogFile.json", json); //creates the file if it doesn't exist + overwrite all the text in it
                 File.AppendAllText("StatusLogFile.json", dataLogSerialized); //creates the file if it doesn't exist + appends text in it
 
-                client.Send(Encoding.UTF8.GetBytes(dataLogSerialized));
+
+               
             }
             else if (format == "xml")
             {
