@@ -1,55 +1,25 @@
 [
   {
-    "jobName": "lolm",
-    "jobType": "Differential",
-    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
-    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest"
-  },
-  {
-    "jobName": "tesst3",
-    "jobType": "Complete",
-    "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
-    "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2"
-  },
-  {
-    "jobName": "Testeeeeee",
-    "jobType": "Differential",
-    "sourcePath": "D:\\blog",
-    "targetPath": "C:\\Users\\Bruno\\Videos"
-  },
-  {
-    "jobName": "fefeefef",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Documents",
-    "targetPath": "C:\\Users\\Bruno\\Pictures\\Camera Roll"
-  },
-  {
-    "jobName": "teteegthyh",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Documents\\ee",
-    "targetPath": "C:\\Users\\Bruno\\Documents\\Enregistrements audio"
-  },
-  {
-    "jobName": "xxxxxx",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Pictures\\Camera Roll",
-    "targetPath": "C:\\Users\\Bruno\\Pictures\\Camera Roll"
-  },
-  {
-    "jobName": "polmp",
-    "jobType": "Differential",
-    "sourcePath": "C:\\Users\\Bruno\\Pictures\\Camera Roll",
-    "targetPath": "C:\\Users\\Bruno\\Documents\\Appa"
-  },
-  {
-    "jobName": "eeeeeee",
-    "jobType": "Differential",
-    "sourcePath": "C:/Users/Bruno/Pictures/Camera Roll",
-    "targetPath": "C:/Users/Bruno/Documents/Appa"
-  },
-  {
     "jobName": "JOB",
     "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "JOB2",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "JOB3",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination3"
+  },
+  {
+    "jobName": "JobDiff",
+    "jobType": "Differential",
     "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
     "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
   }

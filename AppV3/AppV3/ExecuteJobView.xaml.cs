@@ -28,8 +28,6 @@ namespace AppV3
         ExecuteJobVM executeJobVM = new ExecuteJobVM();
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
-        private string logFileFormat;
-        //JobModel jobToExecute;
         Thread[] Threads;
 
         public ExecuteJobView()
@@ -41,47 +39,28 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            Threads = new Thread[executeJobDataGrid.SelectedItems.Count];
-            int counter = 0;
-            Thread myThread;
+            if (executeJobDataGrid.SelectedIndex > -1)
+            {
+                int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+                List<JobModel> jobList = new List<JobModel>() { };
 
-            if (executeJobDataGrid.SelectedItem == null)
-            {
-                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
-            }
-            else
-            {
-                foreach (JobModel obj in executeJobDataGrid.SelectedItems)
+                if (executeJobDataGrid.SelectedItem == null)
                 {
-                    if (executeJobDataGrid.SelectedIndex > -1)
-                    {
-                        myThread = new Thread(new ParameterizedThreadStart(StartBackup));
-                        myThread.Name = "thread" + counter.ToString();
-                        myThread.IsBackground = true;
-                        Threads[counter] = myThread;
-                        Threads[counter].Start(obj);
-
-                    }
-                    counter++;
-                    Thread.Sleep(1000);
+                    MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
                 }
+                else
+                {
+                    foreach (JobModel obj in executeJobDataGrid.SelectedItems)
+                    {
+                        jobList.Add(obj);
+                    }
 
+                    Parallel.ForEach(jobList, job =>
+                    {
+                        executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath);
+                    });
+                }
             }
-        }
-
-        private void StartBackup(object obj)
-        {
-            JobModel jobToExecute = (JobModel)obj;
-            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
-            {
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath);
-            });
-
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
 
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
@@ -90,11 +69,6 @@ namespace AppV3
             Close();
         }
 
-        //private void ExecuteAllBackupButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    executeJobVM.ExecutAllBackup(JobSoftwareNameTextBox.Text, logFileFormat);
-        //}
-
         private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
 
@@ -102,7 +76,6 @@ namespace AppV3
 
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
-  
 
         }
 

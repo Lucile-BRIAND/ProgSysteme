@@ -12,7 +12,7 @@
         <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="189,358,427.6,23"/>
 
         <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="601,30,0,0" VerticalAlignment="Top" Width="128" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508"/>
         <Button Content="Play" HorizontalAlignment="Left" Margin="523,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPlay_Click"/>
         <Button Content="Pause" HorizontalAlignment="Left" Margin="620,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Click"/>
         <Button Content="STOP" HorizontalAlignment="Left" Margin="709,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStop_Click"/>

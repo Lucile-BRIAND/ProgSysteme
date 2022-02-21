@@ -12,30 +12,28 @@ using System.Threading;
 using System.IO.MemoryMappedFiles;
 using System.Runtime.Serialization.Formatters.Binary;
 
-
 namespace AppV3.VM
 {
     class ExecuteJobVM
     {
-        //public string jobSoftwareName;
         public string executeBackup { get; set; }
-
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
         public string executeAllJobsButton { get; set; }
 
         FileExtentions fileExtentions = FileExtentions.GetInstance;
+        FileSize fileSize = FileSize.GetInstance;
 
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
         public string JobSoftwareNameTextBox;
         private string format;
 
-
-
+        private static object _lock;
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
         LogFile lf = LogFile.GetInstance;
+
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -80,8 +78,11 @@ namespace AppV3.VM
 
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
+
         public void ExecuteBackup(string name, string type, string source, string destination)
         {
+            _lock = new object();
+
             this.format = lf.GetFormat();
             Trace.WriteLine(this.format);
 
@@ -93,7 +94,6 @@ namespace AppV3.VM
                 this.JobSoftwareNameTextBox = "";
             }
             Trace.WriteLine(format);
-            //Thread.Sleep(10000);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
 
             if (myProcesses.Length != 0)
@@ -101,7 +101,6 @@ namespace AppV3.VM
                 return;
             }
             int startTranferTime = DateTime.Now.Millisecond;
-            //CallCryptoSoft(source, DateTime.Now.Millisecond);
 
             int nbfile = 0; //number of files that have been copied
             StatusLogFile slf = StatusLogFile.GetInstance;
@@ -113,7 +112,8 @@ namespace AppV3.VM
 
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    totalfileSize += newPath.Length;
+                    FileInfo doc = new FileInfo(newPath);
+                    totalfileSize += doc.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
                 slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
@@ -127,23 +127,86 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-
-                    fileSizeLeftToCopy += newPath.Length;
-
-                    nbfile++;
-                    File.Copy(newPath, newPath.Replace(source, destination), true);
-                    if (totalfileSize - fileSizeLeftToCopy == 0)
+                    FileInfo doc = new FileInfo(newPath);
+                    if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                     {
-                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                    }
-                    else
-                    {
-                        //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
                     }
 
+                    else if (doc.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
+                    {
+                        lock (_lock) //LOCK: set the transfer status as occupied
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        Thread.Sleep(5000); //DEBUG
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock) //LOCK: reset the transfer status as free to use
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+
+                    else if (doc.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                    {
+                        while (fileSize.FileIsTransfering) //wait until the transfer status is free
+                        {
+                            Thread.Sleep(20);
+                        }
+
+                        lock (_lock) //LOCK: set the transfer status as occupied
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock) //LOCK: reset the transfer status as free to use
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+                    
                 }
-                //CallCryptoSoft(source, DateTime.Now.Millisecond);
+
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
@@ -186,10 +249,102 @@ namespace AppV3.VM
                     FileInfo originalFile = new FileInfo(originalFileLocation);
                     FileInfo destFile = new FileInfo(originalFileLocation.Replace(source, destination));
 
-                    if (destFile.Exists)
+                    if (destFile.Exists) //If the file already exists in the destination
                     {
-                        if (originalFile.Length > destFile.Length)
+                        if (originalFile.Length > destFile.Length) //If the source file is different from the destination file
                         {
+                            if (originalFile.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
+                            {
+                                //Copies the file
+                                originalFile.CopyTo(destFile.FullName, true);
+                                nbfile++;
+                                fileSizeLeftToCopy += originalFile.Length;
+
+                                //Appends the text in the status log file
+                                if (totalfileSize - fileSizeLeftToCopy == 0)
+                                {
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+                                else
+                                {
+                                    //Appends the text in the status log file
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+
+                            }
+
+                            else if (originalFile.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
+                            {
+                                lock (_lock) //LOCK: set the transfer status as occupied
+                                {
+                                    fileSize.FileIsTransfering = true;
+                                }
+
+                                //Copies the file
+                                originalFile.CopyTo(destFile.FullName, true);
+                                nbfile++;
+                                fileSizeLeftToCopy += originalFile.Length;
+
+                                //Appends the text in the status log file
+                                if (totalfileSize - fileSizeLeftToCopy == 0)
+                                {
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+                                else
+                                {
+                                    //Appends the text in the status log file
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+
+                                lock (_lock) //LOCK: reset the transfer status as free to use
+                                {
+                                    fileSize.FileIsTransfering = false;
+                                }
+                            }
+
+                            else if (originalFile.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                            {
+                                while (fileSize.FileIsTransfering) //wait until the transfer status is free
+                                {
+                                    Thread.Sleep(20);
+                                }
+
+                                lock (_lock) //LOCK: set the transfer status as occupied
+                                {
+                                    fileSize.FileIsTransfering = true;
+                                }
+
+                                //Copies the file
+                                originalFile.CopyTo(destFile.FullName, true);
+                                nbfile++;
+                                fileSizeLeftToCopy += originalFile.Length;
+
+                                //Appends the text in the status log file
+                                if (totalfileSize - fileSizeLeftToCopy == 0)
+                                {
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+                                else
+                                {
+                                    //Appends the text in the status log file
+                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                                }
+
+                                lock (_lock) //LOCK: reset the transfer status as free to use
+                                {
+                                    fileSize.FileIsTransfering = false;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //Creates the associate directory
+                        Directory.CreateDirectory(destFile.DirectoryName);
+
+                        if (originalFile.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
+                        {
+                            //Copies the file
                             originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
                             fileSizeLeftToCopy += originalFile.Length;
@@ -204,28 +359,75 @@ namespace AppV3.VM
                                 //Appends the text in the status log file
                                 slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                             }
-                        }
-                    }
-                    else
-                    {
-                        Directory.CreateDirectory(destFile.DirectoryName);
-                        originalFile.CopyTo(destFile.FullName, false);
-                        nbfile++;
-                        fileSizeLeftToCopy += originalFile.Length;
 
-                        //Appends the text in the status log file
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
                         }
-                        else
+
+                        else if (originalFile.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
                         {
+                            lock (_lock) //LOCK: set the transfer status as occupied
+                            {
+                                fileSize.FileIsTransfering = true;
+                            }
+
+                            Thread.Sleep(5000); //DEBUG
+                            //Copies the file
+                            originalFile.CopyTo(destFile.FullName, true);
+                            nbfile++;
+                            fileSizeLeftToCopy += originalFile.Length;
+
                             //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            if (totalfileSize - fileSizeLeftToCopy == 0)
+                            {
+                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            }
+                            else
+                            {
+                                //Appends the text in the status log file
+                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            }
+
+                            lock (_lock) //LOCK: reset the transfer status as free to use
+                            {
+                                fileSize.FileIsTransfering = false;
+                            }
+                        }
+
+                        else if (originalFile.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                        {
+                            while (fileSize.FileIsTransfering) //wait until the transfer status is free
+                            {
+                                Thread.Sleep(20);
+                            }
+
+                            lock (_lock) //LOCK: set the transfer status as occupied
+                            {
+                                fileSize.FileIsTransfering = true;
+                            }
+
+                            //Copies the file
+                            originalFile.CopyTo(destFile.FullName, true);
+                            nbfile++;
+                            fileSizeLeftToCopy += originalFile.Length;
+
+                            //Appends the text in the status log file
+                            if (totalfileSize - fileSizeLeftToCopy == 0)
+                            {
+                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            }
+                            else
+                            {
+                                //Appends the text in the status log file
+                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            }
+
+                            lock (_lock) //LOCK: reset the transfer status as free to use
+                            {
+                                fileSize.FileIsTransfering = false;
+                            }
                         }
                     }
                 });
-                //CallCryptoSoft(source, DateTime.Now.Millisecond);
+
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
@@ -238,8 +440,6 @@ namespace AppV3.VM
             var contentFile = System.IO.File.ReadAllText("Jobfile.json");
             var jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
 
-
-
             foreach (JobModel attribute in jobModelList)
             {
 
@@ -250,13 +450,14 @@ namespace AppV3.VM
                 ExecuteBackup(name, type, source, destination);
             }
         }
+
         public void GetFileExtentions(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
         {
             Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG);
 
-            fileExtentions.extentions.Clear();
+            fileExtentions.extentions.Clear(); //Clear the previous list of extentions
 
-            if (valueTXT)
+            if (valueTXT) //if true
             {
                 fileExtentions.extentions.Add("*.txt");
                 fileExtentions.TXTvalue = true;
@@ -266,7 +467,7 @@ namespace AppV3.VM
                 fileExtentions.TXTvalue = false;
             }
 
-            if (valuePDF)
+            if (valuePDF) //if true
             {
                 fileExtentions.extentions.Add("*.pdf");
                 fileExtentions.PDFvalue = true;
@@ -276,7 +477,7 @@ namespace AppV3.VM
                 fileExtentions.PDFvalue = false;
             }
 
-            if (valueJPG)
+            if (valueJPG) //if true
             {
                 fileExtentions.extentions.Add("*.jpg");
                 fileExtentions.JPGvalue = true;
@@ -286,7 +487,7 @@ namespace AppV3.VM
                 fileExtentions.JPGvalue = false;
             }
 
-            if (valuePNG)
+            if (valuePNG) //if true
             {
                 fileExtentions.extentions.Add("*.png");
                 fileExtentions.PNGvalue = true;

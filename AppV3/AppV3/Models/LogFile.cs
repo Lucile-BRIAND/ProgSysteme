@@ -8,6 +8,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Diagnostics;
+using System.Threading;
 
 namespace AppV3.Models
 {
@@ -19,6 +20,7 @@ namespace AppV3.Models
         private static LogFile logInstance = null; //default unique instance
         private string format;
         private string JobSoftware;
+        private Semaphore semaphore = new Semaphore(1,1);
 
         //Private constructor, only accessible from this class
         private LogFile()
@@ -65,7 +67,9 @@ namespace AppV3.Models
         //Writing content in the log file
         public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int nbFile, long fileSize, int timeCryptoSoft, int timeExecuteBackup, string format)
         {
-            
+            //Blocks until the current thread is ended
+            semaphore.WaitOne();
+
             string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
@@ -136,7 +140,9 @@ namespace AppV3.Models
                     xDocument.Save("DailyLog.xml");
                 }
             }
-           
+
+            //Releases the semaphore
+            semaphore.Release();
         }
 
     }
