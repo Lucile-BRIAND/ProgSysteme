@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace AppV3.Models
 {
-    class FileExtentions
+    class FileExtentions //SINGLETON
     {
         //Instance null by default 
         private static FileExtentions extentionInstance = null;

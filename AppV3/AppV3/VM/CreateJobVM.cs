@@ -1,35 +1,25 @@
 ﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AppV3.Models;
 
 namespace AppV3.VM
 {
     class CreateJobVM
     {
-        public string jobName;
-        private string jobType;
-        private string sourcePath;
-        private string targetPath;
         public string name { get; set; }
-
         public string mainMenu { get; set; }
         public string executeBackup { get; set; }
-
         public string createJob { get; set; }
         public string target { get; set; }
-
         public string source { get; set; }
         public string type { get; set; }
         public string type1 { get; set; }
         public string type2 { get; set; }
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
+
         public CreateJobVM getValues()
         {
+            //Gets the selected language for the CreateJobView elements
             var values = new CreateJobVM()
             {
                 executeBackup = singletonLang.ReadFile().Execute,
@@ -44,12 +34,11 @@ namespace AppV3.VM
             };
 
             return values;
-
         }
-    
 
         public void SaveJob(string jobname, string jobtype, string sourcepath, string targetpath)
         {
+            //Saves the entered data into a JobModel
             JobModel userData = new JobModel();
             userData.jobName = jobname;
             userData.jobType = jobtype;
@@ -58,8 +47,10 @@ namespace AppV3.VM
             ExistingJob existingJob = new ExistingJob();
             existingJob.WriteExistingJobs(userData);
         }
+
         public string DisplayJob()
         {
+            //Displays all jobs
              return System.IO.File.ReadAllText("Jobfile.json");
         }
     }

@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppV3.Models
 {
-    class FileSize
+    class FileSize //SINGLETON
     {
         //Instance null by default 
         private static FileSize fileSizeInstance = null;

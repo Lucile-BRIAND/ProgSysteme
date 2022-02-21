@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AppV3.Models;
 
 namespace AppV3.VM
@@ -10,6 +6,8 @@ namespace AppV3.VM
     class ChooseLanguageVM
     {
         LanguageFile singletonLang = LanguageFile.GetInstance;
+
+        //Saves the language choice in the language Singleton
         public LanguageFile SaveLanguage(int index)
         {
             switch (index) {

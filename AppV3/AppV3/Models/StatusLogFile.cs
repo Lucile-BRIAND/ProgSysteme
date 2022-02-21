@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
 using System.Xml;
@@ -11,10 +9,8 @@ using System.Threading;
 
 namespace AppV3.Models
 {
-    class StatusLogFile //: FileAbstractClass
+    class StatusLogFile //SINGLETON
     {
-        //THIS CLASS IS A SINGLETON
-        //
         //Private attributes
         private static StatusLogFile statusInstance = null;
         private Semaphore semaphore = new Semaphore(1, 1);
@@ -67,16 +63,21 @@ namespace AppV3.Models
             }
             else if (format == "xml")
             {
-                if (!File.Exists("StatusLogFile.xml"))
+                if (!File.Exists("StatusLogFile.xml")) //If the file doesn't exist
                 {
+                    //Creates the file and the associated settings
                     XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                     xmlWriterSettings.Indent = true;
                     xmlWriterSettings.NewLineOnAttributes = true;
+
+                    //Writes into the file
                     using (XmlWriter xmlWriter = XmlWriter.Create("StatusLogFile.xml", xmlWriterSettings))
                     {
+                        //Start node
                         xmlWriter.WriteStartDocument();
                         xmlWriter.WriteStartElement("StatusLogFile");
 
+                        //Middle pieces of information
                         xmlWriter.WriteStartElement("Job");
                         xmlWriter.WriteElementString("JobName", jobName);
                         xmlWriter.WriteElementString("Type", jobType);
@@ -89,6 +90,7 @@ namespace AppV3.Models
                         xmlWriter.WriteElementString("FileSizeLeftToCopy", fileSizeLeftToCopy.ToString());
                         xmlWriter.WriteEndElement();
 
+                        //Ending node and closing
                         xmlWriter.WriteEndElement();
                         xmlWriter.WriteEndDocument();
                         xmlWriter.Flush();
@@ -97,9 +99,10 @@ namespace AppV3.Models
                 }
                 else
                 {
+                    //Search for the existing file and writing
                     XDocument xDocument = XDocument.Load("StatusLogFile.xml");
                     XElement root = xDocument.Element("StatusLogFile");
-                    IEnumerable<XElement> rows = root.Descendants("Job");
+                    IEnumerable<XElement> rows = root.Descendants("Job"); //New middle node
                     XElement firstRow = rows.First();
                     firstRow.AddBeforeSelf(
                        new XElement("Job",

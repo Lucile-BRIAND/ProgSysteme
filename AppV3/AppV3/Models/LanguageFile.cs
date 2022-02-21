@@ -1,16 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace AppV3.Models
 {
-    class LanguageFile : INotifyPropertyChanged
+    class LanguageFile : INotifyPropertyChanged //SINGLETON
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -42,7 +37,6 @@ namespace AppV3.Models
         public string Type1 { get; set; }
         public string ExecuteType { get; set; }
         public string JobSoftware { get; set; }
-
         public string ValidationJobSoftware { get; set; }
         public string ValidationRemoveJob { get; set; }
         public string ValidationCreateJob { get; set; }
@@ -52,13 +46,11 @@ namespace AppV3.Models
         public string ExtentionLabel { get; set; }
         public string MaximumFileSizeLabel { get; set; }
 
-
-
-
         public string MainReturn { get; set; }
 
         //private constructor 
         private LanguageFile() { }
+
         // Initializes the unique instance
         public static LanguageFile GetInstance
         {

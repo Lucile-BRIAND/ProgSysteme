@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AppV3.Models;
 using Newtonsoft.Json;
 
@@ -15,6 +12,7 @@ namespace AppV3.VM
         public event PropertyChangedEventHandler PropertyChanged;
         LanguageFile singletonLang = LanguageFile.GetInstance;
         FileExtentions fileExtentions = FileExtentions.GetInstance;
+
         public string jobSoftware { get; set; }
         public string chooseAction { get; set; }
         public string createBackup { get; set; }
@@ -36,12 +34,12 @@ namespace AppV3.VM
         public string MaximumFileSizeLabel { get; set; }
 
 
-
         public string jobSoftwareName;
 
 
         public MainVM getValues()
         {
+            //Binds the selected language to all view elements
             var values = new MainVM()
             {
                 chooseAction = singletonLang.ReadFile().Main,
@@ -82,15 +80,16 @@ namespace AppV3.VM
             }
         }
 
-
         protected void OnPropertyChanged(string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
         public virtual void Dispose() { }
+
         public static List<JobModel> DisplayJobs()
         {
+            //Displays all the created jobs
             string file = "Jobfile.json";
             List<JobModel> jobModelList = new List<JobModel>();
             var contentFile = System.IO.File.ReadAllText(file);

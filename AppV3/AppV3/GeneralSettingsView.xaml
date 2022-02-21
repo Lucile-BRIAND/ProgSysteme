@@ -28,9 +28,9 @@
         <CheckBox Content=".txt" x:Name="CheckboxTXT" IsChecked="{Binding TXTvalue}" HorizontalAlignment="Left" Margin="293,209,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
         <TextBlock HorizontalAlignment="Left" Margin="64,290,0,0" TextWrapping="Wrap" Text="{Binding MaximumFileSizeLabel}" VerticalAlignment="Top" Width="181" Height="42"/>
         <ComboBox Name="maximumFileSizeComboBox" HorizontalAlignment="Left" Height="22" Margin="293,300,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="MaximumFileSizeComboBox_SelectionChanged">
-            <ComboBoxItem  Content="100" Tag="0"/>
-            <ComboBoxItem  Content="1000" Tag="1" />
-            <ComboBoxItem  Content="10000" Tag="2" />
+            <ComboBoxItem  Content="1" Tag="0"/>
+            <ComboBoxItem  Content="10" Tag="1" />
+            <ComboBoxItem  Content="100" Tag="2" />
         </ComboBox>
 
     </Grid>

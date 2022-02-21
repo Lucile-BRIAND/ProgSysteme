@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
 using System.Xml;
@@ -12,10 +10,8 @@ using System.Threading;
 
 namespace AppV3.Models
 {
-    class LogFile
+    class LogFile //SINGLETON
     {
-        //THIS CLASS IS A SINGLETON
-        //
         //Private attributes
         private static LogFile logInstance = null; //default unique instance
         private string format;
@@ -70,6 +66,7 @@ namespace AppV3.Models
             //Blocks until the current thread is ended
             semaphore.WaitOne();
 
+            //Formats several parameters
             string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
@@ -86,26 +83,31 @@ namespace AppV3.Models
                     FileSize = fileSizeFormated,
                     FileTransferTime = timeExecuteBackupFormated,
                     timeCryptoSoft = timeCryptoSoftFormated,
-                    Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //current timestamp in the proper format
+                    Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //Current timestamp in the proper format
                 };
 
                 //Reserializing the json file and writing
                 string dataLogSerialized = JsonConvert.SerializeObject(dataLog, Newtonsoft.Json.Formatting.Indented);
                 dataLogSerialized += "\n";
-                File.AppendAllText("DailyLog.json", dataLogSerialized); //creates the file if it doesn't exist + appends text in it
+                File.AppendAllText("DailyLog.json", dataLogSerialized); //Creates the file if it doesn't exist + appends text in it
             }
             else if (format == "xml")
             {
-                if (!File.Exists("DailyLog.xml"))
+                if (!File.Exists("DailyLog.xml")) //If the file doesn't exist
                 {
+                    //Creates the file and the associated settings
                     XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
                     xmlWriterSettings.Indent = true;
                     xmlWriterSettings.NewLineOnAttributes = true;
+
+                    //Writes into the file
                     using (XmlWriter xmlWriter = XmlWriter.Create("DailyLog.xml", xmlWriterSettings))
                     {
+                        //Start node
                         xmlWriter.WriteStartDocument();
                         xmlWriter.WriteStartElement("DailyLogs");
 
+                        //Middle pieces of information
                         xmlWriter.WriteStartElement("Job");
                         xmlWriter.WriteElementString("JobName", jobName);
                         xmlWriter.WriteElementString("SourcePath", sourcePath);
@@ -116,6 +118,7 @@ namespace AppV3.Models
                         xmlWriter.WriteElementString("Date", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                         xmlWriter.WriteEndElement();
 
+                        //Ending node and closing
                         xmlWriter.WriteEndElement();
                         xmlWriter.WriteEndDocument();
                         xmlWriter.Flush();
@@ -124,9 +127,10 @@ namespace AppV3.Models
                 }
                 else
                 {
+                    //Search for the existing file and writing
                     XDocument xDocument = XDocument.Load("DailyLog.xml");
                     XElement root = xDocument.Element("DailyLogs");
-                    IEnumerable<XElement> rows = root.Descendants("Job");
+                    IEnumerable<XElement> rows = root.Descendants("Job"); //New middle node
                     XElement firstRow = rows.First();
                     firstRow.AddBeforeSelf(
                        new XElement("Job",
