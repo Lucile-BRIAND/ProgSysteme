@@ -1,0 +1,21 @@
+﻿<Window x:Class="AppV3.ExecuteJobView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppV3"
+        mc:Ignorable="d"
+        Title="ExecuteJobView" Height="450" Width="800">
+
+    <Grid Background="White">
+
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="189,358,427.6,23"/>
+
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="601,30,0,0" VerticalAlignment="Top" Width="128" Height="38" Click="ButtonMainMenu_Click"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="Play" HorizontalAlignment="Left" Margin="523,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPlay_Click"/>
+        <Button Content="Pause" HorizontalAlignment="Left" Margin="620,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Click"/>
+        <Button Content="STOP" HorizontalAlignment="Left" Margin="709,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStop_Click"/>
+
+    </Grid>
+</Window>

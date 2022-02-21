@@ -1,0 +1,2156 @@
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 1,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 2
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 1
+}
+{
+  "Name": "tesst3",
+  "Type": "Differential",
+  "sourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "targetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "state": "ACTIVE",
+  "totalFilesToCopy": 2,
+  "totalFilesSize": 1000,
+  "nbFilesLeftToDo": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 10
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 4
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "STARTING",
+  "TotalFilesToCopy": 1,
+  "TotalFilesSize": 6,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 6
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "END",
+  "TotalFilesToCopy": 1,
+  "TotalFilesSize": 6,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 10
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 4
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 10
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 4
+}
+{
+  "Name": "lolm",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 10,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 99
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 53
+}
+{
+  "Name": "tesst3",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/Bruno/Documents/SourceB/Source",
+  "TargetPath": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 99,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}

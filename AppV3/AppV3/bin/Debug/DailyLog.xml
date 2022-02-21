@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DailyLogs>
+  <Job>
+    <JobName>lolm</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest</TargetPath>
+    <FileSize>0</FileSize>
+    <FileTransferTime>664 ms</FileTransferTime>
+    <CryptTime>619 ms</CryptTime>
+    <Date>18/02/2022 10:27:45</Date>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <FileSize>99</FileSize>
+    <FileTransferTime>248 ms</FileTransferTime>
+    <CryptTime>207 ms</CryptTime>
+    <Date>18/02/2022 10:27:45</Date>
+  </Job>
+  <Job>
+    <JobName>lolm</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest</TargetPath>
+    <FileSize>0</FileSize>
+    <FileTransferTime>-1220 ms</FileTransferTime>
+    <CryptTime>-366 ms</CryptTime>
+    <Date>18/02/2022 10:21:39</Date>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <FileSize>99</FileSize>
+    <FileTransferTime>-656 ms</FileTransferTime>
+    <CryptTime>200 ms</CryptTime>
+    <Date>18/02/2022 10:21:39</Date>
+  </Job>
+  <Job>
+    <JobName>lolm</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest</TargetPath>
+    <FileSize>0</FileSize>
+    <FileTransferTime>-927 ms</FileTransferTime>
+    <CryptTime>-1096 ms</CryptTime>
+    <Date>18/02/2022 10:15:52</Date>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <FileSize>99</FileSize>
+    <FileTransferTime>-534 ms</FileTransferTime>
+    <CryptTime>-700 ms</CryptTime>
+    <Date>18/02/2022 10:15:52</Date>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <FileSize>99</FileSize>
+    <FileTransferTime>363 ms</FileTransferTime>
+    <CryptTime>295 ms</CryptTime>
+    <Date>08/02/2022 11:20:58</Date>
+  </Job>
+</DailyLogs>
