@@ -618,3 +618,13 @@
   "timeCryptoSoft": "1616 ms",
   "Date": "18/02/2022 10:30:56"
 }
+{
+  "Name": "JOB",
+  "FileSource": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "FileTarget": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "NbFile": 4,
+  "FileSize": "272 B",
+  "FileTransferTime": "421 ms",
+  "timeCryptoSoft": "207 ms",
+  "Date": "21/02/2022 09:37:22"
+}

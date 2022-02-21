@@ -46,5 +46,11 @@
     "jobType": "Differential",
     "sourcePath": "C:/Users/Bruno/Pictures/Camera Roll",
     "targetPath": "C:/Users/Bruno/Documents/Appa"
+  },
+  {
+    "jobName": "JOB",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
   }
 ]

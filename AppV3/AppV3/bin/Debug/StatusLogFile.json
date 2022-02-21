@@ -1780,3 +1780,58 @@
   "NbFilesLeftToDo": 0,
   "FileSizeLeftToCopy": 0
 }
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 206
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 151
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
