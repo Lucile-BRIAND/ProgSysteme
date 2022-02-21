@@ -21,5 +21,6 @@
   "ValidationCreateJob": "Créer la sauvegarde",
   "MainReturn": "Menu Principal",
   "stopBackup": "Stop thread",
-  "pauseBackup": "Pause thread"
+  "pauseBackup": "Pause thread",
+  "startConnection": "Connecte le client"
 }	

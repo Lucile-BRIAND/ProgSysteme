@@ -17,6 +17,7 @@
         <TextBlock x:Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="64,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="135" Margin="64,252,0,0" VerticalAlignment="Top" Width="636"/>
         <Image Source="easySaveLogo.png" HorizontalAlignment="Left" Height="232" Margin="232,15,0,0" VerticalAlignment="Top" Width="246"/>
+        <Button Name="startClientConnection"  Content="{Binding startConnection}" HorizontalAlignment="Left" Margin="602,132,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="startClientConnection_Click"/>
 
 
     </Grid>

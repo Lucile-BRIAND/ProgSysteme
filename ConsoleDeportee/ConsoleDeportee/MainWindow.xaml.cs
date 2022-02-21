@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -26,14 +27,15 @@ namespace ConsoleDeportee
     public partial class MainWindow : Window
     {
         Socket cokk;
+        BackgroundWorker worker = new BackgroundWorker();
         public MainWindow()
         {
-            
+
             InitializeComponent();
             ConnetionToEasySave connexionToSave = new ConnetionToEasySave();
             MessageBox.Show("Tentative de connexion");
             cokk = connexionToSave.Init();
-            
+
 
 
             //executeJobDataGrid.ItemsSource = ConnetionToEasySave.EcouterReseau(connection);
@@ -47,15 +49,15 @@ namespace ConsoleDeportee
 
         private void ButtonPauseJob_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("test");
 
-             
-           
+
         }
 
         private void ButtonStopJob_Click(object sender, RoutedEventArgs e)
         {
 
-            executeJobDataGrid.ItemsSource = ConnetionToEasySave.EcouterReseau(cokk); 
+            executeJobDataGrid.ItemsSource = ConnetionToEasySave.EcouterReseau(cokk);
         }
 
         private void pbstatus1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -65,47 +67,44 @@ namespace ConsoleDeportee
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Thread listener = new Thread(new ThreadStart(test));
-            //listener.IsBackground = true;
-            //listener.Start();
             BackgroundWorker worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
-            worker.DoWork += worker_DoWork;
+            worker.WorkerSupportsCancellation = true;
             worker.ProgressChanged += worker_ProgressChanged;
+            worker.DoWork += worker_DoWork;
+            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
             worker.RunWorkerAsync();
-
-
-
         }
         void worker_DoWork(object sender, DoWorkEventArgs e)
         {
+            var worker = sender as BackgroundWorker;
+
             for (int i = 1; i <= 100; i++)
             {
-
-                (sender as BackgroundWorker).ReportProgress(i);
-
-                Thread.Sleep(2050);
-
-            }
+                string value = ConnetionToEasySave.EcouterReseau(cokk);
+                worker.ReportProgress(Int32.Parse(value));
+                Thread.Sleep(2200);
+                if (worker.CancellationPending)
+                {
+                    e.Cancel = true;
+                    worker.CancelAsync();
+                    break;
+                }
+            }    
         }
 
         void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            //initialisation de la barre de progression avec le pourcentage de progression
-            string value = ConnetionToEasySave.EcouterReseau(cokk);
-            
-            //pbstatus1.Value = e.ProgressPercentage;
-            pbstatus1.Value = Int64.Parse(value);
-            //Affichage de la progression sur un label
-            lb_etat_prog_server.Content = value;
-            
-            if(value == "100")
-            {
-                return;
-            }
-
-
+            Trace.WriteLine(e.ProgressPercentage);
+            pbstatus1.Value = e.ProgressPercentage;
+            lb_etat_prog_server.Content = e.ProgressPercentage;
         }
+
+        private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            MessageBox.Show("It's done !");
+        }
+
         public void test()
         {
             this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()

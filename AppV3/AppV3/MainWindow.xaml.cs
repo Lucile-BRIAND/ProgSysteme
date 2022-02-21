@@ -64,5 +64,14 @@ namespace AppV3
             this.DataContext = mainVM.getValues();
 
         }
+
+        private void startClientConnection_Click(object sender, RoutedEventArgs e)
+        {
+            SocketManager socketManage = SocketManager.GetInstance;
+            Socket serveur = socketManage.Connect();
+            Socket client = socketManage.AcceptConnection(serveur);
+            MessageBox.Show("Connexion reussie");
+            socketManage.socket = client;
+        }
     }
 }

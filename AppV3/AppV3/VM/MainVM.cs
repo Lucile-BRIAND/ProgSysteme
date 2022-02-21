@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using AppV3.Models;
@@ -21,6 +22,8 @@ namespace AppV3.VM
         public string removeBackup { get; set; }
         public string Language1 { get; set; }
         public string Language2 { get; set; }
+        public string startConnection { get; set; }
+
         public string jobSoftwareName;
         
 
@@ -33,7 +36,8 @@ namespace AppV3.VM
                 executeBackup = singletonLang.ReadFile().MainExecute,
                 removeBackup = singletonLang.ReadFile().MainRemove,
                 Language1 = "French",
-                Language2 = "English"
+                Language2 = "English",
+                startConnection = singletonLang.ReadFile().startConnection
 
             };
             return values;
@@ -68,6 +72,7 @@ namespace AppV3.VM
             List<JobModel> jobModelList = new List<JobModel>();
             var contentFile = System.IO.File.ReadAllText(file);
             jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
+
             return jobModelList;
         }
     }

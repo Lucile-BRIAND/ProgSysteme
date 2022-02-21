@@ -42,13 +42,6 @@ namespace AppV3
             InitializeComponent();
             this.DataContext = executeJobVM.getValues();
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
-            Socket serveur = SocketManage.Connect();
-            Socket client = SocketManage.AcceptConnection(serveur);
-            MessageBox.Show("Connexion reussie");
-            SocketManage.socket = client;
-            
-
-
         }
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)

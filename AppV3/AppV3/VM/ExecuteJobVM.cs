@@ -35,7 +35,7 @@ namespace AppV3.VM
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
         LogFile lf = LogFile.GetInstance;
-        SocketManager socketmanage = SocketManager.GetInstance;
+        SocketManager socketManage = SocketManager.GetInstance;
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -55,7 +55,7 @@ namespace AppV3.VM
         {
             
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/local/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
             P.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
             //int startCryptTime = DateTime.Now.Millisecond;
@@ -110,7 +110,7 @@ namespace AppV3.VM
                     pourcentage =((100 * fileSizeLeftToCopy) / totalfileSize);
                     pourcentage = Math.Round(pourcentage);
                     buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
-                    socketmanage.socket.Send(buffer);
+                    socketManage.socket.Send(buffer);
                     Trace.WriteLine("Le poucentage : "+pourcentage.ToString());
                    //Thread.Sleep(1000);
 

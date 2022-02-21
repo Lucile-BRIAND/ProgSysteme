@@ -43,6 +43,7 @@ namespace AppV3.Models
         public string JobSoftware { get; set; }
         public string stopBackup { get; set; }
         public string pauseBackup { get; set; }
+        public string startConnection { get; set; }
   
 
         public string ValidationJobSoftware { get; set; }

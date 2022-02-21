@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using AppV3.VM;
+using System.Net.Sockets;
 
 namespace AppV3.Models
 {
@@ -19,8 +20,8 @@ namespace AppV3.Models
 
             public string ReadFile() //Gets a string of the file
             {
-                var contentFile = System.IO.File.ReadAllText(file);
-                return contentFile;
+            var contentFile = System.IO.File.ReadAllText(file);
+            return contentFile;
             }
 
             public bool WriteExistingJobs(JobModel list) //Writes the backup in the file 
