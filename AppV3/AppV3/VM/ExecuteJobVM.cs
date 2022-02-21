@@ -23,13 +23,20 @@ namespace AppV3.VM
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
         public string executeAllJobsButton { get; set; }
-        public static byte[] ImageBytes;
+
+        FileExtentions fileExtentions = FileExtentions.GetInstance;
+        FileSize fileSize = FileSize.GetInstance;
+
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
         public string JobSoftwareNameTextBox;
         private string format;
-        public string prioFormat { get; set; }
 
+        private static object _lock;
+
+        public Semaphore semaphore = new Semaphore(1, 1);
+        List<string> PrioritaryList = new List<string>();
+        List<string> NonPriorityList = new List<string>();
 
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
@@ -59,20 +66,43 @@ namespace AppV3.VM
             Trace.WriteLine(format);
             lf.InitFormat(this.format);
         }
-        public static void CallCryptoSoft(string path, int startCryptTime)
+        public void CallCryptoSoft(string path, int startCryptTime)
         {
-            
             Process P = new Process();
             P.StartInfo.FileName = "C:/Users/Bruno/source/repos/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
-            P.StartInfo.WindowStyle = ProcessWindowStyle.Minimized;
-            //int startCryptTime = DateTime.Now.Millisecond;
+
+            if (fileExtentions.extentions.Count != 0)
+            {
+                for (int i = 0; i < fileExtentions.extentions.Count; i++)
+                {
+                    P.StartInfo.Arguments += " " + fileExtentions.extentions[i];
+                }
+            }
+
+            Trace.WriteLine("Args : " + P.StartInfo.Arguments);
             P.Start();
+
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
+        }
+        public void DefinePriority(JobModel source)
+        {
+            foreach (string newPath in Directory.GetFiles(source.sourcePath, "*.*", SearchOption.AllDirectories))
+            {
+                FileInfo doc = new FileInfo(newPath);
+                //Trace.WriteLine(doc);
+            }
+        }
+        public void CopyCompelte(string newPath, string source, string destination)
+        {
+            semaphore.WaitOne();
+            File.Copy(newPath, newPath.Replace(source, destination), true);
+            semaphore.Release();
         }
         public void ExecuteBackup(string name, string type, string source, string destination)
         {
-            string test;
+            _lock = new object();
+
             this.format = lf.GetFormat();
             Trace.WriteLine(this.format);
 
@@ -82,7 +112,6 @@ namespace AppV3.VM
             {
                 this.format = "json";
                 this.JobSoftwareNameTextBox = "";
-                prioFormat = "";
             }
             Trace.WriteLine(format);
             //Thread.Sleep(10000);
@@ -93,7 +122,7 @@ namespace AppV3.VM
                 return;
             }
             int startTranferTime = DateTime.Now.Millisecond;
-            CallCryptoSoft(source, DateTime.Now.Millisecond);
+            //CallCryptoSoft(source, DateTime.Now.Millisecond);
 
             int nbfile = 0; //number of files that have been copied
             StatusLogFile slf = StatusLogFile.GetInstance;
@@ -105,10 +134,11 @@ namespace AppV3.VM
 
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    totalfileSize += newPath.Length;
+                    FileInfo doc = new FileInfo(newPath);
+                    totalfileSize += doc.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
-                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize-fileSizeLeftToCopy, format);
+                slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
 
                 //Now Create all of the directories
                 foreach (string dirPath in Directory.GetDirectories(source, "*", SearchOption.AllDirectories))
@@ -119,25 +149,95 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    Trace.WriteLine("Le path est le suivant " + newPath);
-                    test = newPath.Substring(newPath.IndexOf(".")); ////////////////////////
-
-                    fileSizeLeftToCopy += newPath.Length;
-
-                    nbfile++;
-                    File.Copy(newPath, newPath.Replace(source, destination), true);
-                    if (totalfileSize - fileSizeLeftToCopy == 0)
+                    FileInfo doc = new FileInfo(newPath);
+                    if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                     {
-                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                    }
-                    else
-                    {
-                        //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                    }
+                        fileSizeLeftToCopy += doc.Length;
 
+                        nbfile++;
+
+                        if (fileExtentions.extensionToPrioritize.Contains(doc.Extension))
+                        {
+                            PrioritaryList.Add(newPath);
+
+                        }
+                        else if (doc.Extension != ".png")
+                        {
+                            NonPriorityList.Add(newPath);
+                        }
+
+
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                    }
+                    else if (doc.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
+                    {
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        Thread.Sleep(10000);
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+                    else if (doc.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                    {
+                        while (fileSize.FileIsTransfering)
+                        {
+                            Thread.Sleep(20);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+                    
                 }
-                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
@@ -219,7 +319,7 @@ namespace AppV3.VM
                         }
                     }
                 });
-                CallCryptoSoft(source, DateTime.Now.Millisecond);
+                //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
                 lf.WriteLogMessage(name, source, destination, nbfile, totalfileSize, timeCryptoSoft, timeExecuteBackup, format);
@@ -243,6 +343,100 @@ namespace AppV3.VM
                 string destination = attribute.targetPath;
                 ExecuteBackup(name, type, source, destination);
             }
+        }
+        public void GetFileExtentions(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
+        {
+            Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG);
+
+            fileExtentions.extentions.Clear();
+
+            if (valueTXT)
+            {
+                fileExtentions.extentions.Add("*.txt");
+                fileExtentions.TXTvalue = true;
+            }
+            else
+            {
+                fileExtentions.TXTvalue = false;
+            }
+
+            if (valuePDF)
+            {
+                fileExtentions.extentions.Add("*.pdf");
+                fileExtentions.PDFvalue = true;
+            }
+            else
+            {
+                fileExtentions.PDFvalue = false;
+            }
+
+            if (valueJPG)
+            {
+                fileExtentions.extentions.Add("*.jpg");
+                fileExtentions.JPGvalue = true;
+            }
+            else
+            {
+                fileExtentions.JPGvalue = false;
+            }
+
+            if (valuePNG)
+            {
+                fileExtentions.extentions.Add("*.png");
+                fileExtentions.PNGvalue = true;
+            }
+            else
+            {
+                fileExtentions.PNGvalue = false;
+            }
+
+        }
+        public void GetExtensionToPrioritize(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
+        {
+            Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG);
+
+            fileExtentions.extensionToPrioritize.Clear();
+
+            if (valueTXT)
+            {
+                fileExtentions.extensionToPrioritize.Add(".txt");
+                fileExtentions.Priority_TXTValue = true;
+            }
+            else
+            {
+                fileExtentions.Priority_TXTValue = false;
+            }
+
+            if (valuePDF)
+            {
+                fileExtentions.extensionToPrioritize.Add(".pdf");
+                fileExtentions.Priority_PDFValue = true;
+            }
+            else
+            {
+                fileExtentions.Priority_PDFValue = false;
+            }
+
+            if (valueJPG)
+            {
+                fileExtentions.extensionToPrioritize.Add(".jpg");
+                fileExtentions.Priority_JPGValue = true;
+            }
+            else
+            {
+                fileExtentions.Priority_JPGValue = false;
+            }
+
+            if (valuePNG)
+            {
+                fileExtentions.extensionToPrioritize.Add(".png");
+                fileExtentions.Priority_PNGValue = true;
+            }
+            else
+            {
+                fileExtentions.Priority_PNGValue = false;
+            }
+
         }
     }
 }

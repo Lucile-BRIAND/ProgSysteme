@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
 using AppV3;
+using System.Diagnostics;
 
 namespace AppV3
 {
@@ -56,7 +57,7 @@ namespace AppV3
 
         private void ButtonSelectJobSoftware_Click(object sender, RoutedEventArgs e)
         {
-            if(jobSoftawreNameTextBox.Text == "")
+            if (jobSoftawreNameTextBox.Text == "")
             {
                 MessageBox.Show(singletonLang.ReadFile().ErrorExecute);
             }
@@ -72,17 +73,22 @@ namespace AppV3
             mainWindow.Show();
             Close();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void ExtentionToPrioritize_Checked(object sender, RoutedEventArgs e)
         {
-            if (jobSoftawreNameTextBox.Text == "")
-            {
-                MessageBox.Show(singletonLang.ReadFile().ErrorExecute);
-            }
-            else
-            {
-                executeJobVM.prioFormat = PrioTextBox.Text;
-            }
+            executeJobVM.GetExtensionToPrioritize(((bool)PriorityTXTCheckbox.IsChecked, (bool)PriorityPDFCheckbox.IsChecked, (bool)PriorityJPGCheckbox.IsChecked, (bool)PriorityPNGCheckBox.IsChecked));
+        }
+        private void ExtentionToEncrypit_Checked(object sender, RoutedEventArgs e)
+        {
+            executeJobVM.GetFileExtentions((bool)CheckboxTXT.IsChecked, (bool)CheckboxPDF.IsChecked, (bool)CheckboxJPG.IsChecked, (bool)CheckboxPNG.IsChecked);
+        }
+
+
+        private void MaximumFileSizeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            FileSize fileSize = FileSize.GetInstance;
+            ComboBoxItem size = maximumFileSizeComboBox.SelectedItem as ComboBoxItem;
+            Trace.WriteLine("SIZE :" + size.Content);
+            fileSize.FileMaxSize = Convert.ToInt32(size.Content);
         }
     }
 }

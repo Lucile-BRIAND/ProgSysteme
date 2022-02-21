@@ -48,3 +48,57 @@ D:\mploeeooeeoeooeoeoe\AppV3\AppV3\obj\Debug\AppV2.exe
 D:\mploeeooeeoeooeoeoe\AppV3\AppV3\obj\Debug\AppV2.pdb
 D:\mploeeooeeoeooeoeoe\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
 D:\mploeeooeeoeooeoeoe\AppV3\AppV3\obj\Debug\GeneralSettingsView.baml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV3\AppV3\obj\Debug\GeneralSettingsView.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\bin\Debug\AppV2.exe.config
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\bin\Debug\AppV2.exe
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\bin\Debug\AppV2.pdb
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV3.csproj.AssemblyReference.cache
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\CreateJobView.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\ExecuteJobView.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\MainWindow.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\RemoveJobView.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\App.g.cs
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.cache
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.lref
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\CreateJobView.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\ExecuteJobView.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\GeneralSettingsView.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\MainWindow.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\RemoveJobView.baml
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2.g.resources
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2.Properties.Resources.resources
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV3.csproj.GenerateResource.cache
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV3.csproj.CoreCompileInputs.cache
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV3.csproj.CopyComplete
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2.exe
+C:\Users\lu-ro\source\repos\C#\ProgSysteme\AppV3\AppV3\obj\Debug\AppV2.pdb
+D:\Nouveau dossier (5)\AppV3\AppV3\bin\Debug\AppV2.exe.config
+D:\Nouveau dossier (5)\AppV3\AppV3\bin\Debug\AppV2.exe
+D:\Nouveau dossier (5)\AppV3\AppV3\bin\Debug\AppV2.pdb
+D:\Nouveau dossier (5)\AppV3\AppV3\bin\Debug\Newtonsoft.Json.dll
+D:\Nouveau dossier (5)\AppV3\AppV3\bin\Debug\Newtonsoft.Json.xml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV3.csproj.AssemblyReference.cache
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\CreateJobView.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\ExecuteJobView.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\MainWindow.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\RemoveJobView.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\App.g.cs
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.cache
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.lref
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\CreateJobView.baml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\ExecuteJobView.baml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\GeneralSettingsView.baml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\MainWindow.baml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\RemoveJobView.baml
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2.g.resources
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2.Properties.Resources.resources
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV3.csproj.GenerateResource.cache
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV3.csproj.CoreCompileInputs.cache
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV3.csproj.CopyComplete
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2.exe
+D:\Nouveau dossier (5)\AppV3\AppV3\obj\Debug\AppV2.pdb

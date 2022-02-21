@@ -7,22 +7,35 @@
         mc:Ignorable="d"
         Title="GeneralSettingsView" Height="450" Width="800">
     <Grid>
-        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="344,152,276.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox Name="selectedLanguageComboBox" Text="Default Language" Margin="293,81,327.6,0" VerticalAlignment="Top" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem Content="French" Tag="0"/>
             <ComboBoxItem Content="English" Tag="1"/>
         </ComboBox>
-        <TextBox Name="jobSoftawreNameTextBox" HorizontalAlignment="Left" Height="18" Margin="344,234,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
-        <Label Name="jobSoftwareLabel" Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="37" Margin="115,227,0,0" VerticalAlignment="Top" Width="181"/>
-        <ComboBox Name="LogFileFormatComboBox" HorizontalAlignment="Left" Height="22" Margin="344,307,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
+        <TextBox Name="jobSoftawreNameTextBox" HorizontalAlignment="Left" Height="18" Margin="293,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173"/>
+        <Label Name="jobSoftwareLabel" Content="{Binding JobSoftwareLabel}" HorizontalAlignment="Left" Height="28" Margin="64,123,0,0" VerticalAlignment="Top" Width="181" RenderTransformOrigin="0.474,1.162"/>
+        <ComboBox Name="LogFileFormatComboBox" HorizontalAlignment="Left" Height="22" Margin="293,165,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="LogFileFormatComboBox_SelectionChanged">
             <ComboBoxItem  Content="JSON" Tag="0"></ComboBoxItem>
             <ComboBoxItem  Content="XML" Tag="1" ></ComboBoxItem>
         </ComboBox>
-        <Label Content="{Binding LanguageLabel}" HorizontalAlignment="Left" Height="31" Margin="115,143,0,0" VerticalAlignment="Top" Width="181"/>
-        <Label Content="{Binding LogFileExtensionLabel}" HorizontalAlignment="Left" Height="24" Margin="115,305,0,0" VerticalAlignment="Top" Width="181"/>
-        <Button Content="{Binding ButtonValidate}" HorizontalAlignment="Left" Height="30" Margin="556,234,0,0" VerticalAlignment="Top" Width="113" Click="ButtonSelectJobSoftware_Click"/>
-        <Button Content="{Binding ButtonMainMenu}" HorizontalAlignment="Left" Height="31" Margin="556,76,0,0" VerticalAlignment="Top" Width="113" Click="ButtonMainMenu_Click"/>
-        <Label Content="Fichier prio" HorizontalAlignment="Left" Height="40" Margin="45,107,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox Name="PrioTextBox" HorizontalAlignment="Left" Height="31" Margin="141,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="95"/>
-        <Button Name="btnJobPriority" Content="Button" HorizontalAlignment="Left" Height="31" Margin="115,33,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click"/>
+        <Label Content="{Binding LanguageLabel}" HorizontalAlignment="Left" Height="27" Margin="64,81,0,0" VerticalAlignment="Top" Width="181"/>
+        <Label Content="{Binding LogFileExtensionLabel}" HorizontalAlignment="Left" Height="31" Margin="64,160,0,0" VerticalAlignment="Top" Width="181"/>
+        <Button Content="{Binding ButtonValidate}" HorizontalAlignment="Left" Height="30" Margin="482,121,0,0" VerticalAlignment="Top" Width="113" Click="ButtonSelectJobSoftware_Click"/>
+        <Button Content="{Binding ButtonMainMenu}" HorizontalAlignment="Left" Height="31" Margin="618,39,0,0" VerticalAlignment="Top" Width="113" Click="ButtonMainMenu_Click"/>
+        <Label Content="{Binding ExtentionLabel}" HorizontalAlignment="Left" Height="29" Margin="64,196,0,0" VerticalAlignment="Top" Width="181"/>
+        <CheckBox Content=".png" x:Name="CheckboxPNG" IsChecked="{Binding PNGvalue}" HorizontalAlignment="Left" Margin="293,269,0,0" VerticalAlignment="Top" Checked="ExtentionToEncrypit_Checked" Unchecked="ExtentionToEncrypit_Checked"/>
+        <CheckBox Content=".jpg" x:Name="CheckboxJPG" IsChecked="{Binding JPGvalue}" HorizontalAlignment="Left" Margin="293,249,0,0" VerticalAlignment="Top" Checked="ExtentionToEncrypit_Checked" Unchecked="ExtentionToEncrypit_Checked"/>
+        <CheckBox Content=".pdf" x:Name="CheckboxPDF" IsChecked="{Binding PDFvalue}" HorizontalAlignment="Left" Margin="293,229,0,0" VerticalAlignment="Top" Checked="ExtentionToEncrypit_Checked" Unchecked="ExtentionToEncrypit_Checked"/>
+        <CheckBox Content=".txt" x:Name="CheckboxTXT" IsChecked="{Binding TXTvalue}" HorizontalAlignment="Left" Margin="293,209,0,0" VerticalAlignment="Top" Checked="ExtentionToEncrypit_Checked" Unchecked="ExtentionToEncrypit_Checked"/>
+        <CheckBox Content=".png" x:Name="PriorityPNGCheckBox" IsChecked="{Binding Priority_PNGvalue}" HorizontalAlignment="Left" Margin="578,278,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".jpg" x:Name="PriorityJPGCheckbox" IsChecked="{Binding Priority_JPGvalue}" HorizontalAlignment="Left" Margin="581,257,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".pdf" x:Name="PriorityPDFCheckbox" IsChecked="{Binding Priority_PDFvalue}" HorizontalAlignment="Left" Margin="581,232,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".txt" x:Name="PriorityTXTCheckbox" IsChecked="{Binding Priority_TXTvalue}" HorizontalAlignment="Left" Margin="586,209,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,290,0,0" TextWrapping="Wrap" Text="{Binding MaximumFileSizeLabel}" VerticalAlignment="Top" Width="181" Height="42"/>
+        <ComboBox Name="maximumFileSizeComboBox" HorizontalAlignment="Left" Height="22" Margin="293,300,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="MaximumFileSizeComboBox_SelectionChanged">
+            <ComboBoxItem  Content="100" Tag="0"/>
+            <ComboBoxItem  Content="1000" Tag="1" />
+            <ComboBoxItem  Content="10000" Tag="2" />
+        </ComboBox>
+
     </Grid>
 </Window>

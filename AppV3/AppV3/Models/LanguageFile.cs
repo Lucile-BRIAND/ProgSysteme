@@ -49,6 +49,8 @@ namespace AppV3.Models
         public string ChooseLang { get; set; }
         public string LogFileExtensionLabel { get; set; }
         public string Settings { get; set; }
+        public string ExtentionLabel { get; set; }
+        public string MaximumFileSizeLabel { get; set; }
 
 
 
@@ -79,9 +81,9 @@ namespace AppV3.Models
         // Function used to read the JSON file containing menu's messages
         public LanguageFile ReadFile()
         {
-            
+
             StreamReader streamreader = new StreamReader("../../Languages/" + this.language + "_Lang.json");
-                                                                
+
             string jsonRead = streamreader.ReadToEnd();
             LanguageFile messageList = JsonConvert.DeserializeObject<LanguageFile>(jsonRead);
             return messageList;
