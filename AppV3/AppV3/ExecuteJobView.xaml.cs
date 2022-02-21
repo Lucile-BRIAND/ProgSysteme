@@ -41,7 +41,9 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            Threads = new Thread[executeJobDataGrid.SelectedItems.Count];
+            int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+            Trace.WriteLine("numberOfJobs : " + numberOfJobs);
+            Threads = new Thread[numberOfJobs];
             int counter = 0;
             Thread myThread;
 
@@ -58,9 +60,17 @@ namespace AppV3
                         myThread = new Thread(new ParameterizedThreadStart(StartBackup));
                         myThread.Name = "thread" + counter.ToString();
                         myThread.IsBackground = true;
-                        Threads[counter] = myThread;
-                        Threads[counter].Start(obj);
-
+                        Trace.WriteLine("numberOfJobs (IF) : " + numberOfJobs);
+                        if (counter < numberOfJobs)
+                        {
+                            Threads[counter] = myThread;
+                            Threads[counter].Start(obj);
+                            //ThreadPool.QueueUserWorkItem(delegate
+                            //{
+                            //    Threads[counter].Start(obj);
+                            //});
+                        }
+                        
                     }
                     counter++;
                     Thread.Sleep(1000);

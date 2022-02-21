@@ -20,8 +20,9 @@
   "ValidationRemoveJob": "Remove selected job",
   "ValidationCreateJob": "Create job",
   "MainReturn": "Main Menu",
-  "ChooseLang": "Choose your Language",
-  "LogFileExtensionLabel": "Choose LogFile Extension",
+  "ChooseLang": "Choose your language :",
+  "LogFileExtensionLabel": "Choose LogFile Extension :",
   "Settings": "Settings",
-  "ExtentionLabel": "Types of files to encrypt"
+  "ExtentionLabel": "Types of files to encrypt :",
+  "MaximumFileSizeLabel": "Simultaneous transfer maximum size (kB) :"
 }
