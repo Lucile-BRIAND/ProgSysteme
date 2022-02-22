@@ -37,32 +37,41 @@ namespace AppV3
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
         }
 
+        // The ButtonExecuteJob_Click is called when the user click the button to execute a job
+        // The user can select only one or multiple jobs
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            if (executeJobDataGrid.SelectedIndex > -1)
-            {
+            //if (executeJobDataGrid.SelectedIndex > -1)
+            //{
+                // To know how many jobs has been selected by the user we count the selected cells number and divide by the corredsponding selected columns number
+                // We also initialize a List of JobModel Object
                 int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
                 List<JobModel> jobList = new List<JobModel>() { };
 
+                // If the user didn't select anything, we send an error in the corresponding language
                 if (executeJobDataGrid.SelectedItem == null)
                 {
                     MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
                 }
-                else
+                else // If he select at least on item
                 {
+                    // For each selected Job in the grid we add the corresponding JobModel to the list we initialize previously
                     foreach (JobModel obj in executeJobDataGrid.SelectedItems)
                     {
                         jobList.Add(obj);
                     }
 
+                    // Then for Each Job in the List we use the Parrallel.ForEach() method to create a thread for each iteration, which will call the ExecuteBackup() method
                     Parallel.ForEach(jobList, job =>
                     {
+                        // Method used to start job, copy the file, and also call the method that create or fill in the Log and StatusLog
                         executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath);
                     });
                 }
-            }
+            //}
         }
 
+        // // The ButtonMainMenu_Click is called when the user click the button to go back to the main menu
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.Show();
