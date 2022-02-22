@@ -34,13 +34,16 @@ namespace AppV3
             removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
             this.DataContext = removeJobVM.getValues();
         }
-
+        // The ButtonRemoveBackup_Click method is called when the user click the button to delete an existing job
         public void ButtonRemoveBackup_Click(object sender, RoutedEventArgs e)
         {
+            // If the user did not select any item in the grid, we display an error in the corresponding language
             if (removeJobDataGrid.SelectedItem == null)
             {
                 MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
-            }else
+            }
+            // If the user did select any item in the grid, we delete the corresponding job(s)
+            else
             {
                 JobModel jobToDelete = new JobModel();
                 foreach (var obj in removeJobDataGrid.SelectedItems)
@@ -49,16 +52,16 @@ namespace AppV3
                     RemoveJobVM.RemoveJob(jobToDelete.jobName);
 
                 }
-
+                // Then we display the existing job(s), showing that the deleted job(s) is / are no longer in the grid
                 removeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
             }
         }
-
+        // The DataGrid_SelectionChanged method need to be declare, even if nothing happens in it
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-
+        // The ButtonMainMenu_Click method is called when the user click the button to go back to the main menu
         private void ButtonMainMenu_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.Show();
