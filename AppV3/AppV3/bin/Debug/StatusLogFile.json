@@ -5971,3 +5971,1004 @@
   "NbFilesLeftToDo": 4,
   "FileSizeLeftToCopy": 20
 }
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 84
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 84
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 84
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": 624
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": 544
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": 464
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": 388
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 320
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 248
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 168
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 84
+}
+{
+  "Name": "test1",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": 624,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}

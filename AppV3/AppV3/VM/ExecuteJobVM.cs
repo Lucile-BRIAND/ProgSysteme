@@ -108,12 +108,7 @@ namespace AppV3.VM
             }
             Trace.WriteLine(format);
             //Thread.Sleep(10000);
-            Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
-
-            if (myProcesses.Length != 0)
-            {
-                return;
-            }
+          
             int startTranferTime = DateTime.Now.Millisecond;
             //CallCryptoSoft(source, DateTime.Now.Millisecond);
 
@@ -173,6 +168,13 @@ namespace AppV3.VM
                     {
 
                     }
+                    Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
+                    Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                    if (myProcesses.Length != 0)
+                    {
+                        myProcesses[0].WaitForExit();
+                    }
+
                     fileSizeLeftToCopy += newPath.Length;
 
                     nbfile++;
@@ -258,6 +260,12 @@ namespace AppV3.VM
                     catch
                     {
 
+                    }
+                    Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
+                    Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                    if (myProcesses.Length != 0)
+                    {
+                        myProcesses[0].WaitForExit();
                     }
                     FileInfo originalFile = new FileInfo(originalFileLocation);
                     FileInfo destFile = new FileInfo(originalFileLocation.Replace(source, destination));
