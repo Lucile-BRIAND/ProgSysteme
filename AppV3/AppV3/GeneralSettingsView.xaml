@@ -26,6 +26,10 @@
         <CheckBox Content=".jpg" x:Name="CheckboxJPG" IsChecked="{Binding JPGvalue}" HorizontalAlignment="Left" Margin="293,249,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
         <CheckBox Content=".pdf" x:Name="CheckboxPDF" IsChecked="{Binding PDFvalue}" HorizontalAlignment="Left" Margin="293,229,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
         <CheckBox Content=".txt" x:Name="CheckboxTXT" IsChecked="{Binding TXTvalue}" HorizontalAlignment="Left" Margin="293,209,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Checked"/>
+        <CheckBox Content=".png" x:Name="Priority_PNGCheckBox" IsChecked="{Binding Priority_PNGValue}" HorizontalAlignment="Left" Margin="704,272,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".jpg" x:Name="Priority_JPGCheckbox" IsChecked="{Binding Priority_JPGValue}" HorizontalAlignment="Left" Margin="704,252,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".pdf" x:Name="Priority_PDFCheckbox" IsChecked="{Binding Priority_PDFValue}" HorizontalAlignment="Left" Margin="704,232,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
+        <CheckBox Content=".txt" x:Name="Priority_TXTCheckbox" IsChecked="{Binding Priority_TXTValue}" HorizontalAlignment="Left" Margin="704,210,0,0" VerticalAlignment="Top" Checked="ExtentionToPrioritize_Checked" Unchecked="ExtentionToPrioritize_Checked"/>
         <TextBlock HorizontalAlignment="Left" Margin="64,290,0,0" TextWrapping="Wrap" Text="{Binding MaximumFileSizeLabel}" VerticalAlignment="Top" Width="181" Height="42"/>
         <ComboBox Name="maximumFileSizeComboBox" HorizontalAlignment="Left" Height="22" Margin="293,300,0,0" VerticalAlignment="Top" Width="173" SelectionChanged="MaximumFileSizeComboBox_SelectionChanged">
             <ComboBoxItem  Content="1" Tag="0"/>

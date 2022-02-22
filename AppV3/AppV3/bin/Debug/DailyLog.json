@@ -1,10 +1,30 @@
 {
-  "Name": "JobDiff",
+  "Name": "JOB DIFF 2",
+  "FileSource": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "FileTarget": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "NbFile": 2,
+  "FileSize": "21134 B",
+  "FileTransferTime": "387 ms",
+  "timeCryptoSoft": "184 ms",
+  "Date": "22/02/2022 14:03:10"
+}
+{
+  "Name": "JOB",
   "FileSource": "C:/Users/lu-ro/source/repos/C#/Test/Source",
   "FileTarget": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
-  "NbFile": 2,
-  "FileSize": "18127 B",
-  "FileTransferTime": "494 ms",
-  "timeCryptoSoft": "294 ms",
-  "Date": "22/02/2022 10:40:12"
+  "NbFile": 16,
+  "FileSize": "21146 B",
+  "FileTransferTime": "282 ms",
+  "timeCryptoSoft": "212 ms",
+  "Date": "22/02/2022 14:07:33"
+}
+{
+  "Name": "JOB2",
+  "FileSource": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "FileTarget": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "NbFile": 16,
+  "FileSize": "21146 B",
+  "FileTransferTime": "566 ms",
+  "timeCryptoSoft": "416 ms",
+  "Date": "22/02/2022 14:07:33"
 }

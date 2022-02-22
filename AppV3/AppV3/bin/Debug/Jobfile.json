@@ -22,5 +22,11 @@
     "jobType": "Differential",
     "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
     "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "JOB DIFF 2",
+    "jobType": "Differential",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
   }
 ]

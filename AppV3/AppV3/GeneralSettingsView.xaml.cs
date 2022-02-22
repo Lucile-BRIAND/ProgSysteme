@@ -93,5 +93,9 @@ namespace AppV3
             Trace.WriteLine("SIZE :" + size.Content);
             fileSize.FileMaxSize = Convert.ToInt32(size.Content) * 1000;
         }
+        private void ExtentionToPrioritize_Checked(object sender, RoutedEventArgs e)
+        {
+            executeJobVM.GetExtentionToPrioritize((bool)Priority_TXTCheckbox.IsChecked, (bool)Priority_PDFCheckbox.IsChecked, (bool)Priority_JPGCheckbox.IsChecked, (bool)Priority_PNGCheckBox.IsChecked);
+        }
     }
 }

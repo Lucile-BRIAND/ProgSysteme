@@ -1,33 +1,231 @@
 {
-  "Name": "JobDiff",
+  "Name": "JOB DIFF 2",
   "Type": "Differential",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 21134,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 21134
+}
+{
+  "Name": "JOB DIFF 2",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 21134,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 3012
+}
+{
+  "Name": "JOB DIFF 2",
+  "Type": "Differential",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 2,
+  "TotalFilesSize": 21134,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
   "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
   "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
   "State": "STARTING",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 18127,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 18127
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
 }
 {
-  "Name": "JobDiff",
-  "Type": "Differential",
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": -15098
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
   "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
   "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
   "State": "ACTIVE",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 18127,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 18122
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": -15098
 }
 {
-  "Name": "JobDiff",
-  "Type": "Differential",
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": -51342
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
   "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
   "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 18127,
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
   "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
+  "FileSizeLeftToCopy": -51342
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -2,
+  "FileSizeLeftToCopy": -51352
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -3,
+  "FileSizeLeftToCopy": -51357
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -4,
+  "FileSizeLeftToCopy": -54369
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -5,
+  "FileSizeLeftToCopy": -57381
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -6,
+  "FileSizeLeftToCopy": -57386
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -7,
+  "FileSizeLeftToCopy": -57393
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -8,
+  "FileSizeLeftToCopy": -60405
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -9,
+  "FileSizeLeftToCopy": -60412
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -10,
+  "FileSizeLeftToCopy": -63424
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -10,
+  "FileSizeLeftToCopy": -63424
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -11,
+  "FileSizeLeftToCopy": -63431
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": -12,
+  "FileSizeLeftToCopy": -63438
 }

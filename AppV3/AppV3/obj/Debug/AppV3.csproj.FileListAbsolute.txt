@@ -81,7 +81,6 @@ C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\bin\Debug\AppV2.exe
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\bin\Debug\AppV2.pdb
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\bin\Debug\Newtonsoft.Json.dll
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\bin\Debug\Newtonsoft.Json.xml
-C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV3.csproj.AssemblyReference.cache
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\CreateJobView.g.cs
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\ExecuteJobView.g.cs
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
@@ -102,3 +101,4 @@ C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV3.csproj.CoreCo
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV3.csproj.CopyComplete
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV2.exe
 C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV2.pdb
+C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\AppV3.csproj.AssemblyReference.cache
