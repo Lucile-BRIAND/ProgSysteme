@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Center" Height="51" Margin="0,61,0,0" VerticalAlignment="Top" Width="380" ValueChanged="pbstatus1_ValueChanged"/>
-        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Center" Height="154" Margin="0,150,0,0" VerticalAlignment="Top" Width="316" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="250,388,0,0" VerticalAlignment="Top" Height="36" Width="90" Click="ButtonPauseJob_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="448,388,0,0" VerticalAlignment="Top" Height="36" Width="84" Click="ButtonStopJob_Click"/>
-        <Button Name ="startButton" Content="Button" HorizontalAlignment="Left" Height="56" Margin="33,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
-        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" Height="58" Width="221" FontSize="24"/>
+        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Left" Height="31" Margin="215,0,0,0" VerticalAlignment="Center" Width="380" ValueChanged="pbstatus1_ValueChanged"/>
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="154" Margin="171,25,0,0" VerticalAlignment="Top" Width="472" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Button Content="Pause" HorizontalAlignment="Left" Margin="370,268,0,0" VerticalAlignment="Top" Height="25" Width="56" Click="ButtonPauseJob_Click"/>
+        <Button Content="Resume" HorizontalAlignment="Left" Height="24" Margin="458,269,0,0" VerticalAlignment="Top" Width="65" Click="ButtonStopJob_Click"/>
+        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="305,322,0,0" VerticalAlignment="Top" Height="58" Width="220" FontSize="24"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Height="25" Margin="279,268,0,0" VerticalAlignment="Top" Width="52"/>
 
     </Grid>
 </Window>
