@@ -24,5 +24,6 @@
   "LogFileExtensionLabel": "Extension du LogFile :",
   "Settings": "Paramètres",
   "ExtentionLabel": "Types de fichiers à crypter :",
-  "MaximumFileSizeLabel": "Taille maximale de transfert simultané (ko) :"
+  "MaximumFileSizeLabel": "Taille maximale de transfert simultané (ko) :",
+  "startConnection": "Connect client"
 }	

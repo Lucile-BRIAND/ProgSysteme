@@ -1,0 +1,79 @@
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.exe
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.deps.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.dev.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.AssemblyReference.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.lref
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.g.resources
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfoInputs.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfo.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.CoreCompileInputs.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\local\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.exe
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.deps.json
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.json
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.dev.json
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.dll
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.cache
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.lref
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.g.resources
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.GeneratedMSBuildEditorConfig.editorconfig
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfoInputs.cache
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfo.cs
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.CoreCompileInputs.cache
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+D:\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.exe
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.deps.json
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.json
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.dev.json
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.dll
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.AssemblyReference.cache
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.cache
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.lref
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.g.resources
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfoInputs.cache
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfo.cs
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.CoreCompileInputs.cache
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+D:\Backup_Essai\Essai_Console_Deportee\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.exe
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.deps.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.dev.json
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.AssemblyReference.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.lref
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.g.resources
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfoInputs.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfo.cs
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.CoreCompileInputs.cache
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache

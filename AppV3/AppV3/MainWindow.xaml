@@ -14,6 +14,7 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="109" Margin="10,247,0,0" VerticalAlignment="Top" Width="774"/>
         <Image Source="easySaveLogo.png" HorizontalAlignment="Left" Height="232" Margin="232,15,0,0" VerticalAlignment="Top" Width="246"/>
         <Button Content="{Binding ButtonSettings}" HorizontalAlignment="Left" Height="41" Margin="632,283,0,0" VerticalAlignment="Top" Width="128" Click="ButtonSettings_Click"/>
+        <Button Name="startClientConnection"  Content="{Binding startConnection}" HorizontalAlignment="Left" Margin="602,132,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="startClientConnection_Click"/>
 
 
     </Grid>

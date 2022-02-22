@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using AppV3.Models;
 using System.Diagnostics;
 using System.Threading;
+using System.Text;
 
 namespace AppV3.VM
 {
@@ -28,7 +29,7 @@ namespace AppV3.VM
 
         public LanguageFile singletonLang = LanguageFile.GetInstance;
         public LogFile lf = LogFile.GetInstance;
-
+        SocketManager socketManage = SocketManager.GetInstance;
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -71,7 +72,7 @@ namespace AppV3.VM
             int timeCryptoSoft = 0; //total time of the encryption
 
             Process P = new Process();
-            P.StartInfo.FileName = "D:/Documents/CESI/FISA A3 21-22/3 - PROG SYSTEME/Projet/ProgSysteme/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft.exe";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -81,7 +82,6 @@ namespace AppV3.VM
                     P.StartInfo.Arguments += " " + fileExtentions.extentions[i];
                 }
             }
-
             //Trace.WriteLine("Args : " + P.StartInfo.Arguments);
             P.Start();
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
@@ -172,6 +172,7 @@ namespace AppV3.VM
                 fileSizeLeftToCopy = valuesList[1]; //parameter actualization
                 valuesList.Clear();
 
+               
                 //Check if files need to be encrypted
                 int timeCryptoSoft = CallCryptoSoft(destination, DateTime.Now.Millisecond);
                 timeExecuteBackup += DateTime.Now.Millisecond - startTranferTime;
@@ -269,6 +270,13 @@ namespace AppV3.VM
             //Copy all the files & replaces any file with the same name
             foreach (string newPath in filesList)
             {
+                double pourcentage = 0;
+                Byte[] buffer;
+                pourcentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
+                pourcentage = Math.Round(pourcentage);
+                buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
+                socketManage.socket.Send(buffer);
+
                 Thread.Sleep(2000);
                 int PIDPause = lf.GetJobPauseSoftawre();
                 int PIDStop = lf.GetJobStopSoftawre();

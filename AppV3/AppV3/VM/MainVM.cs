@@ -20,6 +20,7 @@ namespace AppV3.VM
         public string removeBackup { get; set; }
         public string Language1 { get; set; }
         public string Language2 { get; set; }
+        public string startConnection { get; set; }
         public string JobSoftwareLabel { get; set; }
         public string LanguageLabel { get; set; }
         public string LogFileExtensionLabel { get; set; }
@@ -52,6 +53,7 @@ namespace AppV3.VM
                 removeBackup = singletonLang.ReadFile().MainRemove,
                 Language1 = "French",
                 Language2 = "English",
+                startConnection = singletonLang.ReadFile().startConnection,
                 JobSoftwareLabel = singletonLang.ReadFile().JobSoftware,
                 LanguageLabel = singletonLang.ReadFile().ChooseLang,
                 LogFileExtensionLabel = singletonLang.ReadFile().LogFileExtensionLabel,

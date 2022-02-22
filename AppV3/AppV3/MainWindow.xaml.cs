@@ -17,6 +17,7 @@ using AppV3.Models;
 using AppV3;
 using System.Threading;
 using System.Diagnostics;
+using System.Net.Sockets;
 
 namespace AppV3
 {
@@ -67,6 +68,14 @@ namespace AppV3
             GeneralSettingsView generalSettingsView = new GeneralSettingsView();
             generalSettingsView.Show();
             Close();
+        }
+        private void startClientConnection_Click(object sender, RoutedEventArgs e)
+        {
+            SocketManager socketManage = SocketManager.GetInstance;
+            Socket serveur = socketManage.Connect();
+            Socket client = socketManage.AcceptConnection(serveur);
+            MessageBox.Show("Connexion reussie");
+            socketManage.socket = client;
         }
     }
 }

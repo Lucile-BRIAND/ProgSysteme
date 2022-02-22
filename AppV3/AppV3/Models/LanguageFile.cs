@@ -37,6 +37,7 @@ namespace AppV3.Models
         public string Type1 { get; set; }
         public string ExecuteType { get; set; }
         public string JobSoftware { get; set; }
+        public string startConnection { get; set; }
         public string ValidationJobSoftware { get; set; }
         public string ValidationRemoveJob { get; set; }
         public string ValidationCreateJob { get; set; }

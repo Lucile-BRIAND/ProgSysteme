@@ -24,5 +24,6 @@
   "LogFileExtensionLabel": "Choose LogFile Extension :",
   "Settings": "Settings",
   "ExtentionLabel": "Types of files to encrypt :",
-  "MaximumFileSizeLabel": "Simultaneous transfer maximum size (kB) :"
+  "MaximumFileSizeLabel": "Simultaneous transfer maximum size (kB) :",
+  "startConnection": "Connect client"
 }
