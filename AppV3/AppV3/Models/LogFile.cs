@@ -19,7 +19,7 @@ namespace AppV3.Models
         private static LogFile logInstance = null; //default unique instance
         private string format;
         private string JobSoftware;
-
+        private string JobPauseSoftware;
         //Private constructor, only accessible from this class
         private LogFile()
         {
@@ -51,15 +51,22 @@ namespace AppV3.Models
             return format;
         }
 
-        // Init and Get functions -> JobSoftware
         public void InitJobSoftware(string jobSoftware)
         {
             this.JobSoftware = jobSoftware;
             Trace.WriteLine(JobSoftware);
         }
+        public void InitJobPauseSoftware(string jobSoftware)
+        {
+            this.JobPauseSoftware = jobSoftware;
+        }
         public string GetJobSoftawre()
         {
             return JobSoftware;
+        }
+        public string GetJobPauseSoftawre()
+        {
+            return JobPauseSoftware;
         }
 
         //Writing content in the log file

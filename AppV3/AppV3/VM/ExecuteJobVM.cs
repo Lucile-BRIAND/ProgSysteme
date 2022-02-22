@@ -64,7 +64,7 @@ namespace AppV3.VM
         public void CallCryptoSoft(string path, int startCryptTime)
         {
             Process P = new Process();
-            P.StartInfo.FileName = "D:/Documents/CESI/FISA A3 21-22/3 - PROG SYSTEME/Projet/ProgSysteme/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft.exe";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -127,6 +127,13 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
+                    Thread.Sleep(2000);
+                    var processName = lf.GetJobSoftawre();
+                    Process[] myProcess = Process.GetProcessesByName(processName); 
+                    if (myProcess.Length != 0)
+                    {
+                        myProcess[0].WaitForExit();
+                    }
 
                     fileSizeLeftToCopy += newPath.Length;
 

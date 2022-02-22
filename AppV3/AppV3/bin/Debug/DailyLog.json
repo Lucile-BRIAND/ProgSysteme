@@ -628,3 +628,93 @@
   "timeCryptoSoft": "207 ms",
   "Date": "21/02/2022 09:37:22"
 }
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 2,
+  "FileSize": "140 B",
+  "FileTransferTime": "140 ms",
+  "timeCryptoSoft": "118 ms",
+  "Date": "21/02/2022 20:50:54"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "177 ms",
+  "timeCryptoSoft": "107 ms",
+  "Date": "21/02/2022 20:53:14"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-678 ms",
+  "timeCryptoSoft": "210 ms",
+  "Date": "21/02/2022 20:54:09"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-618 ms",
+  "timeCryptoSoft": "224 ms",
+  "Date": "21/02/2022 20:55:45"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-496 ms",
+  "timeCryptoSoft": "290 ms",
+  "Date": "21/02/2022 20:55:45"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "174 ms",
+  "timeCryptoSoft": "101 ms",
+  "Date": "21/02/2022 21:17:47"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-685 ms",
+  "timeCryptoSoft": "-776 ms",
+  "Date": "21/02/2022 21:19:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "386 ms",
+  "timeCryptoSoft": "34 ms",
+  "Date": "21/02/2022 22:00:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-802 ms",
+  "timeCryptoSoft": "33 ms",
+  "Date": "21/02/2022 22:02:36"
+}

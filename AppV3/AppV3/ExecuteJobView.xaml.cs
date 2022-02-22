@@ -41,41 +41,33 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            Threads = new Thread[executeJobDataGrid.SelectedItems.Count];
-            int counter = 0;
-            Thread myThread;
-
-            if (executeJobDataGrid.SelectedItem == null)
-            {
-                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
-            }
-            else
-            {
-                foreach (JobModel obj in executeJobDataGrid.SelectedItems)
-                {
-                    if (executeJobDataGrid.SelectedIndex > -1)
-                    {
-                        myThread = new Thread(new ParameterizedThreadStart(StartBackup));
-                        myThread.Name = "thread" + counter.ToString();
-                        myThread.IsBackground = true;
-                        Threads[counter] = myThread;
-                        Threads[counter].Start(obj);
-
-                    }
-                    counter++;
-                    Thread.Sleep(1000);
-                }
-
-            }
+            StartBackup();
         }
 
-        private void StartBackup(object obj)
+        private async void StartBackup()
         {
-            JobModel jobToExecute = (JobModel)obj;
-            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
+            if (executeJobDataGrid.SelectedIndex > -1)
             {
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath);
-            });
+                int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+                List<JobModel> jobList = new List<JobModel>() { };
+
+                if (executeJobDataGrid.SelectedItem == null)
+                {
+                    MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
+                }
+                else
+                {
+                    foreach (JobModel obj in executeJobDataGrid.SelectedItems)
+                    {
+                        jobList.Add(obj);
+                    }
+                    await Task.Factory.StartNew(() =>
+                    Parallel.ForEach(jobList, job =>
+                    {
+                        executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath);
+                    }));
+                }
+            }
 
         }
 
@@ -102,8 +94,10 @@ namespace AppV3
 
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
-  
-
+            Process process = new Process();
+            process.StartInfo.FileName = "notepad";
+            process.Start();
+            executeJobVM.InitJobSoftwareName("notepad");
         }
 
         private void ButtonStop_Click(object sender, RoutedEventArgs e)
