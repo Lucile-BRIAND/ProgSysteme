@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace AppV3.Models
 {
@@ -16,6 +17,7 @@ namespace AppV3.Models
         //
         //Private attributes
         private static StatusLogFile statusInstance = null;
+        private Semaphore semaphore = new Semaphore(1, 1);
 
         //The private constructor is only accessible from this class
         private StatusLogFile()
@@ -38,6 +40,7 @@ namespace AppV3.Models
         //Writing content in the log file
         public void WriteStatusLogMessage(string jobName, string jobType, string sourcePath, string targetPath, string state, int totalFilesToCopy, long totalFilesSize, int nbFilesLeftToDo, long fileSizeLeftToCopy, string format)
         {
+            semaphore.WaitOne();
             if (format == "json")
             {
                 //Adding values to the json keys
@@ -110,6 +113,7 @@ namespace AppV3.Models
                     xDocument.Save("StatusLogFile.xml");
                 }
             }
+            semaphore.Release();
         }
 
     }

@@ -1,2 +1,1070 @@
-
-
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "319 ms",
+  "timeCryptoSoft": "252 ms",
+  "Date": "08/02/2022 11:14:46"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "561 ms",
+  "timeCryptoSoft": "488 ms",
+  "Date": "08/02/2022 11:15:34"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "537 ms",
+  "timeCryptoSoft": "285 ms",
+  "Date": "17/02/2022 20:05:44"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "1203 ms",
+  "timeCryptoSoft": "947 ms",
+  "Date": "17/02/2022 20:05:44"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1419 ms",
+  "timeCryptoSoft": "1154 ms",
+  "Date": "17/02/2022 20:06:08"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "829 ms",
+  "timeCryptoSoft": "552 ms",
+  "Date": "17/02/2022 20:06:08"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-561 ms",
+  "timeCryptoSoft": "-729 ms",
+  "Date": "17/02/2022 20:28:22"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-874 ms",
+  "timeCryptoSoft": "-1053 ms",
+  "Date": "17/02/2022 20:28:22"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "485 ms",
+  "timeCryptoSoft": "278 ms",
+  "Date": "17/02/2022 20:29:38"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1113 ms",
+  "timeCryptoSoft": "894 ms",
+  "Date": "17/02/2022 20:29:38"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "302 ms",
+  "timeCryptoSoft": "200 ms",
+  "Date": "17/02/2022 20:32:23"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "749 ms",
+  "timeCryptoSoft": "637 ms",
+  "Date": "17/02/2022 20:32:23"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "106 ms",
+  "timeCryptoSoft": "-26 ms",
+  "Date": "17/02/2022 20:33:12"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-227 ms",
+  "timeCryptoSoft": "-374 ms",
+  "Date": "17/02/2022 20:33:12"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-923 ms",
+  "timeCryptoSoft": "-1082 ms",
+  "Date": "17/02/2022 20:34:06"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-1367 ms",
+  "timeCryptoSoft": "-1530 ms",
+  "Date": "17/02/2022 20:34:06"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "344 ms",
+  "timeCryptoSoft": "261 ms",
+  "Date": "17/02/2022 20:37:17"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "832 ms",
+  "timeCryptoSoft": "745 ms",
+  "Date": "17/02/2022 20:37:17"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "354 ms",
+  "timeCryptoSoft": "104 ms",
+  "Date": "17/02/2022 20:49:27"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "844 ms",
+  "timeCryptoSoft": "591 ms",
+  "Date": "17/02/2022 20:49:27"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "407 ms",
+  "timeCryptoSoft": "319 ms",
+  "Date": "17/02/2022 20:50:12"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "981 ms",
+  "timeCryptoSoft": "885 ms",
+  "Date": "17/02/2022 20:50:12"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-453 ms",
+  "timeCryptoSoft": "382 ms",
+  "Date": "17/02/2022 21:02:32"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-636 ms",
+  "timeCryptoSoft": "189 ms",
+  "Date": "17/02/2022 21:02:32"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "427 ms",
+  "timeCryptoSoft": "335 ms",
+  "Date": "17/02/2022 21:03:35"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "1044 ms",
+  "timeCryptoSoft": "947 ms",
+  "Date": "17/02/2022 21:03:35"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1185 ms",
+  "timeCryptoSoft": "1079 ms",
+  "Date": "17/02/2022 21:03:44"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "1451 ms",
+  "timeCryptoSoft": "1343 ms",
+  "Date": "17/02/2022 21:03:44"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1732 ms",
+  "timeCryptoSoft": "1618 ms",
+  "Date": "17/02/2022 21:03:51"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "2268 ms",
+  "timeCryptoSoft": "2152 ms",
+  "Date": "17/02/2022 21:03:51"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "336 ms",
+  "timeCryptoSoft": "291 ms",
+  "Date": "17/02/2022 21:06:26"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "846 ms",
+  "timeCryptoSoft": "789 ms",
+  "Date": "17/02/2022 21:06:31"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "191 ms",
+  "timeCryptoSoft": "967 ms",
+  "Date": "17/02/2022 21:07:04"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-353 ms",
+  "timeCryptoSoft": "418 ms",
+  "Date": "17/02/2022 21:07:09"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-154 ms",
+  "timeCryptoSoft": "601 ms",
+  "Date": "17/02/2022 21:07:29"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "374 ms",
+  "timeCryptoSoft": "1104 ms",
+  "Date": "17/02/2022 21:07:34"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "256 ms",
+  "timeCryptoSoft": "117 ms",
+  "Date": "17/02/2022 21:09:15"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "669 ms",
+  "timeCryptoSoft": "525 ms",
+  "Date": "17/02/2022 21:09:20"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "516 ms",
+  "timeCryptoSoft": "283 ms",
+  "Date": "18/02/2022 07:59:26"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1126 ms",
+  "timeCryptoSoft": "887 ms",
+  "Date": "18/02/2022 07:59:31"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1273 ms",
+  "timeCryptoSoft": "880 ms",
+  "Date": "18/02/2022 08:00:05"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1581 ms",
+  "timeCryptoSoft": "1183 ms",
+  "Date": "18/02/2022 08:00:12"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1720 ms",
+  "timeCryptoSoft": "1315 ms",
+  "Date": "18/02/2022 08:00:35"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1182 ms",
+  "timeCryptoSoft": "757 ms",
+  "Date": "18/02/2022 08:00:41"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1406 ms",
+  "timeCryptoSoft": "951 ms",
+  "Date": "18/02/2022 08:01:10"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1938 ms",
+  "timeCryptoSoft": "1460 ms",
+  "Date": "18/02/2022 08:01:15"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1400 ms",
+  "timeCryptoSoft": "1630 ms",
+  "Date": "18/02/2022 08:01:41"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "941 ms",
+  "timeCryptoSoft": "1160 ms",
+  "Date": "18/02/2022 08:01:46"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "253 ms",
+  "timeCryptoSoft": "155 ms",
+  "Date": "18/02/2022 08:02:25"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "617 ms",
+  "timeCryptoSoft": "508 ms",
+  "Date": "18/02/2022 08:02:25"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-369 ms",
+  "timeCryptoSoft": "-615 ms",
+  "Date": "18/02/2022 09:49:45"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "-536 ms",
+  "timeCryptoSoft": "-793 ms",
+  "Date": "18/02/2022 09:49:45"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "461 ms",
+  "timeCryptoSoft": "246 ms",
+  "Date": "18/02/2022 09:54:13"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "1043 ms",
+  "timeCryptoSoft": "824 ms",
+  "Date": "18/02/2022 09:54:13"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-510 ms",
+  "timeCryptoSoft": "353 ms",
+  "Date": "18/02/2022 10:05:30"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "-912 ms",
+  "timeCryptoSoft": "-52 ms",
+  "Date": "18/02/2022 10:05:30"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "-681 ms",
+  "timeCryptoSoft": "-772 ms",
+  "Date": "18/02/2022 10:06:18"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "-1162 ms",
+  "timeCryptoSoft": "-1255 ms",
+  "Date": "18/02/2022 10:06:18"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "496 ms",
+  "timeCryptoSoft": "337 ms",
+  "Date": "18/02/2022 10:30:37"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 0,
+  "FileSize": "0 B",
+  "FileTransferTime": "1155 ms",
+  "timeCryptoSoft": "992 ms",
+  "Date": "18/02/2022 10:30:37"
+}
+{
+  "Name": "tesst3",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest2",
+  "NbFile": 2,
+  "FileSize": "99 B",
+  "FileTransferTime": "1416 ms",
+  "timeCryptoSoft": "1239 ms",
+  "Date": "18/02/2022 10:30:56"
+}
+{
+  "Name": "lolm",
+  "FileSource": "C:/Users/Bruno/Documents/SourceB/Source",
+  "FileTarget": "C:/Users/Bruno/Documents/SourceB/Dest",
+  "NbFile": 2,
+  "FileSize": "10 B",
+  "FileTransferTime": "1798 ms",
+  "timeCryptoSoft": "1616 ms",
+  "Date": "18/02/2022 10:30:56"
+}
+{
+  "Name": "JOB",
+  "FileSource": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "FileTarget": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "NbFile": 4,
+  "FileSize": "272 B",
+  "FileTransferTime": "421 ms",
+  "timeCryptoSoft": "207 ms",
+  "Date": "21/02/2022 09:37:22"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 2,
+  "FileSize": "140 B",
+  "FileTransferTime": "140 ms",
+  "timeCryptoSoft": "118 ms",
+  "Date": "21/02/2022 20:50:54"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "177 ms",
+  "timeCryptoSoft": "107 ms",
+  "Date": "21/02/2022 20:53:14"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-678 ms",
+  "timeCryptoSoft": "210 ms",
+  "Date": "21/02/2022 20:54:09"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-618 ms",
+  "timeCryptoSoft": "224 ms",
+  "Date": "21/02/2022 20:55:45"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-496 ms",
+  "timeCryptoSoft": "290 ms",
+  "Date": "21/02/2022 20:55:45"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "174 ms",
+  "timeCryptoSoft": "101 ms",
+  "Date": "21/02/2022 21:17:47"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-685 ms",
+  "timeCryptoSoft": "-776 ms",
+  "Date": "21/02/2022 21:19:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "386 ms",
+  "timeCryptoSoft": "34 ms",
+  "Date": "21/02/2022 22:00:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-802 ms",
+  "timeCryptoSoft": "33 ms",
+  "Date": "21/02/2022 22:02:36"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "698 ms",
+  "timeCryptoSoft": "81 ms",
+  "Date": "22/02/2022 10:03:01"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "776 ms",
+  "timeCryptoSoft": "110 ms",
+  "Date": "22/02/2022 10:03:25"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "125 ms",
+  "timeCryptoSoft": "35 ms",
+  "Date": "22/02/2022 10:04:23"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-2 ms",
+  "timeCryptoSoft": "30 ms",
+  "Date": "22/02/2022 10:05:41"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-755 ms",
+  "timeCryptoSoft": "56 ms",
+  "Date": "22/02/2022 10:13:05"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-1515 ms",
+  "timeCryptoSoft": "114 ms",
+  "Date": "22/02/2022 10:13:05"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-795 ms",
+  "timeCryptoSoft": "139 ms",
+  "Date": "22/02/2022 10:13:43"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-152 ms",
+  "timeCryptoSoft": "161 ms",
+  "Date": "22/02/2022 10:13:47"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "108 ms",
+  "timeCryptoSoft": "32 ms",
+  "Date": "22/02/2022 10:38:20"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-881 ms",
+  "timeCryptoSoft": "33 ms",
+  "Date": "22/02/2022 10:39:46"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "219 ms",
+  "timeCryptoSoft": "38 ms",
+  "Date": "22/02/2022 10:43:01"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "203 ms",
+  "timeCryptoSoft": "31 ms",
+  "Date": "22/02/2022 10:43:57"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "273 ms",
+  "timeCryptoSoft": "30 ms",
+  "Date": "22/02/2022 10:44:48"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-215 ms",
+  "timeCryptoSoft": "27 ms",
+  "Date": "22/02/2022 10:45:49"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "213 ms",
+  "timeCryptoSoft": "116 ms",
+  "Date": "22/02/2022 10:53:04"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "278 ms",
+  "timeCryptoSoft": "142 ms",
+  "Date": "22/02/2022 10:53:25"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "161 ms",
+  "timeCryptoSoft": "171 ms",
+  "Date": "22/02/2022 10:54:12"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "185 ms",
+  "timeCryptoSoft": "109 ms",
+  "Date": "22/02/2022 10:57:15"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "256 ms",
+  "timeCryptoSoft": "137 ms",
+  "Date": "22/02/2022 10:57:36"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "290 ms",
+  "timeCryptoSoft": "35 ms",
+  "Date": "22/02/2022 11:00:35"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "196 ms",
+  "timeCryptoSoft": "101 ms",
+  "Date": "22/02/2022 11:05:27"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "281 ms",
+  "timeCryptoSoft": "132 ms",
+  "Date": "22/02/2022 11:05:49"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "775 ms",
+  "timeCryptoSoft": "29 ms",
+  "Date": "22/02/2022 11:06:56"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "176 ms",
+  "timeCryptoSoft": "34 ms",
+  "Date": "22/02/2022 11:07:51"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "709 ms",
+  "timeCryptoSoft": "27 ms",
+  "Date": "22/02/2022 11:14:24"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-482 ms",
+  "timeCryptoSoft": "-962 ms",
+  "Date": "22/02/2022 11:15:33"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "186 ms",
+  "timeCryptoSoft": "105 ms",
+  "Date": "22/02/2022 11:24:30"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "87 ms",
+  "timeCryptoSoft": "29 ms",
+  "Date": "22/02/2022 11:26:44"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-70 ms",
+  "timeCryptoSoft": "52 ms",
+  "Date": "22/02/2022 11:26:44"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-690 ms",
+  "timeCryptoSoft": "32 ms",
+  "Date": "22/02/2022 11:50:31"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-761 ms",
+  "timeCryptoSoft": "63 ms",
+  "Date": "22/02/2022 11:50:31"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "468 ms",
+  "timeCryptoSoft": "36 ms",
+  "Date": "22/02/2022 13:45:06"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "433 ms",
+  "timeCryptoSoft": "34 ms",
+  "Date": "22/02/2022 13:48:45"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-390 ms",
+  "timeCryptoSoft": "98 ms",
+  "Date": "22/02/2022 15:32:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 8,
+  "FileSize": "624 B",
+  "FileTransferTime": "-965 ms",
+  "timeCryptoSoft": "127 ms",
+  "Date": "22/02/2022 15:34:04"
+}

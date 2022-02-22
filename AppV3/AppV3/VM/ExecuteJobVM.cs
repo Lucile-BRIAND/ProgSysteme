@@ -25,15 +25,15 @@ namespace AppV3.VM
         public string executeAllJobsButton { get; set; }
 
         FileExtentions fileExtentions = FileExtentions.GetInstance;
-        FileSize fileSize = FileSize.GetInstance;
 
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
         public string JobSoftwareNameTextBox;
+        public int indexPauseBackup;
+        public int indexStopBackup;
         private string format;
 
-        private static object _lock;
-
+      
 
 
         LanguageFile singletonLang = LanguageFile.GetInstance;
@@ -57,9 +57,17 @@ namespace AppV3.VM
             Trace.WriteLine(JobSoftwareNameTextBox);
             lf.InitJobSoftware(this.JobSoftwareNameTextBox);
         }
-        public void InitJobPauseName(string jobSoftware)
+        public void InitJobPauseName(int PID, int index)
         {
-            lf.InitJobPauseSoftware(jobSoftware);
+            lf.InitJobPauseSoftware(PID);
+            indexPauseBackup = index;
+
+        }
+        public void InitJobStopName(int PID, int index)
+        {
+            lf.InitJobStopSoftware(PID);
+            indexStopBackup = index;
+
         }
         public void InitFormat(string Format)
         {
@@ -70,7 +78,7 @@ namespace AppV3.VM
         public void CallCryptoSoft(string path, int startCryptTime)
         {
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/PAUSE/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -86,10 +94,8 @@ namespace AppV3.VM
 
             timeCryptoSoft += DateTime.Now.Millisecond - startCryptTime;
         }
-        public void ExecuteBackup(string name, string type, string source, string destination)
+        public void ExecuteBackup(string name, string type, string source, string destination, int index)
         {
-            _lock = new object();
-
             this.format = lf.GetFormat();
             Trace.WriteLine(this.format);
 
@@ -121,8 +127,7 @@ namespace AppV3.VM
 
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    FileInfo doc = new FileInfo(newPath);
-                    totalfileSize += doc.Length;
+                    totalfileSize += newPath.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
                 slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
@@ -133,92 +138,55 @@ namespace AppV3.VM
                     Directory.CreateDirectory(dirPath.Replace(source, destination));
                 }
 
+               
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    var processName = lf.GetJobSoftawre();
-                    Process[] myProcess = Process.GetProcessesByName(processName); ///HEEEEEEEEEERRRRRRRRRRRRRRRRRREEEEEEEEEEEEEEEEEEEEEE
-                    if (myProcess.Length != 0)
-                    {         
-                        myProcess[0].WaitForExit();
-                    }
-
-                    FileInfo doc = new FileInfo(newPath);
-                    if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
+                    Thread.Sleep(2000);
+                    int PIDPause = lf.GetJobPauseSoftawre();
+                    int PIDStop = lf.GetJobStopSoftawre();
+                    //PAUSE
+                    try
                     {
-                        fileSizeLeftToCopy += doc.Length;
-
-                        nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        Process myProcess = Process.GetProcessById(PIDPause);
+                        Trace.WriteLine(PIDPause);
+                        if (myProcess != null && indexPauseBackup == index)
                         {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                            myProcess.WaitForExit();
                         }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                    }
-                    else if (doc.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
+                    } catch
                     {
-                        lock (_lock)
-                        {
-                            fileSize.FileIsTransfering = true;
-                        }
 
-                        Thread.Sleep(10000);
-                        fileSizeLeftToCopy += doc.Length;
-
-                        nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-
-                        lock (_lock)
-                        {
-                            fileSize.FileIsTransfering = false;
-                        }
                     }
-                    else if (doc.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                    //STOP
+                    try
                     {
-                        while (fileSize.FileIsTransfering)
+                        Process myProcess2 = Process.GetProcessById(PIDStop);
+                        Trace.WriteLine(PIDStop);
+                        if (myProcess2 != null && indexStopBackup == index)
                         {
-                            Thread.Sleep(20);
-                        }
-
-                        lock (_lock)
-                        {
-                            fileSize.FileIsTransfering = true;
-                        }
-
-                        fileSizeLeftToCopy += doc.Length;
-
-                        nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-
-                        lock (_lock)
-                        {
-                            fileSize.FileIsTransfering = false;
+                            myProcess2.Kill();
+                            return;
                         }
                     }
-                    
+                    catch
+                    {
+
+                    }
+                    fileSizeLeftToCopy += newPath.Length;
+
+                    nbfile++;
+                    File.Copy(newPath, newPath.Replace(source, destination), true);
+                    if (totalfileSize - fileSizeLeftToCopy == 0)
+                    {
+                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                    }
+                    else
+                    {
+                        //Appends the text in the status log file
+                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                    }
+
                 }
                 //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
@@ -260,6 +228,37 @@ namespace AppV3.VM
                 //FOREACH : copies the files
                 Array.ForEach(originalFiles, (originalFileLocation) =>
                 {
+                    Thread.Sleep(2000);
+                    int PIDPause = lf.GetJobPauseSoftawre();
+                    int PIDStop = lf.GetJobStopSoftawre();
+                    try
+                    {
+                        Process myProcess = Process.GetProcessById(PIDPause);
+                        Trace.WriteLine(PIDPause);
+                        if (myProcess != null && indexPauseBackup == index)
+                        {
+                            myProcess.WaitForExit();
+                        }
+                    }
+                    catch
+                    {
+
+                    }
+                    //STOP
+                    try
+                    {
+                        Process myProcess2 = Process.GetProcessById(PIDStop);
+                        Trace.WriteLine(PIDStop);
+                        if (myProcess2 != null && indexStopBackup == index)
+                        {
+                            myProcess2.Kill();
+                            return;
+                        }
+                    }
+                    catch
+                    {
+
+                    }
                     FileInfo originalFile = new FileInfo(originalFileLocation);
                     FileInfo destFile = new FileInfo(originalFileLocation.Replace(source, destination));
 
@@ -324,7 +323,7 @@ namespace AppV3.VM
                 string type = attribute.jobType;
                 string source = attribute.sourcePath;
                 string destination = attribute.targetPath;
-                ExecuteBackup(name, type, source, destination);
+              //  ExecuteBackup(name, type, source, destination);
             }
         }
         public void GetFileExtentions(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)

@@ -64,7 +64,6 @@
     </Compile>
     <Compile Include="Models\ExistingJob.cs" />
     <Compile Include="Models\FileExtentions.cs" />
-    <Compile Include="Models\FileSize.cs" />
     <Compile Include="Models\JobModel.cs" />
     <Compile Include="Models\LanguageFile.cs" />
     <Compile Include="Models\LogFile.cs" />

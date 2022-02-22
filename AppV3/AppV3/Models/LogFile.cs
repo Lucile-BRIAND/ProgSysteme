@@ -8,6 +8,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Diagnostics;
+using System.Threading;
 
 namespace AppV3.Models
 {
@@ -19,8 +20,9 @@ namespace AppV3.Models
         private static LogFile logInstance = null; //default unique instance
         private string format;
         private string JobSoftware;
-        private string JobPauseSoftware;
-
+        private int JobPauseSoftware;
+        private int JobStopSoftware;
+        private Semaphore semaphore = new Semaphore(1, 1);
         //Private constructor, only accessible from this class
         private LogFile()
         {
@@ -52,21 +54,28 @@ namespace AppV3.Models
             return format;
         }
 
-        // Init and Get functions -> JobSoftware
         public void InitJobSoftware(string jobSoftware)
         {
             this.JobSoftware = jobSoftware;
             Trace.WriteLine(JobSoftware);
         }
-        public void InitJobPauseSoftware(string jobSoftware)
+        public void InitJobPauseSoftware(int PID)
         {
-            this.JobPauseSoftware = jobSoftware;
+            this.JobPauseSoftware = PID;
+        }
+        public void InitJobStopSoftware(int PID)
+        {
+            this.JobStopSoftware = PID;
         }
         public string GetJobSoftawre()
         {
             return JobSoftware;
         }
-        public string GetJobPauseSoftawre()
+        public int GetJobStopSoftawre()
+        {
+            return JobStopSoftware;
+        }
+        public int GetJobPauseSoftawre()
         {
             return JobPauseSoftware;
         }
@@ -74,7 +83,7 @@ namespace AppV3.Models
         //Writing content in the log file
         public void WriteLogMessage(string jobName, string sourcePath, string targetPath, int nbFile, long fileSize, int timeCryptoSoft, int timeExecuteBackup, string format)
         {
-            
+            semaphore.WaitOne();
             string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
@@ -145,7 +154,7 @@ namespace AppV3.Models
                     xDocument.Save("DailyLog.xml");
                 }
             }
-           
+            semaphore.Release();
         }
 
     }

@@ -32,8 +32,10 @@ namespace AppV3
         //JobModel jobToExecute;
         Thread[] Threads;
 
+        int[] PIDPauseTab = new int[100];
         public ExecuteJobView()
         {
+        
             InitializeComponent();
             this.DataContext = executeJobVM.getValues();
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
@@ -41,51 +43,34 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
-            Trace.WriteLine("numberOfJobs : " + numberOfJobs);
-            Threads = new Thread[numberOfJobs];
-            int counter = 0;
-            Thread myThread;
-
-            if (executeJobDataGrid.SelectedItem == null)
-            {
-                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
-            }
-            else
-            {
-                foreach (JobModel obj in executeJobDataGrid.SelectedItems)
-                {
-                    if (executeJobDataGrid.SelectedIndex > -1)
-                    {
-                        myThread = new Thread(new ParameterizedThreadStart(StartBackup));
-                        myThread.Name = "thread" + counter.ToString();
-                        myThread.IsBackground = true;
-                        Trace.WriteLine("numberOfJobs (IF) : " + numberOfJobs);
-                        if (counter < numberOfJobs)
-                        {
-                            Threads[counter] = myThread;
-                            Threads[counter].Start(obj);
-                            //ThreadPool.QueueUserWorkItem(delegate
-                            //{
-                            //    Threads[counter].Start(obj);
-                            //});
-                        }
-                        
-                    }
-                    counter++;
-                    Thread.Sleep(1000);
-                }
-
-            }
+            StartBackup();
         }
 
-        private void StartBackup(object obj)
+        private async void StartBackup()
         {
-            JobModel jobToExecute = (JobModel)obj;
-            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
+            int index = executeJobDataGrid.SelectedIndex;
+            if (executeJobDataGrid.SelectedIndex > -1)
             {
-                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath);
-            });
+                int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+                List<JobModel> jobList = new List<JobModel>() { };
+
+                if (executeJobDataGrid.SelectedItem == null)
+                {
+                    MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
+                }
+                else
+                {
+                    foreach (JobModel obj in executeJobDataGrid.SelectedItems)
+                    {
+                        jobList.Add(obj);
+                    }
+                    await Task.Factory.StartNew(() =>
+                    Parallel.ForEach(jobList, job =>
+                    {
+                        executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath, index);
+                    }));
+                }
+            }
 
         }
 
@@ -107,23 +92,64 @@ namespace AppV3
 
         private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
+            int index = executeJobDataGrid.SelectedIndex;
+            if (index < 0)
+            {
+                return;
+            }
+            else
+            {
+                Process processStopStart = new Process();
+                processStopStart.StartInfo.FileName = "notepad";
+                processStopStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                processStopStart.Start();
+                Trace.WriteLine(processStopStart.Id);
+                executeJobVM.InitJobStopName(processStopStart.Id, index);
 
+            }
         }
 
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
-            Process process = new Process();
-            process.StartInfo.FileName = "explorer";
-            process.Start();
-            executeJobVM.InitJobSoftwareName("explorer");
+            int index = executeJobDataGrid.SelectedIndex;
+            if (index < 0)
+            {
+                return;
+            }
+            else
+            {
+                Process processStart = new Process();
+                processStart.StartInfo.FileName = "notepad";
+                processStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                processStart.Start();
+                PIDPauseTab[index] = processStart.Id;
+                Trace.WriteLine(processStart.Id);
+                executeJobVM.InitJobPauseName(processStart.Id, index);
+
+            }
         }
 
         private void ButtonStop_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < executeJobDataGrid.SelectedItems.Count; i++)
+           
+            int index = executeJobDataGrid.SelectedIndex;
+           
+            if (index < 0)
             {
-                Threads[i].Abort();
-                MessageBox.Show(Threads[i].Name);
+                return;
+            }
+            else 
+            {
+                Process processStop = Process.GetProcessById(PIDPauseTab[index]);
+                Trace.WriteLine("test" + processStop);
+                try
+                {
+                    processStop.Kill();
+                }
+                catch 
+                {
+                  
+                }                
             }
 
         }

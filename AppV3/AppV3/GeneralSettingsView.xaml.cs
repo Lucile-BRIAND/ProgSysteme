@@ -14,7 +14,6 @@ using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
 using AppV3;
-using System.Diagnostics;
 
 namespace AppV3
 {
@@ -77,14 +76,6 @@ namespace AppV3
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
             executeJobVM.GetFileExtentions((bool)CheckboxTXT.IsChecked, (bool)CheckboxPDF.IsChecked, (bool)CheckboxJPG.IsChecked, (bool)CheckboxPNG.IsChecked);
-        }
-
-        private void MaximumFileSizeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            FileSize fileSize = FileSize.GetInstance;
-            ComboBoxItem size = maximumFileSizeComboBox.SelectedItem as ComboBoxItem;
-            Trace.WriteLine("SIZE :" + size.Content);
-            fileSize.FileMaxSize = Convert.ToInt32(size.Content);
         }
     }
 }

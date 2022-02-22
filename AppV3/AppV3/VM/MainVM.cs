@@ -33,7 +33,6 @@ namespace AppV3.VM
         public bool JPGvalue { get; set; }
         public bool PDFvalue { get; set; }
         public bool TXTvalue { get; set; }
-        public string MaximumFileSizeLabel { get; set; }
 
 
 
@@ -60,8 +59,7 @@ namespace AppV3.VM
                 TXTvalue = fileExtentions.TXTvalue,
                 PDFvalue = fileExtentions.PDFvalue,
                 JPGvalue = fileExtentions.JPGvalue,
-                PNGvalue = fileExtentions.PNGvalue,
-                MaximumFileSizeLabel = singletonLang.ReadFile().MaximumFileSizeLabel
+                PNGvalue = fileExtentions.PNGvalue
             };
             return values;
 
