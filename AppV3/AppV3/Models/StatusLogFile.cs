@@ -39,6 +39,10 @@ namespace AppV3.Models
             //Blocks until the current thread is ended
             semaphore.WaitOne();
 
+            //Formats several parameters
+            string totalFilesSizeFormated = totalFilesSize.ToString() + " B";
+            string fileSizeLeftToCopyFormated = fileSizeLeftToCopy.ToString() + " B";
+
             if (format == "json")
             {
                 //Adding values to the json keys
@@ -50,9 +54,9 @@ namespace AppV3.Models
                     TargetPath = targetPath,
                     State = state,
                     TotalFilesToCopy = totalFilesToCopy,
-                    TotalFilesSize = totalFilesSize,
+                    TotalFilesSize = totalFilesSizeFormated,
                     NbFilesLeftToDo = nbFilesLeftToDo,
-                    FileSizeLeftToCopy = fileSizeLeftToCopy
+                    FileSizeLeftToCopy = fileSizeLeftToCopyFormated
                 };
 
                 //Reserializing the json file and writing
@@ -87,7 +91,7 @@ namespace AppV3.Models
                         xmlWriter.WriteElementString("TotalFilesToCopy", totalFilesToCopy.ToString());
                         xmlWriter.WriteElementString("TotalFilesSize", totalFilesSize.ToString() + " B");
                         xmlWriter.WriteElementString("NbFilesLeftToDo", nbFilesLeftToDo.ToString());
-                        xmlWriter.WriteElementString("FileSizeLeftToCopy", fileSizeLeftToCopy.ToString());
+                        xmlWriter.WriteElementString("FileSizeLeftToCopy", fileSizeLeftToCopy.ToString() + " B");
                         xmlWriter.WriteEndElement();
 
                         //Ending node and closing
@@ -114,7 +118,7 @@ namespace AppV3.Models
                        new XElement("TotalFilesToCopy", totalFilesToCopy.ToString()),
                        new XElement("TotalFilesSize", totalFilesSize.ToString() + " B"),
                        new XElement("NbFilesLeftToDo", nbFilesLeftToDo.ToString()),
-                       new XElement("FileSizeLeftToCopy", fileSizeLeftToCopy.ToString())));
+                       new XElement("FileSizeLeftToCopy", fileSizeLeftToCopy.ToString() + " B")));
                     xDocument.Save("StatusLogFile.xml");
                 }
             }

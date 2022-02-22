@@ -31,6 +31,10 @@ namespace AppV3.VM
         public bool JPGvalue { get; set; }
         public bool PDFvalue { get; set; }
         public bool TXTvalue { get; set; }
+        public bool Priority_PNGValue { get; set; }
+        public bool Priority_JPGValue { get; set; }
+        public bool Priority_PDFValue { get; set; }
+        public bool Priority_TXTValue { get; set; }
         public string MaximumFileSizeLabel { get; set; }
 
 
@@ -55,11 +59,15 @@ namespace AppV3.VM
                 ButtonMainMenu = singletonLang.ReadFile().MainReturn,
                 ButtonSettings = singletonLang.ReadFile().Settings,
                 ExtentionLabel = singletonLang.ReadFile().ExtentionLabel,
+                MaximumFileSizeLabel = singletonLang.ReadFile().MaximumFileSizeLabel,
                 TXTvalue = fileExtentions.TXTvalue,
                 PDFvalue = fileExtentions.PDFvalue,
                 JPGvalue = fileExtentions.JPGvalue,
                 PNGvalue = fileExtentions.PNGvalue,
-                MaximumFileSizeLabel = singletonLang.ReadFile().MaximumFileSizeLabel
+                Priority_TXTValue = fileExtentions.Priority_TXTValue,
+                Priority_PDFValue = fileExtentions.Priority_PDFValue,
+                Priority_JPGValue = fileExtentions.Priority_JPGValue,
+                Priority_PNGValue = fileExtentions.Priority_PNGValue
             };
             return values;
 

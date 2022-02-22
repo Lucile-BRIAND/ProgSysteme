@@ -81,8 +81,8 @@ namespace AppV3.Models
                     FileTarget = targetPath,
                     NbFile = nbFile,
                     FileSize = fileSizeFormated,
-                    FileTransferTime = timeExecuteBackupFormated,
-                    timeCryptoSoft = timeCryptoSoftFormated,
+                    BackupTransferTime = timeExecuteBackupFormated,
+                    CryptoSoftTime = timeCryptoSoftFormated,
                     Date = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss") //Current timestamp in the proper format
                 };
 
@@ -112,9 +112,9 @@ namespace AppV3.Models
                         xmlWriter.WriteElementString("JobName", jobName);
                         xmlWriter.WriteElementString("SourcePath", sourcePath);
                         xmlWriter.WriteElementString("TargetPath", targetPath);
-                        xmlWriter.WriteElementString("FileSize", fileSize.ToString());
-                        xmlWriter.WriteElementString("FileTransferTime", timeExecuteBackupFormated);
-                        xmlWriter.WriteElementString("CryptTime", timeCryptoSoftFormated);
+                        xmlWriter.WriteElementString("FileSize", fileSize.ToString() + " B");
+                        xmlWriter.WriteElementString("BackupTransferTime", timeExecuteBackupFormated);
+                        xmlWriter.WriteElementString("CryptoSoftTime", timeCryptoSoftFormated);
                         xmlWriter.WriteElementString("Date", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
                         xmlWriter.WriteEndElement();
 
@@ -137,9 +137,9 @@ namespace AppV3.Models
                        new XElement("JobName", jobName),
                        new XElement("SourcePath", sourcePath),
                        new XElement("TargetPath", targetPath),
-                       new XElement("FileSize", fileSize.ToString()),
-                       new XElement("FileTransferTime", timeExecuteBackupFormated),
-                       new XElement("CryptTime", timeCryptoSoftFormated),
+                       new XElement("FileSize", fileSize.ToString() + " B"),
+                       new XElement("BackupTransferTime", timeExecuteBackupFormated),
+                       new XElement("CryptoSoftTime", timeCryptoSoftFormated),
                        new XElement("Date", DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"))));
                     xDocument.Save("DailyLog.xml");
                 }

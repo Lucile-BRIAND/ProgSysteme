@@ -22,5 +22,23 @@
     "jobType": "Differential",
     "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
     "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "JOB DIFF 2",
+    "jobType": "Differential",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "Job2C",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source2",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "Job1C",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
   }
 ]
