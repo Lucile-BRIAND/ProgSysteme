@@ -1836,35 +1836,1113 @@
   "FileSizeLeftToCopy": 0
 }
 {
-  "Name": "test1",
+  "Name": "JOB",
   "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
   "State": "STARTING",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 140,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 140
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
 }
 {
-  "Name": "test1",
+  "Name": "JOB",
   "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
   "State": "ACTIVE",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 140,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 72
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 206
 }
 {
-  "Name": "test1",
+  "Name": "JOB",
   "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 151
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
   "State": "END",
-  "TotalFilesToCopy": 2,
-  "TotalFilesSize": 140,
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 206
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 151
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 206
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 151
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 272
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 206
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 151
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 76
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 272,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 1,
+  "TotalFilesSize": 71,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 71
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 1,
+  "TotalFilesSize": 18122,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": 0
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": 21146
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": 21141
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": 18129
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": 18122
+}
+{
+  "Name": "JOB2",
+  "Type": "Complete",
+  "SourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+  "TargetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 4,
+  "TotalFilesSize": 21146,
   "NbFilesLeftToDo": 0,
   "FileSizeLeftToCopy": 0
 }
@@ -1872,901 +2950,54 @@
   "Name": "test1",
   "Type": "Complete",
   "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
   "State": "STARTING",
   "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
+  "TotalFilesSize": 39,
   "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
+  "FileSizeLeftToCopy": 39
 }
 {
   "Name": "test1",
   "Type": "Complete",
   "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
   "State": "ACTIVE",
   "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
+  "TotalFilesSize": 39,
   "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
+  "FileSizeLeftToCopy": 35
 }
 {
   "Name": "test1",
   "Type": "Complete",
   "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
   "State": "ACTIVE",
   "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
+  "TotalFilesSize": 39,
   "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
+  "FileSizeLeftToCopy": 30
 }
 {
   "Name": "test1",
   "Type": "Complete",
   "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
   "State": "ACTIVE",
   "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
+  "TotalFilesSize": 39,
   "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
+  "FileSizeLeftToCopy": 25
 }
 {
   "Name": "test1",
   "Type": "Complete",
   "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
   "State": "ACTIVE",
   "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
+  "TotalFilesSize": 39,
   "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 6,
-  "FileSizeLeftToCopy": 464
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 5,
-  "FileSizeLeftToCopy": 388
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 4,
-  "FileSizeLeftToCopy": 320
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 3,
-  "FileSizeLeftToCopy": 248
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 2,
-  "FileSizeLeftToCopy": 168
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 1,
-  "FileSizeLeftToCopy": 84
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "END",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 0,
-  "FileSizeLeftToCopy": 0
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test2",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
-  "State": "STARTING",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 8,
-  "FileSizeLeftToCopy": 624
-}
-{
-  "Name": "test1",
-  "Type": "Complete",
-  "SourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-  "TargetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
-  "State": "ACTIVE",
-  "TotalFilesToCopy": 8,
-  "TotalFilesSize": 624,
-  "NbFilesLeftToDo": 7,
-  "FileSizeLeftToCopy": 544
+  "FileSizeLeftToCopy": 20
 }

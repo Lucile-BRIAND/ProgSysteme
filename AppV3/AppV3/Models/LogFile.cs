@@ -20,6 +20,7 @@ namespace AppV3.Models
         private string format;
         private string JobSoftware;
         private string JobPauseSoftware;
+
         //Private constructor, only accessible from this class
         private LogFile()
         {
@@ -51,6 +52,7 @@ namespace AppV3.Models
             return format;
         }
 
+        // Init and Get functions -> JobSoftware
         public void InitJobSoftware(string jobSoftware)
         {
             this.JobSoftware = jobSoftware;

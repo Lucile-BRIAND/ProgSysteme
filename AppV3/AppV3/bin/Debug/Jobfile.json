@@ -3,12 +3,12 @@
     "jobName": "test1",
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
   },
   {
     "jobName": "test2",
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
-    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
   }
 ]

@@ -41,33 +41,51 @@ namespace AppV3
 
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-            StartBackup();
+            int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+            Trace.WriteLine("numberOfJobs : " + numberOfJobs);
+            Threads = new Thread[numberOfJobs];
+            int counter = 0;
+            Thread myThread;
+
+            if (executeJobDataGrid.SelectedItem == null)
+            {
+                MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
+            }
+            else
+            {
+                foreach (JobModel obj in executeJobDataGrid.SelectedItems)
+                {
+                    if (executeJobDataGrid.SelectedIndex > -1)
+                    {
+                        myThread = new Thread(new ParameterizedThreadStart(StartBackup));
+                        myThread.Name = "thread" + counter.ToString();
+                        myThread.IsBackground = true;
+                        Trace.WriteLine("numberOfJobs (IF) : " + numberOfJobs);
+                        if (counter < numberOfJobs)
+                        {
+                            Threads[counter] = myThread;
+                            Threads[counter].Start(obj);
+                            //ThreadPool.QueueUserWorkItem(delegate
+                            //{
+                            //    Threads[counter].Start(obj);
+                            //});
+                        }
+                        
+                    }
+                    counter++;
+                    Thread.Sleep(1000);
+                }
+
+            }
         }
 
-        private async void StartBackup()
+        private void StartBackup(object obj)
         {
-            if (executeJobDataGrid.SelectedIndex > -1)
+            JobModel jobToExecute = (JobModel)obj;
+            this.Dispatcher.BeginInvoke(DispatcherPriority.Normal, (ThreadStart)delegate ()
             {
-                int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
-                List<JobModel> jobList = new List<JobModel>() { };
-
-                if (executeJobDataGrid.SelectedItem == null)
-                {
-                    MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
-                }
-                else
-                {
-                    foreach (JobModel obj in executeJobDataGrid.SelectedItems)
-                    {
-                        jobList.Add(obj);
-                    }
-                    await Task.Factory.StartNew(() =>
-                    Parallel.ForEach(jobList, job =>
-                    {
-                        executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath);
-                    }));
-                }
-            }
+                executeJobVM.ExecuteBackup(jobToExecute.jobName, jobToExecute.jobType, jobToExecute.sourcePath, jobToExecute.targetPath);
+            });
 
         }
 
@@ -95,9 +113,9 @@ namespace AppV3
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
             Process process = new Process();
-            process.StartInfo.FileName = "notepad";
+            process.StartInfo.FileName = "explorer";
             process.Start();
-            executeJobVM.InitJobSoftwareName("notepad");
+            executeJobVM.InitJobSoftwareName("explorer");
         }
 
         private void ButtonStop_Click(object sender, RoutedEventArgs e)

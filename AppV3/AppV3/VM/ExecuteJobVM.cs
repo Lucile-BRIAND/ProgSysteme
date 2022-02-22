@@ -25,12 +25,14 @@ namespace AppV3.VM
         public string executeAllJobsButton { get; set; }
 
         FileExtentions fileExtentions = FileExtentions.GetInstance;
+        FileSize fileSize = FileSize.GetInstance;
 
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
         public string JobSoftwareNameTextBox;
         private string format;
 
+        private static object _lock;
 
 
 
@@ -55,6 +57,10 @@ namespace AppV3.VM
             Trace.WriteLine(JobSoftwareNameTextBox);
             lf.InitJobSoftware(this.JobSoftwareNameTextBox);
         }
+        public void InitJobPauseName(string jobSoftware)
+        {
+            lf.InitJobPauseSoftware(jobSoftware);
+        }
         public void InitFormat(string Format)
         {
             this.format = Format;
@@ -64,7 +70,7 @@ namespace AppV3.VM
         public void CallCryptoSoft(string path, int startCryptTime)
         {
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/PAUSE/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -82,6 +88,8 @@ namespace AppV3.VM
         }
         public void ExecuteBackup(string name, string type, string source, string destination)
         {
+            _lock = new object();
+
             this.format = lf.GetFormat();
             Trace.WriteLine(this.format);
 
@@ -113,7 +121,8 @@ namespace AppV3.VM
 
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    totalfileSize += newPath.Length;
+                    FileInfo doc = new FileInfo(newPath);
+                    totalfileSize += doc.Length;
                 }
                 //Appends the text in the status log file  => state 0 : initialization
                 slf.WriteStatusLogMessage(name, type, source, destination, "STARTING", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
@@ -127,28 +136,89 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
-                    Thread.Sleep(2000);
                     var processName = lf.GetJobSoftawre();
-                    Process[] myProcess = Process.GetProcessesByName(processName); 
+                    Process[] myProcess = Process.GetProcessesByName(processName); ///HEEEEEEEEEERRRRRRRRRRRRRRRRRREEEEEEEEEEEEEEEEEEEEEE
                     if (myProcess.Length != 0)
-                    {
+                    {         
                         myProcess[0].WaitForExit();
                     }
 
-                    fileSizeLeftToCopy += newPath.Length;
-
-                    nbfile++;
-                    File.Copy(newPath, newPath.Replace(source, destination), true);
-                    if (totalfileSize - fileSizeLeftToCopy == 0)
+                    FileInfo doc = new FileInfo(newPath);
+                    if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                     {
-                        slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                    }
-                    else
-                    {
-                        //Appends the text in the status log file
-                        slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                    }
+                        fileSizeLeftToCopy += doc.Length;
 
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                    }
+                    else if (doc.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
+                    {
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        Thread.Sleep(10000);
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+                    else if (doc.Length > fileSize.FileMaxSize && fileSize.FileIsTransfering) //If the file is bigger and another big file is currently tranfering
+                    {
+                        while (fileSize.FileIsTransfering)
+                        {
+                            Thread.Sleep(20);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = true;
+                        }
+
+                        fileSizeLeftToCopy += doc.Length;
+
+                        nbfile++;
+                        File.Copy(newPath, newPath.Replace(source, destination), true);
+                        if (totalfileSize - fileSizeLeftToCopy == 0)
+                        {
+                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+                        else
+                        {
+                            //Appends the text in the status log file
+                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+                        }
+
+                        lock (_lock)
+                        {
+                            fileSize.FileIsTransfering = false;
+                        }
+                    }
+                    
                 }
                 //CallCryptoSoft(source, DateTime.Now.Millisecond);
                 CallCryptoSoft(destination, DateTime.Now.Millisecond);
