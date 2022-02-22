@@ -91,7 +91,7 @@ namespace AppV3
             FileSize fileSize = FileSize.GetInstance;
             ComboBoxItem size = maximumFileSizeComboBox.SelectedItem as ComboBoxItem;
             Trace.WriteLine("SIZE :" + size.Content);
-            fileSize.FileMaxSize = Convert.ToInt32(size.Content);
+            fileSize.FileMaxSize = Convert.ToInt32(size.Content) * 1000;
         }
     }
 }

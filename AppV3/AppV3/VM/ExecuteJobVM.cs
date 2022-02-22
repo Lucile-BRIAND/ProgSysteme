@@ -17,6 +17,7 @@ namespace AppV3.VM
 
         FileExtentions fileExtentions = FileExtentions.GetInstance;
         FileSize fileSize = FileSize.GetInstance;
+        StatusLogFile slf = StatusLogFile.GetInstance;
 
         public static int timeCryptoSoft;
         public static int timeExecuteBackup;
@@ -97,7 +98,6 @@ namespace AppV3.VM
             int startTranferTime = DateTime.Now.Millisecond;
 
             int nbfile = 0; //number of files that have been copied
-            StatusLogFile slf = StatusLogFile.GetInstance;
             long totalfileSize = 0;
             long fileSizeLeftToCopy = 0;
             if (type == "Complete" | type == "Complète")
@@ -125,18 +125,9 @@ namespace AppV3.VM
                     if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                     {
                         fileSizeLeftToCopy += doc.Length;
-
                         nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
+
+                        CompleteCopyMethod(newPath, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy);
                     }
 
                     else if (doc.Length > fileSize.FileMaxSize && !fileSize.FileIsTransfering) //If the file is bigger but no other big file is currently transfering
@@ -148,18 +139,9 @@ namespace AppV3.VM
 
                         Thread.Sleep(5000); //DEBUG
                         fileSizeLeftToCopy += doc.Length;
-
                         nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
+
+                        CompleteCopyMethod(newPath, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy);
 
                         lock (_lock) //LOCK: reset the transfer status as free to use
                         {
@@ -180,18 +162,9 @@ namespace AppV3.VM
                         }
 
                         fileSizeLeftToCopy += doc.Length;
-
                         nbfile++;
-                        File.Copy(newPath, newPath.Replace(source, destination), true);
-                        if (totalfileSize - fileSizeLeftToCopy == 0)
-                        {
-                            slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
-                        else
-                        {
-                            //Appends the text in the status log file
-                            slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                        }
+
+                        CompleteCopyMethod(newPath, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy);
 
                         lock (_lock) //LOCK: reset the transfer status as free to use
                         {
@@ -249,21 +222,10 @@ namespace AppV3.VM
                         {
                             if (originalFile.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                             {
-                                //Copies the file
-                                originalFile.CopyTo(destFile.FullName, true);
                                 nbfile++;
                                 fileSizeLeftToCopy += originalFile.Length;
 
-                                //Appends the text in the status log file
-                                if (totalfileSize - fileSizeLeftToCopy == 0)
-                                {
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
-                                else
-                                {
-                                    //Appends the text in the status log file
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
+                                DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
 
                             }
 
@@ -274,21 +236,11 @@ namespace AppV3.VM
                                     fileSize.FileIsTransfering = true;
                                 }
 
-                                //Copies the file
-                                originalFile.CopyTo(destFile.FullName, true);
                                 nbfile++;
                                 fileSizeLeftToCopy += originalFile.Length;
 
-                                //Appends the text in the status log file
-                                if (totalfileSize - fileSizeLeftToCopy == 0)
-                                {
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
-                                else
-                                {
-                                    //Appends the text in the status log file
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
+                                DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+
 
                                 lock (_lock) //LOCK: reset the transfer status as free to use
                                 {
@@ -308,21 +260,11 @@ namespace AppV3.VM
                                     fileSize.FileIsTransfering = true;
                                 }
 
-                                //Copies the file
-                                originalFile.CopyTo(destFile.FullName, true);
                                 nbfile++;
                                 fileSizeLeftToCopy += originalFile.Length;
 
-                                //Appends the text in the status log file
-                                if (totalfileSize - fileSizeLeftToCopy == 0)
-                                {
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
-                                else
-                                {
-                                    //Appends the text in the status log file
-                                    slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                                }
+                                DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+
 
                                 lock (_lock) //LOCK: reset the transfer status as free to use
                                 {
@@ -338,21 +280,11 @@ namespace AppV3.VM
 
                         if (originalFile.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                         {
-                            //Copies the file
-                            originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
                             fileSizeLeftToCopy += originalFile.Length;
 
-                            //Appends the text in the status log file
-                            if (totalfileSize - fileSizeLeftToCopy == 0)
-                            {
-                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
-                            else
-                            {
-                                //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
+                            DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+
 
                         }
 
@@ -364,21 +296,11 @@ namespace AppV3.VM
                             }
 
                             Thread.Sleep(5000); //DEBUG
-                            //Copies the file
-                            originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
                             fileSizeLeftToCopy += originalFile.Length;
 
-                            //Appends the text in the status log file
-                            if (totalfileSize - fileSizeLeftToCopy == 0)
-                            {
-                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
-                            else
-                            {
-                                //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
+                            DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+
 
                             lock (_lock) //LOCK: reset the transfer status as free to use
                             {
@@ -398,21 +320,11 @@ namespace AppV3.VM
                                 fileSize.FileIsTransfering = true;
                             }
 
-                            //Copies the file
-                            originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
                             fileSizeLeftToCopy += originalFile.Length;
 
-                            //Appends the text in the status log file
-                            if (totalfileSize - fileSizeLeftToCopy == 0)
-                            {
-                                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
-                            else
-                            {
-                                //Appends the text in the status log file
-                                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
-                            }
+                            DifferentialCopyMethod(originalFile, destFile, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+
 
                             lock (_lock) //LOCK: reset the transfer status as free to use
                             {
@@ -442,6 +354,37 @@ namespace AppV3.VM
                 string source = attribute.sourcePath;
                 string destination = attribute.targetPath;
                 ExecuteBackup(name, type, source, destination);
+            }
+        }
+
+        public void CompleteCopyMethod(string newPath, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
+        {
+            File.Copy(newPath, newPath.Replace(source, destination), true);
+            if (totalfileSize - fileSizeLeftToCopy == 0)
+            {
+                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+            }
+            else
+            {
+                //Appends the text in the status log file
+                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileComplete, totalfileSize, totalNbFileComplete - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+            }
+        }
+
+        public void DifferentialCopyMethod(FileInfo originalFile, FileInfo destFile, string name, string type, string source, string destination, int totalNbFileDifferential, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
+        {
+            //Copies the file
+            originalFile.CopyTo(destFile.FullName, true);
+
+            //Appends the text in the status log file
+            if (totalfileSize - fileSizeLeftToCopy == 0)
+            {
+                slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
+            }
+            else
+            {
+                //Appends the text in the status log file
+                slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
             }
         }
 
