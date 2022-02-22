@@ -31,39 +31,37 @@ namespace AppV3
         
         public MainWindow()
         {
+            // If the EasySaveAppV3 is already running we lock the launch of any other instance of the application
             if (Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1) {
                 MessageBox.Show("Application was already running. Only one instance of this application is allowed");
                 Close();
                 return; 
             }
-
             InitializeComponent();
             this.DataContext = mainVM.getValues();
         }
-
+        // The ButtonCreateJobView_Click method is called when the user click the button to go display CreateJob View
         private void ButtonCreateJobView_Click(object sender, RoutedEventArgs e)
         {
             CreateJobView createJobView = new CreateJobView();
             createJobView.Show();
             Close();
         }
-
+        // The ButtonExecuteJobView_Click method is called when the user click the button to go display ExecuteJob View
         private void ButtonExecuteJobView_Click(object sender, RoutedEventArgs e)
         {
             ExecuteJobView executeJob = new ExecuteJobView();
             executeJob.Show();
             Close();
         }
-
+        // The ButtonRemoveJobView_Click method is called when the user click the button to go display RemoveJob View
         private void ButtonRemoveJobView_Click(object sender, RoutedEventArgs e)
         {
             RemoveJobView remove = new RemoveJobView();
             remove.Show();
             Close();
         }
-
-
-
+        // The ButtonSettings_Click method is called when the user click the button to go display GeneralSetting View
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
             GeneralSettingsView generalSettingsView = new GeneralSettingsView();
