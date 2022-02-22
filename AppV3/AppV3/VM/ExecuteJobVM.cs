@@ -149,23 +149,35 @@ namespace AppV3.VM
                 //Copies all the files & replaces any file with the same name
                 foreach (string newPath in Directory.GetFiles(source, "*.*", SearchOption.AllDirectories))
                 {
+
                     FileInfo doc = new FileInfo(newPath);
-                    if(doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
+
+                    if (fileExtentions.extensionToPrioritize.Contains(doc.Extension))
+                    {
+                        PrioritaryList.Add(newPath);
+
+                    }
+                    else if (!fileExtentions.extensionToPrioritize.Contains(doc.Extension))
+                    {
+                        NonPriorityList.Add(newPath);
+                    }
+
+                    foreach (string newPrioritaryPath in PrioritaryList)
+                    {
+                        //CopyCompelte(newPrioritaryPath, source, destination);
+                    }
+                    foreach (string newNonPrioritaryPath in NonPriorityList)
+                    {
+                        //CopyCompelte(newPrioritaryPath, source, destination);
+                    }
+                    if (doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                     {
                         fileSizeLeftToCopy += doc.Length;
 
                         nbfile++;
 
-                        if (fileExtentions.extensionToPrioritize.Contains(doc.Extension))
-                        {
-                            PrioritaryList.Add(newPath);
 
-                        }
-                        else if (doc.Extension != ".png")
-                        {
-                            NonPriorityList.Add(newPath);
-                        }
-
+                    
 
                         if (totalfileSize - fileSizeLeftToCopy == 0)
                         {
@@ -282,7 +294,7 @@ namespace AppV3.VM
 
                     if (destFile.Exists)
                     {
-                        if (originalFile.Length > destFile.Length)
+                        if (originalFile.Length != destFile.Length)
                         {
                             originalFile.CopyTo(destFile.FullName, true);
                             nbfile++;
