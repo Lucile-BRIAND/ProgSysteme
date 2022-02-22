@@ -29,6 +29,7 @@ namespace AppV3
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
         Thread[] Threads;
+        int[] PIDPauseTab = new int[100];
 
         public ExecuteJobView()
         {
@@ -41,31 +42,35 @@ namespace AppV3
         // The user can select only one or multiple jobs
         private void ButtonExecuteJob_Click(object sender, RoutedEventArgs e)
         {
-                // If the user didn't select anything, we send an error in the corresponding language
+            StartBackup();
+        }
+
+        private async void StartBackup()
+        {
+            int index = executeJobDataGrid.SelectedIndex;
+            if (executeJobDataGrid.SelectedIndex > -1)
+            {
+                int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
+                List<JobModel> jobList = new List<JobModel>() { };
+
                 if (executeJobDataGrid.SelectedItem == null)
                 {
                     MessageBox.Show(singletonLang.ReadFile().ErrorGrid);
                 }
-                else // If he select at least on item
+                else
                 {
-                    // To know how many jobs has been selected by the user we count the selected cells number and divide by the corredsponding selected columns number
-                    // We also initialize a List of JobModel Object
-                    int numberOfJobs = (int)(executeJobDataGrid.SelectedCells.Count / executeJobDataGrid.Columns.Count);
-                    List<JobModel> jobList = new List<JobModel>() { };
-
-                    // For each selected Job in the grid we add the corresponding JobModel to the list we initialize previously
                     foreach (JobModel obj in executeJobDataGrid.SelectedItems)
-                        {
-                            jobList.Add(obj);
-                        }
-
-                        // Then for Each Job in the List we use the Parrallel.ForEach() method to create a thread for each iteration, which will call the ExecuteBackup() method
-                        Parallel.ForEach(jobList, job =>
-                        {
-                            // Method used to start job, copy the file, and also call the method that create or fill in the Log and StatusLog
-                            executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath);
-                        });
+                    {
+                        jobList.Add(obj);
+                    }
+                    await Task.Factory.StartNew(() =>
+                    Parallel.ForEach(jobList, job =>
+                    {
+                        executeJobVM.ExecuteBackup(job.jobName, job.jobType, job.sourcePath, job.targetPath, index);
+                    }));
                 }
+            }
+
         }
 
         // The ButtonMainMenu_Click method is called when the user click the button to go back to the main menu
@@ -75,22 +80,66 @@ namespace AppV3
             Close();
         }
 
-        private void ButtonPlay_Click(object sender, RoutedEventArgs e)
+        private void ButtonStop_Click(object sender, RoutedEventArgs e)
         {
+            int index = executeJobDataGrid.SelectedIndex;
+            if (index < 0)
+            {
+                return;
+            }
+            else
+            {
+                Process processStopStart = new Process();
+                processStopStart.StartInfo.FileName = "notepad";
+                processStopStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                processStopStart.Start();
+                Trace.WriteLine(processStopStart.Id);
+                executeJobVM.InitJobStopName(processStopStart.Id, index);
 
+            }
         }
 
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
+            int index = executeJobDataGrid.SelectedIndex;
+            if (index < 0)
+            {
+                return;
+            }
+            else
+            {
+                Process processStart = new Process();
+                processStart.StartInfo.FileName = "notepad";
+                processStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                processStart.Start();
+                PIDPauseTab[index] = processStart.Id;
+                Trace.WriteLine(processStart.Id);
+                executeJobVM.InitJobPauseName(processStart.Id, index);
 
+            }
         }
 
-        private void ButtonStop_Click(object sender, RoutedEventArgs e)
+        private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < executeJobDataGrid.SelectedItems.Count; i++)
+
+            int index = executeJobDataGrid.SelectedIndex;
+
+            if (index < 0)
             {
-                Threads[i].Abort();
-                MessageBox.Show(Threads[i].Name);
+                return;
+            }
+            else
+            {
+                Process processStop = Process.GetProcessById(PIDPauseTab[index]);
+                Trace.WriteLine("test" + processStop);
+                try
+                {
+                    processStop.Kill();
+                }
+                catch
+                {
+
+                }
             }
 
         }

@@ -19,12 +19,10 @@ namespace AppV3.VM
         public FileSize fileSize = FileSize.GetInstance;
         public StatusLogFile slf = StatusLogFile.GetInstance;
 
-        //public static int timeCryptoSoft;
-        //public static int timeExecuteBackup;
         public string JobSoftwareNameTextBox;
         private string format;
-        //private int nbfile;
-        //private long fileSizeLeftToCopy;
+        public int indexPauseBackup;
+        public int indexStopBackup;
 
         private static object _lock;
 
@@ -47,8 +45,20 @@ namespace AppV3.VM
         public void InitJobSoftwareName(string jobSoftware)
         {
             JobSoftwareNameTextBox = jobSoftware;
-            //Trace.WriteLine(JobSoftwareNameTextBox);
-            lf.InitJobSoftware(JobSoftwareNameTextBox);
+            Trace.WriteLine(JobSoftwareNameTextBox);
+            lf.InitJobSoftware(this.JobSoftwareNameTextBox);
+        }
+        public void InitJobPauseName(int PID, int index)
+        {
+            lf.InitJobPauseSoftware(PID);
+            indexPauseBackup = index;
+
+        }
+        public void InitJobStopName(int PID, int index)
+        {
+            lf.InitJobStopSoftware(PID);
+            indexStopBackup = index;
+
         }
         public void InitFormat(string Format)
         {
@@ -79,7 +89,7 @@ namespace AppV3.VM
             return timeCryptoSoft;
         }
 
-        public void ExecuteBackup(string name, string type, string source, string destination)
+        public void ExecuteBackup(string name, string type, string source, string destination, int index)
         {
             _lock = new object(); //object used to lock critical sections of code
 
@@ -149,7 +159,7 @@ namespace AppV3.VM
                 //Call copy method and the associated calls
                 //      Prioritary files first:
                 List<long> valuesList = new List<long>();
-                valuesList = CallCompleteCopy(PrioritaryListComplete, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy);
+                valuesList = CallCompleteCopy(PrioritaryListComplete, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy, index);
                 nbfile = (int)valuesList[0]; //parameter actualization
                 fileSizeLeftToCopy = valuesList[1]; //parameter actualization
                 valuesList.Clear();
@@ -157,7 +167,7 @@ namespace AppV3.VM
                 Thread.Sleep(2000); //DEBUG: helps to see the difference between prioritary files and other files
 
                 //      Then the non-prioritary files:
-                valuesList = CallCompleteCopy(NonPrioritaryListComplete, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy);
+                valuesList = CallCompleteCopy(NonPrioritaryListComplete, source, destination, name, type, totalNbFileComplete, totalfileSize, nbfile, fileSizeLeftToCopy, index);
                 nbfile += (int)valuesList[0]; //parameter actualization
                 fileSizeLeftToCopy = valuesList[1]; //parameter actualization
                 valuesList.Clear();
@@ -231,7 +241,7 @@ namespace AppV3.VM
                 //Call copy method and the associated calls
                 //      Prioritary files first:
                 List<long> valuesList = new List<long>();
-                valuesList = CallDifferentialCopy(PrioritaryArrayDifferential, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+                valuesList = CallDifferentialCopy(PrioritaryArrayDifferential, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy, index);
                 nbfile = (int)valuesList[0]; //parameter actualization
                 fileSizeLeftToCopy = valuesList[1]; //parameter actualization
                 valuesList.Clear();
@@ -239,7 +249,7 @@ namespace AppV3.VM
                 Thread.Sleep(2000); //DEBUG: helps to see the difference between prioritary files and other files
 
                 //      Then the non-prioritary files:
-                valuesList = CallDifferentialCopy(NonPrioritaryArrayDifferential, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy);
+                valuesList = CallDifferentialCopy(NonPrioritaryArrayDifferential, name, type, source, destination, totalNbFileDifferential, totalfileSize, nbfile, fileSizeLeftToCopy, index);
                 nbfile = (int)valuesList[0]; //parameter actualization
                 fileSizeLeftToCopy = valuesList[1]; //parameter actualization
                 valuesList.Clear();
@@ -253,28 +263,51 @@ namespace AppV3.VM
             }
 
         }
-        public void ExecutAllBackup()
-        {
-            //Read the JSON file containing the job's data
-            var contentFile = System.IO.File.ReadAllText("Jobfile.json");
-            var jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile);
 
-            foreach (JobModel attribute in jobModelList)
-            {
-
-                string name = attribute.jobName;
-                string type = attribute.jobType;
-                string source = attribute.sourcePath;
-                string destination = attribute.targetPath;
-                ExecuteBackup(name, type, source, destination);
-            }
-        }
-
-        public List<long> CallCompleteCopy(List<string> filesList, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
+        public List<long> CallCompleteCopy(List<string> filesList, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
             //Copy all the files & replaces any file with the same name
             foreach (string newPath in filesList)
             {
+                Thread.Sleep(2000);
+                int PIDPause = lf.GetJobPauseSoftawre();
+                int PIDStop = lf.GetJobStopSoftawre();
+                //PAUSE
+                try
+                {
+                    Process myProcess = Process.GetProcessById(PIDPause);
+                    Trace.WriteLine(PIDPause);
+                    if (myProcess != null && indexPauseBackup == index)
+                    {
+                        myProcess.WaitForExit();
+                    }
+                }
+                catch
+                {
+
+                }
+                //STOP
+                try
+                {
+                    Process myProcess2 = Process.GetProcessById(PIDStop);
+                    Trace.WriteLine(PIDStop);
+                    if (myProcess2 != null && indexStopBackup == index)
+                    {
+                        myProcess2.Kill();
+                        break;
+                    }
+                }
+                catch
+                {
+
+                }
+                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
+                Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                if (myProcesses.Length != 0)
+                {
+                    myProcesses[0].WaitForExit();
+                }
+
                 FileInfo doc = new FileInfo(newPath);
                 if (doc.Length <= fileSize.FileMaxSize) //If the file size is under the maximum set size
                 {
@@ -338,11 +371,49 @@ namespace AppV3.VM
             return valuesList;
         }
 
-        public List<long> CallDifferentialCopy(string[] filesArray, string name, string type, string source, string destination, int totalNbFileDifferential, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
+        public List<long> CallDifferentialCopy(string[] filesArray, string name, string type, string source, string destination, int totalNbFileDifferential, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
             //FOREACH : copies the files
             Array.ForEach(filesArray, (originalFileLocation) =>
             {
+                Thread.Sleep(2000);
+                int PIDPause = lf.GetJobPauseSoftawre();
+                int PIDStop = lf.GetJobStopSoftawre();
+                try
+                {
+                    Process myProcess = Process.GetProcessById(PIDPause);
+                    Trace.WriteLine(PIDPause);
+                    if (myProcess != null && indexPauseBackup == index)
+                    {
+                        myProcess.WaitForExit();
+                    }
+                }
+                catch
+                {
+
+                }
+                //STOP
+                try
+                {
+                    Process myProcess2 = Process.GetProcessById(PIDStop);
+                    Trace.WriteLine(PIDStop);
+                    if (myProcess2 != null && indexStopBackup == index)
+                    {
+                        myProcess2.Kill();
+                        return;
+                    }
+                }
+                catch
+                {
+
+                }
+                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
+                Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                if (myProcesses.Length != 0)
+                {
+                    myProcesses[0].WaitForExit();
+                }
+
                 FileInfo originalFile = new FileInfo(originalFileLocation);
                 FileInfo destFile = new FileInfo(originalFileLocation.Replace(source, destination));
 

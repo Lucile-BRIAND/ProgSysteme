@@ -16,6 +16,8 @@ namespace AppV3.Models
         private static LogFile logInstance = null; //default unique instance
         private string format;
         private string JobSoftware;
+        private int JobPauseSoftware;
+        private int JobStopSoftware;
         private Semaphore semaphore = new Semaphore(1,1);
 
         //Private constructor, only accessible from this class
@@ -55,9 +57,25 @@ namespace AppV3.Models
             this.JobSoftware = jobSoftware;
             Trace.WriteLine(JobSoftware);
         }
+        public void InitJobPauseSoftware(int PID)
+        {
+            this.JobPauseSoftware = PID;
+        }
+        public void InitJobStopSoftware(int PID)
+        {
+            this.JobStopSoftware = PID;
+        }
         public string GetJobSoftawre()
         {
             return JobSoftware;
+        }
+        public int GetJobStopSoftawre()
+        {
+            return JobStopSoftware;
+        }
+        public int GetJobPauseSoftawre()
+        {
+            return JobPauseSoftware;
         }
 
         //Writing content in the log file
