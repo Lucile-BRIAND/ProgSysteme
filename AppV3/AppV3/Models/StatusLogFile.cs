@@ -14,11 +14,16 @@ namespace AppV3.Models
         //Private attributes
         private static StatusLogFile statusInstance = null;
         private Semaphore semaphore = new Semaphore(1, 1);
+        private List<JobModel> jobModelList = new List<JobModel>();
+
+        public JobProgressInformation jobInfo = new JobProgressInformation();
+
 
         //The private constructor is only accessible from this class
         private StatusLogFile()
         {
         }
+
 
         //The unique function to use theStatusLogFile object
         public static StatusLogFile GetInstance
@@ -45,25 +50,49 @@ namespace AppV3.Models
 
             if (format == "json")
             {
-                //Adding values to the json keys
-                var dataLog = new
+                if (!File.Exists("StatusLogFile.json"))
                 {
-                    Name = jobName,
-                    Type = jobType,
-                    SourcePath = sourcePath,
-                    TargetPath = targetPath,
-                    State = state,
-                    TotalFilesToCopy = totalFilesToCopy,
-                    TotalFilesSize = totalFilesSizeFormated,
-                    NbFilesLeftToDo = nbFilesLeftToDo,
-                    FileSizeLeftToCopy = fileSizeLeftToCopyFormated
-                };
+                    File.Create("StatusLogFile.json").Close();
+                }
+                var content = File.ReadAllText("StatusLogFile.json");
+
+                JobModel jobModel = new JobModel();
+                JobProgressInformation jobProgressInformation1 = new JobProgressInformation();
+                jobModel.jobProgressInformation = jobProgressInformation1;
+
+                jobModel.jobProgressInformation.Name = jobName;
+                jobModel.jobProgressInformation.Type = jobType;
+                jobModel.jobProgressInformation.SourcePath = sourcePath;
+                jobModel.jobProgressInformation.TargetPath = targetPath;
+                jobModel.jobProgressInformation.State = state;
+                jobModel.jobProgressInformation.TotalFilesToCopy = totalFilesToCopy;
+                jobModel.jobProgressInformation.TotalFilesSize = totalFilesSize;
+                jobModel.jobProgressInformation.NbFilesLeftToDo = nbFilesLeftToDo;
+                jobModel.jobProgressInformation.FileSizeLeftToCopy = fileSizeLeftToCopy;
+
+                JobModel jobModelList = JsonConvert.DeserializeObject<JobModel>(content);
+                List<JobModel> jobModelList1 = new List<JobModel>();
+                jobModelList1.Add(jobModelList);
+
+                //Adding values to the json keys
+                //var dataLog = new
+                //{
+                //    Name = jobName,
+                //    Type = jobType,
+                //    SourcePath = sourcePath,
+                //    TargetPath = targetPath,
+                //    State = state,
+                //    TotalFilesToCopy = totalFilesToCopy,
+                //    TotalFilesSize = totalFilesSizeFormated,
+                //    NbFilesLeftToDo = nbFilesLeftToDo,
+                //    FileSizeLeftToCopy = fileSizeLeftToCopyFormated
+                //};
 
                 //Reserializing the json file and writing
-                string dataLogSerialized = JsonConvert.SerializeObject(dataLog, Newtonsoft.Json.Formatting.Indented);
-                dataLogSerialized += "\n";
+                string dataLogSerialized = JsonConvert.SerializeObject(jobModelList1, Newtonsoft.Json.Formatting.Indented);
+
                 //File.WriteAllText("StatusLogFile.json", json); //creates the file if it doesn't exist + overwrite all the text in it
-                File.AppendAllText("StatusLogFile.json", dataLogSerialized); //creates the file if it doesn't exist + appends text in it
+                File.WriteAllText("StatusLogFile.json", dataLogSerialized); //creates the file if it doesn't exist + appends text in it
             }
             else if (format == "xml")
             {

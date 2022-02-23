@@ -52,5 +52,17 @@
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
     "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "Job11",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  },
+  {
+    "jobName": "Job12",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination2"
   }
 ]

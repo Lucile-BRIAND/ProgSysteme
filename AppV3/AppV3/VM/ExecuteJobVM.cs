@@ -72,7 +72,7 @@ namespace AppV3.VM
             int timeCryptoSoft = 0; //total time of the encryption
 
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/P/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)

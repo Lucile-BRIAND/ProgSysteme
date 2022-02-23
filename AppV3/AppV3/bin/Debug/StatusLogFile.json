@@ -1175,3 +1175,1015 @@
   "NbFilesLeftToDo": 0,
   "FileSizeLeftToCopy": "0 B"
 }
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "52895 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "52888 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "52880 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "52872 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "26436 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "89745 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "116181 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "63309 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "89745 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "63309 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "23 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "16 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "8 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "23 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "16 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "8 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 6,
+  "TotalFilesSize": "116181 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": "1467700693 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": "1467700693 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": "1467637407 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": "1467637407 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "1467637400 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "1467637400 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "1467637392 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "1467637392 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "1467637384 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "1467637384 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "1467610948 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "1467610948 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "1467584512 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "1467584512 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "733792256 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "733792256 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": "1467700693 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "STARTING",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 8,
+  "FileSizeLeftToCopy": "1467700693 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": "1467637407 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 7,
+  "FileSizeLeftToCopy": "1467637407 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "1467637400 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 6,
+  "FileSizeLeftToCopy": "1467637400 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "1467637392 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 5,
+  "FileSizeLeftToCopy": "1467637392 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "1467637384 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 4,
+  "FileSizeLeftToCopy": "1467637384 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "1467610948 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 3,
+  "FileSizeLeftToCopy": "1467610948 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "1467584512 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 2,
+  "FileSizeLeftToCopy": "1467584512 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "733792256 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "ACTIVE",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 1,
+  "FileSizeLeftToCopy": "733792256 B"
+}
+{
+  "Name": "Job11",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}
+{
+  "Name": "Job12",
+  "Type": "Complete",
+  "SourcePath": "D:/ProgSystemLocal/Source",
+  "TargetPath": "D:/ProgSystemLocal/Destination2",
+  "State": "END",
+  "TotalFilesToCopy": 8,
+  "TotalFilesSize": "1467700693 B",
+  "NbFilesLeftToDo": 0,
+  "FileSizeLeftToCopy": "0 B"
+}

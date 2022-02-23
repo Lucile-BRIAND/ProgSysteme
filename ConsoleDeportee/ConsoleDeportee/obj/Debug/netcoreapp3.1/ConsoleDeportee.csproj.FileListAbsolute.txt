@@ -77,3 +77,22 @@ C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.exe
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.deps.json
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.json
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.runtimeconfig.dev.json
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\P\ConsoleDeportee\ConsoleDeportee\bin\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csprojAssemblyReference.cache
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\App.g.cs
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.cache
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee_MarkupCompile.lref
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.g.resources
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfoInputs.cache
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.AssemblyInfo.cs
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.csproj.CoreCompileInputs.cache
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.dll
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.pdb
+C:\P\ConsoleDeportee\ConsoleDeportee\obj\Debug\netcoreapp3.1\ConsoleDeportee.genruntimeconfig.cache

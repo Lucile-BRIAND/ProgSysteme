@@ -8,5 +8,7 @@ namespace AppV3.Models
         public string jobType { get; set; }
         public string sourcePath { get; set; }
         public string targetPath { get; set; }
+
+        public JobProgressInformation jobProgressInformation = new JobProgressInformation();
     }
 }
