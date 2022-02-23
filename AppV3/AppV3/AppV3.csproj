@@ -69,6 +69,7 @@
     <Compile Include="Models\LanguageFile.cs" />
     <Compile Include="Models\LogFile.cs" />
     <Compile Include="Models\SocketManager.cs" />
+    <Compile Include="Models\SocketManagerBackupsName.cs" />
     <Compile Include="Models\StatusLogFile.cs" />
     <Compile Include="VM\ChooseLanguageVM.cs" />
     <Compile Include="VM\CreateJobVM.cs" />

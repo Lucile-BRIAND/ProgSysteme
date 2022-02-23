@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
@@ -36,6 +38,55 @@ namespace AppV3
             InitializeComponent();
             this.DataContext = executeJobVM.getValues();
             executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
+        }
+
+        private void ButtonAccept_Click(object sender, RoutedEventArgs e)
+        {
+            SocketManager socketManager = SocketManager.GetInstance;
+            Socket con = socketManager.socket;
+            string value = socketManager.EcouterReseau(con);
+            var valueModify = Regex.Match(value, @"^([\w\-]+)");
+            string indexString = Regex.Match(value, @"\d+").Value;
+            MessageBox.Show(valueModify.ToString());
+            switch (valueModify.ToString())
+            {
+                case "Stop":
+                    MessageBox.Show("STOP");
+                        int index = Int32.Parse(indexString);
+                           MessageBox.Show(index.ToString());
+                        Process processStopStart = new Process();
+                        processStopStart.StartInfo.FileName = "notepad";
+                        processStopStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                        processStopStart.Start();
+                        Trace.WriteLine(processStopStart.Id);
+                        executeJobVM.InitJobStopName(processStopStart.Id, index);
+                    break;
+                case "Pause":
+                    MessageBox.Show("PAUSE");
+                    int index2 = Int32.Parse(indexString);
+                    Process processStart = new Process();
+                    processStart.StartInfo.FileName = "notepad";
+                    processStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    processStart.Start();
+                    PIDPauseTab[index2] = processStart.Id;
+                    Trace.WriteLine(processStart.Id);
+                    executeJobVM.InitJobPauseName(processStart.Id, index2);
+                    break;
+                case "Resume":
+                    MessageBox.Show("RESUME");
+                    int index3 = Int32.Parse(indexString);
+                    Process processStop = Process.GetProcessById(PIDPauseTab[index3]);
+                    Trace.WriteLine("test" + processStop);
+                    try
+                    {
+                        processStop.Kill();
+                    }
+                    catch
+                    {
+
+                    }
+                    break;
+            }
         }
 
         // The ButtonExecuteJob_Click method is called when the user click the button to execute a job

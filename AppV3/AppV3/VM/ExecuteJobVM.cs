@@ -30,6 +30,7 @@ namespace AppV3.VM
         public LanguageFile singletonLang = LanguageFile.GetInstance;
         public LogFile lf = LogFile.GetInstance;
         SocketManager socketManage = SocketManager.GetInstance;
+        SocketManagerBackupsName socketManageBackupsName = SocketManagerBackupsName.GetInstance;
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -91,6 +92,10 @@ namespace AppV3.VM
 
         public void ExecuteBackup(string name, string type, string source, string destination, int index)
         {
+            Byte[] buffer;
+            buffer = Encoding.UTF8.GetBytes(name + " " + "index n°" + index);
+            socketManageBackupsName.socket.Send(buffer);
+           
             _lock = new object(); //object used to lock critical sections of code
 
             format = lf.GetFormat();
@@ -267,13 +272,15 @@ namespace AppV3.VM
 
         public List<long> CallCompleteCopy(List<string> filesList, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
+            double pourcentage = 0;
+            Byte[] buffer;
             //Copy all the files & replaces any file with the same name
             foreach (string newPath in filesList)
             {
-                double pourcentage = 0;
-                Byte[] buffer;
+                
                 pourcentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
                 pourcentage = Math.Round(pourcentage);
+                Trace.WriteLine(pourcentage);
                 buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
                 socketManage.socket.Send(buffer);
 
@@ -368,6 +375,11 @@ namespace AppV3.VM
                 }
 
             }
+            pourcentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
+            pourcentage = Math.Round(pourcentage);
+            Trace.WriteLine(pourcentage);
+            buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
+            socketManage.socket.Send(buffer);
 
             //Add the necessary values in a list
             List<long> valuesList = new List<long>

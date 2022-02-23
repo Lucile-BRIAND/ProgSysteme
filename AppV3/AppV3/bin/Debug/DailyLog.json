@@ -48,3 +48,353 @@
   "CryptoSoftTime": "35 ms",
   "Date": "22/02/2022 20:59:58"
 }
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "201 ms",
+  "CryptoSoftTime": "98 ms",
+  "Date": "23/02/2022 09:18:38"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "100 ms",
+  "CryptoSoftTime": "24 ms",
+  "Date": "23/02/2022 09:19:16"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "36 B",
+  "BackupTransferTime": "184 ms",
+  "CryptoSoftTime": "19 ms",
+  "Date": "23/02/2022 09:19:44"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "150 ms",
+  "CryptoSoftTime": "59 ms",
+  "Date": "23/02/2022 09:23:14"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "171 ms",
+  "CryptoSoftTime": "54 ms",
+  "Date": "23/02/2022 09:25:27"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "159 ms",
+  "CryptoSoftTime": "62 ms",
+  "Date": "23/02/2022 09:31:48"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "169 ms",
+  "CryptoSoftTime": "70 ms",
+  "Date": "23/02/2022 09:33:36"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "176 ms",
+  "CryptoSoftTime": "67 ms",
+  "Date": "23/02/2022 09:36:47"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "146 ms",
+  "CryptoSoftTime": "25 ms",
+  "Date": "23/02/2022 09:37:32"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "36 B",
+  "BackupTransferTime": "215 ms",
+  "CryptoSoftTime": "24 ms",
+  "Date": "23/02/2022 09:38:00"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "171 ms",
+  "CryptoSoftTime": "64 ms",
+  "Date": "23/02/2022 09:51:18"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "36 B",
+  "BackupTransferTime": "535 ms",
+  "CryptoSoftTime": "80 ms",
+  "Date": "23/02/2022 09:51:53"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "241 ms",
+  "CryptoSoftTime": "56 ms",
+  "Date": "23/02/2022 10:37:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "145 ms",
+  "CryptoSoftTime": "27 ms",
+  "Date": "23/02/2022 10:37:38"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "162 ms",
+  "CryptoSoftTime": "51 ms",
+  "Date": "23/02/2022 10:46:57"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "179 ms",
+  "CryptoSoftTime": "59 ms",
+  "Date": "23/02/2022 10:53:45"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "288 ms",
+  "CryptoSoftTime": "21 ms",
+  "Date": "23/02/2022 10:53:52"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "168 ms",
+  "CryptoSoftTime": "57 ms",
+  "Date": "23/02/2022 10:56:11"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "188 ms",
+  "CryptoSoftTime": "59 ms",
+  "Date": "23/02/2022 11:06:17"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "153 ms",
+  "CryptoSoftTime": "54 ms",
+  "Date": "23/02/2022 12:12:49"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "382 ms",
+  "CryptoSoftTime": "231 ms",
+  "Date": "23/02/2022 14:29:30"
+}
+{
+  "Name": "test2",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2",
+  "NbFile": 8,
+  "FileSize": "36 B",
+  "BackupTransferTime": "-357 ms",
+  "CryptoSoftTime": "101 ms",
+  "Date": "23/02/2022 14:30:12"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "254 ms",
+  "CryptoSoftTime": "111 ms",
+  "Date": "23/02/2022 14:46:10"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "-656 ms",
+  "CryptoSoftTime": "217 ms",
+  "Date": "23/02/2022 16:17:22"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "-780 ms",
+  "CryptoSoftTime": "-888 ms",
+  "Date": "23/02/2022 16:19:48"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "246 ms",
+  "CryptoSoftTime": "124 ms",
+  "Date": "23/02/2022 16:27:47"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "-760 ms",
+  "CryptoSoftTime": "124 ms",
+  "Date": "23/02/2022 16:33:35"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "-739 ms",
+  "CryptoSoftTime": "113 ms",
+  "Date": "23/02/2022 16:42:05"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "264 ms",
+  "CryptoSoftTime": "114 ms",
+  "Date": "23/02/2022 16:43:20"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "239 ms",
+  "CryptoSoftTime": "124 ms",
+  "Date": "23/02/2022 16:59:58"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "-718 ms",
+  "CryptoSoftTime": "131 ms",
+  "Date": "23/02/2022 17:11:33"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "298 ms",
+  "CryptoSoftTime": "149 ms",
+  "Date": "23/02/2022 17:13:11"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "280 ms",
+  "CryptoSoftTime": "128 ms",
+  "Date": "23/02/2022 17:15:57"
+}
+{
+  "Name": "test1",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "278 ms",
+  "CryptoSoftTime": "136 ms",
+  "Date": "23/02/2022 17:19:07"
+}
+{
+  "Name": "dany",
+  "FileSource": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+  "FileTarget": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination",
+  "NbFile": 4,
+  "FileSize": "18 B",
+  "BackupTransferTime": "431 ms",
+  "CryptoSoftTime": "23 ms",
+  "Date": "23/02/2022 17:22:56"
+}

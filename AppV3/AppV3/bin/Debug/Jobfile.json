@@ -52,5 +52,17 @@
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
     "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "dany",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
+  },
+  {
+    "jobName": "bruno",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
   }
 ]

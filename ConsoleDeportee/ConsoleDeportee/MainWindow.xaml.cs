@@ -26,7 +26,8 @@ namespace ConsoleDeportee
     /// </summary>
     public partial class MainWindow : Window
     {
-        Socket cokk;
+        Socket conPourcentage;
+        Socket conNomSauvegarde;
         BackgroundWorker worker = new BackgroundWorker();
         public MainWindow()
         {
@@ -34,9 +35,9 @@ namespace ConsoleDeportee
             InitializeComponent();
             ConnetionToEasySave connexionToSave = new ConnetionToEasySave();
             MessageBox.Show("Tentative de connexion");
-            cokk = connexionToSave.Init();
-
-
+            conPourcentage = connexionToSave.InitPourcentage();
+            conNomSauvegarde = connexionToSave.InitNomSauvegarde();
+           
 
             //executeJobDataGrid.ItemsSource = ConnetionToEasySave.EcouterReseau(connection);
             // Deconnecter(connection);
@@ -46,18 +47,31 @@ namespace ConsoleDeportee
         {
 
         }
-
         private void ButtonPauseJob_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("test");
-
-
+            Byte[] buffer = new Byte[1024];
+            Byte[] buffer2 = new byte[1024];
+            string content = (string)nameBackups.Content;
+            buffer = Encoding.UTF8.GetBytes("Pause " + content);
+            conPourcentage.Send(buffer);
+        }
+        private void ButtonResumeJob_Click(object sender, RoutedEventArgs e)
+        {
+            Byte[] buffer = new Byte[1024];
+            Byte[] buffer2 = new byte[1024];
+            string content = (string)nameBackups.Content;
+            buffer = Encoding.UTF8.GetBytes("Resume " + content);         
+            conPourcentage.Send(buffer);
         }
 
         private void ButtonStopJob_Click(object sender, RoutedEventArgs e)
         {
-
-            executeJobDataGrid.ItemsSource = ConnetionToEasySave.EcouterReseau(cokk);
+            Byte[] buffer = new Byte[1024];
+            Byte[] buffer2 = new byte[1024];
+            string content = (string)nameBackups.Content;
+            buffer = Encoding.UTF8.GetBytes("Stop " + content);
+            conPourcentage.Send(buffer);
+           
         }
 
         private void pbstatus1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -67,21 +81,29 @@ namespace ConsoleDeportee
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            BackgroundWorker worker = new BackgroundWorker();
-            worker.WorkerReportsProgress = true;
-            worker.WorkerSupportsCancellation = true;
-            worker.ProgressChanged += worker_ProgressChanged;
-            worker.DoWork += worker_DoWork;
-            worker.RunWorkerCompleted += worker_RunWorkerCompleted;
-            worker.RunWorkerAsync();
+            BackgroundWorker workerPercentage = new BackgroundWorker();
+            workerPercentage.WorkerReportsProgress = true;
+            workerPercentage.WorkerSupportsCancellation = true;
+            workerPercentage.ProgressChanged += workerPercentage_ProgressChanged;
+            workerPercentage.DoWork += workerPercentage_DoWork;
+            workerPercentage.RunWorkerCompleted += workerPercentage_RunWorkerCompleted;
+            workerPercentage.RunWorkerAsync();
+            BackgroundWorker workerNameSave = new BackgroundWorker();
+            workerNameSave.WorkerReportsProgress = true;
+            workerNameSave.WorkerSupportsCancellation = true;
+            workerNameSave.ProgressChanged += workerNameSave_ProgressChanged;
+            workerNameSave.DoWork += workerNameSave_DoWork;
+            workerNameSave.RunWorkerCompleted += workerNameSave_RunWorkerCompleted;
+            workerNameSave.RunWorkerAsync();
+
         }
-        void worker_DoWork(object sender, DoWorkEventArgs e)
+        void workerPercentage_DoWork(object sender, DoWorkEventArgs e)
         {
             var worker = sender as BackgroundWorker;
 
             for (int i = 1; i <= 100; i++)
             {
-                string value = ConnetionToEasySave.EcouterReseau(cokk);
+                string value = ConnetionToEasySave.EcouterReseau(conPourcentage);
                 worker.ReportProgress(Int32.Parse(value));
                 Thread.Sleep(2200);
                 if (worker.CancellationPending)
@@ -90,17 +112,51 @@ namespace ConsoleDeportee
                     worker.CancelAsync();
                     break;
                 }
-            }    
+            }
+        }
+        void workerNameSave_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var worker = sender as BackgroundWorker;
+
+            for (int i = 1; i <= 100; i++)
+            {      
+                string value = ConnetionToEasySave.EcouterReseauBackupsName(conNomSauvegarde);                
+                worker.ReportProgress(i, value);
+                Thread.Sleep(2200);
+                if (worker.CancellationPending)
+                {
+                    e.Cancel = true;
+                    worker.CancelAsync();
+                    break;
+                }
+            }
         }
 
-        void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        void workerPercentage_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
             Trace.WriteLine(e.ProgressPercentage);
             pbstatus1.Value = e.ProgressPercentage;
             lb_etat_prog_server.Content = e.ProgressPercentage;
         }
 
-        private void worker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+
+        void workerNameSave_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            //string values = "";
+            //foreach (string name in (List<String>)e.UserState)
+            //{          
+            //     values += name;
+            //}
+            Trace.WriteLine((String)e.UserState);
+            nameBackups.Content = (String)e.UserState;
+        }
+
+
+        private void workerPercentage_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            MessageBox.Show("It's done !");
+        }
+        private void workerNameSave_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             MessageBox.Show("It's done !");
         }
@@ -112,16 +168,18 @@ namespace ConsoleDeportee
                 while (true)
                 {
 
-                    string value = ConnetionToEasySave.EcouterReseau(cokk);
+                    string value = ConnetionToEasySave.EcouterReseau(conPourcentage);
                     //pbstatus1.Value = Int64.Parse(value);
                     if (value == "100")
                     {
-                        cokk.Close();
+                        conPourcentage.Close();
 
                     }
                 }
             });
 
         }
+
+   
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -39,18 +40,19 @@ namespace AppV3.Models
             Socket client = server.Accept();
             return client;
         }
-        public void ListenToNetwork(Socket client)
+        public string EcouterReseau(Socket client)
         {
-            string data = null;
-            IPEndPoint ipEndPoint = (IPEndPoint)client.LocalEndPoint;
-            byte[] buffer = new byte[client.ReceiveBufferSize];
 
-            int numberReceivedBytes = client.Receive(buffer); // Receive return the number of byte
+            byte[] buffer = new byte[1024];
+            int iRx = client.Receive(buffer);
+            Trace.WriteLine("Je suis le  buffer ;;;;;" + buffer);
+            char[] chars = new char[iRx];
 
-            data += Encoding.ASCII.GetString(buffer, 0, numberReceivedBytes);
-
-            byte[] message = Encoding.ASCII.GetBytes("Your message :" + data);
-            client.Send(message);
+            System.Text.Decoder d = System.Text.Encoding.UTF8.GetDecoder();
+            int charLen = d.GetChars(buffer, 0, iRx, chars, 0);
+            System.String recv = new System.String(chars);
+            Trace.WriteLine(recv);
+            return recv;
         }
     }
 }

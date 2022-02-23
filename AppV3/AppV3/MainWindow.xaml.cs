@@ -72,10 +72,14 @@ namespace AppV3
         private void startClientConnection_Click(object sender, RoutedEventArgs e)
         {
             SocketManager socketManage = SocketManager.GetInstance;
+            SocketManagerBackupsName socketManageBackupsName = SocketManagerBackupsName.GetInstance;
             Socket serveur = socketManage.Connect();
             Socket client = socketManage.AcceptConnection(serveur);
+            Socket serveur2 = socketManageBackupsName.Connect();
+            Socket client2 = socketManageBackupsName.AcceptConnection(serveur2);
             MessageBox.Show("Connexion reussie");
             socketManage.socket = client;
+            socketManageBackupsName.socket = client2;
         }
     }
 }
