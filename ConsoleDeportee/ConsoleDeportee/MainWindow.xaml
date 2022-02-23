@@ -13,6 +13,6 @@
         <Button Content="Resume" HorizontalAlignment="Left" Height="24" Margin="458,269,0,0" VerticalAlignment="Top" Width="65" Click="ButtonStopJob_Click"/>
         <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="305,322,0,0" VerticalAlignment="Top" Height="58" Width="220" FontSize="24"/>
         <Button Content="Stop" HorizontalAlignment="Left" Height="25" Margin="279,268,0,0" VerticalAlignment="Top" Width="52"/>
-
+        <Button Content="Button" HorizontalAlignment="Left" Height="56" Margin="33,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
     </Grid>
 </Window>
