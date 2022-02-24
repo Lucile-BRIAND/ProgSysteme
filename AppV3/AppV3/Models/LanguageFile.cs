@@ -46,8 +46,13 @@ namespace AppV3.Models
         public string Settings { get; set; }
         public string ExtentionLabel { get; set; }
         public string MaximumFileSizeLabel { get; set; }
-
+        public string showBar { get; set; }
+        public string acceptRequest { get; set; }
+        public string resumeBackup { get; set; }
         public string MainReturn { get; set; }
+        public string stopBackup { get; set; }
+        public string pauseBackup { get; set; }
+        public string ExtentionToPrioritizeLabel { get; set; }
 
         //private constructor 
         private LanguageFile() { }

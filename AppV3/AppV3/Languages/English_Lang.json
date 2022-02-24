@@ -25,5 +25,11 @@
   "Settings": "Settings",
   "ExtentionLabel": "Types of files to encrypt :",
   "MaximumFileSizeLabel": "Simultaneous transfer maximum size (kB) :",
-  "startConnection": "Connect client"
+  "startConnection": "Connect client",
+  "showBar": "Show",
+  "acceptRequest": "Accept",
+  "resumeBackup": "Resume",
+  "stopBackup": "Stop",
+  "pauseBackup": "Pause",
+  "ExtentionToPrioritizeLabel": "Types of files to prioritize :"
 }

@@ -25,5 +25,11 @@
   "Settings": "Paramètres",
   "ExtentionLabel": "Types de fichiers à crypter :",
   "MaximumFileSizeLabel": "Taille maximale de transfert simultané (ko) :",
-  "startConnection": "Connect client"
+  "startConnection": "Connect client",
+  "showBar": "Afficher",
+  "acceptRequest": "Accepter",
+  "resumeBackup": "Reprendre",
+  "stopBackup": "Stop",
+  "pauseBackup": "Pause",
+  "ExtentionToPrioritizeLabel": "Types de fichiers à prioriser :"
 }	

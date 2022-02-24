@@ -15,6 +15,11 @@ namespace AppV3.VM
         public string mainMenu { get; set; }
         public string JobSoftwareLabel { get; set; }
         public string executeAllJobsButton { get; set; }
+        public string showBar { get; set; }
+        public string acceptRequest { get; set; }
+        public string resumeBackup { get; set; }
+        public string stopBackup { get; set; }
+        public string pauseBackup { get; set; }
 
         public FileExtentions fileExtentions = FileExtentions.GetInstance;
         public FileSize fileSize = FileSize.GetInstance;
@@ -40,7 +45,12 @@ namespace AppV3.VM
                 executeBackup = singletonLang.ReadFile().Execute,
                 mainMenu = singletonLang.ReadFile().MainReturn,
                 JobSoftwareLabel = singletonLang.ReadFile().JobSoftware,
-                executeAllJobsButton = singletonLang.ReadFile().Validation
+                executeAllJobsButton = singletonLang.ReadFile().Validation,
+                showBar = singletonLang.ReadFile().showBar,
+                acceptRequest = singletonLang.ReadFile().acceptRequest,
+                resumeBackup = singletonLang.ReadFile().resumeBackup,
+                stopBackup = singletonLang.ReadFile().stopBackup,
+                pauseBackup = singletonLang.ReadFile().pauseBackup
             };
 
             return values;
@@ -75,7 +85,7 @@ namespace AppV3.VM
             int timeCryptoSoft = 0; //total time of the encryption
 
             Process P = new Process();
-            P.StartInfo.FileName = "C:/P/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = @"C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\CryptoSoft\CryptoSoft\bin\Debug\netcoreapp3.1\CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -103,7 +113,7 @@ namespace AppV3.VM
             format = lf.GetFormat();
             //Trace.WriteLine(this.format);
 
-            JobSoftwareNameTextBox = lf.GetJobSoftawre();
+            JobSoftwareNameTextBox = lf.GetJobSoftware();
             //Trace.WriteLine(this.JobSoftwareNameTextBox);
             if (format == null | JobSoftwareNameTextBox == null)
             {
@@ -286,8 +296,8 @@ namespace AppV3.VM
                 socketManage.socket.Send(buffer);
 
                 Thread.Sleep(2000);
-                int PIDPause = lf.GetJobPauseSoftawre();
-                int PIDStop = lf.GetJobStopSoftawre();
+                int PIDPause = lf.GetJobPauseSoftware();
+                int PIDStop = lf.GetJobStopSoftware();
                 //PAUSE
                 try
                 {
@@ -317,8 +327,8 @@ namespace AppV3.VM
                 {
 
                 }
-                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
-                Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftware());
+                Trace.WriteLine("test" + lf.GetJobSoftware() + " " + myProcesses.Length);
                 if (myProcesses.Length != 0)
                 {
                     myProcesses[0].WaitForExit();
@@ -398,8 +408,8 @@ namespace AppV3.VM
             Array.ForEach(filesArray, (originalFileLocation) =>
             {
                 Thread.Sleep(2000);
-                int PIDPause = lf.GetJobPauseSoftawre();
-                int PIDStop = lf.GetJobStopSoftawre();
+                int PIDPause = lf.GetJobPauseSoftware();
+                int PIDStop = lf.GetJobStopSoftware();
                 try
                 {
                     Process myProcess = Process.GetProcessById(PIDPause);
@@ -428,8 +438,8 @@ namespace AppV3.VM
                 {
 
                 }
-                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftawre());
-                Trace.WriteLine("test" + lf.GetJobSoftawre() + " " + myProcesses.Length);
+                Process[] myProcesses = Process.GetProcessesByName(lf.GetJobSoftware());
+                Trace.WriteLine("test" + lf.GetJobSoftware() + " " + myProcesses.Length);
                 if (myProcesses.Length != 0)
                 {
                     myProcesses[0].WaitForExit();
@@ -593,7 +603,7 @@ namespace AppV3.VM
             }
         }
 
-        public void GetFileExtentions(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
+        public void GetExtentionsToEncrypt(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
         {
             Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG);
 
@@ -602,46 +612,46 @@ namespace AppV3.VM
             if (valueTXT) //if true
             {
                 fileExtentions.extentions.Add("*.txt");
-                fileExtentions.TXTvalue = true;
+                fileExtentions.Encrypt_TXTValue = true;
             }
             else
             {
-                fileExtentions.TXTvalue = false;
+                fileExtentions.Encrypt_TXTValue = false;
             }
 
             if (valuePDF) //if true
             {
                 fileExtentions.extentions.Add("*.pdf");
-                fileExtentions.PDFvalue = true;
+                fileExtentions.Encrypt_PDFValue = true;
             }
             else
             {
-                fileExtentions.PDFvalue = false;
+                fileExtentions.Encrypt_PDFValue = false;
             }
 
             if (valueJPG) //if true
             {
                 fileExtentions.extentions.Add("*.jpg");
-                fileExtentions.JPGvalue = true;
+                fileExtentions.Encrypt_JPGValue = true;
             }
             else
             {
-                fileExtentions.JPGvalue = false;
+                fileExtentions.Encrypt_JPGValue = false;
             }
 
             if (valuePNG) //if true
             {
                 fileExtentions.extentions.Add("*.png");
-                fileExtentions.PNGvalue = true;
+                fileExtentions.Encrypt_PNGValue = true;
             }
             else
             {
-                fileExtentions.PNGvalue = false;
+                fileExtentions.Encrypt_PNGValue = false;
             }
 
         }
 
-        public void GetExtentionToPrioritize(bool P_valueTXT, bool P_valuePDF, bool P_valueJPG, bool P_valuePNG)
+        public void GetExtentionsToPrioritize(bool P_valueTXT, bool P_valuePDF, bool P_valueJPG, bool P_valuePNG)
         {
             Trace.WriteLine("-------------------VALUES : " + P_valueTXT + P_valuePDF + P_valueJPG + P_valuePNG);
 

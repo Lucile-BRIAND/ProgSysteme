@@ -7,13 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Center" Height="31" Margin="0,113,0,0" VerticalAlignment="Top" Width="380" ValueChanged="pbstatus1_ValueChanged"/>
-        <Label x:Name="nameBackups" Content="" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="380"/>
-        <Button Content="Pause" HorizontalAlignment="Left" Margin="370,268,0,0" VerticalAlignment="Top" Height="25" Width="56" Click="ButtonPauseJob_Click"/>
-        <Button Content="Resume" HorizontalAlignment="Left" Height="24" Margin="458,269,0,0" VerticalAlignment="Top" Width="65" Click="ButtonResumeJob_Click"/>
-        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="215,49,0,0" VerticalAlignment="Top" Height="46" Width="180" FontSize="24"/>
-        <Button Content="Stop" HorizontalAlignment="Left" Height="25" Margin="279,268,0,0" VerticalAlignment="Top" Width="52" Click="ButtonStopJob_Click"/>
-        <Button Content="Start" HorizontalAlignment="Left" Height="56" Margin="33,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
+        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Left" Height="92" VerticalAlignment="Center" Width="658" ValueChanged="pbstatus1_ValueChanged" Margin="108,0,0,0"/>
+        <Label x:Name="nameBackups" Content="" HorizontalAlignment="Center" Margin="0,268,0,0" VerticalAlignment="Top" Width="586" Height="32"/>
+        <Button Content="Pause" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" Height="44" Width="120" Click="ButtonPauseJob_Click" RenderTransformOrigin="1.331,0.801">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Resume" HorizontalAlignment="Left" Height="44" Margin="514,346,0,0" VerticalAlignment="Top" Width="119" Click="ButtonResumeJob_Click" RenderTransformOrigin="0.636,0.583">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="107,120,0,0" VerticalAlignment="Top" Height="46" Width="180" FontSize="24"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Height="44" Margin="168,346,0,0" VerticalAlignment="Top" Width="119" Click="ButtonStopJob_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Start" HorizontalAlignment="Left" Height="92" Margin="30,0,0,0" VerticalAlignment="Center" Width="77" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>
     

@@ -37,6 +37,7 @@ namespace AppV3.VM
         public bool Priority_PDFValue { get; set; }
         public bool Priority_TXTValue { get; set; }
         public string MaximumFileSizeLabel { get; set; }
+        public string ExtentionToPrioritizeLabel { get; set; }
 
 
         public string jobSoftwareName;
@@ -62,14 +63,15 @@ namespace AppV3.VM
                 ButtonSettings = singletonLang.ReadFile().Settings,
                 ExtentionLabel = singletonLang.ReadFile().ExtentionLabel,
                 MaximumFileSizeLabel = singletonLang.ReadFile().MaximumFileSizeLabel,
-                TXTvalue = fileExtentions.TXTvalue,
-                PDFvalue = fileExtentions.PDFvalue,
-                JPGvalue = fileExtentions.JPGvalue,
-                PNGvalue = fileExtentions.PNGvalue,
+                ExtentionToPrioritizeLabel = singletonLang.ReadFile().ExtentionToPrioritizeLabel,
+                TXTvalue = fileExtentions.Encrypt_TXTValue,
+                PDFvalue = fileExtentions.Encrypt_PDFValue,
+                JPGvalue = fileExtentions.Encrypt_JPGValue,
+                PNGvalue = fileExtentions.Encrypt_PNGValue,
                 Priority_TXTValue = fileExtentions.Priority_TXTValue,
                 Priority_PDFValue = fileExtentions.Priority_PDFValue,
                 Priority_JPGValue = fileExtentions.Priority_JPGValue,
-                Priority_PNGValue = fileExtentions.Priority_PNGValue
+                Priority_PNGValue = fileExtentions.Priority_PNGValue,       
             };
             return values;
 

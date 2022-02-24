@@ -49,7 +49,7 @@ namespace AppV3
             }
         }
         // The ComboBox_SelectionChanged method is called when the user chose a language either English or French in the related ComboBox
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBoxChooseLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Here we instanciate a new object from ChooseLanguageVM class, responsible for the language selection save
             ChooseLanguageVM chooseLanguageVM = new ChooseLanguageVM();
@@ -81,21 +81,21 @@ namespace AppV3
         }
         // The CheckBox_Checked method is called when the user click one of the 4 checkbox, for each checkbox we save the corresponding value : true for checked, false for unchecked
         // This checkbox permit us to recover the extension to encrypt related to the user's demand
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        private void ComboBoxExtensionToEncrypt_Checked(object sender, RoutedEventArgs e)
         {
-            executeJobVM.GetFileExtentions((bool)CheckboxTXT.IsChecked, (bool)CheckboxPDF.IsChecked, (bool)CheckboxJPG.IsChecked, (bool)CheckboxPNG.IsChecked);
+            executeJobVM.GetExtentionsToEncrypt((bool)CheckboxTXT.IsChecked, (bool)CheckboxPDF.IsChecked, (bool)CheckboxJPG.IsChecked, (bool)CheckboxPNG.IsChecked);
         }
         // The MaximumFileSizeComboBox_SelectionChanged method is called when the user select a value in the ComboBox, for each value we save the corresponding Maximum File Size for simultaneous transferts
-        private void MaximumFileSizeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBoxMaximumFileSize_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             FileSize fileSize = FileSize.GetInstance;
             ComboBoxItem size = maximumFileSizeComboBox.SelectedItem as ComboBoxItem;
             Trace.WriteLine("SIZE :" + size.Content);
             fileSize.FileMaxSize = Convert.ToInt32(size.Content) * 1000;
         }
-        private void ExtentionToPrioritize_Checked(object sender, RoutedEventArgs e)
+        private void CheckBoxExtentionsToPrioritize_Checked(object sender, RoutedEventArgs e)
         {
-            executeJobVM.GetExtentionToPrioritize((bool)Priority_TXTCheckbox.IsChecked, (bool)Priority_PDFCheckbox.IsChecked, (bool)Priority_JPGCheckbox.IsChecked, (bool)Priority_PNGCheckBox.IsChecked);
+            executeJobVM.GetExtentionsToPrioritize((bool)Priority_TXTCheckbox.IsChecked, (bool)Priority_PDFCheckbox.IsChecked, (bool)Priority_JPGCheckbox.IsChecked, (bool)Priority_PNGCheckBox.IsChecked);
         }
     }
 }

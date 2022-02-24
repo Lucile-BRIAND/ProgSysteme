@@ -65,15 +65,15 @@ namespace AppV3.Models
         {
             this.JobStopSoftware = PID;
         }
-        public string GetJobSoftawre()
+        public string GetJobSoftware()
         {
             return JobSoftware;
         }
-        public int GetJobStopSoftawre()
+        public int GetJobStopSoftware()
         {
             return JobStopSoftware;
         }
-        public int GetJobPauseSoftawre()
+        public int GetJobPauseSoftware()
         {
             return JobPauseSoftware;
         }
