@@ -1,0 +1,33 @@
+﻿<Window x:Class="ConsoleDeportee.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConsoleDeportee"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ProgressBar x:Name="pbstatus1" HorizontalAlignment="Center" Height="31" Margin="0,113,0,0" VerticalAlignment="Top" Width="380" ValueChanged="pbstatus1_ValueChanged"/>
+        <Label x:Name="nameBackups" Content="" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="380"/>
+        <Button Content="Pause" HorizontalAlignment="Left" Margin="370,268,0,0" VerticalAlignment="Top" Height="25" Width="56" Click="ButtonPauseJob_Click"/>
+        <Button Content="Resume" HorizontalAlignment="Left" Height="24" Margin="458,269,0,0" VerticalAlignment="Top" Width="65" Click="ButtonResumeJob_Click"/>
+        <Label x:Name="lb_etat_prog_server" Content="" HorizontalAlignment="Left" Margin="215,49,0,0" VerticalAlignment="Top" Height="46" Width="180" FontSize="24"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Height="25" Margin="279,268,0,0" VerticalAlignment="Top" Width="52" Click="ButtonStopJob_Click"/>
+        <Button Content="Start" HorizontalAlignment="Left" Height="56" Margin="33,199,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
+    </Grid>
+</Window>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+

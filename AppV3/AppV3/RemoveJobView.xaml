@@ -1,0 +1,17 @@
+﻿<Window x:Class="AppV3.RemoveJobView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppV3"
+        mc:Ignorable="d"
+        Title="RemoveJobView" Height="450" Width="800">
+    <Grid Background="White">
+
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" Click="ButtonRemoveBackup_Click" Margin="243,336,348.6,39"/>
+
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="650,23,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <DataGrid Name="removeJobDataGrid" ItemsSource="{Binding removeJobGrid}" HorizontalAlignment="Left" Height="265" Margin="104,48,0,0" VerticalAlignment="Top" Width="474" SelectionChanged="DataGrid_SelectionChanged"/>
+
+    </Grid>
+</Window>

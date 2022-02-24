@@ -1,0 +1,72 @@
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\CreateJobView.g.cs
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\ExecuteJobView.g.cs
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\MainWindow.g.cs
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\App.g.cs
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.cache
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.lref
+C:\Users\Bruno\source\repos\AppV2\AppV2\bin\Debug\AppV2.exe.config
+C:\Users\Bruno\source\repos\AppV2\AppV2\bin\Debug\AppV2.exe
+C:\Users\Bruno\source\repos\AppV2\AppV2\bin\Debug\AppV2.pdb
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\CreateJobView.baml
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\ExecuteJobView.baml
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\MainWindow.baml
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.g.resources
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.Properties.Resources.resources
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.csproj.GenerateResource.cache
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.csproj.CoreCompileInputs.cache
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.exe
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.pdb
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\RemoveJobView.g.cs
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\RemoveJobView.baml
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.csprojAssemblyReference.cache
+C:\Users\Bruno\source\repos\AppV2\AppV2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Bruno\source\repos\AppV2\AppV2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Bruno\source\repos\AppV2\AppV2\obj\Debug\AppV2.csproj.CopyComplete
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\bin\Debug\AppV2.exe.config
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\bin\Debug\AppV2.exe
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\bin\Debug\AppV2.pdb
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\bin\Debug\Newtonsoft.Json.dll
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\bin\Debug\Newtonsoft.Json.xml
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.csprojAssemblyReference.cache
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\CreateJobView.g.cs
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\ExecuteJobView.g.cs
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\MainWindow.g.cs
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\RemoveJobView.g.cs
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\App.g.cs
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.cache
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.lref
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\CreateJobView.baml
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\ExecuteJobView.baml
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\MainWindow.baml
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\RemoveJobView.baml
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.g.resources
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.Properties.Resources.resources
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.csproj.GenerateResource.cache
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.csproj.CoreCompileInputs.cache
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.csproj.CopyComplete
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.exe
+D:\mploeeooeeoeooeoeoe\AppV2\AppV2\obj\Debug\AppV2.pdb
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\bin\Debug\AppV2.exe.config
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\bin\Debug\AppV2.exe
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\bin\Debug\AppV2.pdb
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.csproj.AssemblyReference.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\CreateJobView.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\ExecuteJobView.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\MainWindow.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\RemoveJobView.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\App.g.cs
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2_MarkupCompile.lref
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\CreateJobView.baml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\ExecuteJobView.baml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\MainWindow.baml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\RemoveJobView.baml
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.g.resources
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.Properties.Resources.resources
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.csproj.GenerateResource.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.csproj.CoreCompileInputs.cache
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.csproj.CopyComplete
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.exe
+D:\Documents\CESI\FISA A3 21-22\3 - PROG SYSTEME\Projet\ProgSysteme\AppV2\AppV2\obj\Debug\AppV2.pdb

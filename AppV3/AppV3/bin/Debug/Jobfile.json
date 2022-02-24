@@ -1,0 +1,92 @@
+[
+  {
+    "jobName": "JOB",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "JOB2",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "JOB3",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination3"
+  },
+  {
+    "jobName": "JobDiff",
+    "jobType": "Differential",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "JOB DIFF 2",
+    "jobType": "Differential",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "Job2C",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source2",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination2"
+  },
+  {
+    "jobName": "Job1C",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/lu-ro/source/repos/C#/Test/Source",
+    "targetPath": "C:/Users/lu-ro/source/repos/C#/Test/Destination"
+  },
+  {
+    "jobName": "test1",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
+  },
+  {
+    "jobName": "test2",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source2",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "dany",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination"
+  },
+  {
+    "jobName": "bruno",
+    "jobType": "Complete",
+    "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
+    "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "JobVic1",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  },
+  {
+    "jobName": "VicUn",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  },
+  {
+    "jobName": "VicDeux",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination2"
+  },
+  {
+    "jobName": "VicTrois",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Destination2",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  }
+]

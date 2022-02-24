@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StatusLogFile>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>END</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>0</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>53</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>STARTING</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>99</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>END</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>0</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>53</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>STARTING</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>99</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>END</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>0</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>53</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>STARTING</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>99</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>END</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>0</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>53</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>STARTING</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>99</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>END</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>0</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>0</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>ACTIVE</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>1</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>53</FileSizeLeftToCopy>
+  </Job>
+  <Job>
+    <JobName>tesst3</JobName>
+    <Type>Complete</Type>
+    <SourcePath>C:/Users/Bruno/Documents/SourceB/Source</SourcePath>
+    <TargetPath>C:/Users/Bruno/Documents/SourceB/Dest2</TargetPath>
+    <State>STARTING</State>
+    <TotalFilesToCopy>2</TotalFilesToCopy>
+    <TotalFilesSize>99 B</TotalFilesSize>
+    <NbFilesLeftToDo>2</NbFilesLeftToDo>
+    <FileSizeLeftToCopy>99</FileSizeLeftToCopy>
+  </Job>
+</StatusLogFile>
