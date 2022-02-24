@@ -64,5 +64,29 @@
     "jobType": "Complete",
     "sourcePath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Source",
     "targetPath": "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/test/Destination2"
+  },
+  {
+    "jobName": "JobVic1",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  },
+  {
+    "jobName": "VicUn",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination"
+  },
+  {
+    "jobName": "VicDeux",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Source",
+    "targetPath": "D:/ProgSystemLocal/Destination2"
+  },
+  {
+    "jobName": "VicTrois",
+    "jobType": "Complete",
+    "sourcePath": "D:/ProgSystemLocal/Destination2",
+    "targetPath": "D:/ProgSystemLocal/Destination"
   }
 ]

@@ -128,3 +128,29 @@ C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\AppV3\AppV3\obj\
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\AppV3\AppV3\obj\Debug\AppV3.csproj.CopyComplete
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\AppV3\AppV3\obj\Debug\AppV2.exe
 C:\Users\danyk\Documents\CESI\PROSIT\PROG SYS\Version3\VERSION3\AppV3\AppV3\obj\Debug\AppV2.pdb
+C:\P\AppV3\AppV3\obj\Debug\AppV3.csprojAssemblyReference.cache
+C:\P\AppV3\AppV3\obj\Debug\CreateJobView.g.cs
+C:\P\AppV3\AppV3\obj\Debug\ExecuteJobView.g.cs
+C:\P\AppV3\AppV3\obj\Debug\GeneralSettingsView.g.cs
+C:\P\AppV3\AppV3\obj\Debug\MainWindow.g.cs
+C:\P\AppV3\AppV3\obj\Debug\RemoveJobView.g.cs
+C:\P\AppV3\AppV3\obj\Debug\App.g.cs
+C:\P\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.cache
+C:\P\AppV3\AppV3\obj\Debug\AppV2_MarkupCompile.lref
+C:\P\AppV3\AppV3\obj\Debug\AppV2.exe
+C:\P\AppV3\AppV3\obj\Debug\AppV2.pdb
+C:\P\AppV3\AppV3\bin\Debug\AppV2.exe.config
+C:\P\AppV3\AppV3\bin\Debug\AppV2.exe
+C:\P\AppV3\AppV3\bin\Debug\AppV2.pdb
+C:\P\AppV3\AppV3\bin\Debug\Newtonsoft.Json.dll
+C:\P\AppV3\AppV3\bin\Debug\Newtonsoft.Json.xml
+C:\P\AppV3\AppV3\obj\Debug\CreateJobView.baml
+C:\P\AppV3\AppV3\obj\Debug\ExecuteJobView.baml
+C:\P\AppV3\AppV3\obj\Debug\GeneralSettingsView.baml
+C:\P\AppV3\AppV3\obj\Debug\MainWindow.baml
+C:\P\AppV3\AppV3\obj\Debug\RemoveJobView.baml
+C:\P\AppV3\AppV3\obj\Debug\AppV2.g.resources
+C:\P\AppV3\AppV3\obj\Debug\AppV2.Properties.Resources.resources
+C:\P\AppV3\AppV3\obj\Debug\AppV3.csproj.GenerateResource.cache
+C:\P\AppV3\AppV3\obj\Debug\AppV3.csproj.CoreCompileInputs.cache
+C:\P\AppV3\AppV3\obj\Debug\AppV3.csproj.CopyComplete

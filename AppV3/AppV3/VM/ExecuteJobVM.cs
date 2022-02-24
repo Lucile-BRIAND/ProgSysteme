@@ -31,6 +31,8 @@ namespace AppV3.VM
         public LogFile lf = LogFile.GetInstance;
         SocketManager socketManage = SocketManager.GetInstance;
         SocketManagerBackupsName socketManageBackupsName = SocketManagerBackupsName.GetInstance;
+        JobProgressPercentage jobProgressPercentageInstance = JobProgressPercentage.GetInstance;
+
         public ExecuteJobVM getValues()
         {
             var values = new ExecuteJobVM()
@@ -73,7 +75,7 @@ namespace AppV3.VM
             int timeCryptoSoft = 0; //total time of the encryption
 
             Process P = new Process();
-            P.StartInfo.FileName = "C:/Users/danyk/Documents/CESI/PROSIT/PROG SYS/Version3/VERSION3/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
+            P.StartInfo.FileName = "C:/P/CryptoSoft/CryptoSoft/bin/Debug/netcoreapp3.1/CryptoSoft";
             P.StartInfo.Arguments = path;
 
             if (fileExtentions.extentions.Count != 0)
@@ -272,16 +274,15 @@ namespace AppV3.VM
 
         public List<long> CallCompleteCopy(List<string> filesList, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
-            double pourcentage = 0;
+            jobProgressPercentageInstance.percentage = 0;
             Byte[] buffer;
             //Copy all the files & replaces any file with the same name
             foreach (string newPath in filesList)
-            {
-                
-                pourcentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
-                pourcentage = Math.Round(pourcentage);
-                Trace.WriteLine(pourcentage);
-                buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
+            {                
+                jobProgressPercentageInstance.percentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
+                jobProgressPercentageInstance.percentage = Math.Round(jobProgressPercentageInstance.percentage);
+                Trace.WriteLine(jobProgressPercentageInstance.percentage);
+                buffer = Encoding.UTF8.GetBytes(jobProgressPercentageInstance.percentage.ToString());
                 socketManage.socket.Send(buffer);
 
                 Thread.Sleep(2000);
@@ -339,7 +340,7 @@ namespace AppV3.VM
                         fileSize.FileIsTransfering = true;
                     }
 
-                    Thread.Sleep(5000); //DEBUG
+                    Thread.Sleep(2000); //DEBUG
                     fileSizeLeftToCopy += doc.Length;
                     nbfile++;
 
@@ -375,10 +376,10 @@ namespace AppV3.VM
                 }
 
             }
-            pourcentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
-            pourcentage = Math.Round(pourcentage);
-            Trace.WriteLine(pourcentage);
-            buffer = Encoding.UTF8.GetBytes(pourcentage.ToString());
+            jobProgressPercentageInstance.percentage = ((100 * fileSizeLeftToCopy) / totalfileSize);
+            jobProgressPercentageInstance.percentage = Math.Round(jobProgressPercentageInstance.percentage);
+            Trace.WriteLine(jobProgressPercentageInstance.percentage);
+            buffer = Encoding.UTF8.GetBytes(jobProgressPercentageInstance.percentage.ToString());
             socketManage.socket.Send(buffer);
 
             //Add the necessary values in a list
@@ -514,7 +515,7 @@ namespace AppV3.VM
                             fileSize.FileIsTransfering = true;
                         }
 
-                        Thread.Sleep(5000); //DEBUG
+                        Thread.Sleep(2000); //DEBUG
                         nbfile++;
                         fileSizeLeftToCopy += originalFile.Length;
 

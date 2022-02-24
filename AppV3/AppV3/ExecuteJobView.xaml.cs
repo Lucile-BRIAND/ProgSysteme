@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Net.Sockets;
@@ -27,9 +28,11 @@ namespace AppV3
     public partial class ExecuteJobView : Window
     {
         LanguageFile singletonLang = LanguageFile.GetInstance;
+        JobProgressPercentage jobProgressPercentageInstance = JobProgressPercentage.GetInstance;
         ExecuteJobVM executeJobVM = new ExecuteJobVM();
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
+
         Thread[] Threads;
         int[] PIDPauseTab = new int[100];
 
@@ -52,14 +55,14 @@ namespace AppV3
             {
                 case "Stop":
                     MessageBox.Show("STOP");
-                        int index = Int32.Parse(indexString);
-                           MessageBox.Show(index.ToString());
-                        Process processStopStart = new Process();
-                        processStopStart.StartInfo.FileName = "notepad";
-                        processStopStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                        processStopStart.Start();
-                        Trace.WriteLine(processStopStart.Id);
-                        executeJobVM.InitJobStopName(processStopStart.Id, index);
+                    int index = Int32.Parse(indexString);
+                    MessageBox.Show(index.ToString());
+                    Process processStopStart = new Process();
+                    processStopStart.StartInfo.FileName = "notepad";
+                    processStopStart.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                    processStopStart.Start();
+                    Trace.WriteLine(processStopStart.Id);
+                    executeJobVM.InitJobStopName(processStopStart.Id, index);
                     break;
                 case "Pause":
                     MessageBox.Show("PAUSE");
@@ -95,6 +98,7 @@ namespace AppV3
         {
             StartBackup();
         }
+
 
         private async void StartBackup()
         {
@@ -194,5 +198,60 @@ namespace AppV3
             }
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            BackgroundWorker worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.WorkerSupportsCancellation = true;
+            worker.ProgressChanged += worker_ProgressChanged;
+            worker.DoWork += worker_DoWork;
+            worker.RunWorkerAsync();
+        }
+
+
+        private void worker_DoWork(object sender, DoWorkEventArgs e)
+        {
+            var worker = sender as BackgroundWorker;
+
+            for (int i = 1; i <= 100; i++)
+            {
+                string percentage = jobProgressPercentageInstance.percentage.ToString();
+                worker.ReportProgress(Int32.Parse(percentage));
+                Thread.Sleep(2200);
+                if (worker.CancellationPending)
+                {
+                    e.Cancel = true;
+                    worker.CancelAsync();
+                    break;
+                }
+            }
+        }
+        private void worker_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            Trace.WriteLine(e.ProgressPercentage);
+            executeJobProgressBar.Value = e.ProgressPercentage;
+            executeJobProgressTextBlock.Text = e.ProgressPercentage.ToString();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

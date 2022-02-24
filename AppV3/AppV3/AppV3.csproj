@@ -66,6 +66,7 @@
     <Compile Include="Models\FileExtentions.cs" />
     <Compile Include="Models\FileSize.cs" />
     <Compile Include="Models\JobModel.cs" />
+    <Compile Include="Models\JobProgressPercentage.cs" />
     <Compile Include="Models\LanguageFile.cs" />
     <Compile Include="Models\LogFile.cs" />
     <Compile Include="Models\SocketManager.cs" />

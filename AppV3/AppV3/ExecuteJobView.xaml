@@ -17,5 +17,8 @@
         <Button Content="Pause" HorizontalAlignment="Left" Margin="620,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Click"/>
         <Button Content="Play" HorizontalAlignment="Left" Margin="709,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPlay_Click"/>
         <Button Content="Accept" HorizontalAlignment="Left" Margin="620,103,0,0" VerticalAlignment="Top" Width="75" Click="ButtonAccept_Click"/>
+        <TextBlock Name="executeJobProgressTextBlock" Text="" HorizontalAlignment="Left" Margin="615,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
+        <ProgressBar Name="executeJobProgressBar" HorizontalAlignment="Left" Height="16" Margin="611,159,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="553,159,0,0" VerticalAlignment="Top" Width="45" Height="26" Click="Button_Click"/>
     </Grid>
 </Window>
