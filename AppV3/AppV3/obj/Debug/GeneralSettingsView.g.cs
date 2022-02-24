@@ -218,13 +218,13 @@ namespace AppV3 {
             this.CheckboxPNG = ((System.Windows.Controls.CheckBox)(target));
             
             #line 25 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxPNG.Checked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxPNG.Checked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
             
             #line 25 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxPNG.Unchecked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxPNG.Unchecked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
@@ -233,13 +233,13 @@ namespace AppV3 {
             this.CheckboxJPG = ((System.Windows.Controls.CheckBox)(target));
             
             #line 26 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxJPG.Checked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxJPG.Checked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
             
             #line 26 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxJPG.Unchecked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxJPG.Unchecked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
@@ -248,13 +248,13 @@ namespace AppV3 {
             this.CheckboxPDF = ((System.Windows.Controls.CheckBox)(target));
             
             #line 27 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxPDF.Checked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxPDF.Checked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
             
             #line 27 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxPDF.Unchecked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxPDF.Unchecked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
@@ -263,13 +263,13 @@ namespace AppV3 {
             this.CheckboxTXT = ((System.Windows.Controls.CheckBox)(target));
             
             #line 28 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxTXT.Checked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxTXT.Checked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden
             
             #line 28 "..\..\GeneralSettingsView.xaml"
-            this.CheckboxTXT.Unchecked += new System.Windows.RoutedEventHandler(this.ComboBoxExtensionToEncrypt_Checked);
+            this.CheckboxTXT.Unchecked += new System.Windows.RoutedEventHandler(this.CheckBoxExtensionToEncrypt_Checked);
             
             #line default
             #line hidden

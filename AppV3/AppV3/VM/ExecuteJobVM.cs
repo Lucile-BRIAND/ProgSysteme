@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using Newtonsoft.Json;
 using System.Collections.Generic;
 using AppV3.Models;
 using System.Diagnostics;
@@ -21,9 +20,15 @@ namespace AppV3.VM
         public string stopBackup { get; set; }
         public string pauseBackup { get; set; }
 
+        //Singletons instances
         public FileExtentions fileExtentions = FileExtentions.GetInstance;
         public FileSize fileSize = FileSize.GetInstance;
         public StatusLogFile slf = StatusLogFile.GetInstance;
+        public LanguageFile singletonLang = LanguageFile.GetInstance;
+        public LogFile lf = LogFile.GetInstance;
+        public SocketManager socketManage = SocketManager.GetInstance;
+        public SocketManagerBackupsName socketManageBackupsName = SocketManagerBackupsName.GetInstance;
+        public JobProgressPercentage jobProgressPercentageInstance = JobProgressPercentage.GetInstance;
 
         public string JobSoftwareNameTextBox;
         private string format;
@@ -32,14 +37,10 @@ namespace AppV3.VM
 
         private static object _lock;
 
-        public LanguageFile singletonLang = LanguageFile.GetInstance;
-        public LogFile lf = LogFile.GetInstance;
-        SocketManager socketManage = SocketManager.GetInstance;
-        SocketManagerBackupsName socketManageBackupsName = SocketManagerBackupsName.GetInstance;
-        JobProgressPercentage jobProgressPercentageInstance = JobProgressPercentage.GetInstance;
-
+        
         public ExecuteJobVM getValues()
         {
+            //Display the messages and elements in the correct language
             var values = new ExecuteJobVM()
             {
                 executeBackup = singletonLang.ReadFile().Execute,
@@ -58,30 +59,34 @@ namespace AppV3.VM
         }
         public void InitJobSoftwareName(string jobSoftware)
         {
+            //Initialize the selected job software
             JobSoftwareNameTextBox = jobSoftware;
-            Trace.WriteLine(JobSoftwareNameTextBox);
             lf.InitJobSoftware(this.JobSoftwareNameTextBox);
         }
         public void InitJobPauseName(int PID, int index)
         {
+            //Initialize the ID of the job in order to pause it
             lf.InitJobPauseSoftware(PID);
             indexPauseBackup = index;
 
         }
         public void InitJobStopName(int PID, int index)
         {
+            //Initialize the ID of the job in order to stop it
             lf.InitJobStopSoftware(PID);
             indexStopBackup = index;
 
         }
         public void InitFormat(string Format)
         {
+            //Initialize the selected log files format
             format = Format;
-            //Trace.WriteLine(format);
             lf.InitFormat(format);
         }
         public int CallCryptoSoft(string path, int startCryptTime)
         {
+            //Call the external application CryptoSoft
+
             int timeCryptoSoft = 0; //total time of the encryption
 
             Process P = new Process();
@@ -104,6 +109,8 @@ namespace AppV3.VM
 
         public void ExecuteBackup(string name, string type, string source, string destination, int index)
         {
+            //Call the backups in order to execute them
+
             Byte[] buffer;
             buffer = Encoding.UTF8.GetBytes(name + " " + "index n°" + index);
             socketManageBackupsName.socket.Send(buffer);
@@ -111,18 +118,14 @@ namespace AppV3.VM
             _lock = new object(); //object used to lock critical sections of code
 
             format = lf.GetFormat();
-            //Trace.WriteLine(this.format);
 
             JobSoftwareNameTextBox = lf.GetJobSoftware();
-            //Trace.WriteLine(this.JobSoftwareNameTextBox);
             if (format == null | JobSoftwareNameTextBox == null)
             {
                 format = "json";
                 JobSoftwareNameTextBox = "";
             }
-            //Trace.WriteLine(format);
             Process[] myProcesses = Process.GetProcessesByName(JobSoftwareNameTextBox);
-
             if (myProcesses.Length != 0)
             {
                 return;
@@ -284,6 +287,8 @@ namespace AppV3.VM
 
         public List<long> CallCompleteCopy(List<string> filesList, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
+            //Call the complete copy method according to conditions
+
             jobProgressPercentageInstance.percentage = 0;
             Byte[] buffer;
             //Copy all the files & replaces any file with the same name
@@ -404,7 +409,9 @@ namespace AppV3.VM
 
         public List<long> CallDifferentialCopy(string[] filesArray, string name, string type, string source, string destination, int totalNbFileDifferential, long totalfileSize, int nbfile, long fileSizeLeftToCopy, int index)
         {
-            //FOREACH : copies the files
+            //Call the differential copy method according to conditions
+
+            //FOREACH : copy the files
             Array.ForEach(filesArray, (originalFileLocation) =>
             {
                 Thread.Sleep(2000);
@@ -574,6 +581,8 @@ namespace AppV3.VM
 
         public void CompleteCopyMethod(string newPath, string source, string destination, string name, string type, int totalNbFileComplete, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
         {
+            //Copy the file in complete mode
+
             File.Copy(newPath, newPath.Replace(source, destination), true);
             if (totalfileSize - fileSizeLeftToCopy == 0)
             {
@@ -588,28 +597,32 @@ namespace AppV3.VM
 
         public void DifferentialCopyMethod(FileInfo originalFile, FileInfo destFile, string name, string type, string source, string destination, int totalNbFileDifferential, long totalfileSize, int nbfile, long fileSizeLeftToCopy)
         {
-            //Copies the file
+            //Copy the file in differential mode
+
+            //Copy the file
             originalFile.CopyTo(destFile.FullName, true);
 
-            //Appends the text in the status log file
+            //Append the text in the status log file
             if (totalfileSize - fileSizeLeftToCopy == 0)
             {
                 slf.WriteStatusLogMessage(name, type, source, destination, "END", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
             }
             else
             {
-                //Appends the text in the status log file
+                //Append the text in the status log file
                 slf.WriteStatusLogMessage(name, type, source, destination, "ACTIVE", totalNbFileDifferential, totalfileSize, totalNbFileDifferential - nbfile, totalfileSize - fileSizeLeftToCopy, format);
             }
         }
 
         public void GetExtentionsToEncrypt(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
         {
-            Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG);
+            //Get the files' extentions to encrypt with the checkboxes
+
+            //Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG); //DEBUG
 
             fileExtentions.extentions.Clear(); //Clear the previous list of extentions
 
-            if (valueTXT) //if true
+            if (valueTXT) //if checked
             {
                 fileExtentions.extentions.Add("*.txt");
                 fileExtentions.Encrypt_TXTValue = true;
@@ -619,7 +632,7 @@ namespace AppV3.VM
                 fileExtentions.Encrypt_TXTValue = false;
             }
 
-            if (valuePDF) //if true
+            if (valuePDF) //if checked
             {
                 fileExtentions.extentions.Add("*.pdf");
                 fileExtentions.Encrypt_PDFValue = true;
@@ -629,7 +642,7 @@ namespace AppV3.VM
                 fileExtentions.Encrypt_PDFValue = false;
             }
 
-            if (valueJPG) //if true
+            if (valueJPG)  //if checked
             {
                 fileExtentions.extentions.Add("*.jpg");
                 fileExtentions.Encrypt_JPGValue = true;
@@ -639,7 +652,7 @@ namespace AppV3.VM
                 fileExtentions.Encrypt_JPGValue = false;
             }
 
-            if (valuePNG) //if true
+            if (valuePNG)  //if checked
             {
                 fileExtentions.extentions.Add("*.png");
                 fileExtentions.Encrypt_PNGValue = true;
@@ -651,13 +664,15 @@ namespace AppV3.VM
 
         }
 
-        public void GetExtentionsToPrioritize(bool P_valueTXT, bool P_valuePDF, bool P_valueJPG, bool P_valuePNG)
+        public void GetExtentionsToPrioritize(bool valueTXT, bool valuePDF, bool valueJPG, bool valuePNG)
         {
-            Trace.WriteLine("-------------------VALUES : " + P_valueTXT + P_valuePDF + P_valueJPG + P_valuePNG);
+            //Get the files' extentions to prioritize with the checkboxes
+
+            //Trace.WriteLine("-------------------VALUES : " + valueTXT + valuePDF + valueJPG + valuePNG); //DEBUG
 
             fileExtentions.extentionToPrioritize.Clear(); //Clear the previous list of extentions
 
-            if (P_valueTXT)
+            if (valueTXT)  //if checked
             {
                 fileExtentions.extentionToPrioritize.Add(".txt");
                 fileExtentions.Priority_TXTValue = true;
@@ -667,7 +682,7 @@ namespace AppV3.VM
                 fileExtentions.Priority_TXTValue = false;
             }
 
-            if (P_valuePDF)
+            if (valuePDF)  //if checked
             {
                 fileExtentions.extentionToPrioritize.Add(".pdf");
                 fileExtentions.Priority_PDFValue = true;
@@ -677,7 +692,7 @@ namespace AppV3.VM
                 fileExtentions.Priority_PDFValue = false;
             }
 
-            if (P_valueJPG)
+            if (valueJPG)  //if checked
             {
                 fileExtentions.extentionToPrioritize.Add(".jpg");
                 fileExtentions.Priority_JPGValue = true;
@@ -687,7 +702,7 @@ namespace AppV3.VM
                 fileExtentions.Priority_JPGValue = false;
             }
 
-            if (P_valuePNG)
+            if (valuePNG)  //if checked
             {
                 fileExtentions.extentionToPrioritize.Add(".png");
                 fileExtentions.Priority_PNGValue = true;

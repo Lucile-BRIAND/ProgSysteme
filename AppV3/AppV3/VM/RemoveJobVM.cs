@@ -6,14 +6,14 @@ namespace AppV3.VM
     {
         public string removeBackup { get; set; }
         public string mainMenu { get; set; }
-
-        MainVM mainVM = new MainVM();
-        LanguageFile singletonLang = LanguageFile.GetInstance;
+        
+        public LanguageFile singletonLang = LanguageFile.GetInstance;
 
         public RemoveJobVM getValues()
         {
             var values = new RemoveJobVM()
             {
+                //Gets the selected language for the RemoveJobView elements
                 removeBackup = singletonLang.ReadFile().ValidationRemoveJob,
                 mainMenu = singletonLang.ReadFile().MainReturn
             };

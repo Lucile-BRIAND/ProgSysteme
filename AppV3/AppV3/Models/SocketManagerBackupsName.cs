@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AppV3.Models
 {
-    class SocketManagerBackupsName
+    class SocketManagerBackupsName //SINGLETON
     {
         public Socket socket { get; set; }
         private static SocketManagerBackupsName socketManager;
+
+        //Private constructor
         private SocketManagerBackupsName() { }
+
         // Initializes the unique instance
         public static SocketManagerBackupsName GetInstance
         {
@@ -28,6 +28,7 @@ namespace AppV3.Models
         }
         public Socket Connect()
         {
+            //Connect the server
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Bind(new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9050));
             socket.Listen(20);
@@ -35,11 +36,13 @@ namespace AppV3.Models
         }
         public Socket AcceptConnection(Socket server)
         {
+            //Accept client connection
             Socket client = server.Accept();
             return client;
         }
         public void ListenToNetwork(Socket client)
         {
+            //Listen to the network to receive and send data
             string data = null;
             IPEndPoint ipEndPoint = (IPEndPoint)client.LocalEndPoint;
             byte[] buffer = new byte[client.ReceiveBufferSize];

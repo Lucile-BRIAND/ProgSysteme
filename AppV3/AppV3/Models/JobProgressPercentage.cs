@@ -13,10 +13,10 @@ namespace AppV3.Models
         private static JobProgressPercentage jobProgressPercentageInstance = null;
         public double percentage;
 
-        //private constructor 
+        //Private constructor 
         private JobProgressPercentage() { }
 
-        // Initializes the unique instance
+        //Initialize the unique instance
         public static JobProgressPercentage GetInstance
         {
             get

@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace AppV3.Models
 {
-    class LanguageFile : INotifyPropertyChanged //SINGLETON
+    public class LanguageFile : INotifyPropertyChanged //SINGLETON
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -16,10 +16,12 @@ namespace AppV3.Models
 
         //Instance null by default 
         private static LanguageFile languageInstance = null;
-        // Private Attribute who contains the value writed by the user
+
+        //Private attribute who contains the value writed by the user
         private string language = "English";
         public string mainCreate;
-        // Differents attributes used for the JSON reading
+
+        //Different attributes used for the JSON reading
         public string Main { get; set; }
         public string Execute { get; set; }
         public string Delete { get; set; }
@@ -57,7 +59,7 @@ namespace AppV3.Models
         //private constructor 
         private LanguageFile() { }
 
-        // Initializes the unique instance
+        //Initialize the unique instance
         public static LanguageFile GetInstance
         {
             get

@@ -5,9 +5,10 @@ namespace AppV3.VM
 {
     class ChooseLanguageVM
     {
-        LanguageFile singletonLang = LanguageFile.GetInstance;
+        //Get the instance the language's Singleton
+        public LanguageFile singletonLang = LanguageFile.GetInstance;
 
-        //Saves the language choice in the language Singleton
+        //Save the language choice in the language Singleton
         public LanguageFile SaveLanguage(int index)
         {
             switch (index) {

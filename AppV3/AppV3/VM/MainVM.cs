@@ -10,8 +10,8 @@ namespace AppV3.VM
     {
 
         public event PropertyChangedEventHandler PropertyChanged;
-        LanguageFile singletonLang = LanguageFile.GetInstance;
-        FileExtentions fileExtentions = FileExtentions.GetInstance;
+        public LanguageFile singletonLang = LanguageFile.GetInstance;
+        public FileExtentions fileExtentions = FileExtentions.GetInstance;
 
         public string jobSoftware { get; set; }
         public string chooseAction { get; set; }
@@ -41,6 +41,21 @@ namespace AppV3.VM
 
 
         public string jobSoftwareName;
+        public string JobSoftwareName
+        {
+            get
+            {
+                return jobSoftwareName;
+            }
+            set
+            {
+                if (!string.Equals(jobSoftwareName, value))
+                {
+                    jobSoftwareName = value;
+                    OnPropertyChanged("JobSoftwareName");
+                }
+            }
+        }
 
 
         public MainVM getValues()
@@ -76,21 +91,6 @@ namespace AppV3.VM
             return values;
 
         }
-        public string JobSoftwareName
-        {
-            get
-            {
-                return jobSoftwareName;
-            }
-            set
-            {
-                if (!string.Equals(jobSoftwareName, value))
-                {
-                    jobSoftwareName = value;
-                    OnPropertyChanged("JobSoftwareName");
-                }
-            }
-        }
 
         protected void OnPropertyChanged(string propertyName = null)
         {
@@ -99,7 +99,7 @@ namespace AppV3.VM
 
         public virtual void Dispose() { }
 
-        public static List<JobModel> DisplayJobs()
+        public List<JobModel> DisplayJobs()
         {
             //Displays all the created jobs
             string file = "Jobfile.json";

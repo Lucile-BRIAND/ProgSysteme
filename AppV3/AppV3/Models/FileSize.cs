@@ -2,17 +2,17 @@
 
 namespace AppV3.Models
 {
-    class FileSize //SINGLETON
+    public class FileSize //SINGLETON
     {
         //Instance null by default 
         private static FileSize fileSizeInstance = null;
         public int FileMaxSize { get; set; }
         public bool FileIsTransfering { get; set; }
 
-        //private constructor 
+        //Private constructor 
         private FileSize() { }
 
-        // Initializes the unique instance
+        //Initialize the unique instance
         public static FileSize GetInstance
         {
             get

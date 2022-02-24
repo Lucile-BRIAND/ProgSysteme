@@ -1,34 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
-using AppV3;
-using System.Threading;
 using System.Diagnostics;
 using System.Net.Sockets;
 
 namespace AppV3
 {
-    /// <summary>
-    /// Logique d'interaction pour MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         
         MainVM mainVM = new MainVM();
-        
         
         public MainWindow()
         {
@@ -39,8 +21,9 @@ namespace AppV3
                 return; 
             }
             InitializeComponent();
-            this.DataContext = mainVM.getValues();
+            DataContext = mainVM.getValues();
         }
+
         // The ButtonCreateJobView_Click method is called when the user click the button to go display CreateJob View
         private void ButtonCreateJobView_Click(object sender, RoutedEventArgs e)
         {
@@ -48,6 +31,7 @@ namespace AppV3
             createJobView.Show();
             Close();
         }
+
         // The ButtonExecuteJobView_Click method is called when the user click the button to go display ExecuteJob View
         private void ButtonExecuteJobView_Click(object sender, RoutedEventArgs e)
         {
@@ -55,6 +39,7 @@ namespace AppV3
             executeJob.Show();
             Close();
         }
+
         // The ButtonRemoveJobView_Click method is called when the user click the button to go display RemoveJob View
         private void ButtonRemoveJobView_Click(object sender, RoutedEventArgs e)
         {
@@ -62,6 +47,7 @@ namespace AppV3
             remove.Show();
             Close();
         }
+
         // The ButtonSettings_Click method is called when the user click the button to go display GeneralSetting View
         private void ButtonSettings_Click(object sender, RoutedEventArgs e)
         {
@@ -69,6 +55,8 @@ namespace AppV3
             generalSettingsView.Show();
             Close();
         }
+
+        //This button allows the main application to accept connections from client applications
         private void startClientConnection_Click(object sender, RoutedEventArgs e)
         {
             SocketManager socketManage = SocketManager.GetInstance;

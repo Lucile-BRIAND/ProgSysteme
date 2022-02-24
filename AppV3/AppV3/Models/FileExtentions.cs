@@ -2,7 +2,7 @@
 
 namespace AppV3.Models
 {
-    class FileExtentions //SINGLETON
+    public class FileExtentions //SINGLETON
     {
         //Instance null by default 
         private static FileExtentions extentionInstance = null;
@@ -19,10 +19,10 @@ namespace AppV3.Models
         public List<string> extentions = new List<string>();
         public List<string> extentionToPrioritize = new List<string>();
 
-        //private constructor 
+        //Private constructor 
         private FileExtentions() { }
 
-        // Initializes the unique instance
+        //Initialize the unique instance
         public static FileExtentions GetInstance
         {
             get
