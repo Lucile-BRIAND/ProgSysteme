@@ -91,7 +91,7 @@ namespace AppV3.Models
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
 
-            if (format == "json")
+            if (this.format == "json")
             {
                 //Adding values to the json keys
                 var dataLog = new
@@ -111,7 +111,7 @@ namespace AppV3.Models
                 dataLogSerialized += "\n";
                 File.AppendAllText("DailyLog.json", dataLogSerialized); //Creates the file if it doesn't exist + appends text in it
             }
-            else if (format == "xml")
+            else if (this.format == "xml")
             {
                 if (!File.Exists("DailyLog.xml")) //If the file doesn't exist
                 {
