@@ -85,7 +85,9 @@ namespace AppV3.Models
             semaphore.WaitOne();
 
             //Formats several parameters
-            string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
+            timeCryptoSoft = Math.Abs(timeCryptoSoft);
+            timeExecuteBackup = Math.Abs(timeExecuteBackup);
+            string timeCryptoSoftFormated = timeCryptoSoft.ToString() + " ms";
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
 

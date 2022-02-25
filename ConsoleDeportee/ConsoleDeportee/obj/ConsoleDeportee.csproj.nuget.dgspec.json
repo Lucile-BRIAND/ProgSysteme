@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danyk\\Documents\\CESI\\PROSIT\\PROG SYS\\Version3\\VERSION3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj": {}
+    "C:\\Users\\lu-ro\\source\\repos\\C#\\SysProgV3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danyk\\Documents\\CESI\\PROSIT\\PROG SYS\\Version3\\VERSION3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj": {
+    "C:\\Users\\lu-ro\\source\\repos\\C#\\SysProgV3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danyk\\Documents\\CESI\\PROSIT\\PROG SYS\\Version3\\VERSION3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj",
+        "projectUniqueName": "C:\\Users\\lu-ro\\source\\repos\\C#\\SysProgV3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj",
         "projectName": "ConsoleDeportee",
-        "projectPath": "C:\\Users\\danyk\\Documents\\CESI\\PROSIT\\PROG SYS\\Version3\\VERSION3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj",
-        "packagesPath": "C:\\Users\\danyk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danyk\\Documents\\CESI\\PROSIT\\PROG SYS\\Version3\\VERSION3\\ConsoleDeportee\\ConsoleDeportee\\obj\\",
+        "projectPath": "C:\\Users\\lu-ro\\source\\repos\\C#\\SysProgV3\\ConsoleDeportee\\ConsoleDeportee\\ConsoleDeportee.csproj",
+        "packagesPath": "C:\\Users\\lu-ro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lu-ro\\source\\repos\\C#\\SysProgV3\\ConsoleDeportee\\ConsoleDeportee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\danyk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lu-ro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -61,7 +61,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
