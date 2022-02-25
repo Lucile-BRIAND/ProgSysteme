@@ -7,15 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="38,283,0,0" VerticalAlignment="Top" Width="128" Height="41" Click="ButtonCreateJobView_Click"/>
-        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="219,283,0,0" VerticalAlignment="Top" Width="157" Height="41" Click="ButtonExecuteJobView_Click"/>
-        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="434,283,0,0" VerticalAlignment="Top" Width="138" Height="41" Click="ButtonRemoveJobView_Click"/>
+        <Button Name="createBackupButton" Content="{Binding createBackup}" HorizontalAlignment="Left" Margin="38,283,0,0" VerticalAlignment="Top" Width="128" Height="41" Click="ButtonCreateJobView_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" HorizontalAlignment="Left" Margin="219,283,0,0" VerticalAlignment="Top" Width="157" Height="41" Click="ButtonExecuteJobView_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="removeBackupButton" Content="{Binding removeBackup}" HorizontalAlignment="Left" Margin="434,283,0,0" VerticalAlignment="Top" Width="138" Height="41" Click="ButtonRemoveJobView_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <TextBlock x:Name="chooseActionTextBlock" HorizontalAlignment="Left" Height="28" Margin="64,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="312"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="109" Margin="10,247,0,0" VerticalAlignment="Top" Width="774"/>
         <Image Source="easySaveLogo.png" HorizontalAlignment="Left" Height="232" Margin="232,15,0,0" VerticalAlignment="Top" Width="246"/>
-        <Button Content="{Binding ButtonSettings}" HorizontalAlignment="Left" Height="41" Margin="632,283,0,0" VerticalAlignment="Top" Width="128" Click="ButtonSettings_Click"/>
-        <Button Name="startClientConnection"  Content="{Binding startConnection}" HorizontalAlignment="Left" Margin="602,132,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="startClientConnection_Click"/>
-
+        <Button Content="{Binding ButtonSettings}" HorizontalAlignment="Left" Height="41" Margin="632,283,0,0" VerticalAlignment="Top" Width="128" Click="ButtonSettings_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="startClientConnection"  Content="{Binding startConnection}" HorizontalAlignment="Left" Margin="602,132,0,0" VerticalAlignment="Top" Width="122" Height="34" Click="startClientConnection_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 </Window>

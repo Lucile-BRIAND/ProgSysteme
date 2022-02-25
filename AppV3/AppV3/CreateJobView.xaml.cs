@@ -1,41 +1,26 @@
-﻿using AppV3.VM;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using AppV3.VM;
 using AppV3.Models;
 using WinForms = System.Windows.Forms;
-using System.IO;
-using System.Diagnostics;
 
 namespace AppV3
 {
-    /// <summary>
-    /// Logique d'interaction pour CreateJobView.xaml
-    /// </summary>
     public partial class CreateJobView : Window
     {
         // Initialisation of  Language instance, in order to have access at choosen language in this view
-        LanguageFile singletonLang = LanguageFile.GetInstance;
+        public LanguageFile singletonLang = LanguageFile.GetInstance;
         // Initialisation of the used objects
-        CreateJobVM createJobVM = new CreateJobVM();
-        MainWindow mainWindow = new MainWindow();
-        // The CreateJobView method is used to initialise the components and DataBinding 
+        public CreateJobVM createJobVM = new CreateJobVM();
+        public MainWindow mainWindow = new MainWindow();
+
+        // The CreateJobView constructor is used to initialise the components and DataBinding 
         public CreateJobView()
         {
             InitializeComponent();
 
-            this.DataContext = createJobVM.getValues();
+            DataContext = createJobVM.getValues();
         }
 
         // The DataGrid_SelectionChanged method need to be declare, even if nothing happens  in it
@@ -84,14 +69,14 @@ namespace AppV3
             // Creation of the open folder dialog
             WinForms.FolderBrowserDialog folderDialog = new WinForms.FolderBrowserDialog();
             folderDialog.ShowNewFolderButton = false;
-            folderDialog.SelectedPath = System.AppDomain.CurrentDomain.BaseDirectory;
+            folderDialog.SelectedPath = AppDomain.CurrentDomain.BaseDirectory;
             // Open the selected folder window
             WinForms.DialogResult result = folderDialog.ShowDialog();
 
             if (result == WinForms.DialogResult.OK)
             {
                 // If the DialogResult work well, we display the source path
-                String sPath = folderDialog.SelectedPath;
+                string sPath = folderDialog.SelectedPath;
                 sourcePathTextBox.Text = sPath;
             }
         }
@@ -101,14 +86,14 @@ namespace AppV3
             // Creation of the open folder dialog
             WinForms.FolderBrowserDialog folderDialog = new WinForms.FolderBrowserDialog();
             folderDialog.ShowNewFolderButton = false;
-            folderDialog.SelectedPath = System.AppDomain.CurrentDomain.BaseDirectory;
+            folderDialog.SelectedPath = AppDomain.CurrentDomain.BaseDirectory;
             // Open the selected folder window
             WinForms.DialogResult result = folderDialog.ShowDialog();
 
             if (result == WinForms.DialogResult.OK)
             {
                 // If the DialogResult work well, we display the source path
-                String sPath = folderDialog.SelectedPath;
+                string sPath = folderDialog.SelectedPath;
                 targetPathTextBox.Text = sPath;
             }
         }

@@ -13,13 +13,13 @@ namespace AppV3.Models
 
         }
 
-        public string ReadFile() //Gets a string of the file
+        public string ReadFile() //Put the read file in a string
         {
             var contentFile = System.IO.File.ReadAllText(file);
             return contentFile;
         }
 
-        public bool WriteExistingJobs(JobModel list) //Writes the backup in the file 
+        public bool WriteExistingJobs(JobModel list) //Write the backup in the file 
         {
             if (!File.Exists(file))
             {
@@ -44,30 +44,30 @@ namespace AppV3.Models
             }
 
             jobModelList.Add(list);
-            System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replaces the file with the new one  
+            System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replace the file with the new one  
             return true;
         }
 
-        public bool RemoveExistingJobs(string jobName) //Removes the backup corresponding to the name parameter 
+        public bool RemoveExistingJobs(string jobName) //Remove the backup corresponding to the name parameter 
         {
             var contentFile = System.IO.File.ReadAllText(file);
             List<JobModel> jobModelList = new List<JobModel>();
             try
             {
-                jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile); //Inserts file content into object list 
+                jobModelList = JsonConvert.DeserializeObject<List<JobModel>>(contentFile); //Insert file content into object list 
             }
             catch
             {
 
             }
 
-            foreach (JobModel jobObject in jobModelList) //Gets objects in the object list 
+            foreach (JobModel jobObject in jobModelList) //Get objects in the object list 
             {
                 if (jobObject.jobName == jobName)
                 {
                     var index = jobModelList.IndexOf(jobObject);
                     jobModelList.RemoveAt(index);
-                    System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replaces the file with the new one   
+                    System.IO.File.WriteAllText(file, JsonConvert.SerializeObject(jobModelList, Formatting.Indented)); //Replace the file with the new one   
                     break;
                 }
             }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\P\AppV3\AppV3\obj\Debug\
+C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\obj\Debug\
 AppV2
 none
 false
 DEBUG;TRACE
-C:\P\AppV3\AppV3\App.xaml
+C:\Users\lu-ro\source\repos\C#\ProgSys\AppV3\AppV3\App.xaml
 5-2102259864
 
-241581707943
-15-191223843
+25739348576
+15366595783
 CreateJobView.xaml;ExecuteJobView.xaml;GeneralSettingsView.xaml;MainWindow.xaml;RemoveJobView.xaml;
 
-False
+True
 

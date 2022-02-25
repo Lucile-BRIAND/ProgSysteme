@@ -30,13 +30,37 @@
         Height="23" Margin="0,0,235.6,154" Name="targetPathTextBox" 
         VerticalAlignment="Bottom" HorizontalAlignment="Right"
         Width="172" />
-        <Button Name="createJobButton" Content="{Binding createJob}" Click="ButtonCreateBackup_Click" Margin="419,312,259.6,77"/>
+        <Button Name="createJobButton" Content="{Binding createJob}" Click="ButtonCreateBackup_Click" Margin="419,312,259.6,77">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
-        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="37,30,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="37,30,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="ButtonMainMenu_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
         <Label Name="nameLabel" Content="{Binding name}" HorizontalAlignment="Left" Margin="247,92,0,0" VerticalAlignment="Top" Height="23" Width="121" FontWeight="Bold"/>
-        <Button Content="{Binding source}" HorizontalAlignment="Left" Margin="231,196,0,0" VerticalAlignment="Top" Width="137" Height="23" Click="SourceOpenFolderDialog_Click"/>
-        <Button Content="{Binding target}" HorizontalAlignment="Left" Height="23" Margin="231,237,0,0" VerticalAlignment="Top" Width="137" Click="TargetOpenFolderDialog_Click"/>
+        <Button Content="{Binding source}" HorizontalAlignment="Left" Margin="231,196,0,0" VerticalAlignment="Top" Width="137" Height="23" Click="SourceOpenFolderDialog_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="{Binding target}" HorizontalAlignment="Left" Height="23" Margin="231,237,0,0" VerticalAlignment="Top" Width="137" Click="TargetOpenFolderDialog_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="333" Margin="182,43,0,0" VerticalAlignment="Top" Width="494"/>
     </Grid>
 </Window>

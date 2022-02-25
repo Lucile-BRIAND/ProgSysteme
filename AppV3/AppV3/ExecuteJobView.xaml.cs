@@ -2,29 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 using AppV3.Models;
 using AppV3.VM;
 
 namespace AppV3
 {
-    /// <summary>
-    /// Logique d'interaction pour ExecuteJobView.xaml
-    /// </summary>
     public partial class ExecuteJobView : Window
     {
         LanguageFile singletonLang = LanguageFile.GetInstance;
@@ -33,21 +20,20 @@ namespace AppV3
         MainVM mainVM = new MainVM();
         MainWindow mainWindow = new MainWindow();
 
-        Thread[] Threads;
         int[] PIDPauseTab = new int[100];
 
         public ExecuteJobView()
         {
             InitializeComponent();
-            this.DataContext = executeJobVM.getValues();
-            executeJobDataGrid.ItemsSource = MainVM.DisplayJobs();
+            DataContext = executeJobVM.getValues();
+            executeJobDataGrid.ItemsSource = mainVM.DisplayJobs();
         }
 
         private void ButtonAccept_Click(object sender, RoutedEventArgs e)
         {
             SocketManager socketManager = SocketManager.GetInstance;
             Socket con = socketManager.socket;
-            string value = socketManager.EcouterReseau(con);
+            string value = socketManager.ListenToNetwork(con);
             var valueModify = Regex.Match(value, @"^([\w\-]+)");
             string indexString = Regex.Match(value, @"\d+").Value;
             MessageBox.Show(valueModify.ToString());
@@ -102,6 +88,8 @@ namespace AppV3
 
         private async void StartBackup()
         {
+            //Method that creates the threads and start them
+
             int index = executeJobDataGrid.SelectedIndex;
             if (executeJobDataGrid.SelectedIndex > -1)
             {
@@ -137,6 +125,8 @@ namespace AppV3
 
         private void ButtonStop_Click(object sender, RoutedEventArgs e)
         {
+            //Stop the selected thread
+
             int index = executeJobDataGrid.SelectedIndex;
             if (index < 0)
             {
@@ -156,6 +146,8 @@ namespace AppV3
 
         private void ButtonPause_Click(object sender, RoutedEventArgs e)
         {
+            //Pause the selected thread
+
             int index = executeJobDataGrid.SelectedIndex;
             if (index < 0)
             {
@@ -176,6 +168,7 @@ namespace AppV3
 
         private void ButtonPlay_Click(object sender, RoutedEventArgs e)
         {
+            //Resume the selected thread
 
             int index = executeJobDataGrid.SelectedIndex;
 
@@ -201,6 +194,8 @@ namespace AppV3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            //Activate the background worker 
+
             BackgroundWorker worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
             worker.WorkerSupportsCancellation = true;
@@ -218,7 +213,7 @@ namespace AppV3
             {
                 string percentage = jobProgressPercentageInstance.percentage.ToString();
                 worker.ReportProgress(Int32.Parse(percentage));
-                Thread.Sleep(2200);
+                Thread.Sleep(500);
                 if (worker.CancellationPending)
                 {
                     e.Cancel = true;

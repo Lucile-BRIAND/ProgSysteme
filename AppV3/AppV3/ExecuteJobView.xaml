@@ -8,17 +8,75 @@
         Title="ExecuteJobView" Height="450" Width="800">
 
     <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="349*"/>
+        </Grid.RowDefinitions>
 
-        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="189,358,427.6,23"/>
+        <Button Name="executeBackupButton" Content="{Binding executeBackup}" Click="ButtonExecuteJob_Click" Margin="189,286.9,427.6,23" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
-        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="601,30,0,0" VerticalAlignment="Top" Width="128" Height="38" Click="ButtonMainMenu_Click"/>
-        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508"/>
-        <Button Content="Stop" HorizontalAlignment="Left" Margin="523,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStop_Click"/>
-        <Button Content="Pause" HorizontalAlignment="Left" Margin="620,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Click"/>
-        <Button Content="Play" HorizontalAlignment="Left" Margin="709,378,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPlay_Click"/>
-        <Button Content="Accept" HorizontalAlignment="Left" Margin="620,103,0,0" VerticalAlignment="Top" Width="75" Click="ButtonAccept_Click"/>
-        <TextBlock Name="executeJobProgressTextBlock" Text="" HorizontalAlignment="Left" Margin="615,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96"/>
-        <ProgressBar Name="executeJobProgressBar" HorizontalAlignment="Left" Height="16" Margin="611,159,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="553,159,0,0" VerticalAlignment="Top" Width="45" Height="26" Click="Button_Click"/>
+        <Button Name="mainMenuButton" Content="{Binding mainMenu}" HorizontalAlignment="Left" Margin="601,30,0,0" VerticalAlignment="Top" Width="128" Height="38" Click="ButtonMainMenu_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <DataGrid  Name="executeJobDataGrid" HorizontalAlignment="Left" Height="295" Margin="34,30,0,0" VerticalAlignment="Top" Width="508" Grid.RowSpan="2"/>
+
+        <Button Content="{Binding stopBackup}" HorizontalAlignment="Left" Margin="523,306.9,0,0" VerticalAlignment="Top" Width="75" Click="ButtonStop_Click" Height="19" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="{Binding pauseBackup}" HorizontalAlignment="Left" Margin="614,306.9,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPause_Click" Height="19" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="{Binding resumeBackup}" HorizontalAlignment="Left" Margin="704,306.9,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPlay_Click" Height="19" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="{Binding acceptRequest}" HorizontalAlignment="Left" Margin="601,15.9,0,0" VerticalAlignment="Top" Width="128" Click="ButtonAccept_Click" Height="38" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBlock Name="executeJobProgressTextBlock" Text="" HorizontalAlignment="Left" Margin="620,76.9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" Grid.Row="1"/>
+        <ProgressBar Name="executeJobProgressBar" HorizontalAlignment="Left" Height="29" Margin="620,92.9,0,0" VerticalAlignment="Top" Width="131" Grid.Row="1">
+            <ProgressBar.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </ProgressBar.Resources>
+        </ProgressBar>
+        <Button Content="{Binding showBar}" HorizontalAlignment="Left" Margin="561,92.9,0,0" VerticalAlignment="Top" Width="59" Height="29" Click="Button_Click" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

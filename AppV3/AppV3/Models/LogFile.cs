@@ -65,15 +65,15 @@ namespace AppV3.Models
         {
             this.JobStopSoftware = PID;
         }
-        public string GetJobSoftawre()
+        public string GetJobSoftware()
         {
             return JobSoftware;
         }
-        public int GetJobStopSoftawre()
+        public int GetJobStopSoftware()
         {
             return JobStopSoftware;
         }
-        public int GetJobPauseSoftawre()
+        public int GetJobPauseSoftware()
         {
             return JobPauseSoftware;
         }
@@ -85,11 +85,13 @@ namespace AppV3.Models
             semaphore.WaitOne();
 
             //Formats several parameters
-            string timeCryptoSoftFormated= timeCryptoSoft.ToString() + " ms";
+            timeCryptoSoft = Math.Abs(timeCryptoSoft);
+            timeExecuteBackup = Math.Abs(timeExecuteBackup);
+            string timeCryptoSoftFormated = timeCryptoSoft.ToString() + " ms";
             string timeExecuteBackupFormated = timeExecuteBackup.ToString() + " ms";
             string fileSizeFormated = fileSize.ToString() + " B";
 
-            if (format == "json")
+            if (this.format == "json")
             {
                 //Adding values to the json keys
                 var dataLog = new
@@ -109,7 +111,7 @@ namespace AppV3.Models
                 dataLogSerialized += "\n";
                 File.AppendAllText("DailyLog.json", dataLogSerialized); //Creates the file if it doesn't exist + appends text in it
             }
-            else if (format == "xml")
+            else if (this.format == "xml")
             {
                 if (!File.Exists("DailyLog.xml")) //If the file doesn't exist
                 {
